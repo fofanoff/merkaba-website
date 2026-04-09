@@ -21,9 +21,8 @@ export function HeroSection({
   const mouseY = useMotionValue(0);
   const [isMobile, setIsMobile] = useState(false);
 
-  // Subtle parallax for logo
-  const logoX = useTransform(mouseX, [-0.5, 0.5], [12, -12]);
-  const logoY = useTransform(mouseY, [-0.5, 0.5], [8, -8]);
+  const logoX = useTransform(mouseX, [-0.5, 0.5], [10, -10]);
+  const logoY = useTransform(mouseY, [-0.5, 0.5], [6, -6]);
 
   useEffect(() => {
     setIsMobile(window.innerWidth < 1024);
@@ -47,70 +46,71 @@ export function HeroSection({
       className="relative h-screen min-h-[700px] max-h-[1200px] flex items-center overflow-hidden"
       style={{ background: "#0B0E1A" }}
     >
-      {/* ===== LOGO + EFFECTS LAYER ===== */}
+      {/* ===== LOGO - CENTERED BACKGROUND, z-1 ===== */}
       <motion.div
-        className="absolute inset-0 flex items-center justify-center lg:justify-end lg:pr-[5%] pointer-events-none z-[1]"
+        className="absolute inset-0 flex items-center justify-center pointer-events-none z-[1]"
         style={isMobile ? {} : { x: logoX, y: logoY }}
       >
         <motion.div
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
-          className="relative w-[300px] sm:w-[400px] md:w-[500px] lg:w-[600px] xl:w-[680px]"
+          className="relative"
         >
-          {/* Ambient halo - outermost glow */}
+          {/* Ambient halo */}
           <div
-            className="absolute -inset-[25%] rounded-full pointer-events-none"
+            className="absolute -inset-[30%] rounded-full pointer-events-none"
             style={{
               background:
-                "radial-gradient(circle, rgba(212,168,67,0.07) 0%, rgba(99,102,241,0.04) 40%, rgba(155,89,182,0.02) 60%, transparent 70%)",
-              animation: "ambient-halo 18s ease-in-out infinite",
+                "radial-gradient(circle, rgba(212,168,67,0.06) 0%, rgba(99,102,241,0.03) 40%, rgba(155,89,182,0.02) 60%, transparent 70%)",
+              animation: "ambient-halo 22s ease-in-out infinite",
             }}
           />
 
-          {/* Logo image - cropped to remove text, blended */}
-          <div className="w-full overflow-hidden" style={{ aspectRatio: "1 / 0.82" }}>
+          {/* Logo image - cropped bottom 16% to remove text, centered */}
+          <div
+            className="w-[350px] sm:w-[450px] md:w-[550px] lg:w-[650px] xl:w-[700px] overflow-hidden"
+            style={{ aspectRatio: "1 / 0.84" }}
+          >
             <Image
               src="/logo.png"
-              alt="Merkaba Digital"
+              alt=""
               width={800}
               height={800}
               className="w-full h-auto select-none"
               style={{
-                opacity: 0.5,
+                opacity: 0.45,
                 mixBlendMode: "lighten",
-                filter:
-                  "drop-shadow(0 0 40px rgba(99, 102, 241, 0.08)) drop-shadow(0 0 80px rgba(155, 89, 182, 0.06))",
               }}
               priority
             />
           </div>
 
-          {/* Orbiting glow 1 - clockwise, purple/pink */}
+          {/* Orbiting glow 1 - clockwise, purple/pink, 30s */}
           <div
             className="absolute inset-0 pointer-events-none"
-            style={{ animation: "orbit-cw 25s linear infinite" }}
+            style={{ animation: "orbit-cw 30s linear infinite" }}
           >
             <div
               className="absolute -top-[15%] left-[25%] w-[45%] aspect-square rounded-full"
               style={{
                 background:
-                  "radial-gradient(circle, rgba(155,89,182,0.22) 0%, rgba(232,121,168,0.1) 45%, transparent 70%)",
+                  "radial-gradient(circle, rgba(155,89,182,0.2) 0%, rgba(232,121,168,0.08) 45%, transparent 70%)",
                 filter: "blur(60px)",
               }}
             />
           </div>
 
-          {/* Orbiting glow 2 - counter-clockwise, gold */}
+          {/* Orbiting glow 2 - counter-clockwise, gold, 35s */}
           <div
             className="absolute inset-0 pointer-events-none"
-            style={{ animation: "orbit-ccw 30s linear infinite" }}
+            style={{ animation: "orbit-ccw 35s linear infinite" }}
           >
             <div
               className="absolute -bottom-[10%] right-[20%] w-[40%] aspect-square rounded-full"
               style={{
                 background:
-                  "radial-gradient(circle, rgba(212,168,67,0.18) 0%, rgba(240,199,94,0.07) 45%, transparent 70%)",
+                  "radial-gradient(circle, rgba(212,168,67,0.15) 0%, rgba(240,199,94,0.06) 45%, transparent 70%)",
                 filter: "blur(55px)",
               }}
             />
@@ -121,9 +121,9 @@ export function HeroSection({
             className="absolute top-[35%] left-[38%] w-[12%] aspect-square rounded-full pointer-events-none"
             style={{
               background:
-                "radial-gradient(circle, rgba(155,89,182,0.4) 0%, rgba(99,102,241,0.15) 50%, transparent 70%)",
+                "radial-gradient(circle, rgba(155,89,182,0.35) 0%, rgba(99,102,241,0.12) 50%, transparent 70%)",
               filter: "blur(12px)",
-              animation: "brain-pulse-left 4.5s ease-in-out infinite",
+              animation: "brain-pulse-left 5s ease-in-out infinite",
             }}
           />
 
@@ -132,15 +132,15 @@ export function HeroSection({
             className="absolute top-[35%] left-[50%] w-[12%] aspect-square rounded-full pointer-events-none"
             style={{
               background:
-                "radial-gradient(circle, rgba(212,168,67,0.35) 0%, rgba(240,199,94,0.12) 50%, transparent 70%)",
+                "radial-gradient(circle, rgba(212,168,67,0.3) 0%, rgba(240,199,94,0.1) 50%, transparent 70%)",
               filter: "blur(12px)",
-              animation: "brain-pulse-right 4.5s ease-in-out infinite 2.25s",
+              animation: "brain-pulse-right 5s ease-in-out infinite 2.5s",
             }}
           />
         </motion.div>
       </motion.div>
 
-      {/* ===== PARTICLES CANVAS ===== */}
+      {/* ===== PARTICLES - z-2 ===== */}
       <motion.div
         className="absolute inset-0 z-[2]"
         initial={{ opacity: 0 }}
@@ -150,22 +150,22 @@ export function HeroSection({
         <HeroCanvas />
       </motion.div>
 
-      {/* ===== DARK GRADIENT OVERLAY (left side for text readability) ===== */}
+      {/* ===== DARK GRADIENT OVERLAY LEFT - z-3 ===== */}
       <div
         className="absolute inset-0 z-[3] pointer-events-none"
         style={{
           background:
-            "linear-gradient(90deg, rgba(11,14,26,0.88) 0%, rgba(11,14,26,0.65) 30%, rgba(11,14,26,0.25) 55%, transparent 75%)",
+            "linear-gradient(90deg, rgba(11,14,26,0.85) 0%, rgba(11,14,26,0.6) 30%, rgba(11,14,26,0.2) 55%, transparent 75%)",
         }}
       />
 
       {/* ===== BOTTOM FADE ===== */}
       <div className="absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-t from-bg-primary to-transparent z-[4]" />
 
-      {/* ===== CONTENT ===== */}
+      {/* ===== CONTENT - z-5, ON TOP OF EVERYTHING ===== */}
       <div className="relative z-[5] max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
-          {/* Left column: Text */}
+          {/* Left: Text */}
           <div>
             {/* Badge */}
             <motion.div
@@ -250,7 +250,7 @@ export function HeroSection({
             </motion.div>
           </div>
 
-          {/* Right column: Terminal card */}
+          {/* Right: Terminal card - ON TOP of logo */}
           <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
