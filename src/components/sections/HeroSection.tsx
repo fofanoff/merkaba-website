@@ -36,19 +36,14 @@ export function HeroSection({
 
       {/* Logo as centered background watermark */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none z-[1]">
-        <motion.div
-          animate={{ rotate: [0, 360] }}
-          transition={{ duration: 120, repeat: Infinity, ease: "linear" }}
-        >
-          <Image
-            src="/logo.png"
-            alt=""
-            width={600}
-            height={600}
-            className="w-[500px] md:w-[600px] lg:w-[700px] opacity-[0.04] select-none"
-            priority
-          />
-        </motion.div>
+        <Image
+          src="/logo.png"
+          alt=""
+          width={600}
+          height={600}
+          className="w-[500px] md:w-[600px] lg:w-[700px] opacity-[0.04] select-none"
+          priority
+        />
       </div>
 
       {/* Content */}

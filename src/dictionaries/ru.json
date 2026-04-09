@@ -35,7 +35,7 @@
     "pillar4_desc": "Real-time дашборд и отчетность по AI-видимости"
   },
   "dashboard": {
-    "title": "Полная прозрачность. Реальные метрики.",
+    "title": "Полная прозрачность. Реальные метрики",
     "subtitle": "Ваш персональный AI Visibility Dashboard - в реальном времени",
     "metric1": "Оценка видимости",
     "metric2": "Упоминания бренда",
@@ -67,7 +67,7 @@
     "cta": "Получить бесплатный AI-аудит"
   },
   "services": {
-    "hero_title": "SEO привлекает клики. GEO привлекает рекомендации.",
+    "hero_title": "SEO привлекает клики. GEO привлекает рекомендации",
     "comparison": {
       "seo_title": "Традиционный SEO",
       "geo_title": "Generative Engine Optimization",
