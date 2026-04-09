@@ -67,8 +67,11 @@ export function HeroSection({
             }}
           />
 
-          {/* Logo image - clip bottom 18% to remove "MERKABA DIGITAL" text */}
-          <div className="w-[350px] sm:w-[450px] md:w-[550px] lg:w-[650px] xl:w-[700px]">
+          {/* Logo image - overflow:hidden clips bottom to remove "MERKABA DIGITAL" */}
+          <div
+            className="w-[350px] sm:w-[450px] md:w-[550px] lg:w-[650px] xl:w-[700px] overflow-hidden"
+            style={{ height: "82%" , aspectRatio: "1 / 0.8" }}
+          >
             <Image
               src="/logo.png"
               alt=""
@@ -78,39 +81,47 @@ export function HeroSection({
               style={{
                 opacity: 0.45,
                 mixBlendMode: "lighten",
-                clipPath: "inset(0 0 18% 0)",
               }}
               priority
             />
           </div>
 
-          {/* Orbiting glow 1 - clockwise, purple/pink, 30s
-              This blob orbits around the logo center creating a visible sweeping light */}
+          {/* Orbiting glow 1 - clockwise, purple/pink, 30s */}
           <div
-            className="absolute inset-0 pointer-events-none"
+            className="absolute top-1/2 left-1/2 w-0 h-0 pointer-events-none"
             style={{ animation: "orbit-cw 30s linear infinite" }}
           >
             <div
-              className="absolute -top-[10%] left-[20%] w-[35%] aspect-square rounded-full"
               style={{
+                position: "absolute",
+                top: "-220px",
+                left: "-100px",
+                width: "200px",
+                height: "200px",
+                borderRadius: "50%",
                 background:
-                  "radial-gradient(circle, rgba(155,89,182,0.4) 0%, rgba(232,121,168,0.2) 40%, transparent 70%)",
-                filter: "blur(40px)",
+                  "radial-gradient(circle, rgba(155,89,182,0.45) 0%, rgba(232,121,168,0.2) 40%, transparent 70%)",
+                filter: "blur(35px)",
               }}
             />
           </div>
 
           {/* Orbiting glow 2 - counter-clockwise, gold, 35s */}
           <div
-            className="absolute inset-0 pointer-events-none"
+            className="absolute top-1/2 left-1/2 w-0 h-0 pointer-events-none"
             style={{ animation: "orbit-ccw 35s linear infinite" }}
           >
             <div
-              className="absolute -bottom-[5%] right-[15%] w-[30%] aspect-square rounded-full"
               style={{
+                position: "absolute",
+                top: "60px",
+                left: "-90px",
+                width: "180px",
+                height: "180px",
+                borderRadius: "50%",
                 background:
-                  "radial-gradient(circle, rgba(212,168,67,0.35) 0%, rgba(240,199,94,0.15) 40%, transparent 70%)",
-                filter: "blur(35px)",
+                  "radial-gradient(circle, rgba(212,168,67,0.4) 0%, rgba(240,199,94,0.15) 40%, transparent 70%)",
+                filter: "blur(30px)",
               }}
             />
           </div>
