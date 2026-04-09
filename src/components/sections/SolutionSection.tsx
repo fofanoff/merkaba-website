@@ -83,7 +83,7 @@ export function SolutionSection({ dict }: { dict: any }) {
                 <h3 className="text-text-primary font-heading font-semibold text-lg mb-3">
                   {pillar.title}
                 </h3>
-                <p className="text-text-secondary text-sm leading-relaxed">
+                <p className="text-text-secondary text-base leading-relaxed">
                   {pillar.desc}
                 </p>
               </div>
