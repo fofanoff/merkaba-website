@@ -67,24 +67,19 @@ export function HeroSection({
             }}
           />
 
-          {/* Logo image - overflow:hidden clips bottom to remove "MERKABA DIGITAL" */}
-          <div
-            className="w-[350px] sm:w-[450px] md:w-[550px] lg:w-[650px] xl:w-[700px] overflow-hidden"
-            style={{ height: "82%" , aspectRatio: "1 / 0.8" }}
-          >
-            <Image
-              src="/logo.png"
-              alt=""
-              width={800}
-              height={800}
-              className="w-full h-auto select-none"
-              style={{
-                opacity: 0.45,
-                mixBlendMode: "lighten",
-              }}
-              priority
-            />
-          </div>
+          {/* Logo image - physically cropped, no text */}
+          <Image
+            src="/logo.png"
+            alt=""
+            width={2048}
+            height={1556}
+            className="w-[350px] sm:w-[450px] md:w-[550px] lg:w-[650px] xl:w-[700px] h-auto select-none"
+            style={{
+              opacity: 0.45,
+              mixBlendMode: "lighten",
+            }}
+            priority
+          />
 
           {/* Orbiting glow 1 - clockwise, purple/pink, 30s */}
           <div
