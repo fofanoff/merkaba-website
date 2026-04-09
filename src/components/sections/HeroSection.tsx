@@ -67,11 +67,8 @@ export function HeroSection({
             }}
           />
 
-          {/* Logo image - cropped bottom 16% to remove text, centered */}
-          <div
-            className="w-[350px] sm:w-[450px] md:w-[550px] lg:w-[650px] xl:w-[700px] overflow-hidden"
-            style={{ aspectRatio: "1 / 0.84" }}
-          >
+          {/* Logo image - clip bottom 18% to remove "MERKABA DIGITAL" text */}
+          <div className="w-[350px] sm:w-[450px] md:w-[550px] lg:w-[650px] xl:w-[700px]">
             <Image
               src="/logo.png"
               alt=""
@@ -81,22 +78,24 @@ export function HeroSection({
               style={{
                 opacity: 0.45,
                 mixBlendMode: "lighten",
+                clipPath: "inset(0 0 18% 0)",
               }}
               priority
             />
           </div>
 
-          {/* Orbiting glow 1 - clockwise, purple/pink, 30s */}
+          {/* Orbiting glow 1 - clockwise, purple/pink, 30s
+              This blob orbits around the logo center creating a visible sweeping light */}
           <div
             className="absolute inset-0 pointer-events-none"
             style={{ animation: "orbit-cw 30s linear infinite" }}
           >
             <div
-              className="absolute -top-[15%] left-[25%] w-[45%] aspect-square rounded-full"
+              className="absolute -top-[10%] left-[20%] w-[35%] aspect-square rounded-full"
               style={{
                 background:
-                  "radial-gradient(circle, rgba(155,89,182,0.2) 0%, rgba(232,121,168,0.08) 45%, transparent 70%)",
-                filter: "blur(60px)",
+                  "radial-gradient(circle, rgba(155,89,182,0.4) 0%, rgba(232,121,168,0.2) 40%, transparent 70%)",
+                filter: "blur(40px)",
               }}
             />
           </div>
@@ -107,11 +106,11 @@ export function HeroSection({
             style={{ animation: "orbit-ccw 35s linear infinite" }}
           >
             <div
-              className="absolute -bottom-[10%] right-[20%] w-[40%] aspect-square rounded-full"
+              className="absolute -bottom-[5%] right-[15%] w-[30%] aspect-square rounded-full"
               style={{
                 background:
-                  "radial-gradient(circle, rgba(212,168,67,0.15) 0%, rgba(240,199,94,0.06) 45%, transparent 70%)",
-                filter: "blur(55px)",
+                  "radial-gradient(circle, rgba(212,168,67,0.35) 0%, rgba(240,199,94,0.15) 40%, transparent 70%)",
+                filter: "blur(35px)",
               }}
             />
           </div>
