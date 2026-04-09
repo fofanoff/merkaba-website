@@ -192,6 +192,16 @@
       }
     ]
   },
+  "terminal": {
+    "title": "ai-visibility-check",
+    "command_prefix": "merkaba scan --brand",
+    "brand_name": "Ваш бизнес",
+    "scanning": "Сканирование 5 AI-платформ...",
+    "not_found": "Не найден",
+    "mentioned_once": "Упомянут 1 раз",
+    "score_label": "AI Visibility Score",
+    "conclusion": "AI не знает ваш бренд. Мы это исправим"
+  },
   "footer": {
     "description": "Generative Engine Optimization агентство",
     "copyright": "© 2025 Merkaba Digital. Все права защищены."

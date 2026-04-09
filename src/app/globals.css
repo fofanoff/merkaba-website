@@ -115,3 +115,29 @@ body {
   background: rgba(99, 102, 241, 0.3);
   color: #F1F5F9;
 }
+
+/* Hero logo effects */
+@keyframes orbit-cw {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes orbit-ccw {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(-360deg); }
+}
+
+@keyframes brain-pulse-left {
+  0%, 100% { opacity: 0.1; }
+  50% { opacity: 0.28; }
+}
+
+@keyframes brain-pulse-right {
+  0%, 100% { opacity: 0.08; }
+  50% { opacity: 0.22; }
+}
+
+@keyframes ambient-halo {
+  0%, 100% { opacity: 0.06; transform: scale(1); }
+  50% { opacity: 0.13; transform: scale(1.03); }
+}
