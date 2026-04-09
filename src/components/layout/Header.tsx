@@ -51,17 +51,10 @@ export function Header({
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 md:h-20">
-          {/* Logo */}
-          <Link href={`/${locale}`} className="flex items-center gap-3 shrink-0">
-            <Image
-              src="/logo.png"
-              alt="Merkaba Digital"
-              width={40}
-              height={40}
-              className="w-8 h-8 md:w-10 md:h-10"
-            />
-            <span className="text-text-primary font-heading font-bold text-lg hidden sm:block">
-              MERKABA<span className="text-text-secondary font-normal ml-1">DIGITAL</span>
+          {/* Logo - text only, image logo used as background element */}
+          <Link href={`/${locale}`} className="flex items-center gap-2 shrink-0">
+            <span className="text-text-primary font-heading font-bold text-xl tracking-wide">
+              MERKABA<span className="text-text-muted font-light ml-1.5 tracking-widest">DIGITAL</span>
             </span>
           </Link>
 

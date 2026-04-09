@@ -33,7 +33,7 @@ export function DashboardSection({ dict }: { dict: any }) {
                 <div className="w-3 h-3 rounded-full bg-warning/50" />
                 <div className="w-3 h-3 rounded-full bg-success/50" />
                 <span className="text-text-muted text-xs font-mono ml-4">
-                  AI Visibility Dashboard — Overview
+                  AI Visibility Dashboard - Overview
                 </span>
               </div>
 
@@ -42,10 +42,10 @@ export function DashboardSection({ dict }: { dict: any }) {
                 {/* Top metrics */}
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
                   {[
-                    { label: "Visibility Score", value: "47%", change: "+12%", color: "accent-indigo" },
-                    { label: "Brand Mentions", value: "89", change: "+23", color: "accent-purple" },
-                    { label: "Citation Score", value: "6.8", change: "+1.2", color: "accent-pink" },
-                    { label: "Sentiment", value: "8.4", change: "+0.6", color: "accent-gold" },
+                    { label: dict.dashboard.metric1, value: "47%", change: "+12%", color: "accent-indigo" },
+                    { label: dict.dashboard.metric2, value: "89", change: "+23", color: "accent-purple" },
+                    { label: dict.dashboard.metric3, value: "6.8", change: "+1.2", color: "accent-pink" },
+                    { label: dict.dashboard.metric4, value: "8.4", change: "+0.6", color: "accent-gold" },
                   ].map((metric, i) => (
                     <div key={i} className="rounded-xl bg-bg-surface/50 border border-white/5 p-4">
                       <p className="text-text-muted text-xs mb-1">{metric.label}</p>

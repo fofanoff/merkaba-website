@@ -123,7 +123,7 @@ export function ContactForm({ dict }: { dict: any }) {
                     name="industry"
                     className="w-full bg-bg-card/50 border border-white/10 rounded-xl px-4 py-3 text-text-primary text-sm focus:outline-none focus:border-accent-indigo/50 transition-colors"
                   >
-                    <option value="">—</option>
+                    <option value="">-</option>
                     {t.industries.map((ind: string) => (
                       <option key={ind} value={ind}>
                         {ind}

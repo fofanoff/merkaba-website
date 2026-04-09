@@ -21,6 +21,7 @@ export function PricingSection({
       type: dict.pricing.launch_type,
       features: dict.pricing.launch_features,
       featured: false,
+      cta: dict.pricing.launch_cta,
       gradient: "from-accent-blue/20 to-accent-indigo/20",
       borderColor: "border-accent-blue/20",
     },
@@ -31,6 +32,7 @@ export function PricingSection({
       features: dict.pricing.growth_features,
       featured: true,
       badge: dict.pricing.growth_badge,
+      cta: dict.pricing.growth_cta,
       gradient: "from-accent-pink/20 via-accent-purple/20 to-accent-indigo/20",
       borderColor: "border-accent-indigo/30",
     },
@@ -40,6 +42,7 @@ export function PricingSection({
       type: dict.pricing.dominance_type,
       features: dict.pricing.dominance_features,
       featured: false,
+      cta: dict.pricing.dominance_cta,
       gradient: "from-accent-gold/20 to-accent-gold/10",
       borderColor: "border-accent-gold/20",
     },
@@ -101,7 +104,7 @@ export function PricingSection({
                       : "border border-white/10 text-text-primary hover:bg-white/5 hover:border-white/20"
                   }`}
                 >
-                  {dict.pricing.cta}
+                  {pkg.cta}
                 </Link>
               </div>
             </FadeIn>

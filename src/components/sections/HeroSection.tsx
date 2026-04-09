@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { FlowerOfLife } from "@/components/ui/FlowerOfLife";
 import type { Locale } from "@/lib/i18n";
@@ -32,8 +33,20 @@ export function HeroSection({
         </motion.div>
       </div>
 
+      {/* Logo as large background element */}
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none z-[1]">
+        <Image
+          src="/logo.png"
+          alt=""
+          width={600}
+          height={600}
+          className="w-[400px] md:w-[550px] lg:w-[650px] opacity-[0.06] select-none"
+          priority
+        />
+      </div>
+
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 relative z-10">
-        <div className="max-w-4xl">
+        <div className="max-w-3xl">
           {/* Badge */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -89,12 +102,12 @@ export function HeroSection({
           </motion.div>
         </div>
 
-        {/* Decorative AI Response Preview */}
+        {/* Decorative AI Response Preview - below hero text */}
         <motion.div
-          initial={{ opacity: 0, x: 40 }}
-          animate={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.8 }}
-          className="hidden lg:block absolute right-8 top-1/2 -translate-y-1/2 w-[380px]"
+          className="mt-16 max-w-md"
         >
           <div className="rounded-2xl bg-bg-card/80 border border-white/5 p-6 backdrop-blur-sm">
             <div className="flex items-center gap-2 mb-4">
@@ -111,8 +124,8 @@ export function HeroSection({
               <div className="h-3 bg-white/5 rounded w-2/3" />
               <div className="mt-4 p-3 rounded-lg bg-accent-indigo/10 border border-accent-indigo/20">
                 <div className="flex items-center gap-2">
-                  <span className="text-accent-indigo text-xs font-mono">✦</span>
-                  <span className="text-accent-indigo text-xs">Your Brand — Recommended</span>
+                  <span className="text-accent-indigo text-xs font-mono">&#10022;</span>
+                  <span className="text-accent-indigo text-xs">Your Brand - Recommended</span>
                 </div>
               </div>
             </div>

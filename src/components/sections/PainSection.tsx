@@ -60,13 +60,13 @@ export function PainSection({ dict }: { dict: any }) {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {stats.map((stat, i) => (
             <FadeIn key={i} delay={i * 0.15}>
-              <div className="relative group rounded-2xl bg-bg-card/50 border border-white/5 p-8 text-center card-glow">
+              <div className="relative group rounded-2xl bg-bg-card/50 border border-white/5 p-8 text-center card-glow h-full flex flex-col items-center justify-center">
                 <div className="flex justify-center mb-6">{stat.icon}</div>
                 <AnimatedCounter
                   value={stat.numericValue}
                   suffix={stat.suffix}
                 />
-                <p className="text-text-secondary mt-4 text-sm leading-relaxed">
+                <p className="text-text-secondary mt-4 text-base leading-relaxed min-h-[3rem] flex items-center">
                   {stat.label}
                 </p>
               </div>

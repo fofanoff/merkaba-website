@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Merkaba Digital — Generative Engine Optimization",
+  title: "Merkaba Digital - Generative Engine Optimization",
   description:
     "Мы делаем ваш бизнес видимым для AI. GEO-агентство нового поколения.",
   icons: {

@@ -6,7 +6,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   const { locale } = await params;
   const dict = await getDictionary(locale as Locale);
   return {
-    title: `${dict.nav.contact} | Merkaba Digital — GEO`,
+    title: `${dict.nav.contact} | Merkaba Digital - GEO`,
     description: dict.contact.hero_subtitle,
   };
 }
