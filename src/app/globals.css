@@ -1,0 +1,117 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-bg-primary: #0B0E1A;
+  --color-bg-secondary: #111827;
+  --color-bg-surface: #1A1F35;
+  --color-bg-card: #1E2445;
+
+  --color-accent-purple: #9B59B6;
+  --color-accent-indigo: #6366F1;
+  --color-accent-gold: #D4A843;
+  --color-accent-blue: #3B82F6;
+  --color-accent-pink: #E879A8;
+  --color-accent-cyan: #22D3EE;
+
+  --color-text-primary: #F1F5F9;
+  --color-text-secondary: #94A3B8;
+  --color-text-muted: #64748B;
+
+  --color-success: #10B981;
+  --color-warning: #F59E0B;
+  --color-danger: #EF4444;
+
+  --font-heading: "Space Grotesk", sans-serif;
+  --font-body: "Inter", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+}
+
+body {
+  background: var(--color-bg-primary);
+  color: var(--color-text-primary);
+  font-family: var(--font-body);
+}
+
+/* Gradient brand button */
+.btn-gradient {
+  background: linear-gradient(135deg, #E879A8, #9B59B6, #6366F1, #3B82F6);
+  background-size: 200% 200%;
+  transition: all 0.4s ease;
+}
+
+.btn-gradient:hover {
+  background-size: 300% 300%;
+  background-position: right center;
+  box-shadow: 0 0 30px rgba(99, 102, 241, 0.4), 0 0 60px rgba(155, 89, 182, 0.2);
+}
+
+/* Gradient text */
+.text-gradient {
+  background: linear-gradient(135deg, #E879A8, #9B59B6, #6366F1, #3B82F6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.text-gradient-gold {
+  background: linear-gradient(135deg, #D4A843, #F0C75E);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Glow card */
+.card-glow {
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.card-glow::before {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  border-radius: inherit;
+  background: linear-gradient(135deg, #E879A8, #9B59B6, #6366F1, #3B82F6);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: -1;
+}
+
+.card-glow:hover::before {
+  opacity: 1;
+}
+
+.card-glow:hover {
+  box-shadow: 0 0 30px rgba(99, 102, 241, 0.15);
+}
+
+/* Glass effect for header */
+.glass {
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  background: rgba(11, 14, 26, 0.8);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0B0E1A;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1E2445;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #9B59B6;
+}
+
+/* Selection */
+::selection {
+  background: rgba(99, 102, 241, 0.3);
+  color: #F1F5F9;
+}
