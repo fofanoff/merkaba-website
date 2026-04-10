@@ -80,10 +80,10 @@ export function HeroEffects() {
 
     // CW inner orbit glows (purple/pink) - simple circular orbit at inner radius
     const cwGlows = [
-      { angle: 0, speed: 0.003 },
-      { angle: Math.PI * 0.5, speed: 0.003 },
-      { angle: Math.PI, speed: 0.003 },
-      { angle: Math.PI * 1.5, speed: 0.003 },
+      { angle: 0, speed: 0.0018 },
+      { angle: Math.PI * 0.5, speed: 0.0018 },
+      { angle: Math.PI, speed: 0.0018 },
+      { angle: Math.PI * 1.5, speed: 0.0018 },
     ];
 
     // CCW outer orbit glows (gold) - spaced around outer ring
