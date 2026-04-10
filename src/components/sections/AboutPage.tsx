@@ -173,7 +173,7 @@ export function AboutPage({
                     alt={a.team?.[0]?.name || "Costa Fofanoff"}
                     width={400}
                     height={500}
-                    className="w-full h-[280px] md:h-[320px] object-cover object-top"
+                    className="w-full h-[280px] md:h-full object-contain object-bottom"
                   />
                 </div>
                 {/* Content */}
