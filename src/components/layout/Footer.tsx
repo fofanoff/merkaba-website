@@ -72,7 +72,7 @@ export function Footer({
                 merkaba.vip@gmail.com
               </a>
               <a
-                href="https://t.me/merkaba_digital"
+                href="https://t.me/merkaba_vip"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block text-text-muted hover:text-text-secondary transition-colors"
@@ -80,7 +80,7 @@ export function Footer({
                 Telegram
               </a>
               <a
-                href="https://wa.me/905551234567"
+                href="https://wa.me/996700555785"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block text-text-muted hover:text-text-secondary transition-colors"
