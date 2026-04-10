@@ -198,6 +198,18 @@ export function HeroSection({
           </div>
         </div>
       </div>
+
+      {/* ===== TERMINAL CARD - mobile only, after hero content ===== */}
+      <div className="lg:hidden absolute bottom-8 left-0 right-0 z-[5] px-4 sm:px-6">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 1.0 }}
+          className="max-w-sm mx-auto"
+        >
+          <HeroTerminal dict={dict} />
+        </motion.div>
+      </div>
     </section>
   );
 }
