@@ -125,3 +125,14 @@ body {
   0%, 100% { opacity: 0.4; }
   50% { opacity: 0.6; }
 }
+
+/* Hero orbiting glows */
+@keyframes orbit-cw {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes orbit-ccw {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(-360deg); }
+}

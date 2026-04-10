@@ -25,11 +25,11 @@ export function HeroSection({
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className="hero-bg-pulse"
+          className="hero-bg-pulse relative"
           style={{
             maxHeight: "550px",
-            WebkitMaskImage: "radial-gradient(circle, black 40%, transparent 70%)",
-            maskImage: "radial-gradient(circle, black 40%, transparent 70%)",
+            WebkitMaskImage: "radial-gradient(ellipse 65% 75% at center, black 25%, transparent 60%)",
+            maskImage: "radial-gradient(ellipse 65% 75% at center, black 25%, transparent 60%)",
           }}
         >
           <Image
@@ -38,9 +38,51 @@ export function HeroSection({
             width={1920}
             height={1071}
             className="h-[400px] sm:h-[450px] md:h-[500px] lg:h-[550px] w-auto select-none"
+            style={{ mixBlendMode: "lighten" }}
             priority
           />
         </motion.div>
+      </div>
+
+      {/* ===== ORBITING GLOWS - z-[1] ===== */}
+      <div className="absolute inset-0 flex items-center justify-center pointer-events-none z-[1]">
+        {/* Glow 1 - clockwise, purple/pink, 30s */}
+        <div
+          className="absolute w-0 h-0"
+          style={{ animation: "orbit-cw 30s linear infinite" }}
+        >
+          <div
+            style={{
+              position: "absolute",
+              top: "-200px",
+              left: "-90px",
+              width: "180px",
+              height: "180px",
+              borderRadius: "50%",
+              background: "radial-gradient(circle, rgba(155,89,182,0.5) 0%, rgba(232,121,168,0.2) 40%, transparent 70%)",
+              filter: "blur(30px)",
+            }}
+          />
+        </div>
+
+        {/* Glow 2 - counter-clockwise, gold, 35s */}
+        <div
+          className="absolute w-0 h-0"
+          style={{ animation: "orbit-ccw 35s linear infinite" }}
+        >
+          <div
+            style={{
+              position: "absolute",
+              top: "80px",
+              left: "-80px",
+              width: "160px",
+              height: "160px",
+              borderRadius: "50%",
+              background: "radial-gradient(circle, rgba(212,168,67,0.45) 0%, rgba(240,199,94,0.15) 40%, transparent 70%)",
+              filter: "blur(25px)",
+            }}
+          />
+        </div>
       </div>
 
       {/* ===== DARK GRADIENT OVERLAY LEFT ===== */}
