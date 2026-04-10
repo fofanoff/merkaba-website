@@ -216,12 +216,12 @@
       { "title": "Ölçülebilir sonuçlar", "desc": "Her eylem belirli KPI'lara bağlıdır. Vanity metrics yok. Her şey şeffaf, her şey dashboard'da." }
     ],
     "team_title": "Ekip",
-    "team_intro": "Pazarlama ve stratejide 20 yili askin deneyim. Ekibimiz dort kitada projeler gerceklestirdi: Bati Avrupa'dan Korfez ulkelerine, Turkiye ve MENA'dan Guneydogu Asya ve BDT'ye. Farkli kulturler, farkli tuketici davranislari, farkli diller - her biri yerel ozelliklerin derin anlayisini gerektirdi.\n\nBu deneyim yaklasimimizi sekillendirdi: bizim icin \"zor pazar\" diye bir sey yok. Bir gorev var, veri var, strateji var. Herhangi bir niste, dunyanin herhangi bir yerinde - hem kitlenin hem de AI'nin anladigi dilde isletmeleri tanitiyoruz.",
+    "team_intro": "Merkaba Digital'in arkasinda stratejistler, muhendisler ve analistler var - tek bir fikirle birlesmis: isletme, kararlarin alindigi yerde gorunur olmali. 2026'da kararlar AI ile diyalogda aliniyor.\n\nEkibimiz farkli dunyalardan bir araya getirildi: on yillik deneyime sahip SEO veteranlari, AI otomasyon gelistiricileri, structured data uzmanlari ve Bati Avrupa'dan Korfez'e, Guneydogu Asya'dan BDT'ye pazarlarla calismis icerik stratejistleri.\n\nGenelci aramiyoruz. Ekipteki herkes kendi uzmanlik alanini kapatiyor. Birlikte tam donguyu kapsiyoruz: teknik denetimden icerik uretimine, entity building'den gercek zamanli izlemeye.\n\nDort kita, onlarca pazar, tek yaklasim - tahminlere degil verilere dayali strateji.",
     "team": [
       {
         "name": "Costa Fofanoff",
         "role": "Founder & GEO Strategist",
-        "desc": "15+ yil dijital strateji, SEO ve AI teknolojilerinde. Dort kitada projeler gerceklestirdi: Bati Avrupa'dan Korfez ulkelerine, MENA'dan Guneydogu Asya'ya.\n\nGEO'ya muhendislik yaklasimi: LLM, structured data, alinti algoritmalariyla calisma. Merkaba Digital AI izleme platformunu sifirdan kurdu.\n\nGEO oncesi: gelistirme yonetimi, AI otomasyon lansmanari, saglik, gayrimenkul, e-ticaret ve finans sektoru icin dijital strateji.",
+        "desc": "Merkaba Digital'i iki yetkinligin kesisiminde kurdu: 15+ yil dijital strateji ve AI sistemlerinin yanitlari nasil olusturduguna dair muhendislik anlayisi.\n\nTescilli AI izleme platformunu sifirdan kurdu. LLM, structured data ve alinti algoritmalariyla calisma temelinde GEO optimizasyon metodolojisini gelistirdi.\n\nGEO oncesi: tibbi sektorde dijital pazarlama yonetimi (15+ yil), urun yonetimi, blokzincir projeleri ve kripto analitigi, Turkiye'de gayrimenkul ajansi kurulumu, AI otomasyonlari. Sektorler: saglik, gayrimenkul, fintech, e-ticaret ve daha fazlasi.",
         "linkedin": "https://linkedin.com/in/fofanoff",
         "telegram": "https://t.me/merkaba_vip"
       }
