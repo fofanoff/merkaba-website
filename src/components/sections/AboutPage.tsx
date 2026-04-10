@@ -167,13 +167,13 @@ export function AboutPage({
             <div className="max-w-3xl mx-auto rounded-2xl bg-bg-surface border border-white/5 overflow-hidden">
               <div className="flex flex-col md:flex-row">
                 {/* Photo */}
-                <div className="md:w-[280px] shrink-0" style={{ background: "linear-gradient(180deg, #0B0E1A 0%, #1A1F35 100%)" }}>
+                <div className="md:w-[280px] shrink-0 bg-bg-surface">
                   <Image
                     src="/team/costa.png"
                     alt={a.team?.[0]?.name || "Costa Fofanoff"}
                     width={400}
                     height={500}
-                    className="w-full h-[280px] md:h-[320px] object-cover object-top rounded-t-xl md:rounded-t-none md:rounded-l-xl"
+                    className="w-full h-[280px] md:h-[320px] object-cover object-top"
                   />
                 </div>
                 {/* Content */}
