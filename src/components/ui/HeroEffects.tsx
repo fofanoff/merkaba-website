@@ -224,28 +224,64 @@ export function HeroEffects() {
           distAlongTrace -= segLens[i];
         }
 
-        // Draw impulse dot
+        // Check proximity to nodes for flash effect
         const [ir, ig, ib] = isLeft ? [180, 160, 255] : [240, 210, 120];
-        const pulseAlpha = 0.5 + Math.sin(time * 3 + imp.phase) * 0.2;
-
-        const impGrad = ctx.createRadialGradient(impulseX, impulseY, 0, impulseX, impulseY, 5);
-        impGrad.addColorStop(0, `rgba(255, 255, 255, ${pulseAlpha * 0.8})`);
-        impGrad.addColorStop(0.3, `rgba(${ir},${ig},${ib},${pulseAlpha * 0.6})`);
-        impGrad.addColorStop(1, `rgba(${ir},${ig},${ib},0)`);
-        ctx.fillStyle = impGrad;
-        ctx.fillRect(impulseX - 5, impulseY - 5, 10, 10);
-
-        // Draw trace nodes at each point
+        let nearNode = false;
+        let nearNodeX = 0;
+        let nearNodeY = 0;
         for (let i = 0; i < pts.length; i++) {
           const nx = cx + pts[i][0] * brainScale;
           const ny = cy + pts[i][1] * brainScale;
-          const nodePulse = 0.15 + Math.sin(time * 1.5 + i * 2 + imp.phase) * 0.1;
+          const dist = Math.sqrt((impulseX - nx) ** 2 + (impulseY - ny) ** 2);
+          if (dist < 8) {
+            nearNode = true;
+            nearNodeX = nx;
+            nearNodeY = ny;
+            break;
+          }
+        }
 
-          const nodeGrad = ctx.createRadialGradient(nx, ny, 0, nx, ny, 3);
+        // Draw impulse dot - brighter when near a node
+        const baseAlpha = nearNode ? 0.9 : 0.5;
+        const impSize = nearNode ? 8 : 5;
+
+        const impGrad = ctx.createRadialGradient(impulseX, impulseY, 0, impulseX, impulseY, impSize);
+        impGrad.addColorStop(0, `rgba(255, 255, 255, ${baseAlpha})`);
+        impGrad.addColorStop(0.3, `rgba(${ir},${ig},${ib},${baseAlpha * 0.7})`);
+        impGrad.addColorStop(1, `rgba(${ir},${ig},${ib},0)`);
+        ctx.fillStyle = impGrad;
+        ctx.fillRect(impulseX - impSize, impulseY - impSize, impSize * 2, impSize * 2);
+
+        // Flash burst when impulse hits a node
+        if (nearNode) {
+          const flashSize = 18;
+          const flashGrad = ctx.createRadialGradient(nearNodeX, nearNodeY, 0, nearNodeX, nearNodeY, flashSize);
+          flashGrad.addColorStop(0, `rgba(255, 255, 255, 0.4)`);
+          flashGrad.addColorStop(0.2, `rgba(${ir},${ig},${ib},0.25)`);
+          flashGrad.addColorStop(0.5, `rgba(${ir},${ig},${ib},0.08)`);
+          flashGrad.addColorStop(1, `rgba(${ir},${ig},${ib},0)`);
+          ctx.fillStyle = flashGrad;
+          ctx.fillRect(nearNodeX - flashSize, nearNodeY - flashSize, flashSize * 2, flashSize * 2);
+        }
+
+        // Draw trace nodes
+        for (let i = 0; i < pts.length; i++) {
+          const nx = cx + pts[i][0] * brainScale;
+          const ny = cy + pts[i][1] * brainScale;
+
+          // Node glows brighter briefly when impulse just passed
+          const distToImpulse = Math.sqrt((impulseX - nx) ** 2 + (impulseY - ny) ** 2);
+          const recentlyHit = distToImpulse < 20;
+          const nodePulse = recentlyHit
+            ? 0.3 + (1 - distToImpulse / 20) * 0.4
+            : 0.12 + Math.sin(time * 1.2 + i * 2 + imp.phase) * 0.06;
+          const nodeSize = recentlyHit ? 4 : 2.5;
+
+          const nodeGrad = ctx.createRadialGradient(nx, ny, 0, nx, ny, nodeSize);
           nodeGrad.addColorStop(0, `rgba(${ir},${ig},${ib},${nodePulse})`);
           nodeGrad.addColorStop(1, `rgba(${ir},${ig},${ib},0)`);
           ctx.fillStyle = nodeGrad;
-          ctx.fillRect(nx - 3, ny - 3, 6, 6);
+          ctx.fillRect(nx - nodeSize, ny - nodeSize, nodeSize * 2, nodeSize * 2);
         }
       }
 
