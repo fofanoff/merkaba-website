@@ -342,12 +342,14 @@ export function CasesPage({
             <p className="text-text-secondary text-lg mb-10 max-w-2xl mx-auto">
               {c.demo_subtitle}
             </p>
-            <Link
-              href={`/${locale}/dashboard`}
+            <a
+              href="https://app.merkaba.vip/demo"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex btn-gradient text-white font-semibold px-10 py-5 rounded-xl text-lg"
             >
               {c.demo_cta}
-            </Link>
+            </a>
             <p className="text-text-muted text-xs mt-4">{c.demo_note}</p>
           </FadeIn>
         </div>
