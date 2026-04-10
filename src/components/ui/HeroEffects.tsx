@@ -2,45 +2,14 @@
 
 import { useEffect, useRef } from "react";
 
-// ============================================================
-// BRAIN CIRCUIT TRACES
-// Long paths with trailing light effect
-// Coordinates relative to center, scaled by brainScale
-// ============================================================
-const TRACES = [
-  // Left hemisphere - long winding path across the whole left side
-  {
-    points: [
-      [-0.55, -0.30], [-0.45, -0.15], [-0.30, -0.25], [-0.15, -0.10],
-      [-0.25, 0.05], [-0.40, 0.15], [-0.20, 0.25], [-0.05, 0.10],
-    ],
-    side: "left" as const,
-  },
-  {
-    points: [
-      [-0.50, 0.05], [-0.35, -0.10], [-0.20, -0.30], [-0.10, -0.15],
-      [-0.05, -0.25], [-0.15, 0.0], [-0.30, 0.10], [-0.10, 0.20],
-    ],
-    side: "left" as const,
-  },
-  // Right hemisphere - long winding path across the whole right side
-  {
-    points: [
-      [0.05, -0.15], [0.15, -0.30], [0.30, -0.20], [0.45, -0.10],
-      [0.35, 0.05], [0.20, 0.15], [0.40, 0.25], [0.55, 0.10],
-    ],
-    side: "right" as const,
-  },
-  {
-    points: [
-      [0.10, 0.10], [0.25, -0.05], [0.40, -0.20], [0.50, -0.05],
-      [0.35, 0.10], [0.20, 0.25], [0.30, 0.0], [0.15, -0.15],
-    ],
-    side: "right" as const,
-  },
-];
-
-const TRAIL_LENGTH = 12; // how many past positions to keep for trail
+// Synapse flash - brief bright spark at a point within the brain
+interface Synapse {
+  x: number; // relative to brain center (-1 to 1)
+  y: number;
+  life: number; // 0 to 1, fades out
+  maxLife: number;
+  size: number;
+}
 
 export function HeroEffects() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
@@ -71,14 +40,7 @@ export function HeroEffects() {
     resize();
     window.addEventListener("resize", resize);
 
-    // Impulse state with trail history
-    const impulses = TRACES.map(() => ({
-      position: Math.random(),
-      speed: 0.04 + Math.random() * 0.02,
-      trail: [] as { x: number; y: number }[],
-    }));
-
-    // CW inner orbit glows (purple/pink) - simple circular orbit at inner radius
+    // CW inner orbit glows (purple/pink)
     const cwGlows = [
       { angle: 0, speed: 0.0018 },
       { angle: Math.PI * 0.5, speed: 0.0018 },
@@ -86,12 +48,16 @@ export function HeroEffects() {
       { angle: Math.PI * 1.5, speed: 0.0018 },
     ];
 
-    // CCW outer orbit glows (gold) - spaced around outer ring
+    // CCW outer orbit glows (gold)
     const ccwGlows = [
       { angle: 0, speed: -0.0012 },
       { angle: Math.PI * 0.67, speed: -0.0012 },
       { angle: Math.PI * 1.33, speed: -0.0012 },
     ];
+
+    // Active synapses
+    const synapses: Synapse[] = [];
+    let nextSynapseTime = 0;
 
     let time = 0;
 
@@ -104,9 +70,9 @@ export function HeroEffects() {
 
       const imageH = Math.min(h * 0.72, 650);
       const R = imageH * 0.155;
-      const innerOrbitR = R * 1.25; // inner flower circle intersections
-      const outerOrbitR = R * 2.2; // outer boundary
-      const brainScale = R * 1.0;
+      const innerOrbitR = R * 1.25;
+      const outerOrbitR = R * 2.2;
+      const brainR = R * 0.55; // brain radius for synapse area
 
       // ── CW GLOWS - inner orbit (purple/pink) ──
       for (const glow of cwGlows) {
@@ -116,7 +82,6 @@ export function HeroEffects() {
 
         const flicker = 0.8 + Math.sin(time * 0.9 + glow.angle * 3) * 0.2;
 
-        // Core
         const size = 10;
         const grad = ctx.createRadialGradient(x, y, 0, x, y, size);
         grad.addColorStop(0, `rgba(155,89,182,${0.5 * flicker})`);
@@ -125,7 +90,6 @@ export function HeroEffects() {
         ctx.fillStyle = grad;
         ctx.fillRect(x - size, y - size, size * 2, size * 2);
 
-        // Halo
         const hs = 25;
         const halo = ctx.createRadialGradient(x, y, 0, x, y, hs);
         halo.addColorStop(0, `rgba(155,89,182,${0.08 * flicker})`);
@@ -158,86 +122,71 @@ export function HeroEffects() {
         ctx.fillRect(x - hs, y - hs, hs * 2, hs * 2);
       }
 
-      // ── BRAIN IMPULSES WITH TRAILING LIGHT ──
-      for (let ti = 0; ti < TRACES.length; ti++) {
-        const trace = TRACES[ti];
-        const imp = impulses[ti];
-        const pts = trace.points;
-        // White/cool-white for all impulses - distinct from colored glows
-        const [ir, ig, ib] = [200, 210, 240];
+      // ── BRAIN: BREATHING GLOW ──
+      // Soft pulsing light inside the brain area
+      const breathe = 0.04 + Math.sin(time * 0.5) * 0.025;
+      const brainGlow = ctx.createRadialGradient(cx, cy, 0, cx, cy, brainR * 1.8);
+      brainGlow.addColorStop(0, `rgba(200,210,240,${breathe})`);
+      brainGlow.addColorStop(0.5, `rgba(180,190,220,${breathe * 0.4})`);
+      brainGlow.addColorStop(1, "rgba(180,190,220,0)");
+      ctx.fillStyle = brainGlow;
+      ctx.fillRect(cx - brainR * 2, cy - brainR * 2, brainR * 4, brainR * 4);
 
-        // Compute segments
-        let totalLen = 0;
-        const segLens: number[] = [];
-        for (let i = 0; i < pts.length - 1; i++) {
-          const dx = (pts[i + 1][0] - pts[i][0]) * brainScale;
-          const dy = (pts[i + 1][1] - pts[i][1]) * brainScale;
-          segLens.push(Math.sqrt(dx * dx + dy * dy));
-          totalLen += segLens[segLens.length - 1];
+      // ── BRAIN: SYNAPSE FLASHES ──
+      // Spawn new synapse every 0.4-0.8 seconds
+      if (time > nextSynapseTime) {
+        // Random position within brain ellipse
+        const angle = Math.random() * Math.PI * 2;
+        const dist = Math.random() * 0.85; // 0-85% of brain radius
+        const sx = Math.cos(angle) * dist * 1.3; // wider horizontally (brain shape)
+        const sy = Math.sin(angle) * dist * 0.9; // narrower vertically
+
+        synapses.push({
+          x: sx,
+          y: sy,
+          life: 1,
+          maxLife: 0.4 + Math.random() * 0.3, // 0.4-0.7 sec lifetime
+          size: 3 + Math.random() * 5,
+        });
+
+        nextSynapseTime = time + 0.3 + Math.random() * 0.5;
+      }
+
+      // Update and draw synapses
+      for (let i = synapses.length - 1; i >= 0; i--) {
+        const s = synapses[i];
+        s.life -= 0.016 / s.maxLife;
+
+        if (s.life <= 0) {
+          synapses.splice(i, 1);
+          continue;
         }
 
-        // Advance impulse
-        imp.position += imp.speed * 0.016;
-        if (imp.position > 1) imp.position -= 1;
+        const sx = cx + s.x * brainR;
+        const sy = cy + s.y * brainR;
 
-        // Get current position on trace
-        let dist = imp.position * totalLen;
-        let impulseX = cx + pts[0][0] * brainScale;
-        let impulseY = cy + pts[0][1] * brainScale;
+        // Sharp flash in, smooth fade out
+        const intensity = s.life > 0.7
+          ? (1 - s.life) / 0.3 // quick ramp up in first 30%
+          : s.life / 0.7; // slow fade over remaining 70%
+        const alpha = intensity * 0.6;
 
-        for (let i = 0; i < segLens.length; i++) {
-          if (dist <= segLens[i]) {
-            const t = dist / segLens[i];
-            impulseX = cx + (pts[i][0] + (pts[i + 1][0] - pts[i][0]) * t) * brainScale;
-            impulseY = cy + (pts[i][1] + (pts[i + 1][1] - pts[i][1]) * t) * brainScale;
-            break;
-          }
-          dist -= segLens[i];
-        }
+        // White core
+        const sGrad = ctx.createRadialGradient(sx, sy, 0, sx, sy, s.size);
+        sGrad.addColorStop(0, `rgba(255,255,255,${alpha})`);
+        sGrad.addColorStop(0.3, `rgba(210,220,245,${alpha * 0.5})`);
+        sGrad.addColorStop(1, "rgba(200,210,240,0)");
+        ctx.fillStyle = sGrad;
+        ctx.fillRect(sx - s.size, sy - s.size, s.size * 2, s.size * 2);
 
-        // Update trail
-        imp.trail.push({ x: impulseX, y: impulseY });
-        if (imp.trail.length > TRAIL_LENGTH) imp.trail.shift();
-
-        // Draw trail (fading tail behind the impulse)
-        for (let i = 0; i < imp.trail.length; i++) {
-          const t = imp.trail[i];
-          const age = i / imp.trail.length; // 0 = oldest, 1 = newest
-          const trailAlpha = age * 0.3;
-          const trailSize = 2 + age * 3;
-
-          const tGrad = ctx.createRadialGradient(t.x, t.y, 0, t.x, t.y, trailSize);
-          tGrad.addColorStop(0, `rgba(${ir},${ig},${ib},${trailAlpha})`);
-          tGrad.addColorStop(1, `rgba(${ir},${ig},${ib},0)`);
-          ctx.fillStyle = tGrad;
-          ctx.fillRect(t.x - trailSize, t.y - trailSize, trailSize * 2, trailSize * 2);
-        }
-
-        // Draw impulse head (bright dot)
-        const headSize = 5;
-        const headGrad = ctx.createRadialGradient(impulseX, impulseY, 0, impulseX, impulseY, headSize);
-        headGrad.addColorStop(0, `rgba(255,255,255,0.7)`);
-        headGrad.addColorStop(0.3, `rgba(${ir},${ig},${ib},0.5)`);
-        headGrad.addColorStop(1, `rgba(${ir},${ig},${ib},0)`);
-        ctx.fillStyle = headGrad;
-        ctx.fillRect(impulseX - headSize, impulseY - headSize, headSize * 2, headSize * 2);
-
-        // Check for node proximity - flash effect
-        for (let i = 0; i < pts.length; i++) {
-          const nx = cx + pts[i][0] * brainScale;
-          const ny = cy + pts[i][1] * brainScale;
-          const d = Math.sqrt((impulseX - nx) ** 2 + (impulseY - ny) ** 2);
-
-          if (d < 8) {
-            // Flash!
-            const fs = 14;
-            const fGrad = ctx.createRadialGradient(nx, ny, 0, nx, ny, fs);
-            fGrad.addColorStop(0, "rgba(255,255,255,0.4)");
-            fGrad.addColorStop(0.2, `rgba(${ir},${ig},${ib},0.2)`);
-            fGrad.addColorStop(1, `rgba(${ir},${ig},${ib},0)`);
-            ctx.fillStyle = fGrad;
-            ctx.fillRect(nx - fs, ny - fs, fs * 2, fs * 2);
-          }
+        // Wider soft glow
+        if (s.size > 5) {
+          const gs = s.size * 2.5;
+          const gGrad = ctx.createRadialGradient(sx, sy, 0, sx, sy, gs);
+          gGrad.addColorStop(0, `rgba(200,210,240,${alpha * 0.1})`);
+          gGrad.addColorStop(1, "rgba(200,210,240,0)");
+          ctx.fillStyle = gGrad;
+          ctx.fillRect(sx - gs, sy - gs, gs * 2, gs * 2);
         }
       }
 
