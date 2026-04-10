@@ -104,7 +104,7 @@ export function HeroEffects() {
 
       const imageH = Math.min(h * 0.72, 650);
       const R = imageH * 0.155;
-      const innerOrbitR = R * 1.05; // just outside first ring centers
+      const innerOrbitR = R * 1.55; // on the inner flower circles, away from brain
       const outerOrbitR = R * 2.2; // outer boundary
       const brainScale = R * 1.0;
 
@@ -163,8 +163,8 @@ export function HeroEffects() {
         const trace = TRACES[ti];
         const imp = impulses[ti];
         const pts = trace.points;
-        const isLeft = trace.side === "left";
-        const [ir, ig, ib] = isLeft ? [160, 140, 240] : [230, 200, 110];
+        // White/cool-white for all impulses - distinct from colored glows
+        const [ir, ig, ib] = [200, 210, 240];
 
         // Compute segments
         let totalLen = 0;
