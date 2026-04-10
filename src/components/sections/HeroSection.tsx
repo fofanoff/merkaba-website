@@ -66,28 +66,17 @@ export function HeroSection({
 
       {/* ===== CONTENT ===== */}
       <div className="relative z-[5] max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+
+        {/* Definition - close to header/logo, one line */}
+        {dict.hero.definition && (
+          <p className="page-intro hero-description text-text-muted text-xs mb-8 whitespace-nowrap overflow-hidden text-ellipsis">
+            {dict.hero.definition}
+          </p>
+        )}
+
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           {/* Left: Text */}
           <div>
-            {/* Definition-first (GEO) */}
-            {dict.hero.definition && (
-              <p className="page-intro hero-description text-text-muted text-xs mb-4">
-                {dict.hero.definition}
-              </p>
-            )}
-
-            {/* Badge */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.3 }}
-              className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-accent-indigo/30 bg-accent-indigo/5 backdrop-blur-sm mb-8"
-            >
-              <span className="w-2 h-2 rounded-full bg-accent-indigo animate-pulse" />
-              <span className="text-accent-indigo text-sm font-medium font-mono">
-                Generative Engine Optimization
-              </span>
-            </motion.div>
 
             {/* Title */}
             <motion.h1
@@ -138,22 +127,22 @@ export function HeroSection({
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 1, delay: 1.3 }}
-              className="mt-8 sm:mt-12 flex flex-wrap items-center gap-3 sm:gap-6 text-text-muted text-xs font-mono"
+              className="mt-8 sm:mt-12 flex flex-wrap items-center gap-3 sm:gap-6 text-text-muted text-sm font-mono"
             >
               <span className="flex items-center gap-2">
-                <span className="w-1.5 h-1.5 rounded-full" style={{ background: "#10A37F" }} />
+                <span className="w-2 h-2 rounded-full" style={{ background: "#10A37F" }} />
                 ChatGPT
               </span>
               <span className="flex items-center gap-2">
-                <span className="w-1.5 h-1.5 rounded-full" style={{ background: "#4285F4" }} />
+                <span className="w-2 h-2 rounded-full" style={{ background: "#4285F4" }} />
                 Gemini
               </span>
               <span className="flex items-center gap-2">
-                <span className="w-1.5 h-1.5 rounded-full" style={{ background: "#20B8CD" }} />
+                <span className="w-2 h-2 rounded-full" style={{ background: "#20B8CD" }} />
                 Perplexity
               </span>
               <span className="flex items-center gap-2">
-                <span className="w-1.5 h-1.5 rounded-full" style={{ background: "#D4A27F" }} />
+                <span className="w-2 h-2 rounded-full" style={{ background: "#D4A27F" }} />
                 Claude
               </span>
             </motion.div>
@@ -163,15 +152,28 @@ export function HeroSection({
             )}
           </div>
 
-          {/* Right: Terminal card */}
-          <motion.div
-            initial={{ opacity: 0, scale: 0.95 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 1, delay: 0.5 }}
-            className="hidden lg:flex justify-end"
-          >
-            <HeroTerminal dict={dict} />
-          </motion.div>
+          {/* Right: Badge + Terminal card */}
+          <div className="hidden lg:block">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.3 }}
+              className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-accent-indigo/30 bg-accent-indigo/5 backdrop-blur-sm mb-6"
+            >
+              <span className="w-2 h-2 rounded-full bg-accent-indigo animate-pulse" />
+              <span className="text-accent-indigo text-sm font-medium font-mono">
+                Generative Engine Optimization
+              </span>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, scale: 0.95 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 1, delay: 0.5 }}
+              className="flex justify-end"
+            >
+              <HeroTerminal dict={dict} />
+            </motion.div>
+          </div>
         </div>
       </div>
     </section>

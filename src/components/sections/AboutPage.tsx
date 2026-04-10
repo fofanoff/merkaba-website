@@ -153,9 +153,11 @@ export function AboutPage({
 
           {a.team_intro && (
             <FadeIn>
-              <p className="text-text-secondary text-lg leading-relaxed text-center max-w-3xl mx-auto mb-12">
-                {a.team_intro}
-              </p>
+              <div className="text-text-secondary text-lg leading-relaxed text-center max-w-3xl mx-auto mb-12 space-y-4">
+                {a.team_intro.split("\n\n").map((p: string, i: number) => (
+                  <p key={i}>{p}</p>
+                ))}
+              </div>
             </FadeIn>
           )}
 
