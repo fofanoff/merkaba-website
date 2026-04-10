@@ -17,7 +17,7 @@ export function HeroSection({
 }) {
   return (
     <section
-      className="relative h-screen min-h-[700px] max-h-[1200px] flex items-center overflow-hidden"
+      className="relative h-screen min-h-[600px] sm:min-h-[700px] max-h-[1200px] flex items-center overflow-hidden"
       style={{ background: "#0B0E1A" }}
     >
       {/* ===== BACKGROUND IMAGE - centered, pulsating ===== */}
@@ -136,7 +136,7 @@ export function HeroSection({
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 1, delay: 1.3 }}
-              className="mt-12 flex items-center gap-6 text-text-muted text-xs font-mono"
+              className="mt-8 sm:mt-12 flex flex-wrap items-center gap-3 sm:gap-6 text-text-muted text-xs font-mono"
             >
               <span className="flex items-center gap-2">
                 <span className="w-1.5 h-1.5 rounded-full bg-success" />

@@ -1,5 +1,5 @@
 {
-  "nav": { "home": "Ana Sayfa", "services": "Hizmetler", "cases": "Vakalar", "about": "Hakkımızda", "contact": "İletişim", "partners": "Founding Partners", "cta": "Ücretsiz AI Denetimi" },
+  "nav": { "home": "Ana Sayfa", "services": "Hizmetler", "cases": "Vakalar", "about": "Hakkımızda", "blog": "Blog", "contact": "İletişim", "partners": "Founding Partners", "cta": "Ücretsiz AI Denetimi" },
   "hero": { "title": "AI işletmeniz hakkında ne diyor?", "subtitle": "500+ milyon kişi artık Google yerine ChatGPT, Gemini ve Perplexity'ye soruyor. AI işletmenizi önermiyorsa - şu anda müşteri kaybediyorsunuz", "cta_primary": "Ücretsiz Öğren", "cta_secondary": "Nasıl çalışır", "definition": "Merkaba Digital, işletmeleri AI sistemlerinde görünürlük için optimize eden bir Generative Engine Optimization (GEO) ajansıdır", "last_updated": "Güncelleme: Nisan 2026", "faq_title": "GEO Hakkında Sık Sorulan Sorular", "faq": [{"q": "GEO nedir?", "a": "Generative Engine Optimization, bir işletmenin ChatGPT, Gemini, Perplexity, Claude gibi AI sistemlerinde görünürlük için optimizasyonudur. Bir kullanıcı AI'ya bir ürün veya hizmet sorduğunda, GEO markanızın yanıtta yer almasını sağlar. SEO'dan sonraki evrimdir"}, {"q": "GEO ile SEO arasındaki fark nedir?", "a": "SEO bir web sitesini Google'daki konumlar için optimize eder. GEO bir markayı AI yanıtlarında alıntılanmak için optimize eder. SEO tıklama getirir, GEO öneriler getirir. 2026'da her ikisine de ihtiyacınız var, ancak AI araması büyüdükçe GEO kritik önem kazanıyor"}, {"q": "İşletmem neden ChatGPT'de görünmüyor?", "a": "AI sistemleri yanıtları structured data, kaynak otoritesi ve anlamsal bağlantılara dayalı olarak oluşturur. Google'da iyi konumlara sahip olsanız bile, içeriğiniz AI'nin alıntılayabileceği formata optimize edilmemişse görünmez olabilir"}, {"q": "GEO optimizasyonu ne kadar?", "a": "Merkaba Digital üç program sunuyor: LAUNCH ($5,000 tek seferlik denetim), GROWTH ($8,500/ay'dan) ve DOMINANCE ($15,000/ay'dan). Her biri AI denetimi, strateji ve izleme içerir. Ücretsiz başlangıç denetimi mevcut durumu değerlendirmenizi sağlar"}, {"q": "Sonuçlar ne zaman görülür?", "a": "İlk AI görünürlük iyileştirmeleri optimizasyonun başlamasından 4-8 hafta sonra ortaya çıkar. Sürdürülebilir büyüme 3-6 aylık sistematik çalışma gerektirir. Bazı taktikler (Schema.org işaretlemesi gibi) 2-3 hafta içinde etki gösterir"}, {"q": "Hangi AI sistemlerini takip ediyorsunuz?", "a": "Beş ana AI platformunu izliyoruz: ChatGPT (OpenAI), Gemini (Google), Perplexity, Claude (Anthropic) ve Copilot (Microsoft). Her birinin kendi alıntı algoritmaları vardır ve optimizasyon stratejisi her birinin özelliklerini dikkate alır"}, {"q": "Türkiye dışındaki şirketlerle çalışıyor musunuz?", "a": "Evet. GEO coğrafyaya bağlı değildir - AI sistemleri küreseldir. Herhangi bir ülkeden işletmelerle dört dilde çalışıyoruz: İngilizce, Rusça, Türkçe ve Arapça"}, {"q": "Mevcut sitemizi değiştirmemiz gerekiyor mu?", "a": "Tamamen değil. Structured data ekliyoruz, içerik yapısını optimize ediyoruz ve yeni AI-optimized sayfalar oluşturuyoruz. Çoğu durumda mevcut site yeniden tasarım olmadan uyarlanır"}] },
   "pain": { "title": "Yeni Arama Gerçekliği", "stat1_value": "73%", "stat1_label": "tüketici AI yanıtlarına aramadan daha fazla güveniyor", "stat2_value": "40%", "stat2_label": "arama zaten AI sistemlerinden geçiyor", "stat3_value": "0", "stat3_label": "kez AI çoğu işletmeden bahsediyor" },
   "solution": { "title": "Generative Engine Optimization", "subtitle": "İşletmenizi yapay zeka için görünür kılıyoruz", "pillar1_title": "AI Audit", "pillar1_desc": "5+ AI sisteminde tam görünürlük analizi", "pillar2_title": "Entity Building", "pillar2_desc": "Dijital varlık ve veri alanında otorite", "pillar3_title": "Content Engineering", "pillar3_desc": "AI alıntıları için optimize edilmiş içerik", "pillar4_title": "Monitoring", "pillar4_desc": "Gerçek zamanlı kontrol paneli ve raporlama" },
@@ -102,6 +102,16 @@
       { "title": "Tescilli araçlar", "desc": "Production-grade AI yığını üzerine kurulu kendi AI görünürlük izleme platformumuz. Gerçek zamanlı verilerle kişisel dashboard'unuz." },
       { "title": "Ölçülebilir sonuçlar", "desc": "Her eylem belirli KPI'lara bağlıdır. Vanity metrics yok. Her şey şeffaf, her şey dashboard'da." }
     ],
+    "team_title": "Ekip",
+    "team": [
+      {
+        "name": "Costa",
+        "role": "Founder & GEO Strategist",
+        "desc": "15+ yıl dijital strateji ve pazarlamada. Geliştirme yönetimi, SEO, AI otomasyon deneyimi. AI görünürlük optimizasyonuna mühendislik yaklaşımı",
+        "linkedin": "#",
+        "telegram": "#"
+      }
+    ],
     "numbers": [
       { "value": "15+", "label": "yıl dijital pazarlama ve strateji" },
       { "value": "5", "label": "sürekli izlenen AI sistemi" },
@@ -127,5 +137,12 @@
     "cta_subtitle": "Ücretsiz bir denetimle başlayın - AI'nin işletmeniz hakkında bugün ne söylediğini gösterelim",
     "cta_button": "Ücretsiz AI denetimi talep edin"
   },
-  "footer": { "description": "Generative Engine Optimization Ajansı", "copyright": "© 2025 Merkaba Digital. Tüm hakları saklıdır." }
+  "blog": {
+    "title": "Blog",
+    "subtitle": "GEO, AI gorunurlugu ve AI sistemleri icin optimizasyon stratejileri hakkinda uzman makaleleri",
+    "read_more": "Oku",
+    "nav_label": "Blog",
+    "back_to_blog": "Bloga don"
+  },
+  "footer": { "description": "Generative Engine Optimization Ajansı", "copyright": "© 2026 Merkaba Digital. Tüm hakları saklıdır." }
 }

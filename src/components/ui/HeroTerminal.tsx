@@ -19,7 +19,7 @@ export function HeroTerminal({
   ];
 
   return (
-    <div className="relative w-full max-w-md">
+    <div className="relative w-full max-w-sm md:max-w-md">
       {/* Glow behind card */}
       <div className="absolute -inset-4 bg-gradient-to-br from-accent-pink/8 via-accent-indigo/8 to-accent-blue/8 rounded-3xl blur-2xl" />
 

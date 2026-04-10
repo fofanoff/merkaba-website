@@ -4,6 +4,7 @@
     "services": "Услуги",
     "cases": "Кейсы",
     "about": "О нас",
+    "blog": "Блог",
     "contact": "Контакт",
     "partners": "Founding Partners",
     "cta": "Бесплатный AI-аудит"
@@ -463,6 +464,16 @@
         "desc": "Каждое действие привязано к конкретным KPI. Никаких vanity metrics. AI Visibility Score, количество упоминаний, позиция в ответах, sentiment - все прозрачно, все в дашборде, все под вашим контролем"
       }
     ],
+    "team_title": "Команда",
+    "team": [
+      {
+        "name": "Costa",
+        "role": "Founder & GEO Strategist",
+        "desc": "15+ лет в digital-стратегии и маркетинге. Опыт управления разработкой, SEO, AI-автоматизации. Инженерный подход к оптимизации видимости в AI-системах",
+        "linkedin": "#",
+        "telegram": "#"
+      }
+    ],
     "numbers": [
       { "value": "15+", "label": "лет в digital-маркетинге и стратегии" },
       { "value": "5", "label": "AI-систем в постоянном мониторинге" },
@@ -515,8 +526,15 @@
     "cta_subtitle": "Начните с бесплатного аудита - мы покажем, что AI говорит о вашем бизнесе сегодня, и что можно изменить",
     "cta_button": "Запросить бесплатный AI-аудит"
   },
+  "blog": {
+    "title": "Блог",
+    "subtitle": "Экспертные статьи о GEO, AI-видимости и стратегиях оптимизации для AI-систем",
+    "read_more": "Читать",
+    "nav_label": "Блог",
+    "back_to_blog": "Назад к блогу"
+  },
   "footer": {
     "description": "Generative Engine Optimization агентство",
-    "copyright": "© 2025 Merkaba Digital. Все права защищены."
+    "copyright": "© 2026 Merkaba Digital. Все права защищены."
   }
 }

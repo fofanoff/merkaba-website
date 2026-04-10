@@ -123,7 +123,7 @@ export function AboutPage({
             {a.advantages.map(
               (adv: { title: string; desc: string }, i: number) => (
                 <FadeIn key={i} delay={i * 0.1}>
-                  <div className="rounded-2xl bg-bg-card/50 border border-white/5 p-8 card-glow h-full relative overflow-hidden">
+                  <div className="rounded-2xl bg-bg-card/50 border border-white/5 p-5 sm:p-8 card-glow h-full relative overflow-hidden">
                     <div
                       className="absolute top-0 left-0 w-1 h-full"
                       style={{ background: accentColors[i] }}
@@ -134,6 +134,102 @@ export function AboutPage({
                     <p className="text-text-secondary leading-relaxed pl-4">
                       {adv.desc}
                     </p>
+                  </div>
+                </FadeIn>
+              )
+            )}
+          </div>
+        </div>
+      </section>
+
+      {/* ===== TEAM ===== */}
+      <section className="py-20 md:py-28">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <FadeIn className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold">
+              {a.team_title}
+            </h2>
+          </FadeIn>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center">
+            {a.team?.map(
+              (
+                member: {
+                  name: string;
+                  role: string;
+                  desc: string;
+                  linkedin?: string;
+                  telegram?: string;
+                },
+                i: number
+              ) => (
+                <FadeIn key={i} delay={i * 0.15}>
+                  <div className="rounded-2xl bg-bg-card/50 border border-white/5 p-8 card-glow h-full flex flex-col items-center text-center max-w-sm group hover:border-white/15 transition-colors">
+                    {/* Avatar placeholder */}
+                    <div
+                      className="w-24 h-24 rounded-full flex items-center justify-center mb-6 shrink-0"
+                      style={{
+                        background:
+                          "linear-gradient(135deg, #9B59B6 0%, #D4A843 100%)",
+                      }}
+                    >
+                      <span className="text-3xl font-heading font-bold text-white">
+                        {member.name.charAt(0)}
+                      </span>
+                    </div>
+
+                    <h3 className="text-xl font-heading font-bold text-text-primary mb-1">
+                      {member.name}
+                    </h3>
+                    <p
+                      className="text-sm font-medium mb-4"
+                      style={{ color: "#D4A843" }}
+                    >
+                      {member.role}
+                    </p>
+                    <p className="text-text-secondary text-sm leading-relaxed mb-6 flex-1">
+                      {member.desc}
+                    </p>
+
+                    {/* Social links */}
+                    <div className="flex gap-4">
+                      {member.linkedin && (
+                        <a
+                          href={member.linkedin}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          aria-label={`${member.name} LinkedIn`}
+                          className="text-text-muted hover:text-white transition-colors"
+                        >
+                          <svg
+                            width="20"
+                            height="20"
+                            viewBox="0 0 24 24"
+                            fill="currentColor"
+                          >
+                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                          </svg>
+                        </a>
+                      )}
+                      {member.telegram && (
+                        <a
+                          href={member.telegram}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          aria-label={`${member.name} Telegram`}
+                          className="text-text-muted hover:text-white transition-colors"
+                        >
+                          <svg
+                            width="20"
+                            height="20"
+                            viewBox="0 0 24 24"
+                            fill="currentColor"
+                          >
+                            <path d="M11.944 0A12 12 0 000 12a12 12 0 0012 12 12 12 0 0012-12A12 12 0 0012 0a12 12 0 00-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 01.171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.479.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z" />
+                          </svg>
+                        </a>
+                      )}
+                    </div>
                   </div>
                 </FadeIn>
               )
@@ -185,7 +281,7 @@ export function AboutPage({
                       className="absolute top-0 left-0 w-1 h-full"
                       style={{ background: accentColors[i] }}
                     />
-                    <div className="flex flex-col md:flex-row gap-6">
+                    <div className="flex flex-col md:flex-row gap-4 md:gap-6">
                       <div className="shrink-0">
                         <span
                           className="text-5xl font-heading font-bold opacity-20"
@@ -220,7 +316,7 @@ export function AboutPage({
             </h2>
           </FadeIn>
 
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4">
             {a.industries_list.map((industry: string, i: number) => (
               <FadeIn key={i} delay={i * 0.05}>
                 <div className="rounded-2xl border border-white/10 bg-bg-card/50 p-5 text-center hover:border-white/20 transition-colors h-full flex items-center justify-center">

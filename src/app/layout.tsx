@@ -18,7 +18,14 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     siteName: "Merkaba Digital",
-    images: [{ url: "/logo.png", width: 512, height: 512 }],
+    images: [{ url: "/og-image.png", width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Merkaba Digital - Generative Engine Optimization (GEO)",
+    description:
+      "Making businesses visible to AI. Optimization for ChatGPT, Gemini, Perplexity, Claude. AI Visibility Audit, monitoring, content engineering. merkaba.vip",
+    images: ["https://merkaba.vip/og-image.png"],
   },
 };
 

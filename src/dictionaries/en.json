@@ -4,6 +4,7 @@
     "services": "Services",
     "cases": "Cases",
     "about": "About",
+    "blog": "Blog",
     "contact": "Contact",
     "partners": "Founding Partners",
     "cta": "Free AI Audit"
@@ -150,6 +151,16 @@
         "desc": "Every action is tied to specific KPIs. No vanity metrics. AI Visibility Score, mention count, position in responses, sentiment - everything is transparent, everything is in the dashboard, everything is under your control."
       }
     ],
+    "team_title": "Team",
+    "team": [
+      {
+        "name": "Costa",
+        "role": "Founder & GEO Strategist",
+        "desc": "15+ years in digital strategy and marketing. Experience in development management, SEO, AI automation. Engineering approach to AI visibility optimization",
+        "linkedin": "#",
+        "telegram": "#"
+      }
+    ],
     "numbers": [
       { "value": "15+", "label": "years in digital marketing and strategy" },
       { "value": "5", "label": "AI systems under constant monitoring" },
@@ -193,5 +204,12 @@
     "cta_subtitle": "Start with a free audit - we'll show you what AI says about your business today, and what can be changed",
     "cta_button": "Request a free AI audit"
   },
-  "footer": { "description": "Generative Engine Optimization Agency", "copyright": "© 2025 Merkaba Digital. All rights reserved." }
+  "blog": {
+    "title": "Blog",
+    "subtitle": "Expert articles on GEO, AI visibility and optimization strategies for AI systems",
+    "read_more": "Read",
+    "nav_label": "Blog",
+    "back_to_blog": "Back to blog"
+  },
+  "footer": { "description": "Generative Engine Optimization Agency", "copyright": "© 2026 Merkaba Digital. All rights reserved." }
 }

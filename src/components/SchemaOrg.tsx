@@ -234,6 +234,28 @@ export function SchemaOrgCases({
   );
 }
 
+function buildPersonSchema() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    name: "Costa",
+    jobTitle: "Founder & GEO Strategist",
+    worksFor: {
+      "@type": "Organization",
+      name: "Merkaba Digital",
+      url: "https://merkaba.vip",
+    },
+    knowsAbout: [
+      "Generative Engine Optimization",
+      "SEO",
+      "AI Visibility",
+      "Digital Strategy",
+    ],
+    description:
+      "15+ years in digital strategy, SEO, and AI technologies",
+  };
+}
+
 export function SchemaOrgAbout({
   locale,
   dict,
@@ -248,6 +270,7 @@ export function SchemaOrgAbout({
       <JsonLd data={organizationSchema} />
       <JsonLd data={buildBreadcrumbs(locale, "about", dict.nav.about)} />
       <JsonLd data={buildSpeakable([".hero-description", ".page-intro"])} />
+      <JsonLd data={buildPersonSchema()} />
       {faqData && <JsonLd data={buildFaqSchema(faqData)} />}
     </>
   );

@@ -40,6 +40,7 @@ export function Header({
     { label: dict.nav.services, href: `/${locale}/services` },
     { label: dict.nav.cases, href: `/${locale}/cases` },
     { label: dict.nav.about, href: `/${locale}/about` },
+    { label: dict.nav.blog, href: `/${locale}/blog` },
     { label: dict.nav.partners, href: `/${locale}/partners` },
     { label: dict.nav.contact, href: `/${locale}/contact` },
   ];

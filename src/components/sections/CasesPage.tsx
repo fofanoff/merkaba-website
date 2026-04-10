@@ -10,6 +10,24 @@ import { FaqSection } from "@/components/sections/FaqSection";
 
 const accentColors = ["#E879A8", "#9B59B6", "#3B82F6", "#D4A843"];
 
+const sourceLinks: Record<string, string> = {
+  OpenAI: "https://openai.com/blog",
+  BrightEdge: "https://www.brightedge.com/resources/research-reports",
+  "Bain & Company": "https://www.bain.com/insights/",
+  Bain: "https://www.bain.com/insights/",
+  Gartner: "https://www.gartner.com/en/newsroom",
+  Conductor: "https://www.conductor.com/academy/aeo-geo-benchmarks-report/",
+};
+
+function linkifySource(text: string) {
+  for (const [key, url] of Object.entries(sourceLinks)) {
+    if (text.includes(key)) {
+      return { text, url };
+    }
+  }
+  return { text, url: null };
+}
+
 const fadeUp = {
   initial: { opacity: 0, y: 30 },
   whileInView: { opacity: 1, y: 0 },
@@ -97,11 +115,26 @@ export function CasesPage({
             <FadeIn delay={0.4}>
               <div className="mt-8 pt-6 border-t border-white/5">
                 <div className="flex flex-wrap gap-x-6 gap-y-1 justify-center">
-                  {c.market_sources.map((source: string, i: number) => (
-                    <span key={i} className="text-text-muted text-xs">
-                      [{i + 1}] {source}
-                    </span>
-                  ))}
+                  {c.market_sources.map((source: string, i: number) => {
+                    const { text, url } = linkifySource(source);
+                    return (
+                      <span key={i} className="text-text-muted text-xs">
+                        [{i + 1}]{" "}
+                        {url ? (
+                          <a
+                            href={url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-accent-indigo hover:underline"
+                          >
+                            {text}
+                          </a>
+                        ) : (
+                          text
+                        )}
+                      </span>
+                    );
+                  })}
                 </div>
               </div>
             </FadeIn>

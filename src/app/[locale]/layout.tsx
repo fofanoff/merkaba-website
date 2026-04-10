@@ -26,6 +26,26 @@ export async function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
 }
 
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  return {
+    alternates: {
+      canonical: `https://merkaba.vip/${locale}`,
+      languages: {
+        ru: "https://merkaba.vip/ru",
+        en: "https://merkaba.vip/en",
+        tr: "https://merkaba.vip/tr",
+        ar: "https://merkaba.vip/ar",
+        "x-default": "https://merkaba.vip/en",
+      },
+    },
+  };
+}
+
 export default async function LocaleLayout({
   children,
   params,

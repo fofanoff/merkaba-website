@@ -66,7 +66,7 @@ export function PartnersPage({
           >
             <div className="inline-flex flex-col items-center gap-3 px-8 py-5 rounded-2xl border border-accent-gold/20 bg-bg-card/50 backdrop-blur-sm">
               <div className="flex items-baseline gap-2">
-                <span className="text-5xl md:text-6xl font-heading font-bold text-accent-gold" style={{ textShadow: "0 0 30px rgba(212,168,67,0.3)" }}>
+                <span className="text-4xl sm:text-5xl md:text-6xl font-heading font-bold text-accent-gold" style={{ textShadow: "0 0 30px rgba(212,168,67,0.3)" }}>
                   {spotsLeft}
                 </span>
                 <span className="text-text-secondary text-lg">
@@ -118,9 +118,9 @@ export function PartnersPage({
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
             {/* Cash card */}
-            <motion.div {...fadeUp} className="rounded-2xl border border-white/10 bg-bg-card/50 p-8">
+            <motion.div {...fadeUp} className="rounded-2xl border border-white/10 bg-bg-card/50 p-5 sm:p-8">
               <span className="text-text-muted text-sm font-mono uppercase tracking-wider">{p.cash_label}</span>
-              <h3 className="text-2xl md:text-3xl font-heading font-bold mt-3 mb-4">{p.cash_title}</h3>
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-heading font-bold mt-3 mb-4">{p.cash_title}</h3>
               <p className="text-text-secondary mb-6 leading-relaxed">{p.cash_desc}</p>
               <div className="rounded-xl bg-bg-surface/60 px-5 py-4 text-sm text-text-secondary font-mono">
                 {p.cash_example}
@@ -128,7 +128,7 @@ export function PartnersPage({
             </motion.div>
 
             {/* Balance card (recommended) */}
-            <motion.div {...fadeUp} transition={{ duration: 0.6, delay: 0.15 }} className="relative rounded-2xl p-8 overflow-hidden">
+            <motion.div {...fadeUp} transition={{ duration: 0.6, delay: 0.15 }} className="relative rounded-2xl p-5 sm:p-8 overflow-hidden">
               {/* Gradient border */}
               <div className="absolute inset-0 rounded-2xl" style={{ background: "linear-gradient(135deg, #D4A843, #F0C75E, #D4A843)", padding: "1px" }}>
                 <div className="w-full h-full rounded-2xl bg-bg-card" />
@@ -323,7 +323,7 @@ function Calculator({ dict }: { dict: any }) {
   const yearly = monthly * 12;
 
   return (
-    <motion.div {...fadeUp} className="rounded-2xl border border-white/10 bg-bg-card/50 p-8">
+    <motion.div {...fadeUp} className="rounded-2xl border border-white/10 bg-bg-card/50 p-5 sm:p-8">
       {/* Clients slider */}
       <div className="mb-8">
         <label className="text-text-secondary text-sm mb-3 block">{dict.calc_clients}</label>
@@ -343,7 +343,7 @@ function Calculator({ dict }: { dict: any }) {
       {/* Package selection */}
       <div className="mb-8">
         <label className="text-text-secondary text-sm mb-3 block">{dict.calc_package}</label>
-        <div className="grid grid-cols-3 gap-2">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-2">
           {PACKAGES.map((pk, i) => (
             <button
               key={pk.name}
