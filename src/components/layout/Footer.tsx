@@ -41,17 +41,17 @@ export function Footer({
             <p className="text-text-muted text-sm">{dict.footer.description}</p>
           </div>
 
-          {/* Navigation */}
+          {/* Navigation - 2 columns */}
           <div>
             <h4 className="text-text-primary font-heading font-semibold text-sm uppercase tracking-wider mb-4">
-              {dict.nav.home}
+              {dict.nav.services}
             </h4>
-            <nav className="space-y-3">
+            <nav className="grid grid-cols-2 gap-x-8 gap-y-3">
               {navItems.map((item) => (
                 <Link
                   key={item.href}
                   href={item.href}
-                  className="block text-text-muted hover:text-text-secondary text-sm transition-colors"
+                  className="block text-text-muted hover:text-text-secondary text-sm transition-colors whitespace-nowrap"
                 >
                   {item.label}
                 </Link>

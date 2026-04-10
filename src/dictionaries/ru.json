@@ -155,6 +155,7 @@
   },
   "services": {
     "hero_title": "SEO привлекает клики. GEO привлекает рекомендации",
+    "definition": "Generative Engine Optimization (GEO), также известный как AEO (Answer Engine Optimization) и LLMO (Large Language Model Optimization) - оптимизация бизнеса для видимости и цитирования в AI-системах",
     "comparison": {
       "seo_title": "Традиционный SEO",
       "geo_title": "Generative Engine Optimization",
@@ -581,7 +582,7 @@
   "about": {
     "hero_title": "Не агентство. Инженеры AI-видимости",
     "hero_subtitle": "Мы понимаем, как работают AI-системы изнутри, и используем это знание для вашего бизнеса",
-    "definition": "Merkaba Digital - команда digital-стратегов и AI-инженеров с 15+ летним опытом, специализирующаяся на Generative Engine Optimization",
+    "definition": "Команда digital-стратегов и AI-инженеров с 20+ летним опытом, специализирующаяся на Generative Engine Optimization",
     "last_updated": "Обновлено: апрель 2026",
     "story_title": "Почему Merkaba",
     "story_text": [
@@ -627,8 +628,8 @@
       }
     ],
     "numbers": [
-      { "value": "15+", "label": "лет в digital-маркетинге и стратегии" },
-      { "value": "5+", "label": "AI-систем в мониторинге - и их число растет" },
+      { "value": "20+", "label": "лет в маркетинге и стратегии" },
+      { "value": "5+", "label": "AI-платформ в мониторинге" },
       { "value": "100+", "label": "запросов в каждом аудите" },
       { "value": "4", "label": "языка поддержки (EN, RU, TR, AR)" }
     ],
@@ -663,7 +664,7 @@
     "faq": [
       {
         "q": "Кто стоит за Merkaba Digital?",
-        "a": "Команда с 15+ летним опытом в digital-маркетинге, SEO и AI-технологиях. Мы сочетаем стратегическое мышление с инженерным пониманием того, как работают LLM-модели, structured data и алгоритмы цитирования"
+        "a": "Команда с 20+ летним опытом в маркетинге, SEO и AI-технологиях. Мы сочетаем стратегическое мышление с инженерным пониманием того, как работают LLM-модели, structured data и алгоритмы цитирования"
       },
       {
         "q": "Почему название Merkaba?",

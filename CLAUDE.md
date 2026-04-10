@@ -166,3 +166,12 @@ The hero is a full-viewport section with layered visual effects. Changes here ar
 - Periods ONLY in full paragraphs (3+ sentences)
 - Use straight quotes "" - never typographic/curly quotes
 - Apply these rules to ALL content: dictionaries, components, copy, comments
+
+## Typography Rules (STRICT)
+
+- Headings and short text MUST NOT break mid-word or leave orphan words on a new line
+- CSS `text-wrap: balance` is applied globally to h1-h6 and `.hero-description`
+- CSS `text-wrap: pretty` is applied to all `<p>` tags
+- Compound words like "AI-система", "AI-революция" MUST stay on one line
+- If a heading doesn't fit on one line - rephrase or reduce font size, do NOT let it break ugly
+- The user is very particular about text rendering quality - treat every text break as a bug

@@ -28,7 +28,7 @@ export const blogArticles: BlogArticle[] = [
     },
     content: {
       ru: `<h2>Что такое GEO простыми словами</h2>
-<p>Generative Engine Optimization (GEO) - это оптимизация бизнеса для видимости в ответах AI-систем. Когда пользователь спрашивает ChatGPT, Gemini или Perplexity о продукте или услуге, GEO обеспечивает присутствие вашего бренда в ответе.</p>
+<p>Generative Engine Optimization (GEO), также известный как AEO (Answer Engine Optimization) и LLMO (Large Language Model Optimization) - это оптимизация бизнеса для видимости в ответах AI-систем. Когда пользователь спрашивает ChatGPT, Gemini или Perplexity о продукте или услуге, GEO обеспечивает присутствие вашего бренда в ответе.</p>
 <p>Если SEO отвечает за позиции в Google, то GEO отвечает за упоминания в AI. Это два разных канала с разной механикой, и в 2026 году GEO становится критически важным.</p>
 
 <h2>Почему GEO важнее SEO прямо сейчас</h2>
@@ -88,7 +88,7 @@ export const blogArticles: BlogArticle[] = [
 <p>Базовые шаги (Schema.org, FAQ-страницы) можно реализовать самостоятельно. Но системная GEO-стратегия требует мониторинга 5+ AI-платформ, анализа алгоритмов цитирования и постоянной адаптации. Это инженерная работа, не маркетинговая.</p>`,
 
       en: `<h2>What is GEO in simple terms</h2>
-<p>Generative Engine Optimization (GEO) is the optimization of a business for visibility in AI system responses. When a user asks ChatGPT, Gemini, or Perplexity about a product or service, GEO ensures your brand appears in the answer.</p>
+<p>Generative Engine Optimization (GEO), also known as AEO (Answer Engine Optimization) and LLMO (Large Language Model Optimization), is the optimization of a business for visibility in AI system responses. When a user asks ChatGPT, Gemini, or Perplexity about a product or service, GEO ensures your brand appears in the answer.</p>
 <p>If SEO is responsible for Google rankings, GEO is responsible for mentions in AI. These are two different channels with different mechanics, and in 2026 GEO is becoming critically important.</p>
 
 <h2>Why GEO matters more than SEO right now</h2>
@@ -148,7 +148,7 @@ export const blogArticles: BlogArticle[] = [
 <p>Basic steps (Schema.org, FAQ pages) can be done independently. But a systematic GEO strategy requires monitoring 5+ AI platforms, analyzing citation algorithms, and constant adaptation. This is engineering work, not marketing.</p>`,
 
       tr: `<h2>GEO basit bir dille nedir</h2>
-<p>Generative Engine Optimization (GEO), bir isletmenin AI sistem yanitlarinda gorunur olmasi icin yapilan optimizasyondur. Bir kullanici ChatGPT, Gemini veya Perplexity'ye bir urun ya da hizmet hakkinda sorduqunda, GEO markanizin yanita dahil olmasini saglar.</p>
+<p>Generative Engine Optimization (GEO), AEO (Answer Engine Optimization) ve LLMO (Large Language Model Optimization) olarak da bilinen, bir isletmenin AI sistem yanitlarinda gorunur olmasi icin yapilan optimizasyondur. Bir kullanici ChatGPT, Gemini veya Perplexity'ye bir urun ya da hizmet hakkinda sorduqunda, GEO markanizin yanita dahil olmasini saglar.</p>
 <p>SEO Google siralamalarindan sorumluysa, GEO AI'daki bahsedilmelerden sorumludur. Bunlar farkli mekaniklere sahip iki farkli kanaldir ve 2026'da GEO kritik onem kazanmaktadir.</p>
 
 <h2>GEO neden su anda SEO'dan daha onemli</h2>
@@ -208,7 +208,7 @@ export const blogArticles: BlogArticle[] = [
 <p>Temel adimlar (Schema.org, FAQ sayfalari) bagimsiz olarak yapilabilir. Ancak sistematik bir GEO stratejisi 5+ AI platformunun izlenmesini, alintilanma algoritmalarinin analiz edilmesini ve surekli adaptasyon gerektirir. Bu pazarlama degil, muhendislik isidir.</p>`,
 
       ar: `<h2>ما هو GEO ببساطة</h2>
-<p>Generative Engine Optimization (GEO) هو تحسين الاعمال للظهور في اجابات انظمة الذكاء الاصطناعي. عندما يسال مستخدم ChatGPT او Gemini او Perplexity عن منتج او خدمة، يضمن GEO ان تكون علامتك التجارية موجودة في الاجابة.</p>
+<p>Generative Engine Optimization (GEO)، المعروف ايضا بـ AEO (Answer Engine Optimization) و LLMO (Large Language Model Optimization)، هو تحسين الاعمال للظهور في اجابات انظمة الذكاء الاصطناعي. عندما يسال مستخدم ChatGPT او Gemini او Perplexity عن منتج او خدمة، يضمن GEO ان تكون علامتك التجارية موجودة في الاجابة.</p>
 <p>اذا كان SEO مسؤولا عن ترتيب Google، فان GEO مسؤول عن الذكر في اجابات AI. هذه قناتان مختلفتان بآليات مختلفة، وفي 2026 اصبح GEO بالغ الاهمية.</p>
 
 <h2>لماذا GEO اهم من SEO الان</h2>

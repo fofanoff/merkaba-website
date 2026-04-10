@@ -141,19 +141,19 @@ export function HeroSection({
               className="mt-8 sm:mt-12 flex flex-wrap items-center gap-3 sm:gap-6 text-text-muted text-xs font-mono"
             >
               <span className="flex items-center gap-2">
-                <span className="w-1.5 h-1.5 rounded-full bg-success" />
+                <span className="w-1.5 h-1.5 rounded-full" style={{ background: "#10A37F" }} />
                 ChatGPT
               </span>
               <span className="flex items-center gap-2">
-                <span className="w-1.5 h-1.5 rounded-full bg-success" />
+                <span className="w-1.5 h-1.5 rounded-full" style={{ background: "#4285F4" }} />
                 Gemini
               </span>
               <span className="flex items-center gap-2">
-                <span className="w-1.5 h-1.5 rounded-full bg-success" />
+                <span className="w-1.5 h-1.5 rounded-full" style={{ background: "#20B8CD" }} />
                 Perplexity
               </span>
               <span className="flex items-center gap-2">
-                <span className="w-1.5 h-1.5 rounded-full bg-success" />
+                <span className="w-1.5 h-1.5 rounded-full" style={{ background: "#D4A27F" }} />
                 Claude
               </span>
             </motion.div>
