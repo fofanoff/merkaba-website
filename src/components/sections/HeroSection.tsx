@@ -28,9 +28,8 @@ export function HeroSection({
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="hero-bg-pulse relative"
           style={{
-            maxHeight: "700px",
-            WebkitMaskImage: "radial-gradient(ellipse 70% 80% at center, black 30%, transparent 65%)",
-            maskImage: "radial-gradient(ellipse 70% 80% at center, black 30%, transparent 65%)",
+            WebkitMaskImage: "radial-gradient(ellipse 80% 80% at center, black 35%, transparent 70%)",
+            maskImage: "radial-gradient(ellipse 80% 80% at center, black 35%, transparent 70%)",
           }}
         >
           <Image
@@ -38,7 +37,7 @@ export function HeroSection({
             alt=""
             width={1920}
             height={1071}
-            className="w-[420px] sm:w-[480px] md:w-[580px] lg:w-auto lg:h-[650px] select-none"
+            className="w-[110vw] sm:w-[90vw] md:w-[70vw] lg:w-auto lg:h-[650px] max-w-none select-none"
             style={{ mixBlendMode: "lighten" }}
             priority
           />
