@@ -238,7 +238,7 @@ function buildPersonSchema() {
   return {
     "@context": "https://schema.org",
     "@type": "Person",
-    name: "Costa",
+    name: "Costa Fofanoff",
     jobTitle: "Founder & GEO Strategist",
     worksFor: {
       "@type": "Organization",
@@ -251,6 +251,7 @@ function buildPersonSchema() {
       "AI Visibility",
       "Digital Strategy",
     ],
+    sameAs: ["https://linkedin.com/in/fofanoff"],
     description:
       "15+ years in digital strategy, SEO, and AI technologies",
   };
