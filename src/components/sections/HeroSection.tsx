@@ -38,7 +38,7 @@ export function HeroSection({
             alt=""
             width={1920}
             height={1071}
-            className="h-[280px] sm:h-[380px] md:h-[500px] lg:h-[650px] w-auto select-none"
+            className="w-[320px] sm:w-[420px] md:w-[550px] lg:w-auto lg:h-[650px] select-none"
             style={{ mixBlendMode: "lighten" }}
             priority
           />
@@ -50,11 +50,12 @@ export function HeroSection({
         <HeroEffects />
       </div>
 
-      {/* ===== DARK GRADIENT OVERLAY - full on mobile, left-fade on desktop ===== */}
+      {/* ===== DARK GRADIENT OVERLAY - top/bottom on mobile, left-fade on desktop ===== */}
       <div
         className="absolute inset-0 z-[2] pointer-events-none lg:hidden"
         style={{
-          background: "rgba(11,14,26,0.65)",
+          background:
+            "linear-gradient(180deg, rgba(11,14,26,0.85) 0%, rgba(11,14,26,0.3) 35%, rgba(11,14,26,0.3) 65%, rgba(11,14,26,0.85) 100%)",
         }}
       />
       <div
@@ -73,9 +74,9 @@ export function HeroSection({
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           {/* Left: Text */}
           <div>
-            {/* Definition-first (GEO) - hidden on mobile */}
+            {/* Definition-first (GEO) */}
             {dict.hero.definition && (
-              <p className="hidden md:block page-intro hero-description text-text-muted text-xs mb-4">
+              <p className="page-intro hero-description text-text-muted text-xs mb-4">
                 {dict.hero.definition}
               </p>
             )}
