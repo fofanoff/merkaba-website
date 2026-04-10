@@ -68,7 +68,10 @@ export function HeroEffects() {
       const cx = w / 2;
       const cy = h / 2;
 
-      const imageH = Math.min(h * 0.72, 650);
+      // On mobile (<1024px), flower is square (70vh sized by height)
+      // On desktop, flower is landscape (650px height)
+      const isMobile = w < 1024;
+      const imageH = isMobile ? h * 0.55 : Math.min(h * 0.72, 650);
       const R = imageH * 0.155;
       const innerOrbitR = R * 1.25;
       const outerOrbitR = R * 2.2;
