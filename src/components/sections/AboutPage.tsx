@@ -161,7 +161,7 @@ export function AboutPage({
             </FadeIn>
           )}
 
-          <div className="flex flex-wrap gap-6">
+          <div className="flex flex-wrap gap-6 justify-center">
             {a.team?.map(
               (
                 member: {

@@ -16,6 +16,7 @@ export function HeroSection({
   dict: any;
 }) {
   return (
+    <>
     <section
       className="relative h-screen min-h-[600px] sm:min-h-[700px] max-h-[1200px] flex items-center overflow-hidden"
       style={{ background: "#0B0E1A" }}
@@ -199,17 +200,20 @@ export function HeroSection({
         </div>
       </div>
 
-      {/* ===== TERMINAL CARD - mobile only, after hero content ===== */}
-      <div className="lg:hidden absolute bottom-8 left-0 right-0 z-[5] px-4 sm:px-6">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 1.0 }}
-          className="max-w-sm mx-auto"
-        >
-          <HeroTerminal dict={dict} />
-        </motion.div>
-      </div>
     </section>
+
+    {/* ===== TERMINAL CARD - mobile only, separate section ===== */}
+    <div className="lg:hidden py-8 px-4 sm:px-6" style={{ background: "#0B0E1A" }}>
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.6 }}
+        className="max-w-sm mx-auto"
+      >
+        <HeroTerminal dict={dict} />
+      </motion.div>
+    </div>
+    </>
   );
 }
