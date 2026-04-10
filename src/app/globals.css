@@ -121,6 +121,19 @@ body {
   animation: hero-pulse 8s ease-in-out infinite;
 }
 
+/* Hero background mask - wider on mobile so flower is visible */
+.hero-bg-mask {
+  -webkit-mask-image: radial-gradient(ellipse 120% 100% at center, black 40%, transparent 75%);
+  mask-image: radial-gradient(ellipse 120% 100% at center, black 40%, transparent 75%);
+}
+
+@media (min-width: 1024px) {
+  .hero-bg-mask {
+    -webkit-mask-image: radial-gradient(ellipse 70% 80% at center, black 30%, transparent 65%);
+    mask-image: radial-gradient(ellipse 70% 80% at center, black 30%, transparent 65%);
+  }
+}
+
 @keyframes hero-pulse {
   0%, 100% { opacity: 0.4; }
   50% { opacity: 0.6; }

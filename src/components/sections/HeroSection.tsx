@@ -26,11 +26,7 @@ export function HeroSection({
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className="hero-bg-pulse relative"
-          style={{
-            WebkitMaskImage: "radial-gradient(ellipse 80% 80% at center, black 35%, transparent 70%)",
-            maskImage: "radial-gradient(ellipse 80% 80% at center, black 35%, transparent 70%)",
-          }}
+          className="hero-bg-pulse relative hero-bg-mask"
         >
           <Image
             src="/hero-bg.webp"
