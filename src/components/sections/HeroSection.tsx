@@ -2,10 +2,8 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { motion, useMotionValue, useTransform } from "framer-motion";
-import { useRef, useEffect, useState } from "react";
+import { motion } from "framer-motion";
 import type { Locale } from "@/lib/i18n";
-import { HeroCanvas } from "@/components/ui/HeroCanvas";
 import { HeroTerminal } from "@/components/ui/HeroTerminal";
 
 export function HeroSection({
@@ -16,158 +14,48 @@ export function HeroSection({
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   dict: any;
 }) {
-  const containerRef = useRef<HTMLDivElement>(null);
-  const mouseX = useMotionValue(0);
-  const mouseY = useMotionValue(0);
-  const [isMobile, setIsMobile] = useState(false);
-
-  const logoX = useTransform(mouseX, [-0.5, 0.5], [10, -10]);
-  const logoY = useTransform(mouseY, [-0.5, 0.5], [6, -6]);
-
-  useEffect(() => {
-    setIsMobile(window.innerWidth < 1024);
-    const handleResize = () => setIsMobile(window.innerWidth < 1024);
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
-
-  const handleMouseMove = (e: React.MouseEvent) => {
-    if (isMobile) return;
-    const rect = containerRef.current?.getBoundingClientRect();
-    if (!rect) return;
-    mouseX.set((e.clientX - rect.left) / rect.width - 0.5);
-    mouseY.set((e.clientY - rect.top) / rect.height - 0.5);
-  };
-
   return (
     <section
-      ref={containerRef}
-      onMouseMove={handleMouseMove}
       className="relative h-screen min-h-[700px] max-h-[1200px] flex items-center overflow-hidden"
       style={{ background: "#0B0E1A" }}
     >
-      {/* ===== LOGO - CENTERED BACKGROUND, z-1 ===== */}
-      <motion.div
-        className="absolute inset-0 flex items-center justify-center pointer-events-none z-[1]"
-        style={isMobile ? {} : { x: logoX, y: logoY }}
-      >
+      {/* ===== BACKGROUND IMAGE - centered, pulsating ===== */}
+      <div className="absolute inset-0 flex items-center justify-center pointer-events-none z-[1]">
         <motion.div
-          initial={{ opacity: 0, scale: 0.8 }}
+          initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.6, ease: "easeOut" }}
-          className="relative"
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          className="hero-bg-pulse"
+          style={{
+            maxHeight: "550px",
+            WebkitMaskImage: "radial-gradient(circle, black 40%, transparent 70%)",
+            maskImage: "radial-gradient(circle, black 40%, transparent 70%)",
+          }}
         >
-          {/* Ambient halo */}
-          <div
-            className="absolute -inset-[30%] rounded-full pointer-events-none"
-            style={{
-              background:
-                "radial-gradient(circle, rgba(212,168,67,0.06) 0%, rgba(99,102,241,0.03) 40%, rgba(155,89,182,0.02) 60%, transparent 70%)",
-              animation: "ambient-halo 22s ease-in-out infinite",
-            }}
-          />
-
-          {/* Logo image - physically cropped, no text */}
           <Image
-            src="/logo.png"
+            src="/hero-bg.webp"
             alt=""
-            width={2048}
-            height={1556}
-            className="w-[350px] sm:w-[450px] md:w-[550px] lg:w-[650px] xl:w-[700px] h-auto select-none"
-            style={{
-              opacity: 0.45,
-              mixBlendMode: "lighten",
-            }}
+            width={1920}
+            height={1071}
+            className="h-[400px] sm:h-[450px] md:h-[500px] lg:h-[550px] w-auto select-none"
             priority
           />
-
-          {/* Orbiting glow 1 - clockwise, purple/pink, 30s */}
-          <div
-            className="absolute top-1/2 left-1/2 w-0 h-0 pointer-events-none"
-            style={{ animation: "orbit-cw 30s linear infinite" }}
-          >
-            <div
-              style={{
-                position: "absolute",
-                top: "-220px",
-                left: "-100px",
-                width: "200px",
-                height: "200px",
-                borderRadius: "50%",
-                background:
-                  "radial-gradient(circle, rgba(155,89,182,0.45) 0%, rgba(232,121,168,0.2) 40%, transparent 70%)",
-                filter: "blur(35px)",
-              }}
-            />
-          </div>
-
-          {/* Orbiting glow 2 - counter-clockwise, gold, 35s */}
-          <div
-            className="absolute top-1/2 left-1/2 w-0 h-0 pointer-events-none"
-            style={{ animation: "orbit-ccw 35s linear infinite" }}
-          >
-            <div
-              style={{
-                position: "absolute",
-                top: "60px",
-                left: "-90px",
-                width: "180px",
-                height: "180px",
-                borderRadius: "50%",
-                background:
-                  "radial-gradient(circle, rgba(212,168,67,0.4) 0%, rgba(240,199,94,0.15) 40%, transparent 70%)",
-                filter: "blur(30px)",
-              }}
-            />
-          </div>
-
-          {/* Brain pulse - left hemisphere (purple) */}
-          <div
-            className="absolute top-[35%] left-[38%] w-[12%] aspect-square rounded-full pointer-events-none"
-            style={{
-              background:
-                "radial-gradient(circle, rgba(155,89,182,0.35) 0%, rgba(99,102,241,0.12) 50%, transparent 70%)",
-              filter: "blur(12px)",
-              animation: "brain-pulse-left 5s ease-in-out infinite",
-            }}
-          />
-
-          {/* Brain pulse - right hemisphere (gold) */}
-          <div
-            className="absolute top-[35%] left-[50%] w-[12%] aspect-square rounded-full pointer-events-none"
-            style={{
-              background:
-                "radial-gradient(circle, rgba(212,168,67,0.3) 0%, rgba(240,199,94,0.1) 50%, transparent 70%)",
-              filter: "blur(12px)",
-              animation: "brain-pulse-right 5s ease-in-out infinite 2.5s",
-            }}
-          />
         </motion.div>
-      </motion.div>
+      </div>
 
-      {/* ===== PARTICLES - z-2 ===== */}
-      <motion.div
-        className="absolute inset-0 z-[2]"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 1.2, delay: 0.5 }}
-      >
-        <HeroCanvas />
-      </motion.div>
-
-      {/* ===== DARK GRADIENT OVERLAY LEFT - z-3 ===== */}
+      {/* ===== DARK GRADIENT OVERLAY LEFT ===== */}
       <div
-        className="absolute inset-0 z-[3] pointer-events-none"
+        className="absolute inset-0 z-[2] pointer-events-none"
         style={{
           background:
-            "linear-gradient(90deg, rgba(11,14,26,0.85) 0%, rgba(11,14,26,0.6) 30%, rgba(11,14,26,0.2) 55%, transparent 75%)",
+            "linear-gradient(90deg, rgba(11,14,26,0.9) 0%, rgba(11,14,26,0.65) 30%, rgba(11,14,26,0.2) 55%, transparent 75%)",
         }}
       />
 
       {/* ===== BOTTOM FADE ===== */}
-      <div className="absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-t from-bg-primary to-transparent z-[4]" />
+      <div className="absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-t from-[#0B0E1A] to-transparent z-[3]" />
 
-      {/* ===== CONTENT - z-5, ON TOP OF EVERYTHING ===== */}
+      {/* ===== CONTENT ===== */}
       <div className="relative z-[5] max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           {/* Left: Text */}
@@ -176,7 +64,7 @@ export function HeroSection({
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.6 }}
+              transition={{ duration: 0.6, delay: 0.3 }}
               className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-accent-indigo/30 bg-accent-indigo/5 backdrop-blur-sm mb-8"
             >
               <span className="w-2 h-2 rounded-full bg-accent-indigo animate-pulse" />
@@ -189,7 +77,7 @@ export function HeroSection({
             <motion.h1
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.8 }}
+              transition={{ duration: 0.8, delay: 0.5 }}
               className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-heading font-bold leading-[1.08] mb-8"
             >
               <span className="text-gradient">
@@ -202,7 +90,7 @@ export function HeroSection({
             <motion.p
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 1.0 }}
+              transition={{ duration: 0.8, delay: 0.7 }}
               className="text-lg md:text-xl text-text-secondary max-w-xl mb-10 leading-relaxed"
             >
               {dict.hero.subtitle}
@@ -212,7 +100,7 @@ export function HeroSection({
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 1.2 }}
+              transition={{ duration: 0.8, delay: 0.9 }}
               className="flex flex-col sm:flex-row gap-4"
             >
               <Link
@@ -233,7 +121,7 @@ export function HeroSection({
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
-              transition={{ duration: 1, delay: 1.6 }}
+              transition={{ duration: 1, delay: 1.3 }}
               className="mt-12 flex items-center gap-6 text-text-muted text-xs font-mono"
             >
               <span className="flex items-center gap-2">
@@ -255,7 +143,7 @@ export function HeroSection({
             </motion.div>
           </div>
 
-          {/* Right: Terminal card - ON TOP of logo */}
+          {/* Right: Terminal card */}
           <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
