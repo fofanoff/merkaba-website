@@ -104,7 +104,7 @@ export function HeroEffects() {
 
       const imageH = Math.min(h * 0.72, 650);
       const R = imageH * 0.155;
-      const innerOrbitR = R * 1.55; // on the inner flower circles, away from brain
+      const innerOrbitR = R * 1.95; // middle flower petals orbit
       const outerOrbitR = R * 2.2; // outer boundary
       const brainScale = R * 1.0;
 
