@@ -6,6 +6,7 @@ import type { Locale } from "@/lib/i18n";
 import { FadeIn } from "@/components/ui/FadeIn";
 import { AnimatedCounter } from "@/components/ui/AnimatedCounter";
 import { FlowerOfLife } from "@/components/ui/FlowerOfLife";
+import { FaqSection } from "@/components/sections/FaqSection";
 
 const accentColors = ["#E879A8", "#9B59B6", "#3B82F6", "#D4A843"];
 
@@ -38,6 +39,11 @@ export function AboutPage({
         </div>
 
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+          {a.definition && (
+            <p className="page-intro hero-description text-text-muted text-xs mb-4">
+              {a.definition}
+            </p>
+          )}
           <motion.h1
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
@@ -54,6 +60,9 @@ export function AboutPage({
           >
             {a.hero_subtitle}
           </motion.p>
+          {a.last_updated && (
+            <p className="text-text-muted text-xs mt-4">{a.last_updated}</p>
+          )}
         </div>
       </section>
 
@@ -230,6 +239,9 @@ export function AboutPage({
           </FadeIn>
         </div>
       </section>
+
+      {/* ===== FAQ ===== */}
+      <FaqSection dict={dict} section="about" />
 
       {/* ===== CTA ===== */}
       <section className="py-24 md:py-32 relative bg-bg-secondary/50 overflow-hidden">

@@ -6,6 +6,7 @@ import type { Locale } from "@/lib/i18n";
 import { FadeIn } from "@/components/ui/FadeIn";
 import { AnimatedCounter } from "@/components/ui/AnimatedCounter";
 import { FlowerOfLife } from "@/components/ui/FlowerOfLife";
+import { FaqSection } from "@/components/sections/FaqSection";
 
 const accentColors = ["#E879A8", "#9B59B6", "#3B82F6", "#D4A843"];
 
@@ -50,10 +51,13 @@ export function CasesPage({
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.15 }}
-            className="text-lg md:text-xl text-text-secondary max-w-2xl mx-auto leading-relaxed"
+            className="text-lg md:text-xl text-text-secondary max-w-2xl mx-auto leading-relaxed hero-description"
           >
             {c.hero_subtitle}
           </motion.p>
+          {c.last_updated && (
+            <p className="text-text-muted text-xs mt-4">{c.last_updated}</p>
+          )}
         </div>
       </section>
 
@@ -76,6 +80,9 @@ export function CasesPage({
                       style={{ color: accentColors[i] }}
                     >
                       {stat.value}
+                      <sup className="text-xs font-normal text-text-muted ml-0.5">
+                        [{i + 1}]
+                      </sup>
                     </span>
                     <p className="text-text-secondary text-sm leading-relaxed">
                       {stat.label}
@@ -85,6 +92,20 @@ export function CasesPage({
               )
             )}
           </div>
+
+          {c.market_sources && (
+            <FadeIn delay={0.4}>
+              <div className="mt-8 pt-6 border-t border-white/5">
+                <div className="flex flex-wrap gap-x-6 gap-y-1 justify-center">
+                  {c.market_sources.map((source: string, i: number) => (
+                    <span key={i} className="text-text-muted text-xs">
+                      [{i + 1}] {source}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            </FadeIn>
+          )}
         </div>
       </section>
 
@@ -389,6 +410,9 @@ export function CasesPage({
           </div>
         </div>
       </section>
+
+      {/* ===== FAQ ===== */}
+      <FaqSection dict={dict} section="cases" />
 
       {/* ===== CTA ===== */}
       <section className="py-24 md:py-32 relative overflow-hidden">

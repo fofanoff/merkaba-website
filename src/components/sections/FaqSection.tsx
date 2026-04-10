@@ -10,10 +10,11 @@ export function FaqSection({
 }: {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   dict: any;
-  section: "services" | "contact";
+  section: "services" | "contact" | "home" | "cases" | "about" | "partners";
 }) {
-  const faqData = dict[section]?.faq;
-  const faqTitle = dict[section]?.faq_title;
+  const sectionKey = section === "home" ? "hero" : section;
+  const faqData = dict[sectionKey]?.faq;
+  const faqTitle = dict[sectionKey]?.faq_title;
 
   if (!faqData || faqData.length === 0) return null;
 

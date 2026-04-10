@@ -67,6 +67,13 @@ export function HeroSection({
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           {/* Left: Text */}
           <div>
+            {/* Definition-first (GEO) */}
+            {dict.hero.definition && (
+              <p className="page-intro hero-description text-text-muted text-xs mb-4">
+                {dict.hero.definition}
+              </p>
+            )}
+
             {/* Badge */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -148,6 +155,10 @@ export function HeroSection({
                 Claude
               </span>
             </motion.div>
+
+            {dict.hero.last_updated && (
+              <p className="text-text-muted text-xs mt-4">{dict.hero.last_updated}</p>
+            )}
           </div>
 
           {/* Right: Terminal card */}

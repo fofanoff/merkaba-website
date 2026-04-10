@@ -15,9 +15,17 @@ export function ServicesHero({ dict }: { dict: any }) {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <FadeIn className="text-center mb-16">
+          {dict.services.definition && (
+            <p className="page-intro hero-description text-text-muted text-xs mb-4">
+              {dict.services.definition}
+            </p>
+          )}
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold max-w-4xl mx-auto leading-tight">
             {dict.services.hero_title}
           </h1>
+          {dict.services.last_updated && (
+            <p className="text-text-muted text-xs mt-4">{dict.services.last_updated}</p>
+          )}
         </FadeIn>
 
         {/* SEO vs GEO Comparison */}

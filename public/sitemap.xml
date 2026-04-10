@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- Home pages -->
+  <url>
+    <loc>https://merkaba.vip/ru</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://merkaba.vip/ru" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://merkaba.vip/en" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://merkaba.vip/tr" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://merkaba.vip/ar" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://merkaba.vip/en" />
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://merkaba.vip/en</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://merkaba.vip/ru" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://merkaba.vip/en" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://merkaba.vip/tr" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://merkaba.vip/ar" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://merkaba.vip/en" />
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://merkaba.vip/tr</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://merkaba.vip/ru" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://merkaba.vip/en" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://merkaba.vip/tr" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://merkaba.vip/ar" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://merkaba.vip/en" />
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://merkaba.vip/ar</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://merkaba.vip/ru" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://merkaba.vip/en" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://merkaba.vip/tr" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://merkaba.vip/ar" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://merkaba.vip/en" />
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Services pages -->
+  <url>
+    <loc>https://merkaba.vip/ru/services</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://merkaba.vip/ru/services" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://merkaba.vip/en/services" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://merkaba.vip/tr/services" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://merkaba.vip/ar/services" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://merkaba.vip/en/services" />
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://merkaba.vip/en/services</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://merkaba.vip/ru/services" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://merkaba.vip/en/services" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://merkaba.vip/tr/services" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://merkaba.vip/ar/services" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://merkaba.vip/en/services" />
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://merkaba.vip/tr/services</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://merkaba.vip/ru/services" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://merkaba.vip/en/services" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://merkaba.vip/tr/services" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://merkaba.vip/ar/services" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://merkaba.vip/en/services" />
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://merkaba.vip/ar/services</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://merkaba.vip/ru/services" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://merkaba.vip/en/services" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://merkaba.vip/tr/services" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://merkaba.vip/ar/services" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://merkaba.vip/en/services" />
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Cases pages -->
+  <url>
+    <loc>https://merkaba.vip/ru/cases</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://merkaba.vip/ru/cases" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://merkaba.vip/en/cases" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://merkaba.vip/tr/cases" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://merkaba.vip/ar/cases" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://merkaba.vip/en/cases" />
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://merkaba.vip/en/cases</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://merkaba.vip/ru/cases" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://merkaba.vip/en/cases" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://merkaba.vip/tr/cases" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://merkaba.vip/ar/cases" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://merkaba.vip/en/cases" />
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://merkaba.vip/tr/cases</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://merkaba.vip/ru/cases" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://merkaba.vip/en/cases" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://merkaba.vip/tr/cases" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://merkaba.vip/ar/cases" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://merkaba.vip/en/cases" />
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://merkaba.vip/ar/cases</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://merkaba.vip/ru/cases" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://merkaba.vip/en/cases" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://merkaba.vip/tr/cases" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://merkaba.vip/ar/cases" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://merkaba.vip/en/cases" />
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- About pages -->
+  <url>
+    <loc>https://merkaba.vip/ru/about</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://merkaba.vip/ru/about" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://merkaba.vip/en/about" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://merkaba.vip/tr/about" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://merkaba.vip/ar/about" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://merkaba.vip/en/about" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://merkaba.vip/en/about</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://merkaba.vip/ru/about" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://merkaba.vip/en/about" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://merkaba.vip/tr/about" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://merkaba.vip/ar/about" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://merkaba.vip/en/about" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://merkaba.vip/tr/about</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://merkaba.vip/ru/about" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://merkaba.vip/en/about" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://merkaba.vip/tr/about" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://merkaba.vip/ar/about" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://merkaba.vip/en/about" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://merkaba.vip/ar/about</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://merkaba.vip/ru/about" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://merkaba.vip/en/about" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://merkaba.vip/tr/about" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://merkaba.vip/ar/about" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://merkaba.vip/en/about" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Contact pages -->
+  <url>
+    <loc>https://merkaba.vip/ru/contact</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://merkaba.vip/ru/contact" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://merkaba.vip/en/contact" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://merkaba.vip/tr/contact" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://merkaba.vip/ar/contact" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://merkaba.vip/en/contact" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://merkaba.vip/en/contact</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://merkaba.vip/ru/contact" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://merkaba.vip/en/contact" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://merkaba.vip/tr/contact" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://merkaba.vip/ar/contact" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://merkaba.vip/en/contact" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://merkaba.vip/tr/contact</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://merkaba.vip/ru/contact" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://merkaba.vip/en/contact" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://merkaba.vip/tr/contact" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://merkaba.vip/ar/contact" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://merkaba.vip/en/contact" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://merkaba.vip/ar/contact</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://merkaba.vip/ru/contact" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://merkaba.vip/en/contact" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://merkaba.vip/tr/contact" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://merkaba.vip/ar/contact" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://merkaba.vip/en/contact" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Partners pages -->
+  <url>
+    <loc>https://merkaba.vip/ru/partners</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://merkaba.vip/ru/partners" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://merkaba.vip/en/partners" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://merkaba.vip/tr/partners" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://merkaba.vip/ar/partners" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://merkaba.vip/en/partners" />
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://merkaba.vip/en/partners</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://merkaba.vip/ru/partners" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://merkaba.vip/en/partners" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://merkaba.vip/tr/partners" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://merkaba.vip/ar/partners" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://merkaba.vip/en/partners" />
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://merkaba.vip/tr/partners</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://merkaba.vip/ru/partners" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://merkaba.vip/en/partners" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://merkaba.vip/tr/partners" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://merkaba.vip/ar/partners" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://merkaba.vip/en/partners" />
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://merkaba.vip/ar/partners</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://merkaba.vip/ru/partners" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://merkaba.vip/en/partners" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://merkaba.vip/tr/partners" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://merkaba.vip/ar/partners" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://merkaba.vip/en/partners" />
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+</urlset>
