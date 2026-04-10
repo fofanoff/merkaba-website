@@ -85,6 +85,19 @@ export function HeroSection({
               </p>
             )}
 
+            {/* Badge - mobile only, in flow */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.3 }}
+              className="lg:hidden inline-flex items-center gap-2 px-4 py-2 rounded-full border border-accent-indigo/30 bg-accent-indigo/5 backdrop-blur-sm mb-8"
+            >
+              <span className="w-2 h-2 rounded-full bg-accent-indigo animate-pulse" />
+              <span className="text-accent-indigo text-sm font-medium font-mono">
+                Generative Engine Optimization
+              </span>
+            </motion.div>
+
             {/* Title */}
             <motion.h1
               initial={{ opacity: 0, y: 30 }}
