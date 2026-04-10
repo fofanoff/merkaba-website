@@ -28,6 +28,7 @@ export function Header({
 }) {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [langOpen, setLangOpen] = useState(false);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 20);
@@ -76,21 +77,39 @@ export function Header({
 
           {/* Right side */}
           <div className="flex items-center gap-4">
-            {/* Language switcher */}
-            <div className="hidden md:flex items-center gap-1 text-xs">
-              {locales.map((l) => (
-                <Link
-                  key={l}
-                  href={`/${l}`}
-                  className={`px-2 py-1 rounded transition-colors ${
-                    l === locale
-                      ? "text-text-primary bg-bg-surface"
-                      : "text-text-muted hover:text-text-secondary"
-                  }`}
-                >
-                  {localeLabels[l]}
-                </Link>
-              ))}
+            {/* Language switcher - dropdown */}
+            <div className="hidden md:block relative">
+              <button
+                onClick={() => setLangOpen(!langOpen)}
+                className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-medium text-text-primary bg-bg-surface/60 border border-white/10 hover:border-white/20 transition-colors"
+              >
+                {localeLabels[locale]}
+                <svg className={`w-3 h-3 text-text-muted transition-transform ${langOpen ? "rotate-180" : ""}`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+              <AnimatePresence>
+                {langOpen && (
+                  <motion.div
+                    initial={{ opacity: 0, y: -4 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, y: -4 }}
+                    transition={{ duration: 0.15 }}
+                    className="absolute right-0 top-full mt-1 rounded-lg border border-white/10 bg-bg-card/95 backdrop-blur-md shadow-xl overflow-hidden z-50"
+                  >
+                    {locales.filter((l) => l !== locale).map((l) => (
+                      <Link
+                        key={l}
+                        href={`/${l}`}
+                        onClick={() => setLangOpen(false)}
+                        className="block px-4 py-2 text-xs font-medium text-text-secondary hover:text-text-primary hover:bg-white/5 transition-colors"
+                      >
+                        {localeLabels[l]}
+                      </Link>
+                    ))}
+                  </motion.div>
+                )}
+              </AnimatePresence>
             </div>
 
             {/* CTA */}
