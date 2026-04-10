@@ -81,7 +81,7 @@ export function HeroSection({
           <div>
             {/* Definition - mobile only, in flow */}
             {dict.hero.definition && (
-              <p className="lg:hidden page-intro hero-description text-text-muted text-xs mb-4">
+              <p className="lg:hidden page-intro hero-description text-text-muted text-xs mb-6">
                 {dict.hero.definition}
               </p>
             )}
