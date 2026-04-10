@@ -5,6 +5,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import type { Locale } from "@/lib/i18n";
 import { HeroTerminal } from "@/components/ui/HeroTerminal";
+import { HeroEffects } from "@/components/ui/HeroEffects";
 
 export function HeroSection({
   locale,
@@ -44,45 +45,9 @@ export function HeroSection({
         </motion.div>
       </div>
 
-      {/* ===== ORBITING GLOWS - z-[1] ===== */}
-      <div className="absolute inset-0 flex items-center justify-center pointer-events-none z-[1]">
-        {/* Glow 1 - clockwise, purple/pink, 30s */}
-        <div
-          className="absolute w-0 h-0"
-          style={{ animation: "orbit-cw 30s linear infinite" }}
-        >
-          <div
-            style={{
-              position: "absolute",
-              top: "-260px",
-              left: "-110px",
-              width: "220px",
-              height: "220px",
-              borderRadius: "50%",
-              background: "radial-gradient(circle, rgba(155,89,182,0.5) 0%, rgba(232,121,168,0.2) 40%, transparent 70%)",
-              filter: "blur(30px)",
-            }}
-          />
-        </div>
-
-        {/* Glow 2 - counter-clockwise, gold, 35s */}
-        <div
-          className="absolute w-0 h-0"
-          style={{ animation: "orbit-ccw 35s linear infinite" }}
-        >
-          <div
-            style={{
-              position: "absolute",
-              top: "120px",
-              left: "-100px",
-              width: "200px",
-              height: "200px",
-              borderRadius: "50%",
-              background: "radial-gradient(circle, rgba(212,168,67,0.45) 0%, rgba(240,199,94,0.15) 40%, transparent 70%)",
-              filter: "blur(25px)",
-            }}
-          />
-        </div>
+      {/* ===== CANVAS EFFECTS: glows along circles + neural impulses ===== */}
+      <div className="absolute inset-0 z-[1] pointer-events-none">
+        <HeroEffects />
       </div>
 
       {/* ===== DARK GRADIENT OVERLAY LEFT ===== */}
