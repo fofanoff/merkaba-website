@@ -7,7 +7,7 @@ import type { Locale } from "@/lib/i18n";
 import { FadeIn } from "@/components/ui/FadeIn";
 
 const PACKAGES = [
-  { name: "LAUNCH", price: 5000, type: "one-time" },
+  { name: "LAUNCH", price: 1500, type: "one-time" },
   { name: "GROWTH", price: 8500, type: "monthly" },
   { name: "DOMINANCE", price: 15000, type: "monthly" },
 ];

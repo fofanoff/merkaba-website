@@ -14,10 +14,10 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     ar: "خدمات GEO - تدقيق رؤية AI، المراقبة، هندسة المحتوى | Merkaba Digital",
   };
   const descriptions: Record<string, string> = {
-    ru: "Три программы AI-оптимизации: LAUNCH ($5000), GROWTH ($8500/мес), DOMINANCE ($15000/мес). Structured Data, Entity Building, AI Dashboard",
-    en: "Three AI optimization programs: LAUNCH ($5000), GROWTH ($8500/mo), DOMINANCE ($15000/mo). Structured Data, Entity Building, AI Dashboard",
-    tr: "Uc AI optimizasyon programi: LAUNCH ($5000), GROWTH ($8500/ay), DOMINANCE ($15000/ay). Structured Data, Entity Building, AI Dashboard",
-    ar: "ثلاثة برامج لتحسين AI: LAUNCH ($5000)، GROWTH ($8500/شهر)، DOMINANCE ($15000/شهر). بيانات مهيكلة، بناء الكيان، لوحة تحكم AI",
+    ru: "Три программы AI-оптимизации: LAUNCH (от $1,500), GROWTH ($8,500/мес), DOMINANCE ($15,000/мес). Structured Data, Entity Building, AI Dashboard",
+    en: "Three AI optimization programs: LAUNCH (from $1,500), GROWTH ($8,500/mo), DOMINANCE ($15,000/mo). Structured Data, Entity Building, AI Dashboard",
+    tr: "Uc AI optimizasyon programi: LAUNCH ($1,500'den), GROWTH ($8,500/ay), DOMINANCE ($15,000/ay). Structured Data, Entity Building, AI Dashboard",
+    ar: "ثلاثة برامج لتحسين AI: LAUNCH (من $1,500)، GROWTH ($8,500/شهر)، DOMINANCE ($15,000/شهر). بيانات مهيكلة، بناء الكيان، لوحة تحكم AI",
   };
   return {
     title: titles[locale] || titles.en,

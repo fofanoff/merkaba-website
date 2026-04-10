@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import Link from "next/link";
 import { FadeIn } from "@/components/ui/FadeIn";
 import type { Locale } from "@/lib/i18n";
@@ -14,16 +15,42 @@ export function PricingSection({
   dict: any;
   detailed?: boolean;
 }) {
+  const [launchMode, setLaunchMode] = useState<"light" | "pro">("light");
+  const [hasClickedPro, setHasClickedPro] = useState(false);
+
+  const handleProClick = () => {
+    setLaunchMode("pro");
+    setHasClickedPro(true);
+  };
+
+  const launchPrice =
+    launchMode === "light"
+      ? dict.pricing.launch_light_price
+      : dict.pricing.launch_pro_price;
+  const launchType =
+    launchMode === "light"
+      ? dict.pricing.launch_light_type
+      : dict.pricing.launch_pro_type;
+  const launchFeatures =
+    launchMode === "light"
+      ? dict.pricing.launch_light_features
+      : dict.pricing.launch_pro_features;
+  const launchCta =
+    launchMode === "light"
+      ? dict.pricing.launch_light_cta
+      : dict.pricing.launch_pro_cta;
+
   const packages = [
     {
       name: dict.pricing.launch_name,
-      price: dict.pricing.launch_price,
-      type: dict.pricing.launch_type,
-      features: dict.pricing.launch_features,
+      price: launchPrice,
+      type: launchType,
+      features: launchFeatures,
       featured: false,
-      cta: dict.pricing.launch_cta,
+      cta: launchCta,
       gradient: "from-accent-blue/20 to-accent-indigo/20",
       borderColor: "border-accent-blue/20",
+      isLaunch: true,
     },
     {
       name: dict.pricing.growth_name,
@@ -35,6 +62,7 @@ export function PricingSection({
       cta: dict.pricing.growth_cta,
       gradient: "from-accent-pink/20 via-accent-purple/20 to-accent-indigo/20",
       borderColor: "border-accent-indigo/30",
+      isLaunch: false,
     },
     {
       name: dict.pricing.dominance_name,
@@ -45,6 +73,7 @@ export function PricingSection({
       cta: dict.pricing.dominance_cta,
       gradient: "from-accent-gold/20 to-accent-gold/10",
       borderColor: "border-accent-gold/20",
+      isLaunch: false,
     },
   ];
 
@@ -73,19 +102,56 @@ export function PricingSection({
                   </span>
                 )}
 
+                {/* LAUNCH mode toggle */}
+                {pkg.isLaunch && (
+                  <div className="flex gap-1 mb-5 p-1 bg-bg-surface/60 rounded-lg w-fit">
+                    <button
+                      onClick={() => setLaunchMode("light")}
+                      className={`px-3 py-1.5 rounded-md text-xs font-mono font-bold tracking-wider transition-all ${
+                        launchMode === "light"
+                          ? "bg-accent-indigo/25 text-text-primary border border-accent-indigo/40"
+                          : "text-text-muted hover:text-text-secondary"
+                      }`}
+                    >
+                      {dict.pricing.launch_light_label}
+                    </button>
+                    <button
+                      onClick={handleProClick}
+                      className={`px-3 py-1.5 rounded-md text-xs font-mono font-bold tracking-wider transition-all ${
+                        launchMode === "pro"
+                          ? "bg-accent-indigo/25 text-text-primary border border-accent-indigo/40"
+                          : `text-text-muted hover:text-text-secondary ${!hasClickedPro ? "pro-pulse" : ""}`
+                      }`}
+                    >
+                      {dict.pricing.launch_pro_label}
+                    </button>
+                  </div>
+                )}
+
                 <div className="mb-6">
                   <h3 className="text-text-muted text-sm font-mono uppercase tracking-wider mb-2">
                     {pkg.name}
                   </h3>
                   <div className="flex items-baseline gap-1">
-                    <span className="text-3xl md:text-4xl font-heading font-bold text-text-primary">
+                    <span
+                      key={pkg.isLaunch ? launchMode : "static"}
+                      className="text-3xl md:text-4xl font-heading font-bold text-text-primary transition-opacity duration-300 animate-[fadeIn_0.3s_ease-in-out]"
+                    >
                       {pkg.price}
                     </span>
                   </div>
-                  <span className="text-text-muted text-sm">{pkg.type}</span>
+                  <span
+                    key={pkg.isLaunch ? `type-${launchMode}` : "type-static"}
+                    className="text-text-muted text-sm transition-opacity duration-300 animate-[fadeIn_0.3s_ease-in-out]"
+                  >
+                    {pkg.type}
+                  </span>
                 </div>
 
-                <ul className="space-y-3 mb-8 flex-1">
+                <ul
+                  key={pkg.isLaunch ? `features-${launchMode}` : "features-static"}
+                  className="space-y-3 mb-8 flex-1 transition-opacity duration-300 animate-[fadeIn_0.3s_ease-in-out]"
+                >
                   {pkg.features.map((feature: string, j: number) => (
                     <li key={j} className="flex items-start gap-3 text-sm text-text-secondary">
                       <svg className="w-4 h-4 mt-0.5 shrink-0 text-success" fill="none" viewBox="0 0 24 24" stroke="currentColor">

@@ -79,7 +79,7 @@ export const blogArticles: BlogArticle[] = [
 <p>Нет. GEO и SEO работают параллельно. SEO приносит трафик из поисковой выдачи, GEO обеспечивает рекомендации в AI-ответах. В 2026 году бизнесу нужны оба канала, но доля AI-трафика растет быстрее.</p>
 
 <h3>Сколько стоит GEO-оптимизация</h3>
-<p>Стоимость зависит от масштаба. Разовый AI-аудит обходится от $5,000. Постоянная оптимизация - от $8,500 в месяц. Для понимания текущей ситуации можно начать с бесплатного экспресс-аудита.</p>
+<p>Стоимость зависит от масштаба. Разовый AI-аудит обходится от $1,500. Постоянная оптимизация - от $8,500 в месяц. Для понимания текущей ситуации можно начать с бесплатного экспресс-аудита.</p>
 
 <h3>Через какое время видны результаты GEO</h3>
 <p>Первые изменения в ответах AI появляются через 2-4 недели после внедрения Schema.org и оптимизации контента. Устойчивый рост AI Visibility Score начинается на 6-8 неделе. Полный цикл оптимизации занимает 4-6 месяцев.</p>
@@ -139,7 +139,7 @@ export const blogArticles: BlogArticle[] = [
 <p>No. GEO and SEO work in parallel. SEO drives traffic from search results, GEO ensures recommendations in AI answers. In 2026, businesses need both channels, but the share of AI traffic is growing faster.</p>
 
 <h3>How much does GEO optimization cost</h3>
-<p>Cost depends on scale. A one-time AI audit starts at $5,000. Ongoing optimization starts at $8,500 per month. To understand your current situation, you can start with a free express audit.</p>
+<p>Cost depends on scale. A one-time AI audit starts at $1,500. Ongoing optimization starts at $8,500 per month. To understand your current situation, you can start with a free express audit.</p>
 
 <h3>How long until GEO results are visible</h3>
 <p>First changes in AI answers appear 2-4 weeks after implementing Schema.org and content optimization. Sustainable AI Visibility Score growth begins at week 6-8. A full optimization cycle takes 4-6 months.</p>
@@ -199,7 +199,7 @@ export const blogArticles: BlogArticle[] = [
 <p>Hayir. GEO ve SEO paralel calisir. SEO arama sonuclarindan trafik getirir, GEO AI yanitlarinda tavsiye saglar. 2026'da isletmeler her iki kanala da ihtiyac duyar, ancak AI trafiginin payi daha hizli buyuyor.</p>
 
 <h3>GEO optimizasyonu ne kadar</h3>
-<p>Maliyet olcege baglidir. Tek seferlik AI denetimi $5,000'den baslar. Surekli optimizasyon ayda $8,500'den baslar. Mevcut durumunuzu anlamak icin ucretsiz ekspres denetimle baslayabilirsiniz.</p>
+<p>Maliyet olcege baglidir. Tek seferlik AI denetimi $1,500'den baslar. Surekli optimizasyon ayda $8,500'den baslar. Mevcut durumunuzu anlamak icin ucretsiz ekspres denetimle baslayabilirsiniz.</p>
 
 <h3>GEO sonuclari ne zaman gorunur</h3>
 <p>AI yanitlarindaki ilk degisiklikler Schema.org ve icerik optimizasyonunun uygulanmasindan 2-4 hafta sonra belirir. Surdurulebilir AI Visibility Score buyumesi 6-8. haftada baslar. Tam optimizasyon dongusu 4-6 ay surer.</p>
@@ -259,7 +259,7 @@ export const blogArticles: BlogArticle[] = [
 <p>لا. GEO وSEO يعملان بالتوازي. SEO يجلب الزيارات من نتائج البحث، وGEO يضمن التوصيات في اجابات AI. في 2026 تحتاج الشركات كلتا القناتين، لكن حصة زيارات AI تنمو اسرع.</p>
 
 <h3>كم تكلف عملية تحسين GEO</h3>
-<p>التكلفة تعتمد على الحجم. تدقيق AI لمرة واحدة يبدا من $5,000. التحسين المستمر يبدا من $8,500 شهريا. لفهم وضعك الحالي يمكنك البدء بتدقيق مجاني سريع.</p>
+<p>التكلفة تعتمد على الحجم. تدقيق AI لمرة واحدة يبدا من $1,500. التحسين المستمر يبدا من $8,500 شهريا. لفهم وضعك الحالي يمكنك البدء بتدقيق مجاني سريع.</p>
 
 <h3>متى تظهر نتائج GEO</h3>
 <p>التغييرات الاولى في اجابات AI تظهر بعد 2-4 اسابيع من تطبيق Schema.org وتحسين المحتوى. النمو المستدام في AI Visibility Score يبدا في الاسبوع 6-8. دورة التحسين الكاملة تستغرق 4-6 اشهر.</p>

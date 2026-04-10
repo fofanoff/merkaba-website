@@ -64,10 +64,10 @@ export function Footer({
             </h4>
             <div className="space-y-3 text-sm">
               <a
-                href="mailto:info@merkaba.vip"
+                href="mailto:merkaba.vip@gmail.com"
                 className="block text-text-muted hover:text-text-secondary transition-colors"
               >
-                info@merkaba.vip
+                merkaba.vip@gmail.com
               </a>
               <a
                 href="https://t.me/merkaba_digital"

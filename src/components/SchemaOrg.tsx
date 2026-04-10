@@ -15,10 +15,10 @@ const organizationSchema = {
   knowsLanguage: ["en", "ru", "tr", "ar"],
   contactPoint: {
     "@type": "ContactPoint",
-    email: "info@merkaba.vip",
+    email: "merkaba.vip@gmail.com",
     contactType: "sales",
   },
-  sameAs: ["https://t.me/merkaba_digital"],
+  sameAs: ["https://t.me/merkaba_vip"],
 };
 
 function buildBreadcrumbs(locale: string, path: string, label: string) {

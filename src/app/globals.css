@@ -146,6 +146,21 @@ h1, h2, h3, h4, h5, h6 {
   50% { opacity: 0.6; }
 }
 
+/* PRO button pulse for pricing toggle */
+@keyframes pro-pulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(99, 102, 241, 0); }
+  50% { box-shadow: 0 0 12px 2px rgba(99, 102, 241, 0.3); }
+}
+.pro-pulse {
+  animation: pro-pulse 3.5s ease-in-out infinite;
+}
+
+/* Fade-in for pricing toggle transitions */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
 /* Hero orbiting glows */
 @keyframes orbit-cw {
   from { transform: rotate(0deg); }
