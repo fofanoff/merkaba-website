@@ -64,9 +64,9 @@ export function HeroSection({
       {/* ===== BOTTOM FADE ===== */}
       <div className="absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-t from-[#0B0E1A] to-transparent z-[3]" />
 
-      {/* ===== DEFINITION - pinned to top under header ===== */}
+      {/* ===== DEFINITION - pinned under header on desktop, in-flow on mobile ===== */}
       {dict.hero.definition && (
-        <div className="absolute top-20 md:top-24 left-0 right-0 z-[5]">
+        <div className="hidden lg:block absolute top-24 left-0 right-0 z-[5]">
           <p className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-text-muted text-xs whitespace-nowrap overflow-hidden text-ellipsis">
             {dict.hero.definition}
           </p>
@@ -78,6 +78,12 @@ export function HeroSection({
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           {/* Left: Text */}
           <div>
+            {/* Definition - mobile only, in flow */}
+            {dict.hero.definition && (
+              <p className="lg:hidden page-intro hero-description text-text-muted text-xs mb-4">
+                {dict.hero.definition}
+              </p>
+            )}
 
             {/* Title */}
             <motion.h1
