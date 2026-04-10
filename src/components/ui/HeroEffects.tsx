@@ -2,25 +2,48 @@
 
 import { useEffect, useRef } from "react";
 
-// Glow spot orbiting along flower of life circles
-interface GlowSpot {
-  angle: number;
-  radius: number; // orbit radius as fraction of container width
-  speed: number; // radians per frame
-  size: number;
-  color: [number, number, number];
-  opacity: number;
+// ============================================================
+// FLOWER OF LIFE GEOMETRY
+// All circles share the same radius R.
+// Ring 0: center circle
+// Ring 1: 6 circles at distance R, 60deg apart
+// Ring 2: 6 circles at distance R*sqrt(3), offset 30deg
+// Outer bounding circle: radius ~2.15R
+// ============================================================
+
+function buildFlowerCircles(R: number) {
+  const circles: { cx: number; cy: number }[] = [{ cx: 0, cy: 0 }];
+  // Ring 1
+  for (let i = 0; i < 6; i++) {
+    const a = (i * Math.PI) / 3;
+    circles.push({ cx: R * Math.cos(a), cy: R * Math.sin(a) });
+  }
+  // Ring 2
+  for (let i = 0; i < 6; i++) {
+    const a = (i * Math.PI) / 3 + Math.PI / 6;
+    circles.push({ cx: R * 1.732 * Math.cos(a), cy: R * 1.732 * Math.sin(a) });
+  }
+  return circles;
 }
 
-// Neural pulse dot in brain area
-interface NeuralDot {
-  x: number; // relative to center (-1 to 1)
-  y: number;
-  phase: number;
-  speed: number;
-  size: number;
-  connections: number[]; // indices of connected dots
-}
+// ============================================================
+// BRAIN CIRCUIT TRACES
+// Each trace is a path of points (normalized to brain area).
+// Impulses travel strictly along these segments.
+// ============================================================
+
+const TRACES = [
+  // Left hemisphere traces (will be purple)
+  { points: [[-0.07, -0.04], [-0.03, -0.06], [0.0, -0.03]], side: "left" as const },
+  { points: [[-0.06, 0.01], [-0.03, -0.01], [-0.01, 0.02]], side: "left" as const },
+  { points: [[-0.05, -0.02], [-0.02, 0.03], [0.0, 0.0]], side: "left" as const },
+  { points: [[-0.04, 0.04], [-0.01, 0.01], [-0.03, -0.03]], side: "left" as const },
+  // Right hemisphere traces (will be gold)
+  { points: [[0.0, -0.03], [0.03, -0.05], [0.07, -0.02]], side: "right" as const },
+  { points: [[0.01, 0.02], [0.04, 0.0], [0.06, 0.03]], side: "right" as const },
+  { points: [[0.0, 0.0], [0.03, 0.03], [0.05, -0.01]], side: "right" as const },
+  { points: [[0.02, -0.01], [0.05, 0.02], [0.04, -0.04]], side: "right" as const },
+];
 
 export function HeroEffects() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
@@ -34,36 +57,6 @@ export function HeroEffects() {
 
     let w = 0;
     let h = 0;
-
-    // Clockwise glow spots (purple/pink) - along outer flower circles
-    const cwSpots: GlowSpot[] = [
-      { angle: 0, radius: 0.28, speed: 0.0035, size: 18, color: [155, 89, 182], opacity: 0.6 },
-      { angle: Math.PI * 0.7, radius: 0.34, speed: 0.003, size: 14, color: [232, 121, 168], opacity: 0.5 },
-      { angle: Math.PI * 1.4, radius: 0.22, speed: 0.004, size: 12, color: [99, 102, 241], opacity: 0.45 },
-      { angle: Math.PI * 0.3, radius: 0.4, speed: 0.0025, size: 16, color: [155, 89, 182], opacity: 0.4 },
-    ];
-
-    // Counter-clockwise glow spots (gold) - along inner flower circles
-    const ccwSpots: GlowSpot[] = [
-      { angle: 0, radius: 0.26, speed: -0.003, size: 16, color: [212, 168, 67], opacity: 0.55 },
-      { angle: Math.PI * 0.9, radius: 0.32, speed: -0.0035, size: 13, color: [240, 199, 94], opacity: 0.45 },
-      { angle: Math.PI * 1.6, radius: 0.2, speed: -0.004, size: 11, color: [212, 168, 67], opacity: 0.4 },
-      { angle: Math.PI * 1.2, radius: 0.38, speed: -0.002, size: 15, color: [240, 199, 94], opacity: 0.35 },
-    ];
-
-    const allSpots = [...cwSpots, ...ccwSpots];
-
-    // Neural dots in brain area (center of image)
-    const neuralDots: NeuralDot[] = [
-      { x: -0.04, y: -0.02, phase: 0, speed: 1.2, size: 2.5, connections: [1, 3] },
-      { x: 0.03, y: -0.04, phase: 1.5, speed: 0.9, size: 2, connections: [0, 2] },
-      { x: 0.05, y: 0.01, phase: 3, speed: 1.1, size: 2.2, connections: [1, 4] },
-      { x: -0.03, y: 0.03, phase: 4.5, speed: 1.3, size: 1.8, connections: [0, 5] },
-      { x: 0.02, y: 0.04, phase: 2, speed: 1, size: 2, connections: [2, 5] },
-      { x: -0.01, y: -0.05, phase: 5, speed: 0.8, size: 2.3, connections: [3, 4] },
-      { x: 0.06, y: -0.02, phase: 1, speed: 1.4, size: 1.5, connections: [1, 2] },
-      { x: -0.05, y: -0.01, phase: 3.5, speed: 1.1, size: 1.8, connections: [0, 3] },
-    ];
 
     const resize = () => {
       const dpr = window.devicePixelRatio || 1;
@@ -81,6 +74,29 @@ export function HeroEffects() {
     resize();
     window.addEventListener("resize", resize);
 
+    // CW glow spots - each assigned to a specific flower circle
+    const cwGlows = [
+      { circleIdx: 1, angle: 0, speed: 0.004, size: 12, color: [155, 89, 182] as [number, number, number], opacity: 0.6 },
+      { circleIdx: 3, angle: Math.PI, speed: 0.0035, size: 10, color: [232, 121, 168] as [number, number, number], opacity: 0.5 },
+      { circleIdx: 5, angle: Math.PI * 0.5, speed: 0.0045, size: 11, color: [99, 102, 241] as [number, number, number], opacity: 0.55 },
+      { circleIdx: 0, angle: Math.PI * 1.2, speed: 0.003, size: 13, color: [155, 89, 182] as [number, number, number], opacity: 0.5 },
+      { circleIdx: 2, angle: Math.PI * 0.7, speed: 0.0038, size: 9, color: [232, 121, 168] as [number, number, number], opacity: 0.45 },
+      { circleIdx: 4, angle: Math.PI * 1.8, speed: 0.0032, size: 10, color: [99, 102, 241] as [number, number, number], opacity: 0.4 },
+    ];
+
+    // Outer ring CCW glow
+    const outerGlows = [
+      { angle: 0, speed: -0.0015, size: 14, color: [212, 168, 67] as [number, number, number], opacity: 0.5 },
+      { angle: Math.PI, speed: -0.0012, size: 12, color: [240, 199, 94] as [number, number, number], opacity: 0.4 },
+    ];
+
+    // Impulse state for each trace
+    const impulses = TRACES.map((_, i) => ({
+      position: Math.random(), // 0-1 along trace
+      speed: 0.12 + Math.random() * 0.06, // units per second, slower
+      phase: i * 0.8,
+    }));
+
     let time = 0;
 
     const animate = () => {
@@ -89,92 +105,148 @@ export function HeroEffects() {
 
       const cx = w / 2;
       const cy = h / 2;
-      const baseRadius = Math.min(w, h) * 0.5;
 
-      // Draw glow spots along flower of life circles
-      for (const spot of allSpots) {
-        spot.angle += spot.speed;
+      // Estimate displayed image size to match flower geometry
+      const imageH = Math.min(h * 0.72, 650);
+      const flowerDiameter = imageH * 0.6;
+      const R = flowerDiameter / 4.3;
+      const outerR = R * 2.15;
 
-        const x = cx + Math.cos(spot.angle) * spot.radius * baseRadius;
-        const y = cy + Math.sin(spot.angle) * spot.radius * baseRadius * 0.76; // account for image aspect ratio
+      const circles = buildFlowerCircles(R);
 
-        const flicker = 0.7 + Math.sin(time * 1.5 + spot.angle * 3) * 0.3;
-        const alpha = spot.opacity * flicker;
-        const [r, g, b] = spot.color;
+      // ── CW glows along flower circles ──
+      for (const glow of cwGlows) {
+        glow.angle += glow.speed;
+        const circle = circles[glow.circleIdx];
 
-        // Core bright spot
-        const grad = ctx.createRadialGradient(x, y, 0, x, y, spot.size);
+        const x = cx + circle.cx + R * Math.cos(glow.angle);
+        const y = cy + circle.cy + R * Math.sin(glow.angle);
+
+        const flicker = 0.75 + Math.sin(time * 1.2 + glow.angle * 2) * 0.25;
+        const alpha = glow.opacity * flicker;
+        const [r, g, b] = glow.color;
+
+        // Bright core
+        const grad = ctx.createRadialGradient(x, y, 0, x, y, glow.size);
         grad.addColorStop(0, `rgba(${r},${g},${b},${alpha})`);
-        grad.addColorStop(0.4, `rgba(${r},${g},${b},${alpha * 0.5})`);
+        grad.addColorStop(0.5, `rgba(${r},${g},${b},${alpha * 0.4})`);
         grad.addColorStop(1, `rgba(${r},${g},${b},0)`);
         ctx.fillStyle = grad;
-        ctx.fillRect(x - spot.size, y - spot.size, spot.size * 2, spot.size * 2);
+        ctx.fillRect(x - glow.size, y - glow.size, glow.size * 2, glow.size * 2);
 
-        // Outer soft glow
-        const glowSize = spot.size * 3;
-        const glow = ctx.createRadialGradient(x, y, 0, x, y, glowSize);
-        glow.addColorStop(0, `rgba(${r},${g},${b},${alpha * 0.15})`);
-        glow.addColorStop(1, `rgba(${r},${g},${b},0)`);
-        ctx.fillStyle = glow;
-        ctx.fillRect(x - glowSize, y - glowSize, glowSize * 2, glowSize * 2);
+        // Soft halo
+        const haloSize = glow.size * 3;
+        const halo = ctx.createRadialGradient(x, y, 0, x, y, haloSize);
+        halo.addColorStop(0, `rgba(${r},${g},${b},${alpha * 0.12})`);
+        halo.addColorStop(1, `rgba(${r},${g},${b},0)`);
+        ctx.fillStyle = halo;
+        ctx.fillRect(x - haloSize, y - haloSize, haloSize * 2, haloSize * 2);
       }
 
-      // Draw neural connections and dots in brain area
-      const brainScale = baseRadius * 0.8;
+      // ── CCW glows along outer ring ──
+      for (const glow of outerGlows) {
+        glow.angle += glow.speed;
 
-      // Connections (thin lines with traveling pulses)
-      ctx.lineWidth = 0.8;
-      for (const dot of neuralDots) {
-        const dx = cx + dot.x * brainScale;
-        const dy = cy + dot.y * brainScale * 0.76;
+        const x = cx + outerR * Math.cos(glow.angle);
+        const y = cy + outerR * Math.sin(glow.angle);
 
-        for (const ci of dot.connections) {
-          const target = neuralDots[ci];
-          const tx = cx + target.x * brainScale;
-          const ty = cy + target.y * brainScale * 0.76;
+        const flicker = 0.8 + Math.sin(time * 0.8 + glow.angle) * 0.2;
+        const alpha = glow.opacity * flicker;
+        const [r, g, b] = glow.color;
 
-          // Pulse along connection
-          const pulsePos = (Math.sin(time * dot.speed + dot.phase) + 1) / 2;
-          const px = dx + (tx - dx) * pulsePos;
-          const py = dy + (ty - dy) * pulsePos;
+        // Core
+        const grad = ctx.createRadialGradient(x, y, 0, x, y, glow.size);
+        grad.addColorStop(0, `rgba(${r},${g},${b},${alpha})`);
+        grad.addColorStop(0.5, `rgba(${r},${g},${b},${alpha * 0.35})`);
+        grad.addColorStop(1, `rgba(${r},${g},${b},0)`);
+        ctx.fillStyle = grad;
+        ctx.fillRect(x - glow.size, y - glow.size, glow.size * 2, glow.size * 2);
 
-          // Line
-          const lineAlpha = 0.08 + Math.sin(time * 0.5 + dot.phase) * 0.04;
-          ctx.strokeStyle = `rgba(180, 200, 255, ${lineAlpha})`;
-          ctx.beginPath();
-          ctx.moveTo(dx, dy);
-          ctx.lineTo(tx, ty);
-          ctx.stroke();
+        // Halo
+        const haloSize = glow.size * 3.5;
+        const halo = ctx.createRadialGradient(x, y, 0, x, y, haloSize);
+        halo.addColorStop(0, `rgba(${r},${g},${b},${alpha * 0.1})`);
+        halo.addColorStop(1, `rgba(${r},${g},${b},0)`);
+        ctx.fillStyle = halo;
+        ctx.fillRect(x - haloSize, y - haloSize, haloSize * 2, haloSize * 2);
+      }
 
-          // Traveling pulse dot
-          const pulseAlpha = 0.4 + Math.sin(time * 2 + dot.phase) * 0.3;
-          const pulseGrad = ctx.createRadialGradient(px, py, 0, px, py, 4);
-          pulseGrad.addColorStop(0, `rgba(200, 220, 255, ${pulseAlpha})`);
-          pulseGrad.addColorStop(1, "rgba(200, 220, 255, 0)");
-          ctx.fillStyle = pulseGrad;
-          ctx.fillRect(px - 4, py - 4, 8, 8);
+      // ── BRAIN NEURAL TRACES + IMPULSES ──
+      const brainScale = R * 1.8; // brain area scale
+
+      for (let ti = 0; ti < TRACES.length; ti++) {
+        const trace = TRACES[ti];
+        const imp = impulses[ti];
+        const pts = trace.points;
+
+        // Calculate total trace length
+        let totalLen = 0;
+        const segLens: number[] = [];
+        for (let i = 0; i < pts.length - 1; i++) {
+          const dx = (pts[i + 1][0] - pts[i][0]) * brainScale;
+          const dy = (pts[i + 1][1] - pts[i][1]) * brainScale;
+          const len = Math.sqrt(dx * dx + dy * dy);
+          segLens.push(len);
+          totalLen += len;
         }
-      }
 
-      // Neural dots (nodes)
-      for (const dot of neuralDots) {
-        const dx = cx + dot.x * brainScale;
-        const dy = cy + dot.y * brainScale * 0.76;
+        // Advance impulse position
+        imp.position += (imp.speed * 0.016) / Math.max(totalLen / brainScale, 0.01);
+        if (imp.position > 1) imp.position -= 1;
 
-        const pulse = 0.3 + Math.sin(time * dot.speed * 2 + dot.phase) * 0.4;
-        const brightPulse = Math.max(0, Math.sin(time * dot.speed * 3 + dot.phase));
-        const alpha = pulse + brightPulse * 0.5;
+        // Draw trace lines (subtle)
+        const isLeft = trace.side === "left";
+        const lineColor = isLeft ? "rgba(160, 140, 240, 0.06)" : "rgba(220, 190, 100, 0.06)";
 
-        // Determine color based on x position (left=purple, right=gold)
-        const isLeft = dot.x < 0;
-        const [r, g, b] = isLeft ? [160, 140, 240] : [220, 190, 100];
+        ctx.strokeStyle = lineColor;
+        ctx.lineWidth = 0.8;
+        ctx.beginPath();
+        for (let i = 0; i < pts.length; i++) {
+          const px = cx + pts[i][0] * brainScale;
+          const py = cy + pts[i][1] * brainScale;
+          if (i === 0) ctx.moveTo(px, py);
+          else ctx.lineTo(px, py);
+        }
+        ctx.stroke();
 
-        const grad = ctx.createRadialGradient(dx, dy, 0, dx, dy, dot.size * 2);
-        grad.addColorStop(0, `rgba(255, 255, 255, ${Math.min(alpha, 0.9)})`);
-        grad.addColorStop(0.3, `rgba(${r},${g},${b},${alpha * 0.6})`);
-        grad.addColorStop(1, `rgba(${r},${g},${b},0)`);
-        ctx.fillStyle = grad;
-        ctx.fillRect(dx - dot.size * 2, dy - dot.size * 2, dot.size * 4, dot.size * 4);
+        // Find impulse position on trace
+        let distAlongTrace = imp.position * totalLen;
+        let impulseX = cx + pts[0][0] * brainScale;
+        let impulseY = cy + pts[0][1] * brainScale;
+
+        for (let i = 0; i < segLens.length; i++) {
+          if (distAlongTrace <= segLens[i]) {
+            const t = distAlongTrace / segLens[i];
+            impulseX = cx + (pts[i][0] + (pts[i + 1][0] - pts[i][0]) * t) * brainScale;
+            impulseY = cy + (pts[i][1] + (pts[i + 1][1] - pts[i][1]) * t) * brainScale;
+            break;
+          }
+          distAlongTrace -= segLens[i];
+        }
+
+        // Draw impulse dot
+        const [ir, ig, ib] = isLeft ? [180, 160, 255] : [240, 210, 120];
+        const pulseAlpha = 0.5 + Math.sin(time * 3 + imp.phase) * 0.2;
+
+        const impGrad = ctx.createRadialGradient(impulseX, impulseY, 0, impulseX, impulseY, 5);
+        impGrad.addColorStop(0, `rgba(255, 255, 255, ${pulseAlpha * 0.8})`);
+        impGrad.addColorStop(0.3, `rgba(${ir},${ig},${ib},${pulseAlpha * 0.6})`);
+        impGrad.addColorStop(1, `rgba(${ir},${ig},${ib},0)`);
+        ctx.fillStyle = impGrad;
+        ctx.fillRect(impulseX - 5, impulseY - 5, 10, 10);
+
+        // Draw trace nodes at each point
+        for (let i = 0; i < pts.length; i++) {
+          const nx = cx + pts[i][0] * brainScale;
+          const ny = cy + pts[i][1] * brainScale;
+          const nodePulse = 0.15 + Math.sin(time * 1.5 + i * 2 + imp.phase) * 0.1;
+
+          const nodeGrad = ctx.createRadialGradient(nx, ny, 0, nx, ny, 3);
+          nodeGrad.addColorStop(0, `rgba(${ir},${ig},${ib},${nodePulse})`);
+          nodeGrad.addColorStop(1, `rgba(${ir},${ig},${ib},0)`);
+          ctx.fillStyle = nodeGrad;
+          ctx.fillRect(nx - 3, ny - 3, 6, 6);
+        }
       }
 
       animRef.current = requestAnimationFrame(animate);
