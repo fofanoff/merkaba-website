@@ -64,16 +64,17 @@ export function HeroSection({
       {/* ===== BOTTOM FADE ===== */}
       <div className="absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-t from-[#0B0E1A] to-transparent z-[3]" />
 
-      {/* ===== CONTENT ===== */}
-      <div className="relative z-[5] max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
-
-        {/* Definition - close to header/logo, one line */}
-        {dict.hero.definition && (
-          <p className="page-intro hero-description text-text-muted text-xs mb-8 whitespace-nowrap overflow-hidden text-ellipsis">
+      {/* ===== DEFINITION - pinned to top under header ===== */}
+      {dict.hero.definition && (
+        <div className="absolute top-20 md:top-24 left-0 right-0 z-[5]">
+          <p className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-text-muted text-xs whitespace-nowrap overflow-hidden text-ellipsis">
             {dict.hero.definition}
           </p>
-        )}
+        </div>
+      )}
 
+      {/* ===== CONTENT ===== */}
+      <div className="relative z-[5] max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           {/* Left: Text */}
           <div>
@@ -154,17 +155,19 @@ export function HeroSection({
 
           {/* Right: Badge + Terminal card */}
           <div className="hidden lg:block">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.3 }}
-              className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-accent-indigo/30 bg-accent-indigo/5 backdrop-blur-sm mb-6"
-            >
-              <span className="w-2 h-2 rounded-full bg-accent-indigo animate-pulse" />
-              <span className="text-accent-indigo text-sm font-medium font-mono">
-                Generative Engine Optimization
-              </span>
-            </motion.div>
+            <div className="flex justify-end mb-4">
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.3 }}
+                className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-accent-indigo/30 bg-accent-indigo/5 backdrop-blur-sm"
+              >
+                <span className="w-2 h-2 rounded-full bg-accent-indigo animate-pulse" />
+                <span className="text-accent-indigo text-sm font-medium font-mono">
+                  Generative Engine Optimization
+                </span>
+              </motion.div>
+            </div>
             <motion.div
               initial={{ opacity: 0, scale: 0.95 }}
               animate={{ opacity: 1, scale: 1 }}
