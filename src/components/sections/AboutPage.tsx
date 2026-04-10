@@ -66,28 +66,8 @@ export function AboutPage({
         </div>
       </section>
 
-      {/* ===== OUR STORY ===== */}
-      <section className="py-20 md:py-28 bg-bg-secondary/50">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <FadeIn>
-            <h2 className="text-3xl md:text-4xl font-heading font-bold mb-10">
-              {a.story_title}
-            </h2>
-          </FadeIn>
-          <div className="space-y-6">
-            {a.story_text.map((paragraph: string, i: number) => (
-              <FadeIn key={i} delay={i * 0.1}>
-                <p className="text-text-secondary text-lg leading-relaxed">
-                  {paragraph}
-                </p>
-              </FadeIn>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* ===== PHILOSOPHY ===== */}
-      <section className="py-20 md:py-28 relative overflow-hidden">
+      <section className="py-20 md:py-28 bg-bg-secondary/50 relative overflow-hidden">
         <div className="absolute top-1/2 right-0 translate-x-1/3 -translate-y-1/2 pointer-events-none">
           <FlowerOfLife size={500} opacity={0.03} color="#9B59B6" />
         </div>
@@ -100,6 +80,26 @@ export function AboutPage({
           </FadeIn>
           <div className="space-y-6">
             {a.philosophy_text.map((paragraph: string, i: number) => (
+              <FadeIn key={i} delay={i * 0.1}>
+                <p className="text-text-secondary text-lg leading-relaxed">
+                  {paragraph}
+                </p>
+              </FadeIn>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ===== OUR STORY ===== */}
+      <section className="py-20 md:py-28">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <FadeIn>
+            <h2 className="text-3xl md:text-4xl font-heading font-bold mb-10">
+              {a.story_title}
+            </h2>
+          </FadeIn>
+          <div className="space-y-6">
+            {a.story_text.map((paragraph: string, i: number) => (
               <FadeIn key={i} delay={i * 0.1}>
                 <p className="text-text-secondary text-lg leading-relaxed">
                   {paragraph}
@@ -150,6 +150,14 @@ export function AboutPage({
               {a.team_title}
             </h2>
           </FadeIn>
+
+          {a.team_intro && (
+            <FadeIn>
+              <p className="text-text-secondary text-lg leading-relaxed text-center max-w-3xl mx-auto mb-12">
+                {a.team_intro}
+              </p>
+            </FadeIn>
+          )}
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center">
             {a.team?.map(

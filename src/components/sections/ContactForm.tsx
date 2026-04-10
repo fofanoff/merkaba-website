@@ -210,12 +210,12 @@ export function ContactForm({ dict }: { dict: any }) {
                   <div>
                     <p className="text-text-muted text-xs mb-1">{t.whatsapp_label}</p>
                     <a
-                      href="https://wa.me/905551234567"
+                      href="https://wa.me/996700555785"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-text-primary text-sm hover:text-success transition-colors"
                     >
-                      +90 555 123 45 67
+                      +996 700 555 785
                     </a>
                   </div>
                 </div>
@@ -230,12 +230,12 @@ export function ContactForm({ dict }: { dict: any }) {
                   <div>
                     <p className="text-text-muted text-xs mb-1">{t.telegram_label}</p>
                     <a
-                      href="https://t.me/merkaba_digital"
+                      href="https://t.me/merkaba_vip"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-text-primary text-sm hover:text-accent-blue transition-colors"
                     >
-                      @merkaba_digital
+                      @merkaba_vip
                     </a>
                   </div>
                 </div>

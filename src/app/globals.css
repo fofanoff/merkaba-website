@@ -32,6 +32,13 @@ body {
   font-family: var(--font-body);
 }
 
+/* Prevent ugly word breaks at hyphens */
+h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+  word-break: keep-all;
+  hyphens: none;
+}
+
 /* Gradient brand button */
 .btn-gradient {
   background: linear-gradient(135deg, #E879A8, #9B59B6, #6366F1, #3B82F6);

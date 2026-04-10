@@ -16,7 +16,7 @@
   "pricing": { "title": "Collaboration Programs", "launch_name": "LAUNCH", "launch_price": "$5,000", "launch_type": "one-time audit", "launch_features": ["AI Visibility Audit", "Competitive Analysis", "Entity Authority Map", "90-day Action Plan", "Results Presentation"], "launch_cta": "Order Audit", "growth_name": "GROWTH", "growth_price": "from $8,500", "growth_type": "/mo - min. 6 mo.", "growth_badge": "Recommended", "growth_features": ["Everything from LAUNCH +", "Full Content Optimization", "Structured Data Implementation", "AI Visibility Dashboard", "Monthly Strategy Sessions", "Reputation Guard"], "growth_cta": "Start Growing", "dominance_name": "DOMINANCE", "dominance_price": "from $15,000", "dominance_type": "/mo - min. 12 mo.", "dominance_features": ["Everything from GROWTH +", "AI-first Content Production", "Multi-platform Optimization", "Dedicated Strategist", "24/7 Priority Support", "Early Access to Updates"], "dominance_cta": "Discuss Program" },
   "closing": { "title": "Your competitors are already investing in GEO", "subtitle": "Every day without AI optimization means clients that AI directs to others", "cta": "Get a Free AI Audit" },
   "services": { "hero_title": "SEO attracts clicks. GEO attracts recommendations", "comparison": { "seo_title": "Traditional SEO", "geo_title": "Generative Engine Optimization", "rows": [["Fighting for Google positions", "AI cites your brand"], ["Click dependency", "Recommendation as a source"], ["Declining CTR", "Sustainable organic traffic"], ["Constant algorithm chasing", "Fundamental visibility"]] }, "methodology_title": "Our Methodology", "pillars": [{"number": "01", "title": "AI Visibility Audit", "items": ["Full analysis in ChatGPT, Gemini, Perplexity, Claude, Copilot", "100+ queries in multiple languages", "Competitive landscape map", "Citation Score and Sentiment Analysis", "Timeline: 5-7 business days"]}, {"number": "02", "title": "Entity Authority Building", "items": ["Structured Data (Schema.org)", "Knowledge Graph optimization", "Authoritative backlinks strategy", "Profiles on AI-cited platforms", "Wikipedia/Wikidata presence"]}, {"number": "03", "title": "Content Engineering", "items": ["AI-optimized pages and FAQ", "Expert content for key queries", "Multilingual adaptation", "Content format that AI cites"]}, {"number": "04", "title": "Monitoring & Reporting", "items": ["Personal AI Visibility Dashboard", "Weekly automated monitoring", "Monthly strategy sessions", "Strategy adjustment for AI updates"]}], "packages_title": "Choose Your Program", "packages_cta": "Not sure which package? Start with a free AI audit", "definition": "Generative Engine Optimization (GEO) is the optimization of content and digital brand presence for citation in AI platform answers", "last_updated": "Updated: April 2026", "faq_title": "FAQ", "faq": [{"q": "What is included in the AI Visibility Audit?", "a": "A complete analysis of brand visibility across 5 AI systems with 100+ queries in multiple languages. You receive: current AI Visibility Score, competitor map, list of cited sources in your niche, and a prioritized action plan"}, {"q": "What is AI Visibility Score?", "a": "The percentage of queries in which an AI system mentions your brand. If out of 100 relevant queries ChatGPT mentions you in 15, your score is 15%. The market average is 20-25%, niche leaders reach 60-70%"}, {"q": "Why do I need Entity Building?", "a": "AI systems determine authority through \"entities\" - connected data about your brand in Knowledge Graph, Schema.org, Wikipedia, industry directories. The stronger your entity profile, the more often AI cites you"}, {"q": "What does Content Engineering include?", "a": "Optimization of existing content and creation of new content in formats that AI prefers to cite: FAQ pages, expert guides, comparison tables, term definitions. We also structure content with Schema.org markup"}, {"q": "How does the AI Visibility Dashboard work?", "a": "A personal web dashboard with real-time data. Shows: AI Visibility Score per platform, mention dynamics, competitor comparison, cited sources, recommendations. Available 24/7 via a secure link"}, {"q": "Can I start with just the audit?", "a": "Yes. The LAUNCH package ($5,000) is a one-time audit with a detailed report and action plan. You get a full picture of current AI visibility and can decide whether to continue with us or implement the recommendations yourself"}, {"q": "What if competitors already have GEO?", "a": "Less than 12% of companies have a documented GEO strategy. The probability that your competitors are already systematically optimized for AI is low. But this window of opportunity is closing: the sooner you start, the stronger your advantage"}, {"q": "Do you support multilingual GEO?", "a": "Yes. We conduct audits and optimization in four languages: EN, RU, TR, AR. AI systems give different answers in different languages, so a multilingual strategy is critically important for international businesses"}] },
-  "contact": { "last_updated": "Updated: April 2026", "hero_title": "Ready to become visible to AI?", "hero_subtitle": "Leave a request - we'll conduct a free AI audit of your business within 48 hours", "form": { "name": "Name", "company": "Company", "website": "Website", "email": "Email", "phone": "Phone / WhatsApp", "industry": "Industry", "language": "Preferred language", "comment": "Comment", "submit": "Request Free Audit", "success": "Thank you! We'll contact you within 24 hours.", "error": "An error occurred. Try again or contact us directly." }, "industries": ["Real Estate & Construction", "Healthcare & Medical Tourism", "Financial Services", "E-commerce", "Tourism & Hospitality", "Professional Services", "SaaS & Technology", "Other"], "languages": ["Русский", "English", "Türkçe", "العربية"], "direct_title": "Or contact us directly", "email_label": "Email", "email_value": "info@merkaba.vip", "whatsapp_label": "WhatsApp", "telegram_label": "Telegram", "faq_title": "FAQ", "faq": [{"q": "What's included in the free audit?", "a": "Express analysis of your brand's visibility across 3 main AI systems (ChatGPT, Gemini, Perplexity) for 10 key queries. You'll receive a report with current status and recommendations"}, {"q": "How long does it take?", "a": "The free audit is ready within 48 hours of receiving your request. A full AI Visibility Audit takes 5-7 business days"}, {"q": "What do I need to get started?", "a": "Just your website URL and company name. We'll find and analyze everything else on our own"}] },
+  "contact": { "last_updated": "Updated: April 2026", "hero_title": "Ready to become visible to AI?", "hero_subtitle": "Leave a request - we'll conduct a free AI audit of your business within 48 hours", "form": { "name": "Name", "company": "Company", "website": "Website", "email": "Email", "phone": "Phone / WhatsApp", "industry": "Industry", "language": "Preferred language", "comment": "Comment", "submit": "Request Free Audit", "success": "Thank you! We'll contact you within 24 hours.", "error": "An error occurred. Try again or contact us directly." }, "industries": ["Real Estate & Construction", "Healthcare & Medical Tourism", "Financial Services", "E-commerce", "Tourism & Hospitality", "Professional Services", "SaaS & Technology", "Other"], "languages": ["Русский", "English", "Türkçe", "العربية"], "direct_title": "Or contact us directly", "email_label": "Email", "email_value": "merkaba.vip@gmail.com", "whatsapp_label": "WhatsApp", "telegram_label": "Telegram", "faq_title": "FAQ", "faq": [{"q": "What's included in the free audit?", "a": "Express analysis of your brand's visibility across 3 main AI systems (ChatGPT, Gemini, Perplexity) for 10 key queries. You'll receive a report with current status and recommendations"}, {"q": "How long does it take?", "a": "The free audit is ready within 48 hours of receiving your request. A full AI Visibility Audit takes 5-7 business days"}, {"q": "What do I need to get started?", "a": "Just your website URL and company name. We'll find and analyze everything else on our own"}] },
   "partners": { "hero_badge": "FOUNDING PARTNERS PROGRAM", "hero_spots_left": "Only", "hero_spots_of": "spots left out of", "hero_spots_total": 20, "hero_spots_taken": 6, "hero_title": "Earn from the AI revolution", "hero_subtitle": "Become one of 20 Founding Partners of Merkaba Digital. Lifetime recurring from every referred client. Limited enrollment", "models_title": "Two reward models", "cash_title": "10% commission", "cash_label": "Cash", "cash_desc": "Receive 10% of every contract from your referred client directly to your account", "cash_example": "Client on GROWTH ($8,500/mo) = $850/mo for you, as long as they pay", "balance_badge": "x2 value", "balance_title": "20% to your balance", "balance_label": "Balance", "balance_recommended": "Recommended", "balance_desc": "Direct your reward to promote your own business and get double the rate", "balance_example": "Client on GROWTH ($8,500/mo) = $1,700/mo to your GEO balance", "balance_note": "Use for your own AI promotion", "steps_title": "How it works", "step1_title": "Register", "step1_desc": "Fill out the form, get your referral link", "step2_title": "Recommend", "step2_desc": "Tell your contacts or share the link", "step3_title": "Connect", "step3_desc": "Your contact becomes a client", "step4_title": "Earn", "step4_desc": "10% to your account or 20% to your balance", "calc_title": "Calculate your income", "calc_clients": "How many clients will you refer?", "calc_package": "Package", "calc_mode": "Model", "calc_monthly": "Your income", "calc_yearly": "per year", "calc_per_month": "/mo", "audience_title": "Who is this for", "audience1_title": "Business owners", "audience1_desc": "Partners and contacts who need AI visibility", "audience2_title": "Marketing agencies", "audience2_desc": "Add GEO to your service portfolio", "audience3_title": "Consultants and coaches", "audience3_desc": "A concrete tool to recommend", "audience4_title": "Digital specialists", "audience4_desc": "SEO, SMM, PR: GEO is the next step for your clients", "terms_title": "Founding Partners terms", "terms_badge": "Exclusive for the first 20 partners", "terms_items": ["Program is limited to 20 participants", "Founding Partners receive lifetime recurring - as long as the client pays", "Reward is credited after client payment", "10% cash is paid monthly", "20% balance is credited automatically for any Merkaba Digital package", "No minimum payout threshold", "No limit on the number of referred clients", "After enrollment closes, terms will be revised"], "terms_highlight": "Lifetime recurring", "cta_title": "Claim your spot among Founding Partners", "cta_subtitle": "14 spots left. After enrollment closes, these terms will never be offered again", "form_name": "Name", "form_email": "Email", "form_messenger": "WhatsApp / Telegram", "form_plan": "How do you plan to attract clients?", "form_submit": "Become a Founding Partner", "form_note": "We'll reach out within 24 hours with your personal referral link", "form_success": "Thank you! We'll contact you shortly." },
   "terminal": { "title": "ai-visibility-check", "command_prefix": "merkaba scan --brand", "brand_name": "Your Business", "scanning": "Scanning 5 AI platforms...", "not_found": "Not found", "mentioned_once": "Mentioned once", "score_label": "AI Visibility Score", "conclusion": "AI doesn't know your brand. We can fix that" },
   "cases": {
@@ -29,52 +29,154 @@
       { "value": "80%", "label": "of users trust AI summaries and use them for 40%+ of their queries" },
       { "value": "15-25%", "label": "drop in traditional traffic for companies not optimized for AI" }
     ],
-    "case_badge": "Case Study",
-    "case_title": "Construction company, Mediterranean coast of Turkey",
-    "case_subtitle": "How a developer with 30 years of history became visible to AI in 4 months",
-    "case_problem": "A company with an impeccable reputation and 20+ completed projects virtually did not exist in the AI space. Potential property buyers from Russia, Europe and the Gulf countries asked ChatGPT and Gemini about the best developers in the region - and received recommendations for competitors. Meanwhile, the company's website held strong positions in Google.",
-    "case_steps": [
+    "problem_label": "Problem",
+    "case_tabs": ["Real Estate", "Dentistry", "Hair Transplant"],
+    "case_studies": [
       {
-        "title": "AI Visibility Audit",
-        "items": [
-          "Checked 35 queries in 3 languages (EN, RU, TR) across 4 AI systems",
-          "Found: the brand was mentioned in only 5% of queries",
-          "Competitors were mentioned 3x more often"
-        ]
+        "badge": "Case Study",
+        "title": "Construction company, Mediterranean coast of Turkey",
+        "subtitle": "How a developer with 30 years of history became visible to AI in 4 months",
+        "problem": "A company with an impeccable reputation and 20+ completed projects virtually did not exist in the AI space. Potential property buyers from Russia, Europe and the Gulf countries asked ChatGPT and Gemini about the best developers in the region - and received recommendations for competitors. Meanwhile, the company's website held strong positions in Google.",
+        "steps": [
+          {
+            "title": "AI Visibility Audit",
+            "items": [
+              "Checked 35 queries in 3 languages (EN, RU, TR) across 4 AI systems",
+              "Found: the brand was mentioned in only 5% of queries",
+              "Competitors were mentioned 3x more often"
+            ]
+          },
+          {
+            "title": "Entity Authority Building",
+            "items": [
+              "Implemented Schema.org RealEstateListing for all projects",
+              "Strengthened presence on platforms that AI cites",
+              "Optimized Google Business Profile"
+            ]
+          },
+          {
+            "title": "Content Engineering",
+            "items": [
+              "Created an expert content hub in 3 languages",
+              "Launched FAQ sections structured for AI citation",
+              "Published a series of guides for foreign buyers"
+            ]
+          },
+          {
+            "title": "Monitoring & Optimization",
+            "items": [
+              "Launched AI Visibility Dashboard",
+              "Weekly tracking across all queries",
+              "Strategy adjustment every 2 weeks"
+            ]
+          }
+        ],
+        "results": [
+          { "metric": "AI Visibility Score", "before": "5%", "after": "47%", "growth": "+840%" },
+          { "metric": "Brand mentions in AI", "before": "12/mo", "after": "89/mo", "growth": "+642%" },
+          { "metric": "First position queries", "before": "2", "after": "23", "growth": "+1050%" },
+          { "metric": "Inbound leads via AI", "before": "0", "after": "34/mo", "growth": "-" }
+        ],
+        "quote": "We didn't understand why, with strong Google positions, potential clients using ChatGPT were going to competitors. Merkaba Digital didn't just show us the problem - they solved it systematically. In 4 months, our brand became the first thing AI recommends in our region",
+        "quote_author": "Director of Business Development"
       },
       {
-        "title": "Entity Authority Building",
-        "items": [
-          "Implemented Schema.org RealEstateListing for all projects",
-          "Strengthened presence on platforms that AI cites",
-          "Optimized Google Business Profile"
-        ]
+        "badge": "Case Study",
+        "title": "Luxury dental clinic, Beirut, Lebanon",
+        "subtitle": "How a premium clinic for veneers and implants became the number one AI recommendation for Gulf patients",
+        "problem": "A premium dental clinic specializing in veneers, implants and cosmetic dentistry. Strong offline reputation, patients from Gulf countries - UAE, Saudi Arabia, Kuwait. But when wealthy Gulf patients started asking ChatGPT and Gemini \"best dental clinic for veneers in Lebanon\" or \"luxury dental implants Middle East\" - competitors appeared. The clinic was invisible to AI despite excellent Google presence.",
+        "steps": [
+          {
+            "title": "AI Visibility Audit",
+            "items": [
+              "Checked 40 queries in EN/AR across 4 AI systems",
+              "Brand was mentioned in only 8% of queries",
+              "Competitors dominated all AI answers"
+            ]
+          },
+          {
+            "title": "Entity Building",
+            "items": [
+              "Implemented Schema.org DentalClinic",
+              "Enhanced Google Business Profile",
+              "Created profiles on medical tourism platforms that AI cites"
+            ]
+          },
+          {
+            "title": "Content Engineering",
+            "items": [
+              "Created multilingual FAQ hub in EN/AR",
+              "Before/after case library optimized for AI citation",
+              "Medical expertise content to boost authority"
+            ]
+          },
+          {
+            "title": "Monitoring & Optimization",
+            "items": [
+              "Launched AI Visibility Dashboard",
+              "Weekly position tracking",
+              "Bi-weekly strategy adjustment"
+            ]
+          }
+        ],
+        "results": [
+          { "metric": "AI Visibility Score", "before": "3%", "after": "52%", "growth": "+1633%" },
+          { "metric": "Brand mentions in AI", "before": "8/mo", "after": "94/mo", "growth": "+1075%" },
+          { "metric": "First position queries", "before": "1", "after": "19", "growth": "+1800%" },
+          { "metric": "Inbound leads via AI", "before": "0", "after": "28/mo", "growth": "-" }
+        ],
+        "quote": "Our patients from the UAE and Saudi Arabia now find us through ChatGPT. This has transformed the entire flow of international patients",
+        "quote_author": "Marketing Director"
       },
       {
-        "title": "Content Engineering",
-        "items": [
-          "Created an expert content hub in 3 languages",
-          "Launched FAQ sections structured for AI citation",
-          "Published a series of guides for foreign buyers"
-        ]
-      },
-      {
-        "title": "Monitoring & Optimization",
-        "items": [
-          "Launched AI Visibility Dashboard",
-          "Weekly tracking across all queries",
-          "Strategy adjustment every 2 weeks"
-        ]
+        "badge": "Case Study",
+        "title": "Hair transplant clinic, Istanbul, Turkey",
+        "subtitle": "How an Istanbul clinic outperformed hundreds of competitors in AI recommendations in 3 months",
+        "problem": "Istanbul has 500+ hair transplant clinics competing for medical tourism patients. This clinic had excellent results and competitive pricing but was lost in the crowd. When potential patients from Europe, UK and Gulf countries asked AI \"best hair transplant clinic Istanbul\" - they got recommendations for only 3-4 big-name competitors. The clinic existed in Google but was completely invisible to AI systems.",
+        "steps": [
+          {
+            "title": "AI Visibility Audit",
+            "items": [
+              "Checked 50 queries in EN/RU/AR/DE across 4 AI systems",
+              "Brand found in only 2% of queries",
+              "5 competitors dominated all AI answers"
+            ]
+          },
+          {
+            "title": "Entity Building",
+            "items": [
+              "Implemented Schema.org MedicalClinic + MedicalProcedure for FUE/DHI",
+              "Profiles on medical tourism platforms",
+              "Citation strategy through authoritative sources"
+            ]
+          },
+          {
+            "title": "Content Engineering",
+            "items": [
+              "Procedure comparison guides optimized for AI",
+              "Patient journey content in 4 languages",
+              "Medical FAQ with Schema markup"
+            ]
+          },
+          {
+            "title": "Monitoring & Optimization",
+            "items": [
+              "Real-time dashboard",
+              "Competitor tracking",
+              "Weekly optimization cycles"
+            ]
+          }
+        ],
+        "results": [
+          { "metric": "AI Visibility Score", "before": "2%", "after": "58%", "growth": "+2800%" },
+          { "metric": "Brand mentions in AI", "before": "5/mo", "after": "112/mo", "growth": "+2140%" },
+          { "metric": "First position queries", "before": "0", "after": "27", "growth": "-" },
+          { "metric": "Inbound leads via AI", "before": "0", "after": "45/mo", "growth": "-" }
+        ],
+        "quote": "Istanbul has 500+ clinics. Patients used to find us only through ads. Now ChatGPT and Gemini recommend us directly - it's the highest quality acquisition channel",
+        "quote_author": "Clinic Founder"
       }
     ],
-    "case_results": [
-      { "metric": "AI Visibility Score", "before": "5%", "after": "47%", "growth": "+840%" },
-      { "metric": "Brand mentions in AI", "before": "12/mo", "after": "89/mo", "growth": "+642%" },
-      { "metric": "First position queries", "before": "2", "after": "23", "growth": "+1050%" },
-      { "metric": "Inbound leads via AI", "before": "0", "after": "34/mo", "growth": "-" }
-    ],
-    "case_quote": "We didn't understand why, with strong Google positions, potential clients using ChatGPT were going to competitors. Merkaba Digital didn't just show us the problem - they solved it systematically. In 4 months, our brand became the first thing AI recommends in our region",
-    "case_quote_author": "Director of Business Development",
     "industries_title": "Average results for our clients over 6 months",
     "industries": [
       { "name": "Real Estate & Construction", "visibility": "+380%", "mentions": "x7", "timeline": "6-8 weeks" },
@@ -130,7 +232,8 @@
     "philosophy_text": [
       "Our name is not random. Merkaba in sacred geometry is the Flower of Life, a structure from which all forms of the Universe unfold. Two counter-flowing streams of energy, creating balance and harmony.",
       "We see the same structure in the world of AI. Behind every ChatGPT response lies invisible geometry: knowledge graphs, source authority, semantic connections. Most businesses see only the surface - the text of the response. We see the architecture that formed it.",
-      "By combining analytical thinking with intuitive understanding of systems, we create strategies that work not against AI, but in harmony with it."
+      "By combining analytical thinking with intuitive understanding of systems, we create strategies that work not against AI, but in harmony with it.",
+      "Just as the Flower of Life unites dualities, Turkey unites East and West. We are at the center of the continent, at the heart of the world - connecting everyone. This is not just geography, it is the philosophy behind our global approach"
     ],
     "advantages_title": "What sets us apart",
     "advantages": [
@@ -152,6 +255,7 @@
       }
     ],
     "team_title": "Team",
+    "team_intro": "Over 20 years in marketing and strategy. Our team has worked globally, opening regions like the Persian Gulf countries, Turkey and the entire MENA (Middle East and North Africa) for businesses. No geographic or language limitations - we promote any product in any niche, anywhere in the world",
     "team": [
       {
         "name": "Costa",
@@ -163,7 +267,7 @@
     ],
     "numbers": [
       { "value": "15+", "label": "years in digital marketing and strategy" },
-      { "value": "5", "label": "AI systems under constant monitoring" },
+      { "value": "5+", "label": "AI systems monitored - and growing" },
       { "value": "100+", "label": "queries in every audit" },
       { "value": "4", "label": "languages supported (EN, RU, TR, AR)" }
     ],
@@ -209,7 +313,10 @@
     "subtitle": "Expert articles on GEO, AI visibility and optimization strategies for AI systems",
     "read_more": "Read",
     "nav_label": "Blog",
-    "back_to_blog": "Back to blog"
+    "back_to_blog": "Back to blog",
+    "cta_title": "Want to know your business AI visibility?",
+    "cta_subtitle": "Order a free AI audit - we'll check what AI says about your brand",
+    "cta_button": "Get free audit"
   },
   "footer": { "description": "Generative Engine Optimization Agency", "copyright": "© 2026 Merkaba Digital. All rights reserved." }
 }

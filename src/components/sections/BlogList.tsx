@@ -76,6 +76,26 @@ export function BlogList({
           </div>
         </div>
       </section>
+
+      {/* CTA */}
+      <section className="py-20 md:py-28">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <FadeIn>
+            <h2 className="text-3xl sm:text-4xl font-heading font-bold mb-4 text-text-primary">
+              {b.cta_title}
+            </h2>
+            <p className="text-lg text-text-secondary mb-8 leading-relaxed">
+              {b.cta_subtitle}
+            </p>
+            <Link
+              href={`/${locale}/contact`}
+              className="btn-gradient inline-block px-8 py-4 rounded-xl text-white font-semibold text-lg"
+            >
+              {b.cta_button}
+            </Link>
+          </FadeIn>
+        </div>
+      </section>
     </main>
   );
 }

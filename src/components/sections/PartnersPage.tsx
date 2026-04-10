@@ -65,12 +65,15 @@ export function PartnersPage({
             className="mb-10"
           >
             <div className="inline-flex flex-col items-center gap-3 px-8 py-5 rounded-2xl border border-accent-gold/20 bg-bg-card/50 backdrop-blur-sm">
-              <div className="flex items-baseline gap-2">
+              <div className="flex items-baseline gap-2 flex-wrap justify-center">
+                <span className="text-text-secondary text-lg">
+                  {p.hero_spots_left}
+                </span>
                 <span className="text-4xl sm:text-5xl md:text-6xl font-heading font-bold text-accent-gold" style={{ textShadow: "0 0 30px rgba(212,168,67,0.3)" }}>
                   {spotsLeft}
                 </span>
                 <span className="text-text-secondary text-lg">
-                  {p.hero_spots_left} {p.hero_spots_total}
+                  {p.hero_spots_of} {p.hero_spots_total}
                 </span>
               </div>
               <div className="w-full max-w-[200px] h-2 bg-white/5 rounded-full overflow-hidden">

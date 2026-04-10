@@ -1,7 +1,8 @@
 "use client";
 
+import { useState } from "react";
 import Link from "next/link";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import type { Locale } from "@/lib/i18n";
 import { FadeIn } from "@/components/ui/FadeIn";
 import { AnimatedCounter } from "@/components/ui/AnimatedCounter";
@@ -44,6 +45,9 @@ export function CasesPage({
   dict: any;
 }) {
   const c = dict.cases;
+  const [activeCase, setActiveCase] = useState(0);
+  const studies = c.case_studies || [];
+  const cs = studies[activeCase] || studies[0] || {};
 
   return (
     <main>
@@ -142,41 +146,63 @@ export function CasesPage({
         </div>
       </section>
 
-      {/* ===== CASE STUDY ===== */}
+      {/* ===== CASE STUDIES WITH TABS ===== */}
       <section className="py-20 md:py-28">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          {/* Header */}
-          <FadeIn className="mb-12">
+
+          {/* Tab switcher */}
+          {c.case_tabs && c.case_tabs.length > 1 && (
+            <FadeIn className="mb-12">
+              <div className="flex flex-wrap gap-2 justify-center">
+                {c.case_tabs.map((tab: string, i: number) => (
+                  <button
+                    key={i}
+                    onClick={() => setActiveCase(i)}
+                    className={`px-5 py-2.5 rounded-full text-sm font-medium transition-all ${
+                      activeCase === i
+                        ? "bg-accent-indigo/20 border border-accent-indigo/40 text-text-primary"
+                        : "bg-bg-surface/40 border border-white/5 text-text-muted hover:text-text-secondary hover:border-white/10"
+                    }`}
+                  >
+                    {tab}
+                  </button>
+                ))}
+              </div>
+            </FadeIn>
+          )}
+
+          {/* Case header */}
+          <FadeIn className="mb-12" key={`header-${activeCase}`}>
             <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-accent-indigo/30 bg-accent-indigo/5 text-accent-indigo text-sm font-medium mb-6">
-              {c.case_badge}
+              {cs.badge}
             </span>
             <h2 className="text-3xl md:text-4xl font-heading font-bold mb-3">
-              {c.case_title}
+              {cs.title}
             </h2>
-            <p className="text-text-secondary text-lg">{c.case_subtitle}</p>
+            <p className="text-text-secondary text-lg">{cs.subtitle}</p>
           </FadeIn>
 
           {/* Problem */}
-          <FadeIn>
-            <div className="rounded-2xl bg-bg-card/50 border border-white/5 p-8 mb-10">
+          <FadeIn key={`problem-${activeCase}`}>
+            <div className="rounded-2xl bg-bg-card/50 border border-white/5 p-6 sm:p-8 mb-10">
               <h3 className="text-xl font-heading font-bold mb-4 text-accent-pink">
-                {locale === "ar" ? "المشكلة" : locale === "tr" ? "Sorun" : locale === "en" ? "Problem" : "Проблема"}
+                {c.problem_label || "Проблема"}
               </h3>
-              <p className="text-text-secondary leading-relaxed">{c.case_problem}</p>
+              <p className="text-text-secondary leading-relaxed">{cs.problem}</p>
             </div>
           </FadeIn>
 
           {/* Steps */}
-          <div className="space-y-6 mb-10">
-            {c.case_steps.map(
+          <div className="space-y-6 mb-10" key={`steps-${activeCase}`}>
+            {cs.steps?.map(
               (step: { title: string; items: string[] }, i: number) => (
                 <FadeIn key={i} delay={i * 0.1}>
-                  <div className="rounded-2xl bg-bg-card/50 border border-white/5 p-8 relative overflow-hidden">
+                  <div className="rounded-2xl bg-bg-card/50 border border-white/5 p-6 sm:p-8 relative overflow-hidden">
                     <div
                       className="absolute top-0 left-0 w-1 h-full"
                       style={{ background: accentColors[i] }}
                     />
-                    <div className="flex flex-col md:flex-row gap-6">
+                    <div className="flex flex-col md:flex-row gap-4 md:gap-6">
                       <div className="shrink-0">
                         <span
                           className="text-5xl font-heading font-bold opacity-20"
@@ -212,9 +238,9 @@ export function CasesPage({
           </div>
 
           {/* Results */}
-          <FadeIn>
+          <FadeIn key={`results-${activeCase}`}>
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-10">
-              {c.case_results.map(
+              {cs.results?.map(
                 (
                   r: {
                     metric: string;
@@ -226,7 +252,7 @@ export function CasesPage({
                 ) => (
                   <div
                     key={i}
-                    className="rounded-2xl bg-bg-card/50 border border-white/5 p-6 text-center card-glow"
+                    className="rounded-2xl bg-bg-card/50 border border-white/5 p-4 sm:p-6 text-center card-glow"
                   >
                     <p className="text-text-muted text-xs mb-2 font-mono uppercase tracking-wider">
                       {r.metric}
@@ -235,27 +261,14 @@ export function CasesPage({
                       <span className="text-text-muted text-sm line-through">
                         {r.before}
                       </span>
-                      <svg
-                        className="w-4 h-4 text-text-muted"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M13 7l5 5m0 0l-5 5m5-5H6"
-                        />
+                      <svg className="w-4 h-4 text-text-muted" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
                       </svg>
                       <span className="text-xl font-heading font-bold text-text-primary">
                         {r.after}
                       </span>
                     </div>
-                    <span
-                      className="text-sm font-bold"
-                      style={{ color: accentColors[i] }}
-                    >
+                    <span className="text-sm font-bold" style={{ color: accentColors[i] }}>
                       {r.growth}
                     </span>
                   </div>
@@ -265,31 +278,26 @@ export function CasesPage({
           </FadeIn>
 
           {/* Quote */}
-          <FadeIn>
-            <div className="relative rounded-2xl p-8 overflow-hidden">
+          <FadeIn key={`quote-${activeCase}`}>
+            <div className="relative rounded-2xl p-6 sm:p-8 overflow-hidden">
               <div
                 className="absolute inset-0 rounded-2xl"
                 style={{
-                  background:
-                    "linear-gradient(135deg, #6366F1, #9B59B6, #6366F1)",
+                  background: "linear-gradient(135deg, #6366F1, #9B59B6, #6366F1)",
                   padding: "1px",
                 }}
               >
                 <div className="w-full h-full rounded-2xl bg-bg-card" />
               </div>
               <div className="relative z-10">
-                <svg
-                  className="w-8 h-8 text-accent-indigo/30 mb-4"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                >
+                <svg className="w-8 h-8 text-accent-indigo/30 mb-4" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10H14.017zM0 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151C7.546 6.068 5.983 8.789 5.983 11H10v10H0z" />
                 </svg>
                 <p className="text-text-secondary text-lg leading-relaxed italic mb-4">
-                  &quot;{c.case_quote}&quot;
+                  &quot;{cs.quote}&quot;
                 </p>
                 <p className="text-text-muted text-sm">
-                  - {c.case_quote_author}
+                  - {cs.quote_author}
                 </p>
               </div>
             </div>
