@@ -22,10 +22,10 @@ export function ClosingSection({
 
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
         <FadeIn>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold mb-6">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold mb-6" style={{ textWrap: "balance" }}>
             {dict.closing.title}
           </h2>
-          <p className="text-text-secondary text-lg md:text-xl mb-12 max-w-2xl mx-auto">
+          <p className="text-text-secondary text-lg md:text-xl mb-12 max-w-2xl mx-auto" style={{ textWrap: "balance" }}>
             {dict.closing.subtitle}
           </p>
           <Link
