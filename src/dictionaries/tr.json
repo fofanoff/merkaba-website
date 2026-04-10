@@ -10,5 +10,100 @@
   "contact": { "hero_title": "AI için görünür olmaya hazır mısınız?", "hero_subtitle": "Talep bırakın - 48 saat içinde ücretsiz AI denetimi yapacağız", "form": { "name": "İsim", "company": "Şirket", "website": "Web Sitesi", "email": "E-posta", "phone": "Telefon / WhatsApp", "industry": "Sektör", "language": "Tercih edilen dil", "comment": "Yorum", "submit": "Ücretsiz Denetim Talep Edin", "success": "Teşekkürler! 24 saat içinde sizinle iletişime geçeceğiz.", "error": "Bir hata oluştu." }, "industries": ["Gayrimenkul", "Sağlık", "Finans", "E-ticaret", "Turizm", "Profesyonel Hizmetler", "SaaS", "Diğer"], "languages": ["Русский", "English", "Türkçe", "العربية"], "direct_title": "Veya doğrudan iletişime geçin", "email_label": "E-posta", "email_value": "info@merkaba.vip", "whatsapp_label": "WhatsApp", "telegram_label": "Telegram", "faq_title": "SSS", "faq": [] },
   "partners": { "hero_badge": "FOUNDING PARTNERS PROGRAMI", "hero_spots_left": "Sadece", "hero_spots_of": "yer kaldı, toplam", "hero_spots_total": 20, "hero_spots_taken": 6, "hero_title": "AI devriminden kazanın", "hero_subtitle": "Merkaba Digital'in 20 Founding Partner'ından biri olun. Yönlendirdiğiniz her müşteriden ömür boyu recurring. Kayıt sınırlı", "models_title": "İki ödül modeli", "cash_title": "%10 komisyon", "cash_label": "Nakit", "cash_desc": "Yönlendirdiğiniz müşterinin her sözleşmesinden %10'unu hesabınıza alın", "cash_example": "GROWTH müşterisi ($8,500/ay) = size $850/ay, ödediği sürece", "balance_badge": "x2 değer", "balance_title": "%20 bakiyenize", "balance_label": "Bakiye", "balance_recommended": "Önerilen", "balance_desc": "Ödülünüzü kendi işinizi tanıtmak için kullanın ve çift oran kazanın", "balance_example": "GROWTH müşterisi ($8,500/ay) = GEO bakiyenize $1,700/ay", "balance_note": "Kendi AI tanıtımınız için kullanın", "steps_title": "Nasıl çalışır", "step1_title": "Kayıt", "step1_desc": "Formu doldurun, referans linkinizi alın", "step2_title": "Tavsiye", "step2_desc": "Kişilerinize anlatın veya linki paylaşın", "step3_title": "Bağlantı", "step3_desc": "Kişiniz müşteri olur", "step4_title": "Kazanç", "step4_desc": "Hesabınıza %10 veya bakiyenize %20", "calc_title": "Gelirinizi hesaplayın", "calc_clients": "Kaç müşteri yönlendireceksiniz?", "calc_package": "Paket", "calc_mode": "Model", "calc_monthly": "Geliriniz", "calc_yearly": "yıllık", "calc_per_month": "/ay", "audience_title": "Kimler için", "audience1_title": "İşletme sahipleri", "audience1_desc": "AI görünürlüğüne ihtiyaç duyan ortaklar ve kontaklar", "audience2_title": "Pazarlama ajansları", "audience2_desc": "GEO'yu hizmet portföyünüze ekleyin", "audience3_title": "Danışmanlar ve koçlar", "audience3_desc": "Önerebileceğiniz somut bir araç", "audience4_title": "Dijital uzmanlar", "audience4_desc": "SEO, SMM, PR: GEO müşterileriniz için bir sonraki adım", "terms_title": "Founding Partners koşulları", "terms_badge": "İlk 20 partner için özel", "terms_items": ["Program 20 katılımcıyla sınırlı", "Founding Partners ömür boyu recurring alır - müşteri ödediği sürece", "Ödül müşteri ödemesinden sonra aktarılır", "%10 nakit aylık ödenir", "%20 bakiye tüm Merkaba Digital paketleri için otomatik aktarılır", "Minimum ödeme eşiği yok", "Yönlendirilen müşteri sayısında sınır yok", "Kayıt kapandıktan sonra koşullar revize edilecek"], "terms_highlight": "Ömür boyu recurring", "cta_title": "Founding Partners arasındaki yerinizi alın", "cta_subtitle": "14 yer kaldı. Kayıt kapandıktan sonra bu koşullar bir daha sunulmayacak", "form_name": "İsim", "form_email": "E-posta", "form_messenger": "WhatsApp / Telegram", "form_plan": "Müşterileri nasıl çekmeyi planlıyorsunuz?", "form_submit": "Founding Partner Olun", "form_note": "24 saat içinde sizinle iletişime geçip kişisel referans linkinizi vereceğiz", "form_success": "Teşekkürler! En kısa sürede sizinle iletişime geçeceğiz." },
   "terminal": { "title": "ai-visibility-check", "command_prefix": "merkaba scan --brand", "brand_name": "İşletmeniz", "scanning": "5 AI platformu taranıyor...", "not_found": "Bulunamadı", "mentioned_once": "1 kez bahsedildi", "score_label": "AI Visibility Score", "conclusion": "AI markanızı tanımıyor. Bunu düzeltebiliriz" },
+  "cases": {
+    "hero_title": "AI'nin gördüğü sonuçlar",
+    "hero_subtitle": "Görünmez markaları önerilen kaynaklara nasıl dönüştürüyoruz",
+    "market_title": "GEO neden gelecek değil - şimdiki zaman",
+    "market_stats": [
+      { "value": "400M+", "label": "haftalık aktif ChatGPT kullanıcısı. Bu ABD nüfusundan fazla" },
+      { "value": "25-48%", "label": "Google aramalarında zaten AI tarafından oluşturulan yanıtlar var" },
+      { "value": "80%", "label": "kullanıcı AI özetlerine güveniyor ve sorgularının %40'ından fazlası için kullanıyor" },
+      { "value": "15-25%", "label": "AI için optimize edilmemiş şirketlerde geleneksel trafik düşüşü" }
+    ],
+    "case_badge": "Vaka Çalışması",
+    "case_title": "İnşaat şirketi, Türkiye'nin Akdeniz kıyısı",
+    "case_subtitle": "30 yıllık geçmişe sahip bir müteahhit 4 ayda AI için nasıl görünür hale geldi",
+    "case_problem": "Kusursuz bir itibara ve 20'den fazla tamamlanmış projeye sahip bir şirket, AI alanında neredeyse hiç var olmuyordu. Rusya, Avrupa ve Körfez ülkelerinden potansiyel gayrimenkul alıcıları ChatGPT ve Gemini'ye bölgenin en iyi müteahhitlerini sorduğunda rakiplerin önerilerini alıyordu.",
+    "case_steps": [
+      { "title": "AI Visibility Audit", "items": ["3 dilde 35 sorgu kontrol edildi", "Marka sorguların yalnızca %5'inde geçiyordu", "Rakipler 3 kat daha sık geçiyordu"] },
+      { "title": "Entity Authority Building", "items": ["Schema.org RealEstateListing uygulandı", "AI'nin alıntı yaptığı platformlarda varlık güçlendirildi", "Google Business Profile optimize edildi"] },
+      { "title": "Content Engineering", "items": ["3 dilde uzman içerik hub'ı oluşturuldu", "AI alıntısı için yapılandırılmış SSS bölümleri başlatıldı", "Yabancı alıcılar için rehber serisi yayınlandı"] },
+      { "title": "Monitoring & Optimization", "items": ["AI Visibility Dashboard başlatıldı", "Tüm sorgularda haftalık takip", "Her 2 haftada strateji düzeltmesi"] }
+    ],
+    "case_results": [
+      { "metric": "AI Visibility Score", "before": "5%", "after": "47%", "growth": "+840%" },
+      { "metric": "AI'deki marka bahsedilmeleri", "before": "12/ay", "after": "89/ay", "growth": "+642%" },
+      { "metric": "İlk pozisyon sorguları", "before": "2", "after": "23", "growth": "+1050%" },
+      { "metric": "AI üzerinden gelen talepler", "before": "0", "after": "34/ay", "growth": "-" }
+    ],
+    "case_quote": "Google'daki güçlü konumlarımıza rağmen ChatGPT kullanan potansiyel müşterilerin neden rakiplere gittiğini anlamıyorduk. Merkaba Digital sadece sorunu göstermekle kalmadı - sistematik olarak çözdü",
+    "case_quote_author": "İş Geliştirme Direktörü",
+    "industries_title": "6 ay boyunca müşterilerimizin ortalama sonuçları",
+    "industries": [
+      { "name": "Gayrimenkul ve İnşaat", "visibility": "+380%", "mentions": "x7", "timeline": "6-8 hafta" },
+      { "name": "Sağlık ve Medikal Turizm", "visibility": "+520%", "mentions": "x9", "timeline": "4-6 hafta" },
+      { "name": "Finansal Hizmetler", "visibility": "+290%", "mentions": "x5", "timeline": "8-10 hafta" },
+      { "name": "E-ticaret ve SaaS", "visibility": "+440%", "mentions": "x8", "timeline": "4-6 hafta" }
+    ],
+    "industries_visibility_label": "AI Visibility",
+    "industries_mentions_label": "Bahsedilme artışı",
+    "industries_timeline_label": "İlk sonuçlara ortalama süre",
+    "industries_note": "Sonuçlar başlangıç durumuna, niş rekabetine ve iş kapsamına bağlıdır",
+    "demo_title": "Dashboard'u çalışırken görün",
+    "demo_subtitle": "Gerçek bir iş örneği kullanılarak AI Visibility Dashboard'umuzun interaktif demosu",
+    "demo_cta": "Demo dashboard'u açın",
+    "demo_note": "Tüm veriler gösterim amaçlıdır. Dashboard'unuz işletmenizin gerçek verilerini içerecektir",
+    "process_title": "İşbirliği nasıl görünüyor",
+    "process_steps": [
+      { "period": "Hafta 1-2", "title": "Denetim", "desc": "Markanızın AI görünürlüğünün, rakiplerin ve anahtar sorguların tam analizi." },
+      { "period": "Hafta 3-4", "title": "Strateji", "desc": "Denetim temelinde eylem planı geliştiriyoruz: neyi optimize edeceğimiz, hangi içeriği oluşturacağımız." },
+      { "period": "Ay 2-3", "title": "Uygulama", "desc": "Structured Data, içerik optimizasyonu, entity building, dashboard başlatma." },
+      { "period": "Ay 4+", "title": "Büyüme ve Ölçekleme", "desc": "İzleme, strateji düzeltmesi, içerik ölçekleme. Doğru temelle AI görünürlüğü üstel olarak büyür." }
+    ],
+    "cta_title": "Aynı sonuçları ister misiniz?",
+    "cta_subtitle": "Ücretsiz AI denetimiyle başlayın - AI'nin işletmeniz hakkında şu anda ne söylediğini öğrenin",
+    "cta_button": "Ücretsiz denetim alın"
+  },
+  "about": {
+    "hero_title": "Ajans değil. AI görünürlük mühendisleri",
+    "hero_subtitle": "AI sistemlerinin içeriden nasıl çalıştığını anlıyoruz ve bu bilgiyi işletmeniz için kullanıyoruz",
+    "story_title": "Neden Merkaba",
+    "story_text": [
+      "Merkaba Digital, iki dünyanın kesişiminde doğdu: dijital stratejide 15 yıllık deneyim ve AI sistemlerinin nasıl çalıştığına dair derin bir anlayış.",
+      "2024-2025'te arama manzarası radikal biçimde değişmeye başladığında bir boşluk gördük: şirketler SEO'ya milyonlar harcıyordu ama AI için görünmez kalıyordu.",
+      "Biz anladık. Pazarlama raporlarından değil, LLM'ler, structured data ve AI mimarisiyle gerçek mühendislik çalışmasından. Merkaba Digital böyle doğdu."
+    ],
+    "philosophy_title": "Teknoloji ve bilinçlilik",
+    "philosophy_text": [
+      "İsmimiz rastgele değil. Kutsal geometride Merkaba, Yaşam Çiçeği'dir - evrenin tüm formlarının açıldığı yapı.",
+      "AI dünyasında da aynı yapıyı görüyoruz. Her ChatGPT yanıtının arkasında görünmez bir geometri var: bilgi grafikleri, kaynak otoritesi, anlamsal bağlantılar.",
+      "Analitik düşünceyi sistemlerin sezgisel anlayışıyla birleştirerek AI'ya karşı değil, onunla uyum içinde çalışan stratejiler oluşturuyoruz."
+    ],
+    "advantages_title": "Bizi farklı kılan ne",
+    "advantages": [
+      { "title": "AI'ya mühendislik yaklaşımı", "desc": "LLM'lerin nasıl çalıştığını tahmin etmiyoruz. API'ler, structured data ve alıntı algoritmalarıyla mühendislik düzeyinde çalışıyoruz." },
+      { "title": "Dijital stratejide 15+ yıl", "desc": "İlk SEO kampanyalarından AI otomasyonlarının başlatılmasına kadar. Her arama evrimini yaşadık." },
+      { "title": "Tescilli araçlar", "desc": "Production-grade AI yığını üzerine kurulu kendi AI görünürlük izleme platformumuz. Gerçek zamanlı verilerle kişisel dashboard'unuz." },
+      { "title": "Ölçülebilir sonuçlar", "desc": "Her eylem belirli KPI'lara bağlıdır. Vanity metrics yok. Her şey şeffaf, her şey dashboard'da." }
+    ],
+    "numbers": [
+      { "value": "15+", "label": "yıl dijital pazarlama ve strateji" },
+      { "value": "5", "label": "sürekli izlenen AI sistemi" },
+      { "value": "100+", "label": "her denetimde sorgu" },
+      { "value": "4", "label": "desteklenen dil (EN, RU, TR, AR)" }
+    ],
+    "approach_title": "Nasıl çalışıyoruz",
+    "approach_items": [
+      { "title": "Veriye dayalı, görüşe dayalı değil", "desc": "Varsayımlarla değil, verilerle başlıyoruz. Her denetim gerçek AI sistemlerinde gerçek sorgularda yüzlerce kontroldür." },
+      { "title": "Şeffaflık, kara kutu değil", "desc": "Her şeyi görürsünüz: her sorgu, her AI yanıtı, görünürlükteki her değişiklik. Dashboard'unuz gerçekliği yansıtan bir çalışma aracıdır." },
+      { "title": "Uzun vadeli değer, hızlı hileler değil", "desc": "Zamanla büyüyen temel AI görünürlüğü inşa ediyoruz. Gri şemalar yok, manipülasyon yok." }
+    ],
+    "industries_title": "Her nişle çalışıyoruz",
+    "industries_list": ["Gayrimenkul ve İnşaat", "Sağlık ve Medikal Turizm", "Finansal Hizmetler ve Fintech", "E-ticaret", "Turizm ve Otelcilik", "SaaS ve Teknoloji", "Profesyonel Hizmetler", "Eğitim"],
+    "industries_note": "GEO stratejisi her sektörün özelliklerine uyarlanır - sorgu setinden varlık platformlarına kadar",
+    "cta_title": "AI için görünür olmaya hazır mısınız?",
+    "cta_subtitle": "Ücretsiz bir denetimle başlayın - AI'nin işletmeniz hakkında bugün ne söylediğini gösterelim",
+    "cta_button": "Ücretsiz AI denetimi talep edin"
+  },
   "footer": { "description": "Generative Engine Optimization Ajansı", "copyright": "© 2025 Merkaba Digital. Tüm hakları saklıdır." }
 }

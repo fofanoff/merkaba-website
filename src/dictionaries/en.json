@@ -18,5 +18,158 @@
   "contact": { "hero_title": "Ready to become visible to AI?", "hero_subtitle": "Leave a request - we'll conduct a free AI audit of your business within 48 hours", "form": { "name": "Name", "company": "Company", "website": "Website", "email": "Email", "phone": "Phone / WhatsApp", "industry": "Industry", "language": "Preferred language", "comment": "Comment", "submit": "Request Free Audit", "success": "Thank you! We'll contact you within 24 hours.", "error": "An error occurred. Try again or contact us directly." }, "industries": ["Real Estate & Construction", "Healthcare & Medical Tourism", "Financial Services", "E-commerce", "Tourism & Hospitality", "Professional Services", "SaaS & Technology", "Other"], "languages": ["Русский", "English", "Türkçe", "العربية"], "direct_title": "Or contact us directly", "email_label": "Email", "email_value": "info@merkaba.vip", "whatsapp_label": "WhatsApp", "telegram_label": "Telegram", "faq_title": "FAQ", "faq": [{"q": "What's included in the free audit?", "a": "Coming soon"}, {"q": "How long does it take?", "a": "Coming soon"}] },
   "partners": { "hero_badge": "FOUNDING PARTNERS PROGRAM", "hero_spots_left": "Only", "hero_spots_of": "spots left out of", "hero_spots_total": 20, "hero_spots_taken": 6, "hero_title": "Earn from the AI revolution", "hero_subtitle": "Become one of 20 Founding Partners of Merkaba Digital. Lifetime recurring from every referred client. Limited enrollment", "models_title": "Two reward models", "cash_title": "10% commission", "cash_label": "Cash", "cash_desc": "Receive 10% of every contract from your referred client directly to your account", "cash_example": "Client on GROWTH ($8,500/mo) = $850/mo for you, as long as they pay", "balance_badge": "x2 value", "balance_title": "20% to your balance", "balance_label": "Balance", "balance_recommended": "Recommended", "balance_desc": "Direct your reward to promote your own business and get double the rate", "balance_example": "Client on GROWTH ($8,500/mo) = $1,700/mo to your GEO balance", "balance_note": "Use for your own AI promotion", "steps_title": "How it works", "step1_title": "Register", "step1_desc": "Fill out the form, get your referral link", "step2_title": "Recommend", "step2_desc": "Tell your contacts or share the link", "step3_title": "Connect", "step3_desc": "Your contact becomes a client", "step4_title": "Earn", "step4_desc": "10% to your account or 20% to your balance", "calc_title": "Calculate your income", "calc_clients": "How many clients will you refer?", "calc_package": "Package", "calc_mode": "Model", "calc_monthly": "Your income", "calc_yearly": "per year", "calc_per_month": "/mo", "audience_title": "Who is this for", "audience1_title": "Business owners", "audience1_desc": "Partners and contacts who need AI visibility", "audience2_title": "Marketing agencies", "audience2_desc": "Add GEO to your service portfolio", "audience3_title": "Consultants and coaches", "audience3_desc": "A concrete tool to recommend", "audience4_title": "Digital specialists", "audience4_desc": "SEO, SMM, PR: GEO is the next step for your clients", "terms_title": "Founding Partners terms", "terms_badge": "Exclusive for the first 20 partners", "terms_items": ["Program is limited to 20 participants", "Founding Partners receive lifetime recurring - as long as the client pays", "Reward is credited after client payment", "10% cash is paid monthly", "20% balance is credited automatically for any Merkaba Digital package", "No minimum payout threshold", "No limit on the number of referred clients", "After enrollment closes, terms will be revised"], "terms_highlight": "Lifetime recurring", "cta_title": "Claim your spot among Founding Partners", "cta_subtitle": "14 spots left. After enrollment closes, these terms will never be offered again", "form_name": "Name", "form_email": "Email", "form_messenger": "WhatsApp / Telegram", "form_plan": "How do you plan to attract clients?", "form_submit": "Become a Founding Partner", "form_note": "We'll reach out within 24 hours with your personal referral link", "form_success": "Thank you! We'll contact you shortly." },
   "terminal": { "title": "ai-visibility-check", "command_prefix": "merkaba scan --brand", "brand_name": "Your Business", "scanning": "Scanning 5 AI platforms...", "not_found": "Not found", "mentioned_once": "Mentioned once", "score_label": "AI Visibility Score", "conclusion": "AI doesn't know your brand. We can fix that" },
+  "cases": {
+    "hero_title": "Results that AI can see",
+    "hero_subtitle": "How we turn invisible brands into recommended sources",
+    "market_title": "Why GEO is not the future - it's the present",
+    "market_stats": [
+      { "value": "400M+", "label": "weekly active ChatGPT users. That's more than the population of the USA" },
+      { "value": "25-48%", "label": "of Google searches already contain AI-generated answers" },
+      { "value": "80%", "label": "of users trust AI summaries and use them for 40%+ of their queries" },
+      { "value": "15-25%", "label": "drop in traditional traffic for companies not optimized for AI" }
+    ],
+    "case_badge": "Case Study",
+    "case_title": "Construction company, Mediterranean coast of Turkey",
+    "case_subtitle": "How a developer with 30 years of history became visible to AI in 4 months",
+    "case_problem": "A company with an impeccable reputation and 20+ completed projects virtually did not exist in the AI space. Potential property buyers from Russia, Europe and the Gulf countries asked ChatGPT and Gemini about the best developers in the region - and received recommendations for competitors. Meanwhile, the company's website held strong positions in Google.",
+    "case_steps": [
+      {
+        "title": "AI Visibility Audit",
+        "items": [
+          "Checked 35 queries in 3 languages (EN, RU, TR) across 4 AI systems",
+          "Found: the brand was mentioned in only 5% of queries",
+          "Competitors were mentioned 3x more often"
+        ]
+      },
+      {
+        "title": "Entity Authority Building",
+        "items": [
+          "Implemented Schema.org RealEstateListing for all projects",
+          "Strengthened presence on platforms that AI cites",
+          "Optimized Google Business Profile"
+        ]
+      },
+      {
+        "title": "Content Engineering",
+        "items": [
+          "Created an expert content hub in 3 languages",
+          "Launched FAQ sections structured for AI citation",
+          "Published a series of guides for foreign buyers"
+        ]
+      },
+      {
+        "title": "Monitoring & Optimization",
+        "items": [
+          "Launched AI Visibility Dashboard",
+          "Weekly tracking across all queries",
+          "Strategy adjustment every 2 weeks"
+        ]
+      }
+    ],
+    "case_results": [
+      { "metric": "AI Visibility Score", "before": "5%", "after": "47%", "growth": "+840%" },
+      { "metric": "Brand mentions in AI", "before": "12/mo", "after": "89/mo", "growth": "+642%" },
+      { "metric": "First position queries", "before": "2", "after": "23", "growth": "+1050%" },
+      { "metric": "Inbound leads via AI", "before": "0", "after": "34/mo", "growth": "-" }
+    ],
+    "case_quote": "We didn't understand why, with strong Google positions, potential clients using ChatGPT were going to competitors. Merkaba Digital didn't just show us the problem - they solved it systematically. In 4 months, our brand became the first thing AI recommends in our region",
+    "case_quote_author": "Director of Business Development",
+    "industries_title": "Average results for our clients over 6 months",
+    "industries": [
+      { "name": "Real Estate & Construction", "visibility": "+380%", "mentions": "x7", "timeline": "6-8 weeks" },
+      { "name": "Healthcare & Medical Tourism", "visibility": "+520%", "mentions": "x9", "timeline": "4-6 weeks" },
+      { "name": "Financial Services", "visibility": "+290%", "mentions": "x5", "timeline": "8-10 weeks" },
+      { "name": "E-commerce & SaaS", "visibility": "+440%", "mentions": "x8", "timeline": "4-6 weeks" }
+    ],
+    "industries_visibility_label": "AI Visibility",
+    "industries_mentions_label": "Mentions growth",
+    "industries_timeline_label": "Average time to first results",
+    "industries_note": "Results depend on initial state, competition in the niche and scope of work. Data is based on average GEO industry metrics",
+    "demo_title": "See the dashboard in action",
+    "demo_subtitle": "Interactive demonstration of our AI Visibility Dashboard using a real business example",
+    "demo_cta": "Open demo dashboard",
+    "demo_note": "All data is demonstrative. Your dashboard will contain real data from your business",
+    "process_title": "What the collaboration looks like",
+    "process_steps": [
+      { "period": "Week 1-2", "title": "Audit", "desc": "Full analysis of your brand's AI visibility, competitors and key queries. You receive a detailed report on the current state of affairs." },
+      { "period": "Week 3-4", "title": "Strategy", "desc": "Based on the audit, we develop an action plan: what to optimize, what content to create, which platforms to strengthen. We agree on priorities with you." },
+      { "period": "Month 2-3", "title": "Implementation", "desc": "Structured Data, content optimization, entity building, dashboard launch. First results appear at week 6-8." },
+      { "period": "Month 4+", "title": "Growth & Scaling", "desc": "Monitoring, strategy adjustment, content scaling. AI visibility grows exponentially with the right foundation." }
+    ],
+    "cta_title": "Want the same results?",
+    "cta_subtitle": "Start with a free AI audit - find out what AI says about your business right now",
+    "cta_button": "Get a free audit"
+  },
+  "about": {
+    "hero_title": "Not an agency. AI visibility engineers",
+    "hero_subtitle": "We understand how AI systems work from the inside, and use this knowledge for your business",
+    "story_title": "Why Merkaba",
+    "story_text": [
+      "Merkaba Digital was born at the intersection of two worlds: 15 years of experience in digital strategy and a deep understanding of how AI systems work.",
+      "When the search landscape began to change radically in 2024-2025, we saw a gap: companies were spending millions on SEO but remained invisible to AI. ChatGPT, Gemini, Perplexity - all these systems formed their recommendations by different rules than Google. And almost no one understood exactly which ones.",
+      "We did. Not from marketing reports, but from real engineering work with LLMs, structured data and AI architecture. That's how Merkaba Digital was born - an agency that doesn't just optimize content, but engineers visibility at the data level."
+    ],
+    "philosophy_title": "Technology and consciousness",
+    "philosophy_text": [
+      "Our name is not random. Merkaba in sacred geometry is the Flower of Life, a structure from which all forms of the Universe unfold. Two counter-flowing streams of energy, creating balance and harmony.",
+      "We see the same structure in the world of AI. Behind every ChatGPT response lies invisible geometry: knowledge graphs, source authority, semantic connections. Most businesses see only the surface - the text of the response. We see the architecture that formed it.",
+      "By combining analytical thinking with intuitive understanding of systems, we create strategies that work not against AI, but in harmony with it."
+    ],
+    "advantages_title": "What sets us apart",
+    "advantages": [
+      {
+        "title": "Engineering approach to AI",
+        "desc": "We don't guess how LLMs work. We work with APIs, structured data and citation algorithms at an engineering level. Our strategies are based on mechanics, not guesswork."
+      },
+      {
+        "title": "15+ years in digital strategy",
+        "desc": "From first SEO campaigns to managing development and launching AI automations. We've been through every search evolution and know where the market is heading. This is not our first \"era transition\" - but perhaps the most significant one."
+      },
+      {
+        "title": "Proprietary tools",
+        "desc": "Our own AI visibility monitoring platform, built on a production-grade AI stack. Automation that no traditional agency offers. Your personal dashboard with real-time data."
+      },
+      {
+        "title": "Measurable results",
+        "desc": "Every action is tied to specific KPIs. No vanity metrics. AI Visibility Score, mention count, position in responses, sentiment - everything is transparent, everything is in the dashboard, everything is under your control."
+      }
+    ],
+    "numbers": [
+      { "value": "15+", "label": "years in digital marketing and strategy" },
+      { "value": "5", "label": "AI systems under constant monitoring" },
+      { "value": "100+", "label": "queries in every audit" },
+      { "value": "4", "label": "languages supported (EN, RU, TR, AR)" }
+    ],
+    "approach_title": "How we work",
+    "approach_items": [
+      {
+        "title": "Data-driven, not opinion-driven",
+        "desc": "We start with data, not assumptions. Every audit is hundreds of checks on real queries in real AI systems. Decisions are made based on what works, not what \"should work\"."
+      },
+      {
+        "title": "Transparency, not a black box",
+        "desc": "You see everything: every query, every AI response, every change in visibility. Your dashboard is not a pretty picture for a report, it's a working tool reflecting reality."
+      },
+      {
+        "title": "Long-term value, not quick hacks",
+        "desc": "We build fundamental AI visibility that grows over time. No gray schemes, no manipulation - systematic work with authority, content and data."
+      }
+    ],
+    "industries_title": "We work with any niche",
+    "industries_list": [
+      "Real Estate & Construction",
+      "Healthcare & Medical Tourism",
+      "Financial Services & Fintech",
+      "E-commerce",
+      "Tourism & Hospitality",
+      "SaaS & Technology",
+      "Professional Services",
+      "Education"
+    ],
+    "industries_note": "GEO strategy adapts to the specifics of each industry - from the set of queries to the presence platforms",
+    "cta_title": "Ready to become visible to AI?",
+    "cta_subtitle": "Start with a free audit - we'll show you what AI says about your business today, and what can be changed",
+    "cta_button": "Request a free AI audit"
+  },
   "footer": { "description": "Generative Engine Optimization Agency", "copyright": "© 2025 Merkaba Digital. All rights reserved." }
 }
