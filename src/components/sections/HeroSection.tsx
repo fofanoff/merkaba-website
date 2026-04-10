@@ -33,7 +33,7 @@ export function HeroSection({
             alt=""
             width={1920}
             height={1071}
-            className="w-[110vw] sm:w-[90vw] md:w-[70vw] lg:w-auto lg:h-[650px] max-w-none select-none"
+            className="h-[70vh] sm:h-[65vh] md:h-[60vh] lg:h-[650px] w-auto max-w-none select-none"
             style={{ mixBlendMode: "lighten" }}
             priority
           />
