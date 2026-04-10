@@ -27,9 +27,9 @@ export function HeroSection({
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="hero-bg-pulse relative"
           style={{
-            maxHeight: "550px",
-            WebkitMaskImage: "radial-gradient(ellipse 65% 75% at center, black 25%, transparent 60%)",
-            maskImage: "radial-gradient(ellipse 65% 75% at center, black 25%, transparent 60%)",
+            maxHeight: "700px",
+            WebkitMaskImage: "radial-gradient(ellipse 70% 80% at center, black 30%, transparent 65%)",
+            maskImage: "radial-gradient(ellipse 70% 80% at center, black 30%, transparent 65%)",
           }}
         >
           <Image
@@ -37,7 +37,7 @@ export function HeroSection({
             alt=""
             width={1920}
             height={1071}
-            className="h-[400px] sm:h-[450px] md:h-[500px] lg:h-[550px] w-auto select-none"
+            className="h-[450px] sm:h-[500px] md:h-[580px] lg:h-[650px] w-auto select-none"
             style={{ mixBlendMode: "lighten" }}
             priority
           />
@@ -54,10 +54,10 @@ export function HeroSection({
           <div
             style={{
               position: "absolute",
-              top: "-200px",
-              left: "-90px",
-              width: "180px",
-              height: "180px",
+              top: "-260px",
+              left: "-110px",
+              width: "220px",
+              height: "220px",
               borderRadius: "50%",
               background: "radial-gradient(circle, rgba(155,89,182,0.5) 0%, rgba(232,121,168,0.2) 40%, transparent 70%)",
               filter: "blur(30px)",
@@ -73,10 +73,10 @@ export function HeroSection({
           <div
             style={{
               position: "absolute",
-              top: "80px",
-              left: "-80px",
-              width: "160px",
-              height: "160px",
+              top: "120px",
+              left: "-100px",
+              width: "200px",
+              height: "200px",
               borderRadius: "50%",
               background: "radial-gradient(circle, rgba(212,168,67,0.45) 0%, rgba(240,199,94,0.15) 40%, transparent 70%)",
               filter: "blur(25px)",
