@@ -145,7 +145,7 @@ export function AboutPage({
       {/* ===== TEAM ===== */}
       <section className="py-20 md:py-28">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <FadeIn className="text-center mb-16">
+          <FadeIn className="mb-10">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold">
               {a.team_title}
             </h2>
@@ -153,7 +153,7 @@ export function AboutPage({
 
           {a.team_intro && (
             <FadeIn>
-              <div className="text-text-secondary text-lg leading-relaxed text-center max-w-3xl mx-auto mb-12 space-y-4">
+              <div className="text-text-secondary text-lg leading-relaxed max-w-4xl mb-12 space-y-4">
                 {a.team_intro.split("\n\n").map((p: string, i: number) => (
                   <p key={i}>{p}</p>
                 ))}
@@ -161,7 +161,7 @@ export function AboutPage({
             </FadeIn>
           )}
 
-          <div className="flex flex-wrap gap-6 justify-center">
+          <div className="flex flex-wrap gap-6">
             {a.team?.map(
               (
                 member: {
