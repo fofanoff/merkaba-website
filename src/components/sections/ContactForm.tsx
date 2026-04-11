@@ -14,7 +14,12 @@ export function ContactForm({ dict }: { dict: any }) {
     setStatus("loading");
 
     const formData = new FormData(e.currentTarget);
-    const data = Object.fromEntries(formData.entries());
+    const data = Object.fromEntries(formData.entries()) as Record<string, string>;
+
+    // Auto-add https:// if missing
+    if (data.website && !/^https?:\/\//i.test(data.website)) {
+      data.website = `https://${data.website}`;
+    }
 
     try {
       const res = await fetch("/api/contact", {
@@ -85,9 +90,9 @@ export function ContactForm({ dict }: { dict: any }) {
                   </label>
                   <input
                     name="website"
-                    type="url"
+                    type="text"
                     required
-                    placeholder="https://"
+                    placeholder="example.com"
                     className="w-full bg-bg-card/50 border border-white/10 rounded-xl px-4 py-3 text-text-primary text-sm placeholder:text-text-muted focus:outline-none focus:border-accent-indigo/50 transition-colors"
                   />
                 </div>
