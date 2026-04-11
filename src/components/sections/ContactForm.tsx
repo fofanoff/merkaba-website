@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, type FormEvent } from "react";
+import { motion } from "framer-motion";
 import { FadeIn } from "@/components/ui/FadeIn";
 import { FlowerOfLife } from "@/components/ui/FlowerOfLife";
 
@@ -58,7 +59,7 @@ export function ContactForm({ dict }: { dict: any }) {
 
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 max-w-6xl mx-auto">
           {/* Form */}
-          <FadeIn className="lg:col-span-3">
+          <FadeIn className="lg:col-span-3 relative">
             <form onSubmit={handleSubmit} className="space-y-5">
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                 <div>
@@ -173,13 +174,42 @@ export function ContactForm({ dict }: { dict: any }) {
                 {status === "loading" ? "..." : t.form.submit}
               </button>
 
-              {status === "success" && (
-                <p className="text-success text-sm text-center">{t.form.success}</p>
-              )}
-              {status === "error" && (
-                <p className="text-danger text-sm text-center">{t.form.error}</p>
-              )}
             </form>
+
+            {/* Success overlay */}
+            {status === "success" && (
+              <motion.div
+                initial={{ opacity: 0, scale: 0.9 }}
+                animate={{ opacity: 1, scale: 1 }}
+                className="absolute inset-0 z-10 flex flex-col items-center justify-center rounded-2xl bg-bg-card/95 backdrop-blur-md border border-success/20"
+              >
+                <div className="w-16 h-16 rounded-full bg-success/10 border border-success/30 flex items-center justify-center mb-6">
+                  <svg className="w-8 h-8 text-success" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                  </svg>
+                </div>
+                <p className="text-text-primary text-xl font-heading font-bold mb-2">{t.form.success}</p>
+              </motion.div>
+            )}
+
+            {/* Error overlay */}
+            {status === "error" && (
+              <motion.div
+                initial={{ opacity: 0, scale: 0.9 }}
+                animate={{ opacity: 1, scale: 1 }}
+                className="absolute inset-0 z-10 flex flex-col items-center justify-center rounded-2xl bg-bg-card/95 backdrop-blur-md border border-danger/20"
+              >
+                <div className="w-16 h-16 rounded-full bg-danger/10 border border-danger/30 flex items-center justify-center mb-6">
+                  <svg className="w-8 h-8 text-danger" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                </div>
+                <p className="text-text-primary text-lg font-heading font-bold mb-2">{t.form.error}</p>
+                <button onClick={() => setStatus("idle")} className="text-accent-indigo text-sm hover:underline mt-2">
+                  ↩
+                </button>
+              </motion.div>
+            )}
           </FadeIn>
 
           {/* Direct contacts */}
