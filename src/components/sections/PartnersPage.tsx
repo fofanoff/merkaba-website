@@ -425,12 +425,11 @@ function PartnerForm({
     const data = new FormData(form);
 
     try {
-      await fetch("https://formspree.io/f/xqaqpwdo", {
+      const res = await fetch("/api/partners", {
         method: "POST",
         body: data,
-        headers: { Accept: "application/json" },
       });
-      setSubmitted(true);
+      if (res.ok) setSubmitted(true);
     } catch {
       // Silently handle - form might still work
       setSubmitted(true);
