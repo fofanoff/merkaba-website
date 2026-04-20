@@ -157,6 +157,12 @@ The hero is a full-viewport section with layered visual effects. Changes here ar
 5. Wait 1-2 min, check the live site
 6. If user reports cached old version: tell them Ctrl+Shift+R (hard refresh)
 
+## Copywriting
+
+**ALWAYS use the `merkaba-geo-copy` skill when writing or rewriting any user-facing text** - headlines, descriptions, CTAs, form messages, notifications, blog content, service descriptions, pricing copy, case study text, success/error messages.
+
+The skill defines premium boutique GEO-partner tone. Without it, default copy is too generic for this project.
+
 ## Formatting Rules (STRICT - apply everywhere, always)
 
 - NEVER use em-dashes "-" - only short hyphens "-"
