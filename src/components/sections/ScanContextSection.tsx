@@ -37,12 +37,14 @@ export function ScanContextSection({
           )}
 
           <div className="flex flex-col sm:flex-row gap-4">
-            <Link
-              href={`/${locale}/services`}
+            <a
+              href="https://app.merkaba.vip/demo"
+              target="_blank"
+              rel="noopener noreferrer"
               className="btn-gradient text-white font-semibold px-8 py-4 rounded-xl text-lg text-center"
             >
               {s.cta_primary}
-            </Link>
+            </a>
             <Link
               href={`/${locale}/contact`}
               className="border border-white/10 hover:border-white/20 text-text-primary font-semibold px-8 py-4 rounded-xl text-lg text-center transition-colors hover:bg-white/5"
