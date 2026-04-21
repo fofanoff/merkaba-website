@@ -117,10 +117,22 @@ export function HeroSection({
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.7 }}
-              className="text-lg md:text-xl text-text-secondary max-w-xl mb-10 leading-relaxed"
+              className="text-lg md:text-xl text-text-secondary max-w-xl mb-6 leading-relaxed"
             >
               {dict.hero.subtitle}
             </motion.p>
+
+            {/* Supporting copy */}
+            {dict.hero.supporting && (
+              <motion.p
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.85 }}
+                className="text-sm md:text-base text-text-muted max-w-xl mb-10 leading-relaxed"
+              >
+                {dict.hero.supporting}
+              </motion.p>
+            )}
 
             {/* CTAs */}
             <motion.div
@@ -129,19 +141,33 @@ export function HeroSection({
               transition={{ duration: 0.8, delay: 0.9 }}
               className="flex flex-col sm:flex-row gap-4"
             >
-              <Link
-                href={`/${locale}/contact`}
+              <a
+                href="https://app.merkaba.vip/demo"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="btn-gradient text-white font-semibold px-8 py-4 rounded-xl text-lg text-center"
               >
                 {dict.hero.cta_primary}
-              </Link>
+              </a>
               <Link
-                href={`/${locale}/services`}
+                href={`/${locale}/contact`}
                 className="border border-white/10 hover:border-white/20 text-text-primary font-semibold px-8 py-4 rounded-xl text-lg text-center transition-colors hover:bg-white/5 backdrop-blur-sm"
               >
                 {dict.hero.cta_secondary}
               </Link>
             </motion.div>
+
+            {/* Microcopy under CTA */}
+            {dict.hero.microcopy && (
+              <motion.p
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 0.8, delay: 1.05 }}
+                className="mt-4 text-xs text-text-muted"
+              >
+                {dict.hero.microcopy}
+              </motion.p>
+            )}
 
             {/* Trust indicators */}
             <motion.div

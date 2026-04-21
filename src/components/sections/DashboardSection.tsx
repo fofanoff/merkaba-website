@@ -1,22 +1,43 @@
 "use client";
 
+import Link from "next/link";
 import { FadeIn } from "@/components/ui/FadeIn";
 import { motion } from "framer-motion";
+import type { Locale } from "@/lib/i18n";
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-export function DashboardSection({ dict }: { dict: any }) {
+export function DashboardSection({
+  locale,
+  dict,
+}: {
+  locale?: Locale;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  dict: any;
+}) {
+  const d = dict.dashboard;
   return (
     <section className="py-24 md:py-32 relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <FadeIn className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold mb-4">
-            {dict.dashboard.title}
+          {d.eyebrow && (
+            <p className="text-accent-indigo text-xs font-mono uppercase tracking-wider mb-4">
+              {d.eyebrow}
+            </p>
+          )}
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold mb-4 leading-tight max-w-3xl mx-auto">
+            {d.title}
           </h2>
-          <p className="text-text-secondary text-lg">{dict.dashboard.subtitle}</p>
+          <p className="text-text-secondary text-lg max-w-3xl mx-auto leading-relaxed">
+            {d.subtitle}
+          </p>
+          {d.supporting && (
+            <p className="text-text-muted text-sm md:text-base max-w-3xl mx-auto leading-relaxed mt-6">
+              {d.supporting}
+            </p>
+          )}
         </FadeIn>
 
         <FadeIn>
-          <div className="relative max-w-5xl mx-auto">
+          <div className="relative max-w-5xl mx-auto mb-12">
             {/* Glow effect behind dashboard */}
             <div className="absolute inset-0 bg-gradient-to-r from-accent-pink/10 via-accent-indigo/10 to-accent-blue/10 blur-3xl rounded-3xl" />
 
@@ -42,10 +63,10 @@ export function DashboardSection({ dict }: { dict: any }) {
                 {/* Top metrics */}
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
                   {[
-                    { label: dict.dashboard.metric1, value: "47%", change: "+12%", color: "accent-indigo" },
-                    { label: dict.dashboard.metric2, value: "89", change: "+23", color: "accent-purple" },
-                    { label: dict.dashboard.metric3, value: "6.8", change: "+1.2", color: "accent-pink" },
-                    { label: dict.dashboard.metric4, value: "8.4", change: "+0.6", color: "accent-gold" },
+                    { label: d.metric1, value: "47%", change: "+12%", color: "accent-indigo" },
+                    { label: d.metric2, value: "89", change: "+23", color: "accent-purple" },
+                    { label: d.metric3, value: "6.8", change: "+1.2", color: "accent-pink" },
+                    { label: d.metric4, value: "8.4", change: "+0.6", color: "accent-gold" },
                   ].map((metric, i) => (
                     <div key={i} className="rounded-xl bg-bg-surface/50 border border-white/5 p-4">
                       <p className="text-text-muted text-xs mb-1">{metric.label}</p>
@@ -76,6 +97,34 @@ export function DashboardSection({ dict }: { dict: any }) {
             </motion.div>
           </div>
         </FadeIn>
+
+        {(d.cta_primary || d.cta_secondary) && (
+          <FadeIn>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+              {d.cta_primary && (
+                <a
+                  href="https://app.merkaba.vip/demo"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-gradient text-white font-semibold px-8 py-4 rounded-xl text-lg text-center"
+                >
+                  {d.cta_primary}
+                </a>
+              )}
+              {d.cta_secondary && locale && (
+                <Link
+                  href={`/${locale}/contact`}
+                  className="border border-white/10 hover:border-white/20 text-text-primary font-semibold px-8 py-4 rounded-xl text-lg text-center transition-colors hover:bg-white/5"
+                >
+                  {d.cta_secondary}
+                </Link>
+              )}
+            </div>
+            {d.microcopy && (
+              <p className="mt-4 text-xs text-text-muted text-center">{d.microcopy}</p>
+            )}
+          </FadeIn>
+        )}
       </div>
     </section>
   );

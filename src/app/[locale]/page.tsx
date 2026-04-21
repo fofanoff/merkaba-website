@@ -1,5 +1,6 @@
 import { getDictionary, type Locale } from "@/lib/i18n";
 import { HeroSection } from "@/components/sections/HeroSection";
+import { ScanContextSection } from "@/components/sections/ScanContextSection";
 import { PainSection } from "@/components/sections/PainSection";
 import { SolutionSection } from "@/components/sections/SolutionSection";
 import { DashboardSection } from "@/components/sections/DashboardSection";
@@ -46,9 +47,10 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
     <>
       <SchemaOrgHome locale={locale as Locale} dict={dict} />
       <HeroSection locale={locale as Locale} dict={dict} />
+      <ScanContextSection locale={locale as Locale} dict={dict} />
       <PainSection dict={dict} />
       <SolutionSection dict={dict} />
-      <DashboardSection dict={dict} />
+      <DashboardSection locale={locale as Locale} dict={dict} />
       <PricingSection locale={locale as Locale} dict={dict} />
       <FaqSection dict={dict} section="home" />
       <ClosingSection locale={locale as Locale} dict={dict} />
