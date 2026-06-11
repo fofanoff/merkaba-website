@@ -264,13 +264,10 @@ export function CasesPage({
                       <svg className="w-4 h-4 text-text-muted shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
                       </svg>
-                      <span className="text-xl font-heading font-bold text-text-primary whitespace-nowrap">
+                      <span className="text-xl font-heading font-bold text-text-primary whitespace-nowrap" style={{ color: accentColors[i] }}>
                         {r.after}
                       </span>
                     </div>
-                    <span className="text-sm font-bold" style={{ color: accentColors[i] }}>
-                      {r.growth}
-                    </span>
                   </div>
                 )
               )}

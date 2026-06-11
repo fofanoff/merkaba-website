@@ -383,7 +383,7 @@
     ],
     "terms_highlight": "Lifetime recurring",
     "cta_title": "Claim your spot among Founding Partners",
-    "cta_subtitle": "14 spots left. After enrollment closes, terms for new partners will be revised",
+    "cta_subtitle": "{spots} spots left. After enrollment closes, terms for new partners will be revised",
     "form_name": "Name",
     "form_email": "Email",
     "form_messenger": "WhatsApp / Telegram",
@@ -497,7 +497,7 @@
           }
         ],
         "quote": "We didn't understand why, with strong Google positions, potential clients using ChatGPT were going to competitors. Merkaba Digital didn't just show us the problem - they solved it systematically. In 4 months, our brand became the first thing AI recommends in our region",
-        "quote_author": "Ahmet Yildiz, Director of Business Development"
+        "quote_author": "Ahmet Y. - Business Development Director, real estate developer, Antalya"
       },
       {
         "badge": "Case Study",
@@ -565,7 +565,7 @@
           }
         ],
         "quote": "Our patients from the UAE and Saudi Arabia now find us through ChatGPT. This has transformed the entire flow of international patients",
-        "quote_author": "Nadia Khoury, Marketing Director"
+        "quote_author": "Nadia K. - Marketing Director, dental clinic, Beirut"
       },
       {
         "badge": "Case Study",
@@ -633,7 +633,7 @@
           }
         ],
         "quote": "Istanbul has 500+ clinics. Patients used to find us only through ads. Now ChatGPT and Gemini recommend us directly - it's the highest quality acquisition channel",
-        "quote_author": "Murat Ozturk, Clinic Founder"
+        "quote_author": "Murat O. - Founder, hair transplant clinic, Istanbul"
       }
     ],
     "industries_title": "Typical GEO project dynamics over 6 months",
@@ -856,7 +856,7 @@
     "headline": "For most brands, AI visibility starts out fragmented",
     "subheadline": "An initial check usually shows weak presence in relevant AI answers. This is not an exception but a typical starting point: without targeted work, AI systems rarely connect a brand correctly to its category, sources and key demand scenarios.",
     "supporting": "A full audit widens the picture: more queries, several languages, competitor benchmarks - and a view of which sources AI systems rely on in your category.",
-    "cta_primary": "View the demo dashboard",
+    "cta_primary": "See the audit methodology",
     "cta_secondary": "Request an audit",
     "microcopy": "Initial diagnostics show the starting point. The full picture comes from a systematic audit."
   }

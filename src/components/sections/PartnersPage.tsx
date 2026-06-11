@@ -19,6 +19,44 @@ const fadeUp = {
   transition: { duration: 0.6 },
 };
 
+const audienceIcons = [
+  // Business owners - building
+  <svg key="owners" viewBox="0 0 48 48" className="w-10 h-10" fill="none">
+    <rect x="12" y="8" width="24" height="34" rx="2" stroke="#6366F1" strokeWidth="1.5" />
+    <rect x="18" y="14" width="4" height="4" rx="0.5" fill="#6366F1" opacity="0.5" />
+    <rect x="26" y="14" width="4" height="4" rx="0.5" fill="#6366F1" opacity="0.5" />
+    <rect x="18" y="22" width="4" height="4" rx="0.5" fill="#6366F1" opacity="0.5" />
+    <rect x="26" y="22" width="4" height="4" rx="0.5" fill="#6366F1" opacity="0.5" />
+    <rect x="21" y="32" width="6" height="10" rx="1" stroke="#6366F1" strokeWidth="1" />
+    <line x1="8" y1="42" x2="40" y2="42" stroke="#6366F1" strokeWidth="1" opacity="0.5" />
+  </svg>,
+  // Marketing agencies - chart
+  <svg key="agencies" viewBox="0 0 48 48" className="w-10 h-10" fill="none">
+    <rect x="8" y="26" width="7" height="14" rx="1" stroke="#9B59B6" strokeWidth="1.5" />
+    <rect x="20" y="18" width="7" height="22" rx="1" stroke="#9B59B6" strokeWidth="1.5" />
+    <rect x="32" y="10" width="7" height="30" rx="1" stroke="#9B59B6" strokeWidth="1.5" fill="#9B59B6" fillOpacity="0.15" />
+    <path d="M10 20 L22 12 L34 6" stroke="#9B59B6" strokeWidth="1" opacity="0.6" />
+    <circle cx="34" cy="6" r="2" fill="#9B59B6" opacity="0.6" />
+  </svg>,
+  // Consultants and coaches - lightbulb
+  <svg key="consultants" viewBox="0 0 48 48" className="w-10 h-10" fill="none">
+    <path d="M24 6 C16 6 11 12 11 19 C11 24 14 27 16 30 C17.5 32 18 34 18 36 L30 36 C30 34 30.5 32 32 30 C34 27 37 24 37 19 C37 12 32 6 24 6 Z" stroke="#D4A843" strokeWidth="1.5" />
+    <line x1="19" y1="40" x2="29" y2="40" stroke="#D4A843" strokeWidth="1.5" />
+    <line x1="21" y1="44" x2="27" y2="44" stroke="#D4A843" strokeWidth="1" opacity="0.6" />
+    <path d="M21 26 L24 20 L27 26" stroke="#D4A843" strokeWidth="1" opacity="0.7" />
+  </svg>,
+  // Digital specialists - connected nodes
+  <svg key="digital" viewBox="0 0 48 48" className="w-10 h-10" fill="none">
+    <circle cx="10" cy="24" r="4" stroke="#22D3EE" strokeWidth="1.5" />
+    <circle cx="38" cy="10" r="4" stroke="#22D3EE" strokeWidth="1.5" />
+    <circle cx="38" cy="38" r="4" stroke="#22D3EE" strokeWidth="1.5" />
+    <circle cx="24" cy="24" r="3" fill="#22D3EE" opacity="0.4" />
+    <line x1="14" y1="24" x2="21" y2="24" stroke="#22D3EE" strokeWidth="1" />
+    <line x1="26.5" y1="22" x2="34.5" y2="12.5" stroke="#22D3EE" strokeWidth="1" />
+    <line x1="26.5" y1="26" x2="34.5" y2="35.5" stroke="#22D3EE" strokeWidth="1" />
+  </svg>,
+];
+
 export function PartnersPage({
   locale,
   dict,
@@ -229,10 +267,10 @@ export function PartnersPage({
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             {[
-              { icon: "🏢", title: p.audience1_title, desc: p.audience1_desc },
-              { icon: "📊", title: p.audience2_title, desc: p.audience2_desc },
-              { icon: "💡", title: p.audience3_title, desc: p.audience3_desc },
-              { icon: "⚡", title: p.audience4_title, desc: p.audience4_desc },
+              { icon: audienceIcons[0], title: p.audience1_title, desc: p.audience1_desc },
+              { icon: audienceIcons[1], title: p.audience2_title, desc: p.audience2_desc },
+              { icon: audienceIcons[2], title: p.audience3_title, desc: p.audience3_desc },
+              { icon: audienceIcons[3], title: p.audience4_title, desc: p.audience4_desc },
             ].map((item, i) => (
               <motion.div
                 key={i}
@@ -240,7 +278,7 @@ export function PartnersPage({
                 transition={{ duration: 0.6, delay: i * 0.1 }}
                 className="rounded-2xl border border-white/10 bg-bg-card/50 p-6 hover:border-white/20 transition-colors"
               >
-                <span className="text-3xl mb-4 block">{item.icon}</span>
+                <span className="mb-4 block">{item.icon}</span>
                 <h3 className="text-lg font-heading font-bold mb-2">{item.title}</h3>
                 <p className="text-text-secondary text-sm leading-relaxed">{item.desc}</p>
               </motion.div>
@@ -302,7 +340,7 @@ export function PartnersPage({
               <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
                 {p.cta_title}
               </h2>
-              <p className="text-text-secondary text-lg">{p.cta_subtitle}</p>
+              <p className="text-text-secondary text-lg">{p.cta_subtitle.replace("{spots}", String(spotsLeft))}</p>
             </div>
           </FadeIn>
 

@@ -383,7 +383,7 @@
     ],
     "terms_highlight": "Ömür boyu recurring",
     "cta_title": "Founding Partners arasındaki yerinizi alın",
-    "cta_subtitle": "14 yer kaldı. Kayıt kapandıktan sonra yeni partnerler için koşullar revize edilecek",
+    "cta_subtitle": "{spots} yer kaldı. Kayıt kapandıktan sonra yeni partnerler için koşullar revize edilecek",
     "form_name": "İsim",
     "form_email": "E-posta",
     "form_messenger": "WhatsApp / Telegram",
@@ -497,7 +497,7 @@
           }
         ],
         "quote": "Google'daki güçlü konumlarımıza rağmen ChatGPT kullanan potansiyel müşterilerin neden rakiplere gittiğini anlamıyorduk. Merkaba Digital sadece sorunu göstermekle kalmadı - sistematik olarak çözdü",
-        "quote_author": "Ahmet Yildiz, İş Geliştirme Direktörü"
+        "quote_author": "Ahmet Y. - İş Geliştirme Direktörü, müteahhit, Antalya"
       },
       {
         "badge": "Vaka Çalışması",
@@ -565,7 +565,7 @@
           }
         ],
         "quote": "BAE ve Suudi Arabistan'dan hastalarımız artık bizi ChatGPT aracılığıyla buluyor. Bu, uluslararası hasta akışının tamamını değiştirdi",
-        "quote_author": "Nadia Khoury, Pazarlama Direktörü"
+        "quote_author": "Nadia K. - Pazarlama Direktörü, diş kliniği, Beyrut"
       },
       {
         "badge": "Vaka Çalışması",
@@ -633,7 +633,7 @@
           }
         ],
         "quote": "İstanbul'da 500'den fazla klinik var. Hastalar bizi eskiden sadece reklamla buluyordu. Şimdi ChatGPT ve Gemini bizi doğrudan öneriyor - bu en kaliteli hasta kazanım kanalı",
-        "quote_author": "Murat Ozturk, Klinik Kurucusu"
+        "quote_author": "Murat O. - Kurucu, saç ekimi kliniği, İstanbul"
       }
     ],
     "industries_title": "6 ayda tipik GEO proje dinamiği",
@@ -856,7 +856,7 @@
     "headline": "Çoğu markada AI görünürlüğü başlangıçta parçalı kalır",
     "subheadline": "İlk kontrol genellikle ilgili AI yanıtlarında zayıf bir varlık gösterir. Bu bir istisna değil, tipik bir başlangıç noktasıdır: hedefli çalışma olmadan AI sistemleri bir markayı kategorisi, kaynakları ve temel talep senaryolarıyla nadiren doğru şekilde ilişkilendirir.",
     "supporting": "Tam denetim resmi genişletir: daha fazla sorgu, birkaç dil, rakip karşılaştırması - ve AI sistemlerinin kategorinizde hangi kaynakları kullandığını gösterir.",
-    "cta_primary": "Demo paneli görüntüle",
+    "cta_primary": "Denetim metodolojisini incele",
     "cta_secondary": "Denetim talep et",
     "microcopy": "İlk teşhis başlangıç noktasını gösterir. Tam resim sistematik denetimle ortaya çıkar."
   }
