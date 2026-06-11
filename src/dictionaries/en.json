@@ -20,7 +20,7 @@
     "faq": [
       {
         "q": "What is GEO?",
-        "a": "Generative Engine Optimization is the optimization of a business for visibility in AI systems: ChatGPT, Gemini, Perplexity, Claude. When a user asks AI about a product or service, GEO ensures your brand is in the answer. It is the next evolution after SEO"
+        "a": "Generative Engine Optimization is the optimization of a business for visibility in AI systems: ChatGPT, Claude, Gemini, Perplexity. When a user asks AI about a product or service, GEO ensures your brand is in the answer. It is the next evolution after SEO"
       },
       {
         "q": "How is GEO different from SEO?",
@@ -40,7 +40,7 @@
       },
       {
         "q": "Which AI systems do you track?",
-        "a": "We monitor five main AI platforms: ChatGPT (OpenAI), Gemini (Google), Perplexity, Claude (Anthropic) and Copilot (Microsoft). Each has its own citation algorithms, and the optimization strategy accounts for the specifics of each"
+        "a": "We monitor five main AI platforms: ChatGPT (OpenAI), Claude (Anthropic), Gemini (Google), Perplexity and Copilot (Microsoft). Each has its own citation algorithms, and the optimization strategy accounts for the specifics of each"
       },
       {
         "q": "Do you work with companies outside Turkey?",
@@ -97,7 +97,7 @@
     "launch_light_price": "$1,500",
     "launch_light_type": "one-time audit",
     "launch_light_features": [
-      "Brand visibility check in ChatGPT, Gemini, Perplexity, Claude",
+      "Brand visibility check in ChatGPT, Claude, Gemini, Perplexity",
       "30+ targeted queries in 1 language",
       "Analysis of 3 direct competitors",
       "AI Visibility Score per platform",
@@ -191,7 +191,7 @@
         "number": "01",
         "title": "AI Visibility Audit",
         "items": [
-          "Full analysis in ChatGPT, Gemini, Perplexity, Claude, Copilot",
+          "Full analysis in ChatGPT, Claude, Gemini, Perplexity, Copilot",
           "100+ queries in multiple languages",
           "Competitive landscape map",
           "Citation Score and Sentiment Analysis",

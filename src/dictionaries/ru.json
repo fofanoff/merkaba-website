@@ -23,7 +23,7 @@
     "faq": [
       {
         "q": "Что такое GEO?",
-        "a": "Generative Engine Optimization - это оптимизация бизнеса для видимости в AI‑системах: ChatGPT, Gemini, Perplexity, Claude. Когда пользователь спрашивает AI о продукте или услуге, GEO обеспечивает, чтобы ваш бренд был в ответе. Это следующая эволюция после SEO"
+        "a": "Generative Engine Optimization - это оптимизация бизнеса для видимости в AI‑системах: ChatGPT, Claude, Gemini, Perplexity. Когда пользователь спрашивает AI о продукте или услуге, GEO обеспечивает, чтобы ваш бренд был в ответе. Это следующая эволюция после SEO"
       },
       {
         "q": "Чем GEO отличается от SEO?",
@@ -43,7 +43,7 @@
       },
       {
         "q": "Какие AI‑системы вы отслеживаете?",
-        "a": "Мы мониторим пять основных AI‑платформ: ChatGPT (OpenAI), Gemini (Google), Perplexity, Claude (Anthropic) и Copilot (Microsoft). Каждая имеет свои алгоритмы цитирования, и стратегия оптимизации учитывает особенности каждой"
+        "a": "Мы мониторим пять основных AI‑платформ: ChatGPT (OpenAI), Claude (Anthropic), Gemini (Google), Perplexity и Copilot (Microsoft). Каждая имеет свои алгоритмы цитирования, и стратегия оптимизации учитывает особенности каждой"
       },
       {
         "q": "Работаете ли вы с компаниями за пределами Турции?",
@@ -106,7 +106,7 @@
     "launch_light_price": "$1,500",
     "launch_light_type": "разовый аудит",
     "launch_light_features": [
-      "Проверка видимости бренда в ChatGPT, Gemini, Perplexity, Claude",
+      "Проверка видимости бренда в ChatGPT, Claude, Gemini, Perplexity",
       "30+ целевых запросов на 1 языке",
       "Анализ 3 прямых конкурентов",
       "AI Visibility Score по каждой платформе",
@@ -201,7 +201,7 @@
         "number": "01",
         "title": "AI Visibility Audit",
         "items": [
-          "Полный анализ в ChatGPT, Gemini, Perplexity, Claude, Copilot",
+          "Полный анализ в ChatGPT, Claude, Gemini, Perplexity, Copilot",
           "100+ запросов на нескольких языках",
           "Карта конкурентного ландшафта",
           "Citation Score и Sentiment Analysis",

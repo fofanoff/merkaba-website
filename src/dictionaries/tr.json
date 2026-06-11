@@ -20,7 +20,7 @@
     "faq": [
       {
         "q": "GEO nedir?",
-        "a": "Generative Engine Optimization, bir işletmenin ChatGPT, Gemini, Perplexity, Claude gibi AI sistemlerinde görünürlük için optimizasyonudur. Bir kullanıcı AI'ya bir ürün veya hizmet sorduğunda, GEO markanızın yanıtta yer almasını sağlar. SEO'dan sonraki evrimdir"
+        "a": "Generative Engine Optimization, bir işletmenin ChatGPT, Claude, Gemini, Perplexity gibi AI sistemlerinde görünürlük için optimizasyonudur. Bir kullanıcı AI'ya bir ürün veya hizmet sorduğunda, GEO markanızın yanıtta yer almasını sağlar. SEO'dan sonraki evrimdir"
       },
       {
         "q": "GEO ile SEO arasındaki fark nedir?",
@@ -40,7 +40,7 @@
       },
       {
         "q": "Hangi AI sistemlerini takip ediyorsunuz?",
-        "a": "Beş ana AI platformunu izliyoruz: ChatGPT (OpenAI), Gemini (Google), Perplexity, Claude (Anthropic) ve Copilot (Microsoft). Her birinin kendi alıntı algoritmaları vardır ve optimizasyon stratejisi her birinin özelliklerini dikkate alır"
+        "a": "Beş ana AI platformunu izliyoruz: ChatGPT (OpenAI), Claude (Anthropic), Gemini (Google), Perplexity ve Copilot (Microsoft). Her birinin kendi alıntı algoritmaları vardır ve optimizasyon stratejisi her birinin özelliklerini dikkate alır"
       },
       {
         "q": "Türkiye dışındaki şirketlerle çalışıyor musunuz?",
@@ -97,7 +97,7 @@
     "launch_light_price": "$1,500",
     "launch_light_type": "tek seferlik denetim",
     "launch_light_features": [
-      "ChatGPT, Gemini, Perplexity, Claude'da marka gorunurluk kontrolu",
+      "ChatGPT, Claude, Gemini, Perplexity'da marka gorunurluk kontrolu",
       "1 dilde 30+ hedefli sorgu",
       "3 dogrudan rakip analizi",
       "Platform bazinda AI Visibility Score",
@@ -191,7 +191,7 @@
         "number": "01",
         "title": "AI Visibility Audit",
         "items": [
-          "ChatGPT, Gemini, Perplexity, Claude, Copilot'ta tam analiz",
+          "ChatGPT, Claude, Gemini, Perplexity, Copilot'ta tam analiz",
           "Birkaç dilde 100+ sorgu",
           "Rekabet ortamı haritası",
           "Citation Score ve Sentiment Analysis",

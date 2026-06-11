@@ -184,16 +184,16 @@ export function HeroSection({
                 ChatGPT
               </span>
               <span className="flex items-center gap-2">
+                <span className="w-2 h-2 rounded-full" style={{ background: "#D4A27F" }} />
+                Claude
+              </span>
+              <span className="flex items-center gap-2">
                 <span className="w-2 h-2 rounded-full" style={{ background: "#4285F4" }} />
                 Gemini
               </span>
               <span className="flex items-center gap-2">
                 <span className="w-2 h-2 rounded-full" style={{ background: "#20B8CD" }} />
                 Perplexity
-              </span>
-              <span className="flex items-center gap-2">
-                <span className="w-2 h-2 rounded-full" style={{ background: "#D4A27F" }} />
-                Claude
               </span>
             </motion.div>
 

@@ -59,9 +59,9 @@ export const blogArticles: BlogArticle[] = [
 <p>В 2026 году пять основных AI‑платформ формируют рынок:</p>
 <ul>
 <li><strong>ChatGPT (OpenAI)</strong> - 400M+ пользователей еженедельно, лидер рынка</li>
+<li><strong>Claude (Anthropic)</strong> - растущая база пользователей в B2B-сегменте</li>
 <li><strong>Gemini (Google)</strong> - интегрирован в поиск Google, влияет на AI Overviews</li>
 <li><strong>Perplexity</strong> - AI‑поисковик с цитированием источников</li>
-<li><strong>Claude (Anthropic)</strong> - растущая база пользователей в B2B-сегменте</li>
 <li><strong>Copilot (Microsoft)</strong> - интегрирован в Bing и продукты Microsoft</li>
 </ul>
 <p>Каждая система использует свои алгоритмы цитирования. Стратегия GEO должна учитывать особенности каждой платформы.</p>
@@ -119,9 +119,9 @@ export const blogArticles: BlogArticle[] = [
 <p>In 2026, five major AI platforms shape the market:</p>
 <ul>
 <li><strong>ChatGPT (OpenAI)</strong> - 400M+ weekly users, market leader</li>
+<li><strong>Claude (Anthropic)</strong> - growing user base in the B2B segment</li>
 <li><strong>Gemini (Google)</strong> - integrated into Google Search, powers AI Overviews</li>
 <li><strong>Perplexity</strong> - AI search engine with source citation</li>
-<li><strong>Claude (Anthropic)</strong> - growing user base in the B2B segment</li>
 <li><strong>Copilot (Microsoft)</strong> - integrated into Bing and Microsoft products</li>
 </ul>
 <p>Each system uses its own citation algorithms. A GEO strategy must account for the specifics of each platform.</p>
@@ -179,9 +179,9 @@ export const blogArticles: BlogArticle[] = [
 <p>2026'da bes buyuk AI platformu piyasayi sekillendiriyor:</p>
 <ul>
 <li><strong>ChatGPT (OpenAI)</strong> - haftalik 400M+ kullanici, pazar lideri</li>
+<li><strong>Claude (Anthropic)</strong> - B2B segmentinde buyuyen kullanici tabani</li>
 <li><strong>Gemini (Google)</strong> - Google Arama'ya entegre, AI Overviews'i besliyor</li>
 <li><strong>Perplexity</strong> - kaynak gosterimli AI arama motoru</li>
-<li><strong>Claude (Anthropic)</strong> - B2B segmentinde buyuyen kullanici tabani</li>
 <li><strong>Copilot (Microsoft)</strong> - Bing ve Microsoft urunlerine entegre</li>
 </ul>
 <p>Her sistem kendi alintilanma algoritmalarini kullanir. GEO stratejisi her platformun ozelliklerini hesaba katmalidir.</p>
@@ -239,9 +239,9 @@ export const blogArticles: BlogArticle[] = [
 <p>في 2026، خمس منصات AI رئيسية تشكل السوق:</p>
 <ul>
 <li><strong>ChatGPT (OpenAI)</strong> - اكثر من 400 مليون مستخدم اسبوعيا، الرائد في السوق</li>
+<li><strong>Claude (Anthropic)</strong> - قاعدة مستخدمين متنامية في قطاع B2B</li>
 <li><strong>Gemini (Google)</strong> - متكامل في بحث Google، يدعم AI Overviews</li>
 <li><strong>Perplexity</strong> - محرك بحث AI مع ذكر المصادر</li>
-<li><strong>Claude (Anthropic)</strong> - قاعدة مستخدمين متنامية في قطاع B2B</li>
 <li><strong>Copilot (Microsoft)</strong> - متكامل في Bing ومنتجات Microsoft</li>
 </ul>
 <p>كل نظام يستخدم خوارزميات استشهاد خاصة به. استراتيجية GEO يجب ان تراعي خصائص كل منصة.</p>
@@ -293,7 +293,7 @@ export const blogArticles: BlogArticle[] = [
 <p>Расчет включает несколько этапов:</p>
 <ol>
 <li><strong>Формирование пула запросов</strong> - 100+ релевантных запросов на языках целевой аудитории</li>
-<li><strong>Проверка в AI‑системах</strong> - каждый запрос отправляется в ChatGPT, Gemini, Perplexity, Claude и Copilot</li>
+<li><strong>Проверка в AI‑системах</strong> - каждый запрос отправляется в ChatGPT, Claude, Gemini, Perplexity и Copilot</li>
 <li><strong>Анализ ответов</strong> - фиксируется, упоминается ли бренд, в каком контексте, на какой позиции в ответе</li>
 <li><strong>Расчет score</strong> - процент запросов с упоминанием бренда от общего числа</li>
 </ol>
@@ -363,7 +363,7 @@ export const blogArticles: BlogArticle[] = [
 <p>The calculation involves several stages:</p>
 <ol>
 <li><strong>Query pool formation</strong> - 100+ relevant queries in your target audience languages</li>
-<li><strong>AI system checks</strong> - each query is sent to ChatGPT, Gemini, Perplexity, Claude, and Copilot</li>
+<li><strong>AI system checks</strong> - each query is sent to ChatGPT, Claude, Gemini, Perplexity, and Copilot</li>
 <li><strong>Response analysis</strong> - we record whether the brand is mentioned, in what context, and at what position in the response</li>
 <li><strong>Score calculation</strong> - percentage of queries with brand mentions out of total</li>
 </ol>
@@ -433,7 +433,7 @@ export const blogArticles: BlogArticle[] = [
 <p>Hesaplama birden fazla asamadan olusur:</p>
 <ol>
 <li><strong>Sorgu havuzu olusturma</strong> - hedef kitle dillerinde 100+ ilgili sorgu</li>
-<li><strong>AI sistem kontrolleri</strong> - her sorgu ChatGPT, Gemini, Perplexity, Claude ve Copilot'a gonderilir</li>
+<li><strong>AI sistem kontrolleri</strong> - her sorgu ChatGPT, Claude, Gemini, Perplexity ve Copilot'a gonderilir</li>
 <li><strong>Yanit analizi</strong> - markadan bahsedilip bahsedilmedigi, hangi baglamda ve yanitdaki konumu kaydedilir</li>
 <li><strong>Puan hesaplama</strong> - toplam sorgu icinde marka bahsedilen sorgularin yuzdesi</li>
 </ol>
@@ -503,7 +503,7 @@ export const blogArticles: BlogArticle[] = [
 <p>يتضمن الحساب عدة مراحل:</p>
 <ol>
 <li><strong>تكوين مجموعة الاستفسارات</strong> - اكثر من 100 استفسار ذي صلة بلغات جمهورك المستهدف</li>
-<li><strong>فحص انظمة AI</strong> - يتم ارسال كل استفسار الى ChatGPT وGemini وPerplexity وClaude وCopilot</li>
+<li><strong>فحص انظمة AI</strong> - يتم ارسال كل استفسار الى ChatGPT وClaude وGemini وPerplexity وCopilot</li>
 <li><strong>تحليل الاجابات</strong> - نسجل ما اذا كانت العلامة التجارية مذكورة وفي اي سياق وفي اي موقع في الاجابة</li>
 <li><strong>حساب النتيجة</strong> - نسبة الاستفسارات التي تذكر العلامة التجارية من اجمالي الاستفسارات</li>
 </ol>

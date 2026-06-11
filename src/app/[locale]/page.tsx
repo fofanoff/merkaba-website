@@ -18,10 +18,10 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     ar: "Merkaba Digital - Generative Engine Optimization (GEO)",
   };
   const descriptions: Record<string, string> = {
-    ru: "Делаем бизнес видимым для AI. Оптимизация для ChatGPT, Gemini, Perplexity, Claude. AI Visibility Audit, мониторинг, контент-инжиниринг. merkaba.vip",
-    en: "Making businesses visible to AI. Optimization for ChatGPT, Gemini, Perplexity, Claude. AI Visibility Audit, monitoring, content engineering. merkaba.vip",
-    tr: "Isletmenizi AI icin gorunur kiliyoruz. ChatGPT, Gemini, Perplexity, Claude icin optimizasyon. merkaba.vip",
-    ar: "نجعل عملك مرئيا للذكاء الاصطناعي. التحسين لـ ChatGPT وGemini وPerplexity وClaude. merkaba.vip",
+    ru: "Делаем бизнес видимым для AI. Оптимизация для ChatGPT, Claude, Gemini, Perplexity. AI Visibility Audit, мониторинг, контент-инжиниринг. merkaba.vip",
+    en: "Making businesses visible to AI. Optimization for ChatGPT, Claude, Gemini, Perplexity. AI Visibility Audit, monitoring, content engineering. merkaba.vip",
+    tr: "Isletmenizi AI icin gorunur kiliyoruz. ChatGPT, Claude, Gemini, Perplexity icin optimizasyon. merkaba.vip",
+    ar: "نجعل عملك مرئيا للذكاء الاصطناعي. التحسين لـ ChatGPT وClaude وGemini وPerplexity. merkaba.vip",
   };
   return {
     title: titles[locale] || titles.en,

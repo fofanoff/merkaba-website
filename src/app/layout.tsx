@@ -4,7 +4,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Merkaba Digital - Generative Engine Optimization (GEO)",
   description:
-    "Делаем бизнес видимым для AI. Оптимизация для ChatGPT, Gemini, Perplexity, Claude. AI Visibility Audit, мониторинг, контент-инжиниринг. merkaba.vip",
+    "Делаем бизнес видимым для AI. Оптимизация для ChatGPT, Claude, Gemini, Perplexity. AI Visibility Audit, мониторинг, контент-инжиниринг. merkaba.vip",
   icons: {
     icon: [
       { url: "/favicon.ico", sizes: "any" },
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Merkaba Digital - Generative Engine Optimization (GEO)",
     description:
-      "Making businesses visible to AI. Optimization for ChatGPT, Gemini, Perplexity, Claude. AI Visibility Audit, monitoring, content engineering. merkaba.vip",
+      "Making businesses visible to AI. Optimization for ChatGPT, Claude, Gemini, Perplexity. AI Visibility Audit, monitoring, content engineering. merkaba.vip",
     images: ["https://merkaba.vip/og-image.png"],
   },
 };

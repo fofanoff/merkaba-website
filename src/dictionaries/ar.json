@@ -20,7 +20,7 @@
     "faq": [
       {
         "q": "ما هو GEO?",
-        "a": "Generative Engine Optimization هو تحسين الأعمال للظهور في أنظمة الذكاء الاصطناعي: ChatGPT وGemini وPerplexity وClaude. عندما يسأل المستخدم AI عن منتج أو خدمة، يضمن GEO أن تكون علامتك التجارية في الإجابة. إنه التطور التالي بعد SEO"
+        "a": "Generative Engine Optimization هو تحسين الأعمال للظهور في أنظمة الذكاء الاصطناعي: ChatGPT وClaude وGemini وPerplexity. عندما يسأل المستخدم AI عن منتج أو خدمة، يضمن GEO أن تكون علامتك التجارية في الإجابة. إنه التطور التالي بعد SEO"
       },
       {
         "q": "كيف يختلف GEO عن SEO?",
@@ -40,7 +40,7 @@
       },
       {
         "q": "أي أنظمة AI تتتبعون?",
-        "a": "نراقب خمس منصات AI رئيسية: ChatGPT (OpenAI) وGemini (Google) وPerplexity وClaude (Anthropic) وCopilot (Microsoft). لكل منها خوارزميات استشهاد خاصة، واستراتيجية التحسين تراعي خصائص كل منها"
+        "a": "نراقب خمس منصات AI رئيسية: ChatGPT (OpenAI) وClaude (Anthropic) وGemini (Google) وPerplexity وCopilot (Microsoft). لكل منها خوارزميات استشهاد خاصة، واستراتيجية التحسين تراعي خصائص كل منها"
       },
       {
         "q": "هل تعملون مع شركات خارج تركيا?",
@@ -97,7 +97,7 @@
     "launch_light_price": "$1,500",
     "launch_light_type": "تدقيق لمرة واحدة",
     "launch_light_features": [
-      "فحص ظهور العلامة التجارية في ChatGPT وGemini وPerplexity وClaude",
+      "فحص ظهور العلامة التجارية في ChatGPT وClaude وGemini وPerplexity",
       "30+ استعلام مستهدف بلغة واحدة",
       "تحليل 3 منافسين مباشرين",
       "AI Visibility Score لكل منصة",
@@ -191,7 +191,7 @@
         "number": "01",
         "title": "AI Visibility Audit",
         "items": [
-          "تحليل كامل في ChatGPT وGemini وPerplexity وClaude وCopilot",
+          "تحليل كامل في ChatGPT وClaude وGemini وPerplexity وCopilot",
           "100+ استعلام بعدة لغات",
           "خريطة المشهد التنافسي",
           "Citation Score وSentiment Analysis",

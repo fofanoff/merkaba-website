@@ -10,7 +10,7 @@ const organizationSchema = {
   url: SITE_URL,
   logo: `${SITE_URL}/logo.png`,
   description:
-    "Generative Engine Optimization (GEO) agency. AI visibility optimization for ChatGPT, Gemini, Perplexity, Claude",
+    "Generative Engine Optimization (GEO) agency. AI visibility optimization for ChatGPT, Claude, Gemini, Perplexity",
   foundingDate: "2026",
   areaServed: "Worldwide",
   knowsLanguage: ["en", "ru", "tr", "ar"],

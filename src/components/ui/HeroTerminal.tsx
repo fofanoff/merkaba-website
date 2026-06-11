@@ -12,9 +12,9 @@ export function HeroTerminal({
 
   const results = [
     { platform: "ChatGPT", status: t.not_found, color: "text-danger" },
+    { platform: "Claude", status: t.not_found, color: "text-danger" },
     { platform: "Gemini", status: t.not_found, color: "text-danger" },
     { platform: "Perplexity", status: t.mentioned_once, color: "text-warning" },
-    { platform: "Claude", status: t.not_found, color: "text-danger" },
     { platform: "Copilot", status: t.not_found, color: "text-danger" },
   ];
 
