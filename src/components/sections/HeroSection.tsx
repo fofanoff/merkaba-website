@@ -51,7 +51,7 @@ export function HeroSection({
         className="absolute inset-0 z-[2] pointer-events-none lg:hidden"
         style={{
           background:
-            "linear-gradient(180deg, rgba(11,14,26,0.85) 0%, rgba(11,14,26,0.3) 35%, rgba(11,14,26,0.3) 65%, rgba(11,14,26,0.85) 100%)",
+            "linear-gradient(180deg, rgba(11,14,26,0.85) 0%, rgba(11,14,26,0.55) 30%, rgba(11,14,26,0.55) 70%, rgba(11,14,26,0.9) 100%)",
         }}
       />
       <div

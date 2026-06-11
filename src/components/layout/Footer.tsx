@@ -44,7 +44,7 @@ export function Footer({
           {/* Navigation - 2 columns */}
           <div>
             <h4 className="text-text-primary font-heading font-semibold text-sm uppercase tracking-wider mb-4">
-              {dict.nav.services}
+              {dict.footer.nav_title || dict.nav.services}
             </h4>
             <nav className="grid grid-cols-2 gap-x-8 gap-y-3">
               {navItems.map((item) => (

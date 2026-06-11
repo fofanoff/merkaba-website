@@ -257,14 +257,14 @@ export function CasesPage({
                     <p className="text-text-muted text-xs mb-2 font-mono uppercase tracking-wider">
                       {r.metric}
                     </p>
-                    <div className="flex items-center justify-center gap-2 mb-2">
-                      <span className="text-text-muted text-sm line-through">
+                    <div className="flex flex-wrap items-center justify-center gap-2 mb-2">
+                      <span className="text-text-muted text-sm line-through whitespace-nowrap">
                         {r.before}
                       </span>
-                      <svg className="w-4 h-4 text-text-muted" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <svg className="w-4 h-4 text-text-muted shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
                       </svg>
-                      <span className="text-xl font-heading font-bold text-text-primary">
+                      <span className="text-xl font-heading font-bold text-text-primary whitespace-nowrap">
                         {r.after}
                       </span>
                     </div>

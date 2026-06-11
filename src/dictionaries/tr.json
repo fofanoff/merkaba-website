@@ -1,9 +1,94 @@
 {
-  "nav": { "home": "Ana Sayfa", "services": "Hizmetler", "cases": "Vakalar", "about": "Hakkımızda", "blog": "Blog", "contact": "İletişim", "partners": "Founding Partners", "cta": "Ücretsiz AI Denetimi" },
-  "hero": { "title": "AI işletmeniz hakkında ne diyor?", "subtitle": "500+ milyon kişi artık Google yerine ChatGPT, Gemini ve Perplexity'ye soruyor. AI işletmenizi önermiyorsa - şu anda müşteri kaybediyorsunuz", "cta_primary": "Ücretsiz Öğren", "cta_secondary": "Nasıl çalışır", "definition": "Generative Engine Optimization (GEO) - işletmeleri AI sistemlerinde görünürlük için optimize eden ajans", "last_updated": "Güncelleme: Nisan 2026", "faq_title": "GEO Hakkında Sık Sorulan Sorular", "faq": [{"q": "GEO nedir?", "a": "Generative Engine Optimization, bir işletmenin ChatGPT, Gemini, Perplexity, Claude gibi AI sistemlerinde görünürlük için optimizasyonudur. Bir kullanıcı AI'ya bir ürün veya hizmet sorduğunda, GEO markanızın yanıtta yer almasını sağlar. SEO'dan sonraki evrimdir"}, {"q": "GEO ile SEO arasındaki fark nedir?", "a": "SEO bir web sitesini Google'daki konumlar için optimize eder. GEO bir markayı AI yanıtlarında alıntılanmak için optimize eder. SEO tıklama getirir, GEO öneriler getirir. 2026'da her ikisine de ihtiyacınız var, ancak AI araması büyüdükçe GEO kritik önem kazanıyor"}, {"q": "İşletmem neden ChatGPT'de görünmüyor?", "a": "AI sistemleri yanıtları structured data, kaynak otoritesi ve anlamsal bağlantılara dayalı olarak oluşturur. Google'da iyi konumlara sahip olsanız bile, içeriğiniz AI'nin alıntılayabileceği formata optimize edilmemişse görünmez olabilir"}, {"q": "GEO optimizasyonu ne kadar?", "a": "Merkaba Digital üç program sunuyor: LAUNCH ($1,500'den tek seferlik denetim), GROWTH ($8,500/ay'dan) ve DOMINANCE ($15,000/ay'dan). Her biri AI denetimi, strateji ve izleme içerir. Ücretsiz başlangıç denetimi mevcut durumu değerlendirmenizi sağlar"}, {"q": "Sonuçlar ne zaman görülür?", "a": "İlk AI görünürlük iyileştirmeleri optimizasyonun başlamasından 4-8 hafta sonra ortaya çıkar. Sürdürülebilir büyüme 3-6 aylık sistematik çalışma gerektirir. Bazı taktikler (Schema.org işaretlemesi gibi) 2-3 hafta içinde etki gösterir"}, {"q": "Hangi AI sistemlerini takip ediyorsunuz?", "a": "Beş ana AI platformunu izliyoruz: ChatGPT (OpenAI), Gemini (Google), Perplexity, Claude (Anthropic) ve Copilot (Microsoft). Her birinin kendi alıntı algoritmaları vardır ve optimizasyon stratejisi her birinin özelliklerini dikkate alır"}, {"q": "Türkiye dışındaki şirketlerle çalışıyor musunuz?", "a": "Evet. GEO coğrafyaya bağlı değildir - AI sistemleri küreseldir. Herhangi bir ülkeden işletmelerle dört dilde çalışıyoruz: İngilizce, Rusça, Türkçe ve Arapça"}, {"q": "Mevcut sitemizi değiştirmemiz gerekiyor mu?", "a": "Tamamen değil. Structured data ekliyoruz, içerik yapısını optimize ediyoruz ve yeni AI-optimized sayfalar oluşturuyoruz. Çoğu durumda mevcut site yeniden tasarım olmadan uyarlanır"}] },
-  "pain": { "title": "Yeni Arama Gerçekliği", "stat1_value": "73%", "stat1_label": "tüketici AI yanıtlarına aramadan daha fazla güveniyor", "stat2_value": "40%", "stat2_label": "arama zaten AI sistemlerinden geçiyor", "stat3_value": "0", "stat3_label": "kez AI çoğu işletmeden bahsediyor" },
-  "solution": { "title": "Generative Engine Optimization", "subtitle": "İşletmenizi yapay zeka için görünür kılıyoruz", "pillar1_title": "AI Audit", "pillar1_desc": "5+ AI sisteminde tam görünürlük analizi", "pillar2_title": "Entity Building", "pillar2_desc": "Dijital varlık ve veri alanında otorite", "pillar3_title": "Content Engineering", "pillar3_desc": "AI alıntıları için optimize edilmiş içerik", "pillar4_title": "Monitoring", "pillar4_desc": "Gerçek zamanlı kontrol paneli ve raporlama" },
-  "dashboard": { "title": "Tam Şeffaflık. Gerçek Metrikler", "subtitle": "Kişisel AI Görünürlük Paneliniz - gerçek zamanlı", "metric1": "Görünürlük Puanı", "metric2": "Marka Bahsedilmeleri", "metric3": "Alıntı Puanı", "metric4": "Duygu Analizi" },
+  "nav": {
+    "home": "Ana Sayfa",
+    "services": "Hizmetler",
+    "cases": "Vakalar",
+    "about": "Hakkımızda",
+    "blog": "Blog",
+    "contact": "İletişim",
+    "partners": "Founding Partners",
+    "cta": "Ücretsiz AI Denetimi"
+  },
+  "hero": {
+    "title": "Stratejik varlık olarak markanın AI görünürlüğü",
+    "subtitle": "Merkaba, markaların ChatGPT, Gemini, Perplexity ve diğer AI sistemlerinin yanıtlarındaki varlığını güçlendirmesine yardımcı olur - denetim, alıntılanan kaynaklarla çalışma ve AI görünürlüğünün sistemli yönetimi yoluyla.",
+    "cta_primary": "Demo paneli görüntüle",
+    "cta_secondary": "Denetim talep et",
+    "definition": "Generative Engine Optimization (GEO) - işletmeleri AI sistemlerinde görünürlük için optimize eden ajans",
+    "last_updated": "Güncelleme: Nisan 2026",
+    "faq_title": "GEO Hakkında Sık Sorulan Sorular",
+    "faq": [
+      {
+        "q": "GEO nedir?",
+        "a": "Generative Engine Optimization, bir işletmenin ChatGPT, Gemini, Perplexity, Claude gibi AI sistemlerinde görünürlük için optimizasyonudur. Bir kullanıcı AI'ya bir ürün veya hizmet sorduğunda, GEO markanızın yanıtta yer almasını sağlar. SEO'dan sonraki evrimdir"
+      },
+      {
+        "q": "GEO ile SEO arasındaki fark nedir?",
+        "a": "SEO bir web sitesini Google'daki konumlar için optimize eder. GEO bir markayı AI yanıtlarında alıntılanmak için optimize eder. SEO tıklama getirir, GEO öneriler getirir. 2026'da her ikisine de ihtiyacınız var, ancak AI aramasının payı büyüdükçe GEO'nun ağırlığı da artıyor"
+      },
+      {
+        "q": "İşletmem neden ChatGPT'de görünmüyor?",
+        "a": "AI sistemleri yanıtları structured data, kaynak otoritesi ve anlamsal bağlantılara dayalı olarak oluşturur. Google'da iyi konumlara sahip olsanız bile, içeriğiniz AI'nin alıntılayabileceği formata optimize edilmemişse görünmez olabilir"
+      },
+      {
+        "q": "GEO optimizasyonu ne kadar?",
+        "a": "Merkaba Digital üç program sunuyor: LAUNCH ($1,500'den tek seferlik denetim), GROWTH ($8,500/ay'dan) ve DOMINANCE ($15,000/ay'dan). Her biri AI denetimi, strateji ve izleme içerir. Ücretsiz başlangıç denetimi mevcut durumu değerlendirmenizi sağlar"
+      },
+      {
+        "q": "Sonuçlar ne zaman görülür?",
+        "a": "İlk AI görünürlük iyileştirmeleri optimizasyonun başlamasından 4-8 hafta sonra ortaya çıkar. Sürdürülebilir büyüme 3-6 aylık sistematik çalışma gerektirir. Bazı taktikler (Schema.org işaretlemesi gibi) 2-3 hafta içinde etki gösterir"
+      },
+      {
+        "q": "Hangi AI sistemlerini takip ediyorsunuz?",
+        "a": "Beş ana AI platformunu izliyoruz: ChatGPT (OpenAI), Gemini (Google), Perplexity, Claude (Anthropic) ve Copilot (Microsoft). Her birinin kendi alıntı algoritmaları vardır ve optimizasyon stratejisi her birinin özelliklerini dikkate alır"
+      },
+      {
+        "q": "Türkiye dışındaki şirketlerle çalışıyor musunuz?",
+        "a": "Evet. GEO coğrafyaya bağlı değildir - AI sistemleri küreseldir. Herhangi bir ülkeden işletmelerle dört dilde çalışıyoruz: İngilizce, Rusça, Türkçe ve Arapça"
+      },
+      {
+        "q": "Mevcut sitemizi değiştirmemiz gerekiyor mu?",
+        "a": "Tamamen değil. Structured data ekliyoruz, içerik yapısını optimize ediyoruz ve yeni AI-optimized sayfalar oluşturuyoruz. Çoğu durumda mevcut site yeniden tasarım olmadan uyarlanır"
+      }
+    ],
+    "eyebrow": "Generative Engine Optimization",
+    "supporting": "Aynı anda sınırlı sayıda projeyle çalışıyoruz. Her biri kıdemli uzmanlar tarafından yürütülüyor - net ölçütler, ölçülebilir ilerleme ve şeffaf raporlama ile",
+    "microcopy": "Demo açık - kayıt ve başvuru gerekmez"
+  },
+  "pain": {
+    "title": "Müşteriler zaten AI'ya soruyor",
+    "stat1_value": "73%",
+    "stat1_label": "tüketici AI yanıtlarına aramadan daha fazla güveniyor",
+    "stat2_value": "40%",
+    "stat2_label": "arama zaten AI sistemlerinden geçiyor",
+    "stat3_value": "0",
+    "stat3_label": "çoğu markanın AI yanıtlarındaki bahsedilme sayısı"
+  },
+  "solution": {
+    "title": "Generative Engine Optimization",
+    "subtitle": "İşletmenizi yapay zeka için görünür kılıyoruz",
+    "pillar1_title": "AI Audit",
+    "pillar1_desc": "5+ AI sisteminde tam görünürlük analizi",
+    "pillar2_title": "Entity Building",
+    "pillar2_desc": "Dijital varlık ve veri alanında otorite",
+    "pillar3_title": "Content Engineering",
+    "pillar3_desc": "AI alıntıları için optimize edilmiş içerik",
+    "pillar4_title": "Monitoring",
+    "pillar4_desc": "Gerçek zamanlı kontrol paneli ve raporlama"
+  },
+  "dashboard": {
+    "eyebrow": "GEO yönetimi için çalışma aracı",
+    "title": "AI görünürlük paneli sonucu ölçülebilir kılar",
+    "subtitle": "Markanın nerede göründüğünü, AI sistemlerinin hangi kaynakları alıntıladığını, platformlara ve sorgu kategorilerine göre dinamiğin nasıl değiştiğini, rakiplerin hâlâ nerede görünürlük payı aldığını ve nerede önde olduğunuzu görürsünüz.",
+    "supporting": "Bu, AI görünürlük dinamiğini izlediğiniz, temel sorguları takip ettiğiniz ve proje hakkında şeffaf raporlama aldığınız çalışma panelidir.",
+    "cta_primary": "Demo paneli aç",
+    "cta_secondary": "İşbirliğini görüş",
+    "microcopy": "Demoda farklı sektörlerden üç projenin gerçek panelleri var",
+    "metric1": "AI Visibility Score",
+    "metric2": "Marka Bahsedilmeleri",
+    "metric3": "Alıntı Puanı",
+    "metric4": "Duygu Analizi"
+  },
   "pricing": {
     "title": "İşbirliği Programları",
     "launch_name": "LAUNCH",
@@ -71,23 +156,280 @@
     ],
     "dominance_cta": "Programi Tartis"
   },
-  "closing": { "title": "Rakipleriniz zaten GEO'ya yatırım yapıyor", "subtitle": "AI optimizasyonu olmadan geçen her gün, AI'ın başkalarına yönlendirdiği müşterilerdir", "cta": "Ücretsiz AI Denetimi Alın" },
-  "services": { "hero_title": "SEO tıklama çeker. GEO öneriler çeker", "comparison": { "seo_title": "Geleneksel SEO", "geo_title": "Generative Engine Optimization", "rows": [["Google sıraları için mücadele", "AI markanızdan alıntı yapar"], ["Tıklama bağımlılığı", "Öneri kaynağı olarak"], ["Düşen CTR", "Sürdürülebilir organik trafik"], ["Sürekli algoritma takibi", "Temel görünürlük"]] }, "methodology_title": "Metodolojimiz", "pillars": [], "packages_title": "Programınızı Seçin", "packages_cta": "Hangi paket emin değil misiniz?", "definition": "Generative Engine Optimization (GEO), AEO (Answer Engine Optimization) ve LLMO (Large Language Model Optimization) olarak da bilinen - isletmeleri AI sistemlerinde gorunurluk ve alinti icin optimize etme", "last_updated": "Güncelleme: Nisan 2026", "faq_title": "SSS", "faq": [{"q": "AI Visibility Audit neyi kapsar?", "a": "5 AI sisteminde 100+ sorguyla birden fazla dilde marka görünürlüğünün tam analizi. Alacağınız: mevcut AI Visibility Score, rakip haritası, nişinizdeki alıntılanan kaynak listesi ve önceliklendirilmiş eylem planı"}, {"q": "AI Visibility Score nedir?", "a": "Bir AI sisteminin markanızdan bahsettiği sorguların yüzdesi. 100 ilgili sorgudan ChatGPT sizi 15'inde bahsediyorsa, puanınız %15'tir. Piyasa ortalaması %20-25, niş liderleri %60-70'e ulaşır"}, {"q": "Entity Building neden gerekli?", "a": "AI sistemleri otoriteyi \"varlıklar\" aracılığıyla belirler - Knowledge Graph, Schema.org, Wikipedia, sektör dizinlerindeki markanız hakkındaki bağlantılı veriler. Entity profiliniz ne kadar güçlüyse, AI sizi o kadar sık alıntılar"}, {"q": "Content Engineering neyi kapsar?", "a": "Mevcut içeriğin optimizasyonu ve AI'nin alıntılamayı tercih ettiği formatlarda yeni içerik oluşturulması: FAQ sayfaları, uzman rehberler, karşılaştırma tabloları, terim tanımları. İçeriği Schema.org işaretlemesiyle de yapılandırıyoruz"}, {"q": "AI Visibility Dashboard nasıl çalışır?", "a": "Gerçek zamanlı verilerle kişisel web dashboard'u. Gösterir: platform bazında AI Visibility Score, bahsedilme dinamikleri, rakip karşılaştırması, alıntılanan kaynaklar, öneriler. Güvenli bir bağlantı üzerinden 7/24 erişilebilir"}, {"q": "Sadece denetimle başlayabilir miyim?", "a": "Evet. LAUNCH paketi ($1,500'den) detaylı rapor ve eylem planı içeren tek seferlik bir denetimdir. Mevcut AI görünürlüğünün tam resmini alırsınız ve bizimle devam edip etmemeye karar verebilirsiniz"}, {"q": "Rakiplerin zaten GEO'su varsa ne olur?", "a": "Şirketlerin %12'sinden azı belgelenmiş bir GEO stratejisine sahip. Rakiplerinizin AI için sistematik olarak optimize edilmiş olma olasılığı düşük. Ama bu fırsat penceresi kapanıyor: ne kadar erken başlarsanız, avantajınız o kadar güçlü olur"}, {"q": "Çok dilli GEO destekliyor musunuz?", "a": "Evet. Dört dilde denetim ve optimizasyon yapıyoruz: EN, RU, TR, AR. AI sistemleri farklı dillerde farklı yanıtlar verir, bu nedenle uluslararası işletmeler için çok dilli strateji kritik önem taşır"}] },
-  "contact": { "last_updated": "Güncelleme: Nisan 2026", "hero_title": "AI için görünür olmaya hazır mısınız?", "hero_subtitle": "Talep bırakın - 48 saat içinde ücretsiz AI denetimi yapacağız", "form": { "name": "İsim", "company": "Şirket", "website": "Web Sitesi", "email": "E-posta", "phone": "Telefon / WhatsApp", "industry": "Sektör", "language": "Tercih edilen dil", "comment": "Yorum", "submit": "Ücretsiz Denetim Talep Edin", "success": "Tamam. Stratejistimiz projenizi gorusmek icin 24 saat icinde sizinle iletisime gececek", "error": "Bir hata oluştu." }, "industries": ["Gayrimenkul", "Sağlık", "Finans", "E-ticaret", "Turizm", "Profesyonel Hizmetler", "SaaS", "Diğer"], "languages": ["Русский", "English", "Türkçe", "العربية"], "direct_title": "Veya doğrudan iletişime geçin", "email_label": "E-posta", "email_value": "merkaba.vip@gmail.com", "whatsapp_label": "WhatsApp", "telegram_label": "Telegram", "faq_title": "SSS", "faq": [] },
-  "partners": { "hero_badge": "FOUNDING PARTNERS PROGRAMI", "hero_spots_left": "Sadece", "hero_spots_of": "yer kaldı, toplam", "hero_spots_total": 20, "hero_spots_taken": 6, "hero_title": "AI devriminden kazanın", "hero_subtitle": "Merkaba Digital'in 20 Founding Partner'ından biri olun. Yönlendirdiğiniz her müşteriden ömür boyu recurring. Kayıt sınırlı", "models_title": "İki ödül modeli", "cash_title": "%10 komisyon", "cash_label": "Nakit", "cash_desc": "Yönlendirdiğiniz müşterinin her sözleşmesinden %10'unu hesabınıza alın", "cash_example": "GROWTH müşterisi ($8,500/ay) = size $850/ay, ödediği sürece", "balance_badge": "x2 değer", "balance_title": "%20 bakiyenize", "balance_label": "Bakiye", "balance_recommended": "Önerilen", "balance_desc": "Ödülünüzü kendi işinizi tanıtmak için kullanın ve çift oran kazanın", "balance_example": "GROWTH müşterisi ($8,500/ay) = GEO bakiyenize $1,700/ay", "balance_note": "Kendi AI tanıtımınız için kullanın", "steps_title": "Nasıl çalışır", "step1_title": "Kayıt", "step1_desc": "Formu doldurun, referans linkinizi alın", "step2_title": "Tavsiye", "step2_desc": "Kişilerinize anlatın veya linki paylaşın", "step3_title": "Bağlantı", "step3_desc": "Kişiniz müşteri olur", "step4_title": "Kazanç", "step4_desc": "Hesabınıza %10 veya bakiyenize %20", "calc_title": "Gelirinizi hesaplayın", "calc_clients": "Kaç müşteri yönlendireceksiniz?", "calc_package": "Paket", "calc_mode": "Model", "calc_monthly": "Geliriniz", "calc_yearly": "yıllık", "calc_per_month": "/ay", "audience_title": "Kimler için", "audience1_title": "İşletme sahipleri", "audience1_desc": "AI görünürlüğüne ihtiyaç duyan ortaklar ve kontaklar", "audience2_title": "Pazarlama ajansları", "audience2_desc": "GEO'yu hizmet portföyünüze ekleyin", "audience3_title": "Danışmanlar ve koçlar", "audience3_desc": "Önerebileceğiniz somut bir araç", "audience4_title": "Dijital uzmanlar", "audience4_desc": "SEO, SMM, PR: GEO müşterileriniz için bir sonraki adım", "terms_title": "Founding Partners koşulları", "terms_badge": "İlk 20 partner için özel", "terms_items": ["Program 20 katılımcıyla sınırlı", "Founding Partners ömür boyu recurring alır - müşteri ödediği sürece", "Ödül müşteri ödemesinden sonra aktarılır", "%10 nakit aylık ödenir", "%20 bakiye tüm Merkaba Digital paketleri için otomatik aktarılır", "Minimum ödeme eşiği yok", "Yönlendirilen müşteri sayısında sınır yok", "Kayıt kapandıktan sonra koşullar revize edilecek"], "terms_highlight": "Ömür boyu recurring", "cta_title": "Founding Partners arasındaki yerinizi alın", "cta_subtitle": "14 yer kaldı. Kayıt kapandıktan sonra bu koşullar bir daha sunulmayacak", "form_name": "İsim", "form_email": "E-posta", "form_messenger": "WhatsApp / Telegram", "form_plan": "Müşterileri nasıl çekmeyi planlıyorsunuz?", "form_submit": "Founding Partner Olun", "form_note": "24 saat içinde sizinle iletişime geçip kişisel referans linkinizi vereceğiz", "form_success": "Teşekkürler! En kısa sürede sizinle iletişime geçeceğiz." },
-  "terminal": { "title": "ai-visibility-check", "command_prefix": "merkaba scan --brand", "brand_name": "İşletmeniz", "scanning": "5 AI platformu taranıyor...", "not_found": "Bulunamadı", "mentioned_once": "1 kez bahsedildi", "score_label": "AI Visibility Score", "conclusion": "AI markanızı tanımıyor. Bunu düzeltebiliriz" },
+  "closing": {
+    "title": "AI, müşterilerinizin sorularını zaten yanıtlıyor",
+    "subtitle": "Geriye markanızın bu yanıtlarda olup olmadığını öğrenmek kalıyor. Ücretsiz denetim bunu 48 saat içinde gösterir",
+    "cta": "Ücretsiz AI Denetimi Alın"
+  },
+  "services": {
+    "hero_title": "SEO tıklama çeker. GEO öneriler çeker",
+    "comparison": {
+      "seo_title": "Geleneksel SEO",
+      "geo_title": "Generative Engine Optimization",
+      "rows": [
+        [
+          "Google sıraları için mücadele",
+          "AI markanızdan alıntı yapar"
+        ],
+        [
+          "Tıklama bağımlılığı",
+          "Öneri kaynağı olarak"
+        ],
+        [
+          "Düşen CTR",
+          "Sürdürülebilir organik trafik"
+        ],
+        [
+          "Sürekli algoritma takibi",
+          "Temel görünürlük"
+        ]
+      ]
+    },
+    "methodology_title": "Metodolojimiz",
+    "pillars": [
+      {
+        "number": "01",
+        "title": "AI Visibility Audit",
+        "items": [
+          "ChatGPT, Gemini, Perplexity, Claude, Copilot'ta tam analiz",
+          "Birkaç dilde 100+ sorgu",
+          "Rekabet ortamı haritası",
+          "Citation Score ve Sentiment Analysis",
+          "Süre: 5-7 iş günü"
+        ]
+      },
+      {
+        "number": "02",
+        "title": "Entity Authority Building",
+        "items": [
+          "Structured Data (Schema.org)",
+          "Knowledge Graph optimizasyonu",
+          "Otoriter backlink stratejisi",
+          "AI'nin alıntıladığı platformlarda profiller",
+          "Wikipedia/Wikidata varlığı"
+        ]
+      },
+      {
+        "number": "03",
+        "title": "Content Engineering",
+        "items": [
+          "AI için optimize edilmiş sayfalar ve SSS",
+          "Temel sorgular için uzman içerik",
+          "Çok dilli uyarlama",
+          "AI'nin alıntıladığı içerik formatı"
+        ]
+      },
+      {
+        "number": "04",
+        "title": "Monitoring & Reporting",
+        "items": [
+          "Kişisel AI Visibility Dashboard",
+          "Haftalık otomatik izleme",
+          "Aylık strateji oturumları",
+          "AI güncellemelerine göre strateji ayarı"
+        ]
+      }
+    ],
+    "packages_title": "Programınızı Seçin",
+    "packages_cta": "Hangi paketten emin değil misiniz? Ücretsiz AI denetimiyle başlayın",
+    "definition": "Generative Engine Optimization (GEO), AEO (Answer Engine Optimization) ve LLMO (Large Language Model Optimization) olarak da bilinen - isletmeleri AI sistemlerinde gorunurluk ve alinti icin optimize etme",
+    "last_updated": "Güncelleme: Nisan 2026",
+    "faq_title": "SSS",
+    "faq": [
+      {
+        "q": "AI Visibility Audit neyi kapsar?",
+        "a": "5 AI sisteminde 100+ sorguyla birden fazla dilde marka görünürlüğünün tam analizi. Alacağınız: mevcut AI Visibility Score, rakip haritası, nişinizdeki alıntılanan kaynak listesi ve önceliklendirilmiş eylem planı"
+      },
+      {
+        "q": "AI Visibility Score nedir?",
+        "a": "Bir AI sisteminin markanızdan bahsettiği sorguların yüzdesi. 100 ilgili sorgudan ChatGPT sizi 15'inde bahsediyorsa, puanınız %15'tir. Piyasa ortalaması %20-25, niş liderleri %60-70'e ulaşır"
+      },
+      {
+        "q": "Entity Building neden gerekli?",
+        "a": "AI sistemleri otoriteyi \"varlıklar\" aracılığıyla belirler - Knowledge Graph, Schema.org, Wikipedia, sektör dizinlerindeki markanız hakkındaki bağlantılı veriler. Entity profiliniz ne kadar güçlüyse, AI sizi o kadar sık alıntılar"
+      },
+      {
+        "q": "Content Engineering neyi kapsar?",
+        "a": "Mevcut içeriğin optimizasyonu ve AI'nin alıntılamayı tercih ettiği formatlarda yeni içerik oluşturulması: FAQ sayfaları, uzman rehberler, karşılaştırma tabloları, terim tanımları. İçeriği Schema.org işaretlemesiyle de yapılandırıyoruz"
+      },
+      {
+        "q": "AI Visibility Dashboard nasıl çalışır?",
+        "a": "Gerçek zamanlı verilerle kişisel web dashboard'u. Gösterir: platform bazında AI Visibility Score, bahsedilme dinamikleri, rakip karşılaştırması, alıntılanan kaynaklar, öneriler. Güvenli bir bağlantı üzerinden 7/24 erişilebilir"
+      },
+      {
+        "q": "Sadece denetimle başlayabilir miyim?",
+        "a": "Evet. LAUNCH paketi ($1,500'den) detaylı rapor ve eylem planı içeren tek seferlik bir denetimdir. Mevcut AI görünürlüğünün tam resmini alırsınız ve bizimle devam edip etmemeye karar verebilirsiniz"
+      },
+      {
+        "q": "Rakiplerin zaten GEO'su varsa ne olur?",
+        "a": "Şirketlerin %12'sinden azı belgelenmiş bir GEO stratejisine sahip. Rakiplerinizin AI için sistematik olarak optimize edilmiş olma olasılığı düşük. Ama bu fırsat penceresi kapanıyor: ne kadar erken başlarsanız, avantajınız o kadar güçlü olur"
+      },
+      {
+        "q": "Çok dilli GEO destekliyor musunuz?",
+        "a": "Evet. Dört dilde denetim ve optimizasyon yapıyoruz: EN, RU, TR, AR. AI sistemleri farklı dillerde farklı yanıtlar verir, bu nedenle uluslararası işletmelerin çok dilli bir stratejiye ihtiyacı var"
+      }
+    ]
+  },
+  "contact": {
+    "last_updated": "Güncelleme: Nisan 2026",
+    "hero_title": "AI için görünür olmaya hazır mısınız?",
+    "hero_subtitle": "Talep bırakın - 48 saat içinde ücretsiz AI denetimi yapacağız",
+    "form": {
+      "name": "İsim",
+      "company": "Şirket",
+      "website": "Web Sitesi",
+      "email": "E-posta",
+      "phone": "Telefon / WhatsApp",
+      "industry": "Sektör",
+      "language": "Tercih edilen dil",
+      "comment": "Yorum",
+      "submit": "Ücretsiz Denetim Talep Edin",
+      "success": "Tamam. Stratejistimiz projenizi gorusmek icin 24 saat icinde sizinle iletisime gececek",
+      "error": "Bir hata oluştu."
+    },
+    "industries": [
+      "Gayrimenkul",
+      "Sağlık",
+      "Finans",
+      "E-ticaret",
+      "Turizm",
+      "Profesyonel Hizmetler",
+      "SaaS",
+      "Diğer"
+    ],
+    "languages": [
+      "Русский",
+      "English",
+      "Türkçe",
+      "العربية"
+    ],
+    "direct_title": "Veya doğrudan iletişime geçin",
+    "email_label": "E-posta",
+    "email_value": "merkaba.vip@gmail.com",
+    "whatsapp_label": "WhatsApp",
+    "telegram_label": "Telegram",
+    "faq_title": "SSS",
+    "faq": [
+      {
+        "q": "Ücretsiz denetim neleri kapsar?",
+        "a": "Markanızın 3 ana AI sisteminde (ChatGPT, Gemini, Perplexity) 10 temel sorguyla görünürlüğünün ekspres analizi. Mevcut durum ve önerilerle bir rapor alırsınız"
+      },
+      {
+        "q": "Ne kadar sürer?",
+        "a": "Ücretsiz denetim, başvurunun alınmasından sonra 48 saat içinde hazır olur. Tam AI Visibility Audit 5-7 iş günü sürer"
+      },
+      {
+        "q": "Başlamak için benden ne gerekiyor?",
+        "a": "Yalnızca web sitenizin adresi ve şirket adı. Gerisini kendimiz bulup analiz ederiz"
+      }
+    ]
+  },
+  "partners": {
+    "hero_badge": "FOUNDING PARTNERS PROGRAMI",
+    "hero_spots_left": "Sadece",
+    "hero_spots_of": "yer kaldı, toplam",
+    "hero_spots_total": 20,
+    "hero_spots_taken": 6,
+    "hero_title": "Yönlendirdiğiniz her müşteriden gelir",
+    "hero_subtitle": "Merkaba Digital'in 20 Founding Partner'ından biri olun - yönlendirdiğiniz her müşteriden ömür boyu recurring ile",
+    "models_title": "İki ödül modeli",
+    "cash_title": "%10 komisyon",
+    "cash_label": "Nakit",
+    "cash_desc": "Yönlendirdiğiniz müşterinin her sözleşmesinden %10'unu hesabınıza alın",
+    "cash_example": "GROWTH müşterisi ($8,500/ay) = size $850/ay, ödediği sürece",
+    "balance_badge": "x2 değer",
+    "balance_title": "%20 bakiyenize",
+    "balance_label": "Bakiye",
+    "balance_recommended": "Önerilen",
+    "balance_desc": "Ödülünüzü kendi işinizi tanıtmak için kullanın ve çift oran kazanın",
+    "balance_example": "GROWTH müşterisi ($8,500/ay) = GEO bakiyenize $1,700/ay",
+    "balance_note": "Kendi AI tanıtımınız için kullanın",
+    "steps_title": "Nasıl çalışır",
+    "step1_title": "Kayıt",
+    "step1_desc": "Formu doldurun, referans linkinizi alın",
+    "step2_title": "Tavsiye",
+    "step2_desc": "Kişilerinize anlatın veya linki paylaşın",
+    "step3_title": "Bağlantı",
+    "step3_desc": "Kişiniz müşteri olur",
+    "step4_title": "Kazanç",
+    "step4_desc": "Hesabınıza %10 veya bakiyenize %20",
+    "calc_title": "Gelirinizi hesaplayın",
+    "calc_clients": "Kaç müşteri yönlendireceksiniz?",
+    "calc_package": "Paket",
+    "calc_mode": "Model",
+    "calc_monthly": "Geliriniz",
+    "calc_yearly": "yıllık",
+    "calc_per_month": "/ay",
+    "audience_title": "Kimler için",
+    "audience1_title": "İşletme sahipleri",
+    "audience1_desc": "AI görünürlüğüne ihtiyaç duyan ortaklar ve kontaklar",
+    "audience2_title": "Pazarlama ajansları",
+    "audience2_desc": "GEO'yu hizmet portföyünüze ekleyin",
+    "audience3_title": "Danışmanlar ve koçlar",
+    "audience3_desc": "Önerebileceğiniz somut bir araç",
+    "audience4_title": "Dijital uzmanlar",
+    "audience4_desc": "SEO, SMM, PR: GEO müşterileriniz için bir sonraki adım",
+    "terms_title": "Founding Partners koşulları",
+    "terms_badge": "İlk 20 partner için özel",
+    "terms_items": [
+      "Program 20 katılımcıyla sınırlı",
+      "Founding Partners ömür boyu recurring alır - müşteri ödediği sürece",
+      "Ödül müşteri ödemesinden sonra aktarılır",
+      "%10 nakit aylık ödenir",
+      "%20 bakiye tüm Merkaba Digital paketleri için otomatik aktarılır",
+      "Minimum ödeme eşiği yok",
+      "Yönlendirilen müşteri sayısında sınır yok",
+      "Kayıt kapandıktan sonra koşullar revize edilecek"
+    ],
+    "terms_highlight": "Ömür boyu recurring",
+    "cta_title": "Founding Partners arasındaki yerinizi alın",
+    "cta_subtitle": "14 yer kaldı. Kayıt kapandıktan sonra yeni partnerler için koşullar revize edilecek",
+    "form_name": "İsim",
+    "form_email": "E-posta",
+    "form_messenger": "WhatsApp / Telegram",
+    "form_plan": "Müşterileri nasıl çekmeyi planlıyorsunuz?",
+    "form_submit": "Founding Partner Olun",
+    "form_note": "24 saat içinde sizinle iletişime geçip kişisel referans linkinizi vereceğiz",
+    "form_success": "Başvuru alındı. 24 saat içinde iletişime geçip kişisel referans linkinizi göndereceğiz"
+  },
+  "terminal": {
+    "title": "ai-visibility-scan",
+    "command_prefix": "merkaba scan --brand",
+    "brand_name": "Markanız",
+    "scanning": "5 AI sistemi, 10 sorgu taranıyor...",
+    "not_found": "Bulunamadı",
+    "mentioned_once": "1 kez bahsedildi",
+    "score_label": "AI Visibility Score",
+    "conclusion": "Başlangıç noktası. Tam denetim 100+ sorguyu birkaç dilde ve kaynak analizini kapsar"
+  },
   "cases": {
     "hero_title": "AI'nin gördüğü sonuçlar",
     "hero_subtitle": "Görünmez markaları önerilen kaynaklara nasıl dönüştürüyoruz",
     "market_title": "GEO neden gelecek değil - şimdiki zaman",
     "market_stats": [
-      { "value": "400M+", "label": "haftalık aktif ChatGPT kullanıcısı. Bu ABD nüfusundan fazla" },
-      { "value": "25-48%", "label": "Google aramalarında zaten AI tarafından oluşturulan yanıtlar var" },
-      { "value": "80%", "label": "kullanıcı AI özetlerine güveniyor ve sorgularının %40'ından fazlası için kullanıyor" },
-      { "value": "15-25%", "label": "AI için optimize edilmemiş şirketlerde geleneksel trafik düşüşü" }
+      {
+        "value": "400M+",
+        "label": "haftalık aktif ChatGPT kullanıcısı. Bu ABD nüfusundan fazla"
+      },
+      {
+        "value": "25-48%",
+        "label": "Google aramalarında zaten AI tarafından oluşturulan yanıtlar var"
+      },
+      {
+        "value": "80%",
+        "label": "kullanıcı AI özetlerine güveniyor ve sorgularının %40'ından fazlası için kullanıyor"
+      },
+      {
+        "value": "15-25%",
+        "label": "AI için optimize edilmemiş şirketlerde geleneksel trafik düşüşü"
+      }
     ],
     "problem_label": "Sorun",
-    "case_tabs": ["Gayrimenkul", "Diş Hekimliği", "Saç Ekimi"],
+    "case_tabs": [
+      "Gayrimenkul",
+      "Diş Hekimliği",
+      "Saç Ekimi"
+    ],
     "case_studies": [
       {
         "badge": "Vaka Çalışması",
@@ -95,16 +437,64 @@
         "subtitle": "30 yıllık geçmişe sahip bir müteahhit 4 ayda AI için nasıl görünür hale geldi",
         "problem": "Kusursuz bir itibara ve 20'den fazla tamamlanmış projeye sahip bir şirket, AI alanında neredeyse hiç var olmuyordu. Rusya, Avrupa ve Körfez ülkelerinden potansiyel gayrimenkul alıcıları ChatGPT ve Gemini'ye bölgenin en iyi müteahhitlerini sorduğunda rakiplerin önerilerini alıyordu.",
         "steps": [
-          { "title": "AI Visibility Audit", "items": ["3 dilde 35 sorgu kontrol edildi", "Marka sorguların yalnızca %5'inde geçiyordu", "Rakipler 3 kat daha sık geçiyordu"] },
-          { "title": "Entity Authority Building", "items": ["Schema.org RealEstateListing uygulandı", "AI'nin alıntı yaptığı platformlarda varlık güçlendirildi", "Google Business Profile optimize edildi"] },
-          { "title": "Content Engineering", "items": ["3 dilde uzman içerik hub'ı oluşturuldu", "AI alıntısı için yapılandırılmış SSS bölümleri başlatıldı", "Yabancı alıcılar için rehber serisi yayınlandı"] },
-          { "title": "Monitoring & Optimization", "items": ["AI Visibility Dashboard başlatıldı", "Tüm sorgularda haftalık takip", "Her 2 haftada strateji düzeltmesi"] }
+          {
+            "title": "AI Visibility Audit",
+            "items": [
+              "3 dilde 35 sorgu kontrol edildi",
+              "Marka sorguların yalnızca %5'inde geçiyordu",
+              "Rakipler 3 kat daha sık geçiyordu"
+            ]
+          },
+          {
+            "title": "Entity Authority Building",
+            "items": [
+              "Schema.org RealEstateListing uygulandı",
+              "AI'nin alıntı yaptığı platformlarda varlık güçlendirildi",
+              "Google Business Profile optimize edildi"
+            ]
+          },
+          {
+            "title": "Content Engineering",
+            "items": [
+              "3 dilde uzman içerik hub'ı oluşturuldu",
+              "AI alıntısı için yapılandırılmış SSS bölümleri başlatıldı",
+              "Yabancı alıcılar için rehber serisi yayınlandı"
+            ]
+          },
+          {
+            "title": "Monitoring & Optimization",
+            "items": [
+              "AI Visibility Dashboard başlatıldı",
+              "Tüm sorgularda haftalık takip",
+              "Her 2 haftada strateji düzeltmesi"
+            ]
+          }
         ],
         "results": [
-          { "metric": "AI Visibility Score", "before": "5%", "after": "47%", "growth": "+840%" },
-          { "metric": "AI'deki marka bahsedilmeleri", "before": "12/ay", "after": "89/ay", "growth": "+642%" },
-          { "metric": "İlk pozisyon sorguları", "before": "2", "after": "23", "growth": "+1050%" },
-          { "metric": "AI üzerinden gelen talepler", "before": "0", "after": "34/ay", "growth": "-" }
+          {
+            "metric": "AI Visibility Score",
+            "before": "5%",
+            "after": "47%",
+            "growth": "+840%"
+          },
+          {
+            "metric": "AI'deki marka bahsedilmeleri",
+            "before": "12/ay",
+            "after": "89/ay",
+            "growth": "+642%"
+          },
+          {
+            "metric": "İlk pozisyon sorguları",
+            "before": "2",
+            "after": "23",
+            "growth": "+1050%"
+          },
+          {
+            "metric": "AI üzerinden gelen talepler",
+            "before": "0",
+            "after": "34/ay",
+            "growth": "-"
+          }
         ],
         "quote": "Google'daki güçlü konumlarımıza rağmen ChatGPT kullanan potansiyel müşterilerin neden rakiplere gittiğini anlamıyorduk. Merkaba Digital sadece sorunu göstermekle kalmadı - sistematik olarak çözdü",
         "quote_author": "Ahmet Yildiz, İş Geliştirme Direktörü"
@@ -115,16 +505,64 @@
         "subtitle": "Laminat ve implant konusunda premium bir klinik, Körfez hastaları için AI'nin bir numaralı önerisi haline nasıl geldi",
         "problem": "Laminat, implant ve estetik diş hekimliğinde uzmanlaşmış premium bir diş kliniği. Güçlü çevrimdışı itibar, Körfez ülkelerinden hastalar - BAE, Suudi Arabistan, Kuveyt. Ancak varlıklı Körfez hastaları ChatGPT ve Gemini'ye \"best dental clinic for veneers in Lebanon\" veya \"luxury dental implants Middle East\" diye sormaya başladığında rakipler ortaya çıktı. Klinik, mükemmel Google varlığına rağmen AI için görünmezdi.",
         "steps": [
-          { "title": "AI Visibility Audit", "items": ["4 AI sisteminde EN/AR dillerinde 40 sorgu kontrol edildi", "Marka sorguların yalnızca %8'inde geçiyordu", "Rakipler tüm AI yanıtlarında baskındı"] },
-          { "title": "Entity Building", "items": ["Schema.org DentalClinic uygulandı", "Google Business Profile güçlendirildi", "AI'nin alıntı yaptığı medikal turizm platformlarında profiller oluşturuldu"] },
-          { "title": "Content Engineering", "items": ["EN/AR dillerinde çok dilli SSS hub'ı oluşturuldu", "AI alıntısı için optimize edilmiş önce/sonra vaka kütüphanesi", "Otorite artırmak için tıbbi uzmanlık içeriği"] },
-          { "title": "Monitoring & Optimization", "items": ["AI Visibility Dashboard başlatıldı", "Haftalık pozisyon takibi", "İki haftada bir strateji düzeltmesi"] }
+          {
+            "title": "AI Visibility Audit",
+            "items": [
+              "4 AI sisteminde EN/AR dillerinde 40 sorgu kontrol edildi",
+              "Marka sorguların yalnızca %8'inde geçiyordu",
+              "Rakipler tüm AI yanıtlarında baskındı"
+            ]
+          },
+          {
+            "title": "Entity Building",
+            "items": [
+              "Schema.org DentalClinic uygulandı",
+              "Google Business Profile güçlendirildi",
+              "AI'nin alıntı yaptığı medikal turizm platformlarında profiller oluşturuldu"
+            ]
+          },
+          {
+            "title": "Content Engineering",
+            "items": [
+              "EN/AR dillerinde çok dilli SSS hub'ı oluşturuldu",
+              "AI alıntısı için optimize edilmiş önce/sonra vaka kütüphanesi",
+              "Otorite artırmak için tıbbi uzmanlık içeriği"
+            ]
+          },
+          {
+            "title": "Monitoring & Optimization",
+            "items": [
+              "AI Visibility Dashboard başlatıldı",
+              "Haftalık pozisyon takibi",
+              "İki haftada bir strateji düzeltmesi"
+            ]
+          }
         ],
         "results": [
-          { "metric": "AI Visibility Score", "before": "3%", "after": "52%", "growth": "+1633%" },
-          { "metric": "AI'deki marka bahsedilmeleri", "before": "8/ay", "after": "94/ay", "growth": "+1075%" },
-          { "metric": "İlk pozisyon sorguları", "before": "1", "after": "19", "growth": "+1800%" },
-          { "metric": "AI üzerinden gelen talepler", "before": "0", "after": "28/ay", "growth": "-" }
+          {
+            "metric": "AI Visibility Score",
+            "before": "3%",
+            "after": "52%",
+            "growth": "+1633%"
+          },
+          {
+            "metric": "AI'deki marka bahsedilmeleri",
+            "before": "8/ay",
+            "after": "94/ay",
+            "growth": "+1075%"
+          },
+          {
+            "metric": "İlk pozisyon sorguları",
+            "before": "1",
+            "after": "19",
+            "growth": "+1800%"
+          },
+          {
+            "metric": "AI üzerinden gelen talepler",
+            "before": "0",
+            "after": "28/ay",
+            "growth": "-"
+          }
         ],
         "quote": "BAE ve Suudi Arabistan'dan hastalarımız artık bizi ChatGPT aracılığıyla buluyor. Bu, uluslararası hasta akışının tamamını değiştirdi",
         "quote_author": "Nadia Khoury, Pazarlama Direktörü"
@@ -135,42 +573,126 @@
         "subtitle": "İstanbul'daki bir klinik 3 ayda yüzlerce rakibi AI önerilerinde nasıl geride bıraktı",
         "problem": "İstanbul'da medikal turizm hastaları için yarışan 500'den fazla saç ekimi kliniği var. Bu kliniğin mükemmel sonuçları ve rekabetçi fiyatları vardı ancak kalabalıkta kayboluyordu. Avrupa, İngiltere ve Körfez ülkelerinden potansiyel hastalar AI'ye \"best hair transplant clinic Istanbul\" sorduğunda yalnızca 3-4 büyük rakibin önerilerini alıyorlardı. Klinik Google'da vardı ama AI sistemleri için tamamen görünmezdi.",
         "steps": [
-          { "title": "AI Visibility Audit", "items": ["4 AI sisteminde EN/RU/AR/DE dillerinde 50 sorgu kontrol edildi", "Marka sorguların yalnızca %2'sinde bulundu", "5 rakip tüm AI yanıtlarında baskındı"] },
-          { "title": "Entity Building", "items": ["FUE/DHI için Schema.org MedicalClinic + MedicalProcedure uygulandı", "Medikal turizm platformlarında profiller", "Otoriter kaynaklar aracılığıyla alıntı stratejisi"] },
-          { "title": "Content Engineering", "items": ["AI için optimize edilmiş prosedür karşılaştırma rehberleri", "4 dilde hasta yolculuğu içeriği", "Schema işaretlemeli tıbbi SSS"] },
-          { "title": "Monitoring & Optimization", "items": ["Gerçek zamanlı dashboard", "Rakip takibi", "Haftalık optimizasyon döngüleri"] }
+          {
+            "title": "AI Visibility Audit",
+            "items": [
+              "4 AI sisteminde EN/RU/AR/DE dillerinde 50 sorgu kontrol edildi",
+              "Marka sorguların yalnızca %2'sinde bulundu",
+              "5 rakip tüm AI yanıtlarında baskındı"
+            ]
+          },
+          {
+            "title": "Entity Building",
+            "items": [
+              "FUE/DHI için Schema.org MedicalClinic + MedicalProcedure uygulandı",
+              "Medikal turizm platformlarında profiller",
+              "Otoriter kaynaklar aracılığıyla alıntı stratejisi"
+            ]
+          },
+          {
+            "title": "Content Engineering",
+            "items": [
+              "AI için optimize edilmiş prosedür karşılaştırma rehberleri",
+              "4 dilde hasta yolculuğu içeriği",
+              "Schema işaretlemeli tıbbi SSS"
+            ]
+          },
+          {
+            "title": "Monitoring & Optimization",
+            "items": [
+              "Gerçek zamanlı dashboard",
+              "Rakip takibi",
+              "Haftalık optimizasyon döngüleri"
+            ]
+          }
         ],
         "results": [
-          { "metric": "AI Visibility Score", "before": "2%", "after": "58%", "growth": "+2800%" },
-          { "metric": "AI'deki marka bahsedilmeleri", "before": "5/ay", "after": "112/ay", "growth": "+2140%" },
-          { "metric": "İlk pozisyon sorguları", "before": "0", "after": "27", "growth": "-" },
-          { "metric": "AI üzerinden gelen talepler", "before": "0", "after": "45/ay", "growth": "-" }
+          {
+            "metric": "AI Visibility Score",
+            "before": "2%",
+            "after": "58%",
+            "growth": "+2800%"
+          },
+          {
+            "metric": "AI'deki marka bahsedilmeleri",
+            "before": "5/ay",
+            "after": "112/ay",
+            "growth": "+2140%"
+          },
+          {
+            "metric": "İlk pozisyon sorguları",
+            "before": "0",
+            "after": "27",
+            "growth": "-"
+          },
+          {
+            "metric": "AI üzerinden gelen talepler",
+            "before": "0",
+            "after": "45/ay",
+            "growth": "-"
+          }
         ],
         "quote": "İstanbul'da 500'den fazla klinik var. Hastalar bizi eskiden sadece reklamla buluyordu. Şimdi ChatGPT ve Gemini bizi doğrudan öneriyor - bu en kaliteli hasta kazanım kanalı",
         "quote_author": "Murat Ozturk, Klinik Kurucusu"
       }
     ],
-    "industries_title": "6 ay boyunca müşterilerimizin ortalama sonuçları",
+    "industries_title": "6 ayda tipik GEO proje dinamiği",
     "industries": [
-      { "name": "Gayrimenkul ve İnşaat", "visibility": "+380%", "mentions": "x7", "timeline": "6-8 hafta" },
-      { "name": "Sağlık ve Medikal Turizm", "visibility": "+520%", "mentions": "x9", "timeline": "4-6 hafta" },
-      { "name": "Finansal Hizmetler", "visibility": "+290%", "mentions": "x5", "timeline": "8-10 hafta" },
-      { "name": "E-ticaret ve SaaS", "visibility": "+440%", "mentions": "x8", "timeline": "4-6 hafta" }
+      {
+        "name": "Gayrimenkul ve İnşaat",
+        "visibility": "+380%",
+        "mentions": "x7",
+        "timeline": "6-8 hafta"
+      },
+      {
+        "name": "Sağlık ve Medikal Turizm",
+        "visibility": "+520%",
+        "mentions": "x9",
+        "timeline": "4-6 hafta"
+      },
+      {
+        "name": "Finansal Hizmetler",
+        "visibility": "+290%",
+        "mentions": "x5",
+        "timeline": "8-10 hafta"
+      },
+      {
+        "name": "E-ticaret ve SaaS",
+        "visibility": "+440%",
+        "mentions": "x8",
+        "timeline": "4-6 hafta"
+      }
     ],
     "industries_visibility_label": "AI Visibility",
     "industries_mentions_label": "Bahsedilme artışı",
     "industries_timeline_label": "İlk sonuçlara ortalama süre",
-    "industries_note": "Sonuçlar başlangıç durumuna, niş rekabetine ve iş kapsamına bağlıdır",
+    "industries_note": "Sonuçlar başlangıç durumuna, niş rekabetine ve iş kapsamına bağlıdır. Veriler GEO sektörünün ortalama göstergelerine dayanır",
     "demo_title": "Dashboard'u çalışırken görün",
     "demo_subtitle": "Gerçek bir iş örneği kullanılarak AI Visibility Dashboard'umuzun interaktif demosu",
     "demo_cta": "Demo dashboard'u açın",
     "demo_note": "Tüm veriler gösterim amaçlıdır. Dashboard'unuz işletmenizin gerçek verilerini içerecektir",
     "process_title": "İşbirliği nasıl görünüyor",
     "process_steps": [
-      { "period": "Hafta 1-2", "title": "Denetim", "desc": "Markanızın AI görünürlüğünün, rakiplerin ve anahtar sorguların tam analizi." },
-      { "period": "Hafta 3-4", "title": "Strateji", "desc": "Denetim temelinde eylem planı geliştiriyoruz: neyi optimize edeceğimiz, hangi içeriği oluşturacağımız." },
-      { "period": "Ay 2-3", "title": "Uygulama", "desc": "Structured Data, içerik optimizasyonu, entity building, dashboard başlatma." },
-      { "period": "Ay 4+", "title": "Büyüme ve Ölçekleme", "desc": "İzleme, strateji düzeltmesi, içerik ölçekleme. Doğru temelle AI görünürlüğü üstel olarak büyür." }
+      {
+        "period": "Hafta 1-2",
+        "title": "Denetim",
+        "desc": "Markanızın AI görünürlüğünün, rakiplerin ve anahtar sorguların tam analizi."
+      },
+      {
+        "period": "Hafta 3-4",
+        "title": "Strateji",
+        "desc": "Denetim temelinde eylem planı geliştiriyoruz: neyi optimize edeceğimiz, hangi içeriği oluşturacağımız."
+      },
+      {
+        "period": "Ay 2-3",
+        "title": "Uygulama",
+        "desc": "Structured Data, içerik optimizasyonu, entity building, dashboard başlatma."
+      },
+      {
+        "period": "Ay 4+",
+        "title": "Büyüme ve Ölçekleme",
+        "desc": "İzleme, strateji düzeltmesi, içerik ölçekleme. Doğru temelle AI görünürlüğü üstel olarak büyür."
+      }
     ],
     "market_sources": [
       "Kaynak: OpenAI, 2025",
@@ -181,25 +703,37 @@
     "last_updated": "Güncelleme: Nisan 2026",
     "faq_title": "GEO Sonuçları Hakkında SSS",
     "faq": [
-      {"q": "İlk GEO sonuçları ne kadar hızlı ortaya çıkar?", "a": "Schema.org ve içerik optimizasyonu uygulandıktan 2-4 hafta sonra AI yanıtlarındaki ilk değişiklikler görülür. Sürdürülebilir AI Visibility Score büyümesi 6-8. haftada başlar. Tam optimizasyon döngüsü 4-6 ay sürer"},
-      {"q": "GEO hangi ROI'yi sağlar?", "a": "Sektör verilerine göre GEO uygulayan ajanslar 3-5x ROI gösteriyor. Bir B2B SaaS müşterisi 6 ayda alıntıları %22-47 artırdı. Spesifik sonuçlar niş, rekabet ve iş kapsamına bağlıdır"},
-      {"q": "Dashboard'u canlı görebilir miyim?", "a": "Evet. Bir inşaat şirketinin gerçek verileriyle demo dashboard'a erişim sağlıyoruz. Bu, işbirliğine başlamadan önce raporlama formatını ve görselleştirmeyi görmenizi sağlar"},
-      {"q": "Sonuç garanti ediyor musunuz?", "a": "Belirli rakamlar vaat etmiyoruz çünkü AI algoritmaları opak ve sürekli güncelleniyor. Ancak sistematik yaklaşım, şeffaf raporlama ve veriye dayalı strateji düzeltmesi garantisi veriyoruz. Müşterilerimizin %100'ü AI görünürlük artışı görüyor"}
+      {
+        "q": "İlk GEO sonuçları ne kadar hızlı ortaya çıkar?",
+        "a": "Schema.org ve içerik optimizasyonu uygulandıktan 2-4 hafta sonra AI yanıtlarındaki ilk değişiklikler görülür. Sürdürülebilir AI Visibility Score büyümesi 6-8. haftada başlar. Tam optimizasyon döngüsü 4-6 ay sürer"
+      },
+      {
+        "q": "GEO hangi ROI'yi sağlar?",
+        "a": "Sektör verilerine göre GEO uygulayan ajanslar 3-5x ROI gösteriyor. Bir B2B SaaS müşterisi 6 ayda alıntıları %22-47 artırdı. Spesifik sonuçlar niş, rekabet ve iş kapsamına bağlıdır"
+      },
+      {
+        "q": "Dashboard'u canlı görebilir miyim?",
+        "a": "Evet. Demo panel app.merkaba.vip/demo adresinde açık - farklı sektörlerden üç projenin gösterim verileri üzerinde raporlama formatını ve görselleştirmeyi gösterir"
+      },
+      {
+        "q": "Sonuç garanti ediyor musunuz?",
+        "a": "Belirli rakamlar vaat etmiyoruz: AI algoritmaları opak ve düzenli olarak güncelleniyor. Garanti ettiğimiz şey ise sistematik yaklaşım, şeffaf raporlama ve veriye dayalı strateji düzeltmesi"
+      }
     ],
-    "cta_title": "Aynı sonuçları ister misiniz?",
-    "cta_subtitle": "Ücretsiz AI denetimiyle başlayın - AI'nin işletmeniz hakkında şu anda ne söylediğini öğrenin",
+    "cta_title": "Başlangıç noktanızı öğrenin",
+    "cta_subtitle": "Ücretsiz AI denetimi, AI sistemlerinin markanız hakkında bugün ne yanıtladığını gösterir",
     "cta_button": "Ücretsiz denetim alın"
   },
   "about": {
     "hero_title": "Ajans değil. AI görünürlük mühendisleri",
     "hero_subtitle": "AI sistemlerinin içeriden nasıl çalıştığını anlıyoruz ve bu bilgiyi işletmeniz için kullanıyoruz",
-    "definition": "Generative Engine Optimization konusunda uzmanlasmis, 20+ yillik deneyime sahip dijital stratejist ve AI muhendislerinden olusan bir ekip",
+    "definition": "Generative Engine Optimization konusunda uzmanlasmis, 15+ yillik deneyime sahip dijital stratejist ve AI muhendislerinden olusan bir ekip",
     "last_updated": "Güncelleme: Nisan 2026",
     "story_title": "Neden Merkaba",
     "story_text": [
       "Merkaba Digital, iki dünyanın kesişiminde doğdu: dijital stratejide 15 yıllık deneyim ve AI sistemlerinin nasıl çalıştığına dair derin bir anlayış.",
       "2024-2025'te arama manzarası radikal biçimde değişmeye başladığında bir boşluk gördük: şirketler SEO'ya milyonlar harcıyordu ama AI için görünmez kalıyordu.",
-      "Biz anladık. Pazarlama raporlarından değil, LLM'ler, structured data ve AI mimarisiyle gerçek mühendislik çalışmasından. Merkaba Digital böyle doğdu."
+      "Bu kuralları anlamamızı sağlayan pazarlama teorisi değil, LLM'ler, structured data ve AI mimarisiyle yapılan mühendislik çalışmasıydı. Merkaba Digital böyle doğdu - marka görünürlüğünü metin optimizasyonuyla sınırlamayıp veri düzeyinde tasarlayan bir ekip."
     ],
     "philosophy_title": "Teknoloji ve bilinçlilik",
     "philosophy_text": [
@@ -210,13 +744,25 @@
     ],
     "advantages_title": "Bizi farklı kılan ne",
     "advantages": [
-      { "title": "AI'ya mühendislik yaklaşımı", "desc": "LLM'lerin nasıl çalıştığını tahmin etmiyoruz. API'ler, structured data ve alıntı algoritmalarıyla mühendislik düzeyinde çalışıyoruz." },
-      { "title": "Dijital stratejide 15+ yıl", "desc": "İlk SEO kampanyalarından AI otomasyonlarının başlatılmasına kadar. Her arama evrimini yaşadık." },
-      { "title": "Tescilli araçlar", "desc": "Production-grade AI yığını üzerine kurulu kendi AI görünürlük izleme platformumuz. Gerçek zamanlı verilerle kişisel dashboard'unuz." },
-      { "title": "Ölçülebilir sonuçlar", "desc": "Her eylem belirli KPI'lara bağlıdır. Vanity metrics yok. Her şey şeffaf, her şey dashboard'da." }
+      {
+        "title": "AI'ya mühendislik yaklaşımı",
+        "desc": "API'ler, structured data ve alıntı algoritmalarıyla mühendislik düzeyinde çalışıyoruz. Stratejiler tahminlere değil, AI sistemlerinin mekaniğine dayanır."
+      },
+      {
+        "title": "Dijital stratejide 15+ yıl",
+        "desc": "İlk SEO kampanyalarından AI otomasyonlarının başlatılmasına kadar. Her arama evrimini yaşadık."
+      },
+      {
+        "title": "Tescilli araçlar",
+        "desc": "Production-grade AI yığını üzerine kurulu kendi AI görünürlük izleme platformumuz. Gerçek zamanlı verilerle kişisel dashboard'unuz."
+      },
+      {
+        "title": "Ölçülebilir sonuçlar",
+        "desc": "Her eylem belirli KPI'lara bağlıdır. Vanity metrics yok. Her şey şeffaf, her şey dashboard'da."
+      }
     ],
     "team_title": "Ekip",
-    "team_intro": "Merkaba Digital'in arkasinda stratejistler, muhendisler ve analistler var - tek bir fikirle birlesmis: isletme, kararlarin alindigi yerde gorunur olmali. 2026'da kararlar AI ile diyalogda aliniyor.\n\nEkibimiz farkli dunyalardan bir araya getirildi: on yillik deneyime sahip SEO veteranlari, AI otomasyon gelistiricileri, structured data uzmanlari ve Bati Avrupa'dan Korfez'e, Guneydogu Asya'dan BDT'ye pazarlarla calismis icerik stratejistleri.\n\nGenelci aramiyoruz. Ekipteki herkes kendi uzmanlik alanini kapatiyor. Birlikte tam donguyu kapsiyoruz: teknik denetimden icerik uretimine, entity building'den gercek zamanli izlemeye.\n\nDort kita, onlarca pazar, tek yaklasim - tahminlere degil verilere dayali strateji.",
+    "team_intro": "Merkaba Digital'in arkasinda stratejistler, muhendisler ve analistler var - tek bir fikirle birlesmis: isletme, kararlarin alindigi yerde gorunur olmali. 2026'da kararlar AI ile diyalogda aliniyor.\n\nEkipte on yillik deneyime sahip SEO uzmanlari, AI otomasyon gelistiricileri, structured data uzmanlari ve Bati Avrupa'dan Korfez'e, Guneydogu Asya'dan BDT'ye pazarlarla calismis icerik stratejistleri var.\n\nEkipteki herkes kendi uzmanlik alanini kapatiyor; birlikte tam donguyu kapsiyoruz: teknik denetimden icerik uretimine, entity building'den gercek zamanli izlemeye.\n\nDort kita, onlarca pazar, tek yaklasim - dogrulanabilir verilere dayanan kararlar.",
     "team": [
       {
         "name": "Costa Fofanoff",
@@ -227,27 +773,66 @@
       }
     ],
     "numbers": [
-      { "value": "20+", "label": "yil pazarlama ve strateji" },
-      { "value": "5+", "label": "izlenen AI sistemi - ve artıyor" },
-      { "value": "100+", "label": "her denetimde sorgu" },
-      { "value": "4", "label": "desteklenen dil (EN, RU, TR, AR)" }
+      {
+        "value": "15+",
+        "label": "yil pazarlama ve strateji"
+      },
+      {
+        "value": "5+",
+        "label": "izlenen AI sistemi - ve artıyor"
+      },
+      {
+        "value": "100+",
+        "label": "her denetimde sorgu"
+      },
+      {
+        "value": "4",
+        "label": "desteklenen dil (EN, RU, TR, AR)"
+      }
     ],
     "approach_title": "Nasıl çalışıyoruz",
     "approach_items": [
-      { "title": "Veriye dayalı, görüşe dayalı değil", "desc": "Varsayımlarla değil, verilerle başlıyoruz. Her denetim gerçek AI sistemlerinde gerçek sorgularda yüzlerce kontroldür." },
-      { "title": "Şeffaflık, kara kutu değil", "desc": "Her şeyi görürsünüz: her sorgu, her AI yanıtı, görünürlükteki her değişiklik. Dashboard'unuz gerçekliği yansıtan bir çalışma aracıdır." },
-      { "title": "Uzun vadeli değer, hızlı hileler değil", "desc": "Zamanla büyüyen temel AI görünürlüğü inşa ediyoruz. Gri şemalar yok, manipülasyon yok." }
+      {
+        "title": "Veriye dayalı kararlar",
+        "desc": "Her denetim, gerçek AI sistemlerinde gerçek sorgular üzerinde yüzlerce kontroldür. Kararlar, verilerin doğruladığı şeylere dayanır"
+      },
+      {
+        "title": "Süreç şeffaflığı",
+        "desc": "Her şeyi görürsünüz: her sorgu, her AI yanıtı, görünürlükteki her değişiklik. Dashboard rapor için bir resim değil, gerçek durumu yansıtan bir çalışma aracıdır"
+      },
+      {
+        "title": "Hack değil, temel",
+        "desc": "Zamanla büyüyen AI görünürlüğü inşa ediyoruz: otorite, içerik ve verilerle sistematik çalışma - gri şemalar ve manipülasyon olmadan"
+      }
     ],
     "industries_title": "Her nişle çalışıyoruz",
-    "industries_list": ["Gayrimenkul ve İnşaat", "Sağlık ve Medikal Turizm", "Finansal Hizmetler ve Fintech", "E-ticaret", "Turizm ve Otelcilik", "SaaS ve Teknoloji", "Profesyonel Hizmetler", "Eğitim"],
+    "industries_list": [
+      "Gayrimenkul ve İnşaat",
+      "Sağlık ve Medikal Turizm",
+      "Finansal Hizmetler ve Fintech",
+      "E-ticaret",
+      "Turizm ve Otelcilik",
+      "SaaS ve Teknoloji",
+      "Profesyonel Hizmetler",
+      "Eğitim"
+    ],
     "industries_note": "GEO stratejisi her sektörün özelliklerine uyarlanır - sorgu setinden varlık platformlarına kadar",
     "faq_title": "Merkaba Digital Hakkında SSS",
     "faq": [
-      {"q": "Merkaba Digital'in arkasında kim var?", "a": "Pazarlama, SEO ve AI teknolojilerinde 20+ yillik deneyime sahip bir ekip. LLM modellerinin, structured data'nin ve alinti algoritmalarinin nasil calistigina dair muhendislik anlayisini stratejik dusunceyle birlestiriyoruz"},
-      {"q": "Neden Merkaba adı?", "a": "Merkaba, kutsal geometrinin bir sembolü olan Yaşam Çiçeği'dir ve tüm varoluşun temel yapılarını içerir. AI ile bir paralel görüyoruz: görünür yanıtların arkasında görünmez bir veri mimarisi yatar. Görevimiz bu mimariyi yönetmektir"},
-      {"q": "Hangi sektörlerde çalışıyorsunuz?", "a": "GEO stratejisi herhangi bir sektöre uyarlanır. Gayrimenkul, sağlık, finans, e-ticaret, turizm, SaaS, profesyonel hizmetler ve eğitimle çalışıyoruz. Sorgu seti ve varlık platformları farklılık gösterir, metodoloji evrenseldir"}
+      {
+        "q": "Merkaba Digital'in arkasında kim var?",
+        "a": "Pazarlama, SEO ve AI teknolojilerinde 15+ yillik deneyime sahip bir ekip. LLM modellerinin, structured data'nin ve alinti algoritmalarinin nasil calistigina dair muhendislik anlayisini stratejik dusunceyle birlestiriyoruz"
+      },
+      {
+        "q": "Neden Merkaba adı?",
+        "a": "Merkaba, kutsal geometrinin bir sembolü olan Yaşam Çiçeği'dir ve tüm varoluşun temel yapılarını içerir. AI ile bir paralel görüyoruz: görünür yanıtların arkasında görünmez bir veri mimarisi yatar. Görevimiz bu mimariyi yönetmektir"
+      },
+      {
+        "q": "Hangi sektörlerde çalışıyorsunuz?",
+        "a": "GEO stratejisi herhangi bir sektöre uyarlanır. Gayrimenkul, sağlık, finans, e-ticaret, turizm, SaaS, profesyonel hizmetler ve eğitimle çalışıyoruz. Sorgu seti ve varlık platformları farklılık gösterir, metodoloji evrenseldir"
+      }
     ],
-    "cta_title": "AI için görünür olmaya hazır mısınız?",
+    "cta_title": "AI'nin markanızı nasıl gördüğünü kontrol edin",
     "cta_subtitle": "Ücretsiz bir denetimle başlayın - AI'nin işletmeniz hakkında bugün ne söylediğini gösterelim",
     "cta_button": "Ücretsiz AI denetimi talep edin"
   },
@@ -261,5 +846,18 @@
     "cta_subtitle": "Ucretsiz AI denetimi siparisi verin - AI'nin markaniz hakkinda ne soyledigini kontrol edelim",
     "cta_button": "Ucretsiz denetim alin"
   },
-  "footer": { "description": "Generative Engine Optimization Ajansı", "copyright": "© 2026 Merkaba Digital. Tüm hakları saklıdır." }
+  "footer": {
+    "description": "Generative Engine Optimization Ajansı",
+    "copyright": "© 2026 Merkaba Digital. Tüm hakları saklıdır.",
+    "nav_title": "Gezinti"
+  },
+  "scan_context": {
+    "eyebrow": "Başlangıç AI görünürlük teşhisi",
+    "headline": "Çoğu markada AI görünürlüğü başlangıçta parçalı kalır",
+    "subheadline": "İlk kontrol genellikle ilgili AI yanıtlarında zayıf bir varlık gösterir. Bu bir istisna değil, tipik bir başlangıç noktasıdır: hedefli çalışma olmadan AI sistemleri bir markayı kategorisi, kaynakları ve temel talep senaryolarıyla nadiren doğru şekilde ilişkilendirir.",
+    "supporting": "Tam denetim resmi genişletir: daha fazla sorgu, birkaç dil, rakip karşılaştırması - ve AI sistemlerinin kategorinizde hangi kaynakları kullandığını gösterir.",
+    "cta_primary": "Demo paneli görüntüle",
+    "cta_secondary": "Denetim talep et",
+    "microcopy": "İlk teşhis başlangıç noktasını gösterir. Tam resim sistematik denetimle ortaya çıkar."
+  }
 }

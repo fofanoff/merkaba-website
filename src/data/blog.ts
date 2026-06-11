@@ -32,7 +32,7 @@ export const blogArticles: BlogArticle[] = [
 <p>Если SEO отвечает за позиции в Google, то GEO отвечает за упоминания в AI. Это два разных канала с разной механикой, и в 2026 году GEO становится критически важным.</p>
 
 <h2>Почему GEO важнее SEO прямо сейчас</h2>
-<p>Цифры говорят сами за себя. По данным OpenAI, ChatGPT имеет более 400 миллионов еженедельных активных пользователей. Это больше населения США.</p>
+<p>По данным OpenAI, ChatGPT имеет более 400 миллионов еженедельных активных пользователей - больше населения США.</p>
 <p>По данным BrightEdge Research (2026), от 25% до 48% поисковых запросов в Google уже содержат AI-сгенерированные ответы. Пользователи получают ответ прямо на странице результатов, не кликая на сайты.</p>
 <p>Исследование Bain & Company (2025) показывает, что 80% пользователей доверяют ответам AI и используют их для 40%+ своих запросов. Gartner прогнозирует снижение органического трафика на 15-25% для компаний, не адаптированных к AI-поиску.</p>
 
@@ -67,7 +67,7 @@ export const blogArticles: BlogArticle[] = [
 <p>Каждая система использует свои алгоритмы цитирования. Стратегия GEO должна учитывать особенности каждой платформы.</p>
 
 <h2>Что делать бизнесу уже сейчас</h2>
-<p>GEO - не технология будущего. Это реальность 2026 года. Каждый день без AI-оптимизации - это клиенты, которых AI направляет к конкурентам. Вот три первых шага:</p>
+<p>GEO уже влияет на то, как клиенты находят компании. Чем дольше бренд отсутствует в AI-ответах, тем больше спроса достается тем, кого AI уже цитирует. Вот три первых шага:</p>
 <ol>
 <li><strong>Провести AI-аудит</strong> - узнать, что AI-системы говорят о вашем бизнесе прямо сейчас</li>
 <li><strong>Внедрить Schema.org разметку</strong> - дать AI-системам структурированные данные о вашем бизнесе</li>
@@ -92,7 +92,7 @@ export const blogArticles: BlogArticle[] = [
 <p>If SEO is responsible for Google rankings, GEO is responsible for mentions in AI. These are two different channels with different mechanics, and in 2026 GEO is becoming critically important.</p>
 
 <h2>Why GEO matters more than SEO right now</h2>
-<p>The numbers speak for themselves. According to OpenAI, ChatGPT has over 400 million weekly active users. That is more than the population of the United States.</p>
+<p>According to OpenAI, ChatGPT has over 400 million weekly active users - more than the population of the United States.</p>
 <p>BrightEdge Research (2026) reports that 25% to 48% of Google searches already contain AI-generated answers. Users get their answer right on the results page without clicking through to websites.</p>
 <p>A Bain & Company study (2025) shows that 80% of users trust AI answers and use them for 40%+ of their queries. Gartner forecasts a 15-25% decline in organic traffic for companies not adapted to AI search.</p>
 
@@ -127,7 +127,7 @@ export const blogArticles: BlogArticle[] = [
 <p>Each system uses its own citation algorithms. A GEO strategy must account for the specifics of each platform.</p>
 
 <h2>What businesses should do right now</h2>
-<p>GEO is not a future technology. It is a 2026 reality. Every day without AI optimization means clients that AI directs to competitors. Here are three first steps:</p>
+<p>GEO already shapes how clients find companies. The longer a brand is absent from AI answers, the more demand goes to those AI already cites. Here are three first steps:</p>
 <ol>
 <li><strong>Run an AI audit</strong> - find out what AI systems say about your business right now</li>
 <li><strong>Implement Schema.org markup</strong> - give AI systems structured data about your business</li>
@@ -152,7 +152,7 @@ export const blogArticles: BlogArticle[] = [
 <p>SEO Google siralamalarindan sorumluysa, GEO AI'daki bahsedilmelerden sorumludur. Bunlar farkli mekaniklere sahip iki farkli kanaldir ve 2026'da GEO kritik onem kazanmaktadir.</p>
 
 <h2>GEO neden su anda SEO'dan daha onemli</h2>
-<p>Rakamlar kendini anlatir. OpenAI verilerine gore ChatGPT'nin 400 milyondan fazla haftalik aktif kullanicisi var. Bu ABD nufusundan fazla.</p>
+<p>OpenAI verilerine gore ChatGPT'nin 400 milyondan fazla haftalik aktif kullanicisi var - bu ABD nufusundan fazla.</p>
 <p>BrightEdge Research (2026) verilerine gore Google aramalarinin %25 ila %48'i zaten AI tarafindan olusturulan yanitlar iceriyor. Kullanicilar yanitlarini sitelere tiklamadan dogrudan sonuc sayfasinda aliyor.</p>
 <p>Bain & Company arastirmasi (2025), kullanicilarin %80'inin AI yanitlarina guvendigini ve sorgularinin %40'indan fazlasi icin kullandigini gosteriyor. Gartner, AI aramaya uyum saglamayan sirketler icin organik trafikte %15-25 dusus ongoruyor.</p>
 
@@ -187,7 +187,7 @@ export const blogArticles: BlogArticle[] = [
 <p>Her sistem kendi alintilanma algoritmalarini kullanir. GEO stratejisi her platformun ozelliklerini hesaba katmalidir.</p>
 
 <h2>Isletmeler su anda ne yapmali</h2>
-<p>GEO gelecek teknolojisi degildir. 2026 gercekligidir. AI optimizasyonu olmadan gecen her gun, AI'nin rakiplere yonlendirdigi musterilerdir. Iste ilk uc adim:</p>
+<p>GEO, musterilerin sirketleri nasil buldugunu simdiden sekillendiriyor. Bir marka AI yanitlarinda ne kadar uzun sure yer almazsa, talep o kadar AI'nin zaten alintiladigi markalara gider. Iste ilk uc adim:</p>
 <ol>
 <li><strong>AI denetimi yapin</strong> - AI sistemlerinin isletmeniz hakkinda su anda ne soyledigini ogrenin</li>
 <li><strong>Schema.org isaretlemesi uygulayin</strong> - AI sistemlerine isletmeniz hakkinda yapilandirilmis veri saglayin</li>
@@ -212,7 +212,7 @@ export const blogArticles: BlogArticle[] = [
 <p>اذا كان SEO مسؤولا عن ترتيب Google، فان GEO مسؤول عن الذكر في اجابات AI. هذه قناتان مختلفتان بآليات مختلفة، وفي 2026 اصبح GEO بالغ الاهمية.</p>
 
 <h2>لماذا GEO اهم من SEO الان</h2>
-<p>الارقام تتحدث عن نفسها. وفقا لـ OpenAI، لدى ChatGPT اكثر من 400 مليون مستخدم نشط اسبوعيا. هذا اكثر من عدد سكان الولايات المتحدة.</p>
+<p>وفقا لـ OpenAI، لدى ChatGPT اكثر من 400 مليون مستخدم نشط اسبوعيا - اكثر من عدد سكان الولايات المتحدة.</p>
 <p>وفقا لـ BrightEdge Research (2026)، تحتوي 25% الى 48% من عمليات البحث في Google بالفعل على اجابات مولدة بالذكاء الاصطناعي. يحصل المستخدمون على اجاباتهم مباشرة في صفحة النتائج دون النقر على المواقع.</p>
 <p>تظهر دراسة Bain & Company (2025) ان 80% من المستخدمين يثقون باجابات AI ويستخدمونها لاكثر من 40% من استفساراتهم. تتوقع Gartner انخفاضا بنسبة 15-25% في الزيارات العضوية للشركات غير المتكيفة مع بحث AI.</p>
 
@@ -247,7 +247,7 @@ export const blogArticles: BlogArticle[] = [
 <p>كل نظام يستخدم خوارزميات استشهاد خاصة به. استراتيجية GEO يجب ان تراعي خصائص كل منصة.</p>
 
 <h2>ماذا يجب ان تفعل الشركات الان</h2>
-<p>GEO ليس تقنية المستقبل. انه واقع 2026. كل يوم بدون تحسين AI يعني عملاء يوجههم AI الى المنافسين. اليك ثلاث خطوات اولى:</p>
+<p>GEO يؤثر بالفعل على كيفية عثور العملاء على الشركات. كلما طال غياب العلامة التجارية عن اجابات AI، ذهب المزيد من الطلب الى من يستشهد بهم AI بالفعل. اليك ثلاث خطوات اولى:</p>
 <ol>
 <li><strong>اجر تدقيق AI</strong> - اعرف ما تقوله انظمة AI عن عملك الان</li>
 <li><strong>طبق ترميز Schema.org</strong> - اعط انظمة AI بيانات مهيكلة عن عملك</li>
@@ -594,7 +594,7 @@ export const blogArticles: BlogArticle[] = [
 <ul>
 <li><strong>Organization</strong> - базовая информация о компании (название, адрес, контакты, логотип)</li>
 <li><strong>LocalBusiness</strong> - если у вас есть физическое расположение</li>
-<li><strong>FAQPage</strong> - для страниц с вопросами и ответами (AI любит этот формат)</li>
+<li><strong>FAQPage</strong> - для страниц с вопросами и ответами (формат, который AI-системы цитируют чаще всего)</li>
 <li><strong>Product/Service</strong> - для страниц услуг и товаров</li>
 <li><strong>Article</strong> - для блога и экспертного контента</li>
 </ul>
@@ -693,7 +693,7 @@ export const blogArticles: BlogArticle[] = [
 <ul>
 <li><strong>Organization</strong> - basic company information (name, address, contacts, logo)</li>
 <li><strong>LocalBusiness</strong> - if you have a physical location</li>
-<li><strong>FAQPage</strong> - for question-and-answer pages (AI loves this format)</li>
+<li><strong>FAQPage</strong> - for question-and-answer pages (the format AI systems cite most often)</li>
 <li><strong>Product/Service</strong> - for service and product pages</li>
 <li><strong>Article</strong> - for blog and expert content</li>
 </ul>
@@ -792,7 +792,7 @@ export const blogArticles: BlogArticle[] = [
 <ul>
 <li><strong>Organization</strong> - temel sirket bilgileri (ad, adres, iletisim, logo)</li>
 <li><strong>LocalBusiness</strong> - fiziksel konumunuz varsa</li>
-<li><strong>FAQPage</strong> - soru-cevap sayfalari icin (AI bu formati sever)</li>
+<li><strong>FAQPage</strong> - soru-cevap sayfalari icin (AI sistemlerinin en sik alintiladigi format)</li>
 <li><strong>Product/Service</strong> - hizmet ve urun sayfalari icin</li>
 <li><strong>Article</strong> - blog ve uzman icerigi icin</li>
 </ul>
@@ -891,7 +891,7 @@ export const blogArticles: BlogArticle[] = [
 <ul>
 <li><strong>Organization</strong> - معلومات الشركة الاساسية (الاسم والعنوان وجهات الاتصال والشعار)</li>
 <li><strong>LocalBusiness</strong> - اذا كان لديك موقع فعلي</li>
-<li><strong>FAQPage</strong> - لصفحات الاسئلة والاجوبة (AI يحب هذا التنسيق)</li>
+<li><strong>FAQPage</strong> - لصفحات الاسئلة والاجوبة (التنسيق الذي تستشهد به انظمة AI اكثر من غيره)</li>
 <li><strong>Product/Service</strong> - لصفحات الخدمات والمنتجات</li>
 <li><strong>Article</strong> - للمدونة والمحتوى المتخصص</li>
 </ul>
