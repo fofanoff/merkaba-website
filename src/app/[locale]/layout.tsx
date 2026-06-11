@@ -1,5 +1,9 @@
 import { Space_Grotesk, Inter, JetBrains_Mono } from "next/font/google";
 import { getDictionary, isRtl, type Locale, locales } from "@/lib/i18n";
+
+// Regenerate static pages daily so computed dates ("Обновлено: <месяц> <год>",
+// Schema.org dateModified) roll over automatically on the 1st of each month
+export const revalidate = 86400;
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { GradientOrbs } from "@/components/ui/GradientOrbs";

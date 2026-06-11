@@ -1,4 +1,5 @@
 import type { Locale } from "@/lib/i18n";
+import { currentIsoDate } from "@/lib/last-updated";
 
 const SITE_URL = "https://merkaba.vip";
 
@@ -143,7 +144,7 @@ function buildArticleSchema() {
       logo: { "@type": "ImageObject", url: `${SITE_URL}/logo.png` },
     },
     datePublished: "2026-03-01",
-    dateModified: "2026-04-10",
+    dateModified: currentIsoDate(),
   };
 }
 

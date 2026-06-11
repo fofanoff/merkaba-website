@@ -15,8 +15,9 @@ const dictionaries: Record<Locale, () => Promise<Record<string, unknown>>> = {
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 export async function getDictionary(locale: Locale): Promise<any> {
-  if (!locales.includes(locale)) {
-    return dictionaries[defaultLocale]();
-  }
-  return dictionaries[locale]();
+  const safeLocale = locales.includes(locale) ? locale : defaultLocale;
+  const dict = await dictionaries[safeLocale]();
+  const { lastUpdatedLabel, stampLastUpdated } = await import("./last-updated");
+  stampLastUpdated(dict, lastUpdatedLabel(safeLocale));
+  return dict;
 }
