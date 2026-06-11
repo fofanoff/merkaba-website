@@ -90,17 +90,29 @@ export function HeroSection({
               </span>
             </motion.div>
 
-            {/* Title */}
+            {/* Title - always two lines: break at " - ", font sizes tuned so each line fits */}
             <motion.h1
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.5 }}
-              className="text-4xl sm:text-5xl md:text-6xl xl:text-7xl font-heading font-bold leading-[1.08] mb-8"
+              className="text-[28px] sm:text-[42px] md:text-5xl lg:text-[34px] xl:text-[44px] font-heading font-bold leading-[1.15] mb-8"
             >
-              <span className="text-gradient">
-                {dict.hero.title.split(" ").slice(0, 2).join(" ")}
-              </span>{" "}
-              {dict.hero.title.split(" ").slice(2).join(" ")}
+              {dict.hero.title.includes(" - ") ? (
+                <>
+                  <span className="text-gradient">
+                    {dict.hero.title.split(" - ")[0] + " -"}
+                  </span>
+                  <br />
+                  {dict.hero.title.split(" - ").slice(1).join(" - ")}
+                </>
+              ) : (
+                <>
+                  <span className="text-gradient">
+                    {dict.hero.title.split(" ").slice(0, 2).join(" ")}
+                  </span>{" "}
+                  {dict.hero.title.split(" ").slice(2).join(" ")}
+                </>
+              )}
             </motion.h1>
 
             {/* Subtitle */}

@@ -177,7 +177,22 @@ export function CasesPage({
               {cs.badge}
             </span>
             <h2 className="text-3xl md:text-4xl font-heading font-bold mb-3">
-              {cs.title}
+              {(() => {
+                // Unified two-line case title: "business type" / "location"
+                for (const sep of [". ", "، ", ", "]) {
+                  const idx = cs.title.indexOf(sep);
+                  if (idx > 0) {
+                    return (
+                      <>
+                        {cs.title.slice(0, idx)}
+                        <br />
+                        {cs.title.slice(idx + sep.length)}
+                      </>
+                    );
+                  }
+                }
+                return cs.title;
+              })()}
             </h2>
             <p className="text-text-secondary text-lg">{cs.subtitle}</p>
           </FadeIn>
