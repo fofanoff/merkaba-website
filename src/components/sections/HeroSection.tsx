@@ -18,7 +18,7 @@ export function HeroSection({
   return (
     <>
     <section
-      className="relative h-screen min-h-[600px] sm:min-h-[700px] max-h-[1200px] flex items-center overflow-hidden"
+      className="relative min-h-screen flex items-center overflow-hidden pt-24 pb-12 lg:pt-28 lg:pb-14"
       style={{ background: "#0B0E1A" }}
     >
       {/* ===== BACKGROUND IMAGE - centered, pulsating ===== */}
@@ -65,23 +65,14 @@ export function HeroSection({
       {/* ===== BOTTOM FADE ===== */}
       <div className="absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-t from-[#0B0E1A] to-transparent z-[3]" />
 
-      {/* ===== DEFINITION - pinned under header on desktop, in-flow on mobile ===== */}
-      {dict.hero.definition && (
-        <div className="hidden lg:block absolute top-24 left-0 right-0 z-[5]">
-          <p className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-text-muted text-xs whitespace-nowrap overflow-hidden text-ellipsis">
-            {dict.hero.definition}
-          </p>
-        </div>
-      )}
-
       {/* ===== CONTENT ===== */}
       <div className="relative z-[5] max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           {/* Left: Text */}
           <div>
-            {/* Definition - mobile only, in flow */}
+            {/* Definition - in flow above the title, can never collide with it */}
             {dict.hero.definition && (
-              <p className="lg:hidden page-intro hero-description text-text-muted text-xs mb-6">
+              <p className="page-intro hero-description text-text-muted text-xs mb-6">
                 {dict.hero.definition}
               </p>
             )}
@@ -104,7 +95,7 @@ export function HeroSection({
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.5 }}
-              className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-heading font-bold leading-[1.08] mb-8"
+              className="text-4xl sm:text-5xl md:text-6xl xl:text-7xl font-heading font-bold leading-[1.08] mb-8"
             >
               <span className="text-gradient">
                 {dict.hero.title.split(" ").slice(0, 2).join(" ")}

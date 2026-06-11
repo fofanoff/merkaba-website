@@ -161,10 +161,12 @@ function buildReviewSchema() {
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 function JsonLd({ data }: { data: any }) {
+  // UI strings use non-breaking hyphens (U+2011) to keep AI-/GEO- compounds on one line;
+  // machine-readable structured data must stay canonical ASCII
   return (
     <script
       type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }}
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(data).replace(/‑/g, "-") }}
     />
   );
 }

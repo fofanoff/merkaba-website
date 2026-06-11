@@ -12,7 +12,7 @@ export interface BlogArticle {
 export const blogArticles: BlogArticle[] = [
   {
     slug: "chto-takoe-geo",
-    date: "2026-04-07",
+    date: "2026-05-04",
     author: "Merkaba Digital Team",
     title: {
       ru: "Что такое Generative Engine Optimization (GEO) и почему это важнее SEO в 2026 году",
@@ -21,23 +21,23 @@ export const blogArticles: BlogArticle[] = [
       ar: "ما هو Generative Engine Optimization (GEO) ولماذا هو اهم من SEO في 2026",
     },
     description: {
-      ru: "GEO - это оптимизация бизнеса для видимости в AI-системах: ChatGPT, Gemini, Perplexity. Разбираемся, чем GEO отличается от SEO, какие данные это подтверждают и что делать уже сейчас",
+      ru: "GEO - это оптимизация бизнеса для видимости в AI‑системах: ChatGPT, Gemini, Perplexity. Разбираемся, чем GEO отличается от SEO, какие данные это подтверждают и что делать уже сейчас",
       en: "GEO is the optimization of businesses for visibility in AI systems: ChatGPT, Gemini, Perplexity. We explain how GEO differs from SEO, what data supports it, and what to do right now",
       tr: "GEO, isletmelerin ChatGPT, Gemini, Perplexity gibi AI sistemlerinde gorunurlugu icin optimizasyondur. GEO'nun SEO'dan farklarini, destekleyen verileri ve simdi ne yapmaniz gerektigini acikliyoruz",
       ar: "GEO هو تحسين الاعمال للظهور في انظمة الذكاء الاصطناعي مثل ChatGPT وGemini وPerplexity. نوضح كيف يختلف عن SEO وما البيانات التي تدعمه وماذا تفعل الان",
     },
     content: {
       ru: `<h2>Что такое GEO простыми словами</h2>
-<p>Generative Engine Optimization (GEO), также известный как AEO (Answer Engine Optimization) и LLMO (Large Language Model Optimization) - это оптимизация бизнеса для видимости в ответах AI-систем. Когда пользователь спрашивает ChatGPT, Gemini или Perplexity о продукте или услуге, GEO обеспечивает присутствие вашего бренда в ответе.</p>
+<p>Generative Engine Optimization (GEO), также известный как AEO (Answer Engine Optimization) и LLMO (Large Language Model Optimization) - это оптимизация бизнеса для видимости в ответах AI‑систем. Когда пользователь спрашивает ChatGPT, Gemini или Perplexity о продукте или услуге, GEO обеспечивает присутствие вашего бренда в ответе.</p>
 <p>Если SEO отвечает за позиции в Google, то GEO отвечает за упоминания в AI. Это два разных канала с разной механикой, и в 2026 году GEO становится критически важным.</p>
 
 <h2>Почему GEO важнее SEO прямо сейчас</h2>
 <p>По данным OpenAI, ChatGPT имеет более 400 миллионов еженедельных активных пользователей - больше населения США.</p>
-<p>По данным BrightEdge Research (2026), от 25% до 48% поисковых запросов в Google уже содержат AI-сгенерированные ответы. Пользователи получают ответ прямо на странице результатов, не кликая на сайты.</p>
-<p>Исследование Bain & Company (2025) показывает, что 80% пользователей доверяют ответам AI и используют их для 40%+ своих запросов. Gartner прогнозирует снижение органического трафика на 15-25% для компаний, не адаптированных к AI-поиску.</p>
+<p>По данным BrightEdge Research (2026), от 25% до 48% поисковых запросов в Google уже содержат AI‑сгенерированные ответы. Пользователи получают ответ прямо на странице результатов, не кликая на сайты.</p>
+<p>Исследование Bain & Company (2025) показывает, что 80% пользователей доверяют ответам AI и используют их для 40%+ своих запросов. Gartner прогнозирует снижение органического трафика на 15-25% для компаний, не адаптированных к AI‑поиску.</p>
 
 <h2>Как AI формирует ответы и кого цитирует</h2>
-<p>AI-модели не ищут информацию как Google. Они генерируют ответы на основе обученных данных и дополнительных источников. Ключевые факторы цитирования:</p>
+<p>AI‑модели не ищут информацию как Google. Они генерируют ответы на основе обученных данных и дополнительных источников. Ключевые факторы цитирования:</p>
 <ul>
 <li><strong>Structured Data (Schema.org)</strong> - разметка, которую AI легко парсит и цитирует</li>
 <li><strong>Entity Authority</strong> - связанность бренда в Knowledge Graph, Wikipedia, профессиональных каталогах</li>
@@ -50,42 +50,42 @@ export const blogArticles: BlogArticle[] = [
 <p>SEO оптимизирует сайт для позиций в поисковой выдаче. GEO оптимизирует бренд для упоминания в ответах AI. Вот конкретные различия:</p>
 <ul>
 <li><strong>Цель SEO:</strong> клики из поисковой выдачи. <strong>Цель GEO:</strong> рекомендация в ответе AI</li>
-<li><strong>SEO-метрика:</strong> позиция, CTR, трафик. <strong>GEO-метрика:</strong> AI Visibility Score, количество упоминаний, sentiment</li>
+<li><strong>SEO‑метрика:</strong> позиция, CTR, трафик. <strong>GEO‑метрика:</strong> AI Visibility Score, количество упоминаний, sentiment</li>
 <li><strong>SEO работает с:</strong> ключевыми словами, ссылками, мета-тегами. <strong>GEO работает с:</strong> structured data, entity building, content engineering</li>
-<li><strong>SEO обновляется:</strong> алгоритмами Google. <strong>GEO зависит от:</strong> обучения моделей и индексации AI-систем</li>
+<li><strong>SEO обновляется:</strong> алгоритмами Google. <strong>GEO зависит от:</strong> обучения моделей и индексации AI‑систем</li>
 </ul>
 
-<h2>Какие AI-системы нужно учитывать</h2>
-<p>В 2026 году пять основных AI-платформ формируют рынок:</p>
+<h2>Какие AI‑системы нужно учитывать</h2>
+<p>В 2026 году пять основных AI‑платформ формируют рынок:</p>
 <ul>
 <li><strong>ChatGPT (OpenAI)</strong> - 400M+ пользователей еженедельно, лидер рынка</li>
 <li><strong>Gemini (Google)</strong> - интегрирован в поиск Google, влияет на AI Overviews</li>
-<li><strong>Perplexity</strong> - AI-поисковик с цитированием источников</li>
+<li><strong>Perplexity</strong> - AI‑поисковик с цитированием источников</li>
 <li><strong>Claude (Anthropic)</strong> - растущая база пользователей в B2B-сегменте</li>
 <li><strong>Copilot (Microsoft)</strong> - интегрирован в Bing и продукты Microsoft</li>
 </ul>
 <p>Каждая система использует свои алгоритмы цитирования. Стратегия GEO должна учитывать особенности каждой платформы.</p>
 
 <h2>Что делать бизнесу уже сейчас</h2>
-<p>GEO уже влияет на то, как клиенты находят компании. Чем дольше бренд отсутствует в AI-ответах, тем больше спроса достается тем, кого AI уже цитирует. Вот три первых шага:</p>
+<p>GEO уже влияет на то, как клиенты находят компании. Чем дольше бренд отсутствует в AI‑ответах, тем больше спроса достается тем, кого AI уже цитирует. Вот три первых шага:</p>
 <ol>
-<li><strong>Провести AI-аудит</strong> - узнать, что AI-системы говорят о вашем бизнесе прямо сейчас</li>
-<li><strong>Внедрить Schema.org разметку</strong> - дать AI-системам структурированные данные о вашем бизнесе</li>
+<li><strong>Провести AI‑аудит</strong> - узнать, что AI‑системы говорят о вашем бизнесе прямо сейчас</li>
+<li><strong>Внедрить Schema.org разметку</strong> - дать AI‑системам структурированные данные о вашем бизнесе</li>
 <li><strong>Создать контент в формате FAQ</strong> - AI предпочитает цитировать ответы в формате "вопрос-ответ"</li>
 </ol>
 
 <h2>Часто задаваемые вопросы</h2>
 <h3>GEO заменит SEO?</h3>
-<p>Нет. GEO и SEO работают параллельно. SEO приносит трафик из поисковой выдачи, GEO обеспечивает рекомендации в AI-ответах. В 2026 году бизнесу нужны оба канала, но доля AI-трафика растет быстрее.</p>
+<p>Нет. GEO и SEO работают параллельно. SEO приносит трафик из поисковой выдачи, GEO обеспечивает рекомендации в AI‑ответах. В 2026 году бизнесу нужны оба канала, но доля AI‑трафика растет быстрее.</p>
 
-<h3>Сколько стоит GEO-оптимизация</h3>
-<p>Стоимость зависит от масштаба. Разовый AI-аудит обходится от $1,500. Постоянная оптимизация - от $8,500 в месяц. Для понимания текущей ситуации можно начать с бесплатного экспресс-аудита.</p>
+<h3>Сколько стоит GEO‑оптимизация</h3>
+<p>Стоимость зависит от масштаба. Разовый AI‑аудит обходится от $1,500. Постоянная оптимизация - от $8,500 в месяц. Для понимания текущей ситуации можно начать с бесплатного экспресс-аудита.</p>
 
 <h3>Через какое время видны результаты GEO</h3>
 <p>Первые изменения в ответах AI появляются через 2-4 недели после внедрения Schema.org и оптимизации контента. Устойчивый рост AI Visibility Score начинается на 6-8 неделе. Полный цикл оптимизации занимает 4-6 месяцев.</p>
 
 <h3>Можно ли сделать GEO самостоятельно</h3>
-<p>Базовые шаги (Schema.org, FAQ-страницы) можно реализовать самостоятельно. Но системная GEO-стратегия требует мониторинга 5+ AI-платформ, анализа алгоритмов цитирования и постоянной адаптации. Это инженерная работа, не маркетинговая.</p>`,
+<p>Базовые шаги (Schema.org, FAQ-страницы) можно реализовать самостоятельно. Но системная GEO‑стратегия требует мониторинга 5+ AI‑платформ, анализа алгоритмов цитирования и постоянной адаптации. Это инженерная работа, не маркетинговая.</p>`,
 
       en: `<h2>What is GEO in simple terms</h2>
 <p>Generative Engine Optimization (GEO), also known as AEO (Answer Engine Optimization) and LLMO (Large Language Model Optimization), is the optimization of a business for visibility in AI system responses. When a user asks ChatGPT, Gemini, or Perplexity about a product or service, GEO ensures your brand appears in the answer.</p>
@@ -93,7 +93,7 @@ export const blogArticles: BlogArticle[] = [
 
 <h2>Why GEO matters more than SEO right now</h2>
 <p>According to OpenAI, ChatGPT has over 400 million weekly active users - more than the population of the United States.</p>
-<p>BrightEdge Research (2026) reports that 25% to 48% of Google searches already contain AI-generated answers. Users get their answer right on the results page without clicking through to websites.</p>
+<p>BrightEdge Research (2026) reports that 25% to 48% of Google searches already contain AI‑generated answers. Users get their answer right on the results page without clicking through to websites.</p>
 <p>A Bain & Company study (2025) shows that 80% of users trust AI answers and use them for 40%+ of their queries. Gartner forecasts a 15-25% decline in organic traffic for companies not adapted to AI search.</p>
 
 <h2>How AI generates answers and who gets cited</h2>
@@ -101,7 +101,7 @@ export const blogArticles: BlogArticle[] = [
 <ul>
 <li><strong>Structured Data (Schema.org)</strong> - markup that AI can easily parse and cite</li>
 <li><strong>Entity Authority</strong> - brand connectivity in Knowledge Graph, Wikipedia, professional directories</li>
-<li><strong>Content Structure</strong> - FAQ pages, definitions, expert guides in AI-friendly formats</li>
+<li><strong>Content Structure</strong> - FAQ pages, definitions, expert guides in AI‑friendly formats</li>
 <li><strong>Source Authority</strong> - backlinks, mentions in authoritative sources, domain rating</li>
 </ul>
 <p>If your content is not optimized for these parameters, AI will cite competitors even if you rank higher in Google.</p>
@@ -270,7 +270,7 @@ export const blogArticles: BlogArticle[] = [
   },
   {
     slug: "ai-visibility-score",
-    date: "2026-04-09",
+    date: "2026-05-11",
     author: "Merkaba Digital Team",
     title: {
       ru: "AI Visibility Score - что это и как проверить видимость вашего бизнеса в ChatGPT",
@@ -279,35 +279,35 @@ export const blogArticles: BlogArticle[] = [
       ar: "AI Visibility Score - ما هو وكيف تتحقق من ظهور عملك في ChatGPT",
     },
     description: {
-      ru: "AI Visibility Score - это процент запросов, по которым AI-система упоминает ваш бренд. Разбираемся, как он считается, почему у большинства компаний он близок к нулю и как это исправить",
+      ru: "AI Visibility Score - это процент запросов, по которым AI‑система упоминает ваш бренд. Разбираемся, как он считается, почему у большинства компаний он близок к нулю и как это исправить",
       en: "AI Visibility Score is the percentage of queries where an AI system mentions your brand. We explain how it is calculated, why most companies score near zero, and how to fix it",
       tr: "AI Visibility Score, bir AI sisteminin markanizdan bahsettigi sorgularin yuzdesini ifade eder. Nasil hesaplandigini, neden cogu sirketin puaninin sifira yakin oldugunu ve bunu nasil duzeltecegini acikliyoruz",
       ar: "AI Visibility Score هو النسبة المئوية للاستفسارات التي يذكر فيها نظام AI علامتك التجارية. نوضح كيف يحسب ولماذا معظم الشركات تحصل على نقاط قريبة من الصفر وكيفية اصلاح ذلك",
     },
     content: {
       ru: `<h2>Что такое AI Visibility Score</h2>
-<p>AI Visibility Score - это процент запросов, по которым AI-система (ChatGPT, Gemini, Perplexity) упоминает ваш бренд в своем ответе. Если из 100 релевантных запросов ChatGPT упоминает вас в 15, ваш score равен 15%.</p>
-<p>Это ключевая метрика GEO-оптимизации, аналог позиции в поисковой выдаче для SEO. Только вместо "какое место в Google" мы измеряем "как часто AI рекомендует ваш бренд".</p>
+<p>AI Visibility Score - это процент запросов, по которым AI‑система (ChatGPT, Gemini, Perplexity) упоминает ваш бренд в своем ответе. Если из 100 релевантных запросов ChatGPT упоминает вас в 15, ваш score равен 15%.</p>
+<p>Это ключевая метрика GEO‑оптимизации, аналог позиции в поисковой выдаче для SEO. Только вместо "какое место в Google" мы измеряем "как часто AI рекомендует ваш бренд".</p>
 
 <h2>Как рассчитывается AI Visibility Score</h2>
 <p>Расчет включает несколько этапов:</p>
 <ol>
 <li><strong>Формирование пула запросов</strong> - 100+ релевантных запросов на языках целевой аудитории</li>
-<li><strong>Проверка в AI-системах</strong> - каждый запрос отправляется в ChatGPT, Gemini, Perplexity, Claude и Copilot</li>
+<li><strong>Проверка в AI‑системах</strong> - каждый запрос отправляется в ChatGPT, Gemini, Perplexity, Claude и Copilot</li>
 <li><strong>Анализ ответов</strong> - фиксируется, упоминается ли бренд, в каком контексте, на какой позиции в ответе</li>
 <li><strong>Расчет score</strong> - процент запросов с упоминанием бренда от общего числа</li>
 </ol>
 <p>Дополнительно учитывается sentiment (позитивный, нейтральный, негативный контекст) и позиция в ответе (первое упоминание или последнее).</p>
 
 <h2>Почему у большинства компаний score близок к нулю</h2>
-<p>По нашим данным, менее 12% компаний имеют документированную GEO-стратегию. Большинство бизнесов невидимы для AI по нескольким причинам:</p>
+<p>По нашим данным, менее 12% компаний имеют документированную GEO‑стратегию. Большинство бизнесов невидимы для AI по нескольким причинам:</p>
 <ul>
 <li><strong>Нет structured data</strong> - сайт не содержит Schema.org разметку, которую AI может парсить</li>
 <li><strong>Слабый entity profile</strong> - бренд не связан в Knowledge Graph, нет присутствия на платформах, которые AI цитирует</li>
 <li><strong>Контент не в формате AI</strong> - нет FAQ-страниц, определений, структурированных гайдов</li>
 <li><strong>Низкая source authority</strong> - мало упоминаний в авторитетных источниках</li>
 </ul>
-<p>Даже компании с топовыми позициями в Google часто имеют AI Visibility Score ниже 5%. Google-позиции и AI-видимость - это разные показатели.</p>
+<p>Даже компании с топовыми позициями в Google часто имеют AI Visibility Score ниже 5%. Google-позиции и AI‑видимость - это разные показатели.</p>
 
 <h2>Какой score считается хорошим</h2>
 <p>Средний AI Visibility Score по рынку составляет 20-25%. Лидеры ниш достигают 60-70%. Вот ориентиры по уровням:</p>
@@ -316,7 +316,7 @@ export const blogArticles: BlogArticle[] = [
 <li><strong>5-15%</strong> - начальный уровень, бренд изредка упоминается</li>
 <li><strong>15-30%</strong> - средний уровень, есть базовая видимость</li>
 <li><strong>30-50%</strong> - хороший уровень, бренд регулярно рекомендуется</li>
-<li><strong>50%+</strong> - лидерский уровень, бренд доминирует в AI-ответах в нише</li>
+<li><strong>50%+</strong> - лидерский уровень, бренд доминирует в AI‑ответах в нише</li>
 </ul>
 
 <h2>Как проверить свой AI Visibility Score</h2>
@@ -327,11 +327,11 @@ export const blogArticles: BlogArticle[] = [
 <li>"Сравни [ваша категория] в [рынок]"</li>
 </ul>
 <p>Посчитайте, в скольких ответах упоминается ваш бренд. Это даст приблизительную оценку.</p>
-<p>Для точного анализа нужна проверка 100+ запросов в 5 AI-системах на нескольких языках. Merkaba Digital проводит такой аудит бесплатно в рамках экспресс-проверки.</p>
+<p>Для точного анализа нужна проверка 100+ запросов в 5 AI‑системах на нескольких языках. Merkaba Digital проводит такой аудит бесплатно в рамках экспресс-проверки.</p>
 
 <h2>Примеры результатов аудита</h2>
-<p>Строительная компания на средиземноморском побережье Турции: AI Visibility Score до оптимизации - 5%. После 4 месяцев GEO-работы - 47%. Рост на 840%.</p>
-<p>При этом позиции в Google у компании были стабильно высокими. Проблема была именно в AI-видимости: контент не был структурирован для цитирования AI-системами.</p>
+<p>Строительная компания на средиземноморском побережье Турции: AI Visibility Score до оптимизации - 5%. После 4 месяцев GEO‑работы - 47%. Рост на 840%.</p>
+<p>При этом позиции в Google у компании были стабильно высокими. Проблема была именно в AI‑видимости: контент не был структурирован для цитирования AI‑системами.</p>
 
 <h2>Как повысить AI Visibility Score</h2>
 <p>Основные направления работы:</p>
@@ -346,14 +346,14 @@ export const blogArticles: BlogArticle[] = [
 <h3>Можно ли отслеживать AI Visibility Score в реальном времени</h3>
 <p>Да. Merkaba Digital предоставляет персональный AI Visibility Dashboard с данными в реальном времени. Он показывает score по каждой платформе, динамику упоминаний, сравнение с конкурентами и рекомендации.</p>
 
-<h3>Score отличается в разных AI-системах</h3>
-<p>Да, и значительно. Бренд может быть хорошо видим в ChatGPT, но невидим в Gemini. Каждая AI-система использует свои алгоритмы и источники данных. Поэтому GEO-стратегия должна охватывать все платформы.</p>
+<h3>Score отличается в разных AI‑системах</h3>
+<p>Да, и значительно. Бренд может быть хорошо видим в ChatGPT, но невидим в Gemini. Каждая AI‑система использует свои алгоритмы и источники данных. Поэтому GEO‑стратегия должна охватывать все платформы.</p>
 
 <h3>Как часто нужно проверять score</h3>
-<p>Рекомендуем еженедельный мониторинг. AI-модели обновляются регулярно, и видимость может меняться. При активной GEO-оптимизации важно отслеживать динамику для своевременной корректировки стратегии.</p>
+<p>Рекомендуем еженедельный мониторинг. AI‑модели обновляются регулярно, и видимость может меняться. При активной GEO‑оптимизации важно отслеживать динамику для своевременной корректировки стратегии.</p>
 
 <h3>Бесплатный аудит - что входит</h3>
-<p>Экспресс-анализ видимости вашего бренда в 3 основных AI-системах (ChatGPT, Gemini, Perplexity) по 10 ключевым запросам. Вы получите отчет с текущим статусом и рекомендациями. Заполните форму на странице контактов, и мы пришлем результаты в течение 48 часов.</p>`,
+<p>Экспресс-анализ видимости вашего бренда в 3 основных AI‑системах (ChatGPT, Gemini, Perplexity) по 10 ключевым запросам. Вы получите отчет с текущим статусом и рекомендациями. Заполните форму на странице контактов, и мы пришлем результаты в течение 48 часов.</p>`,
 
       en: `<h2>What is AI Visibility Score</h2>
 <p>AI Visibility Score is the percentage of queries where an AI system (ChatGPT, Gemini, Perplexity) mentions your brand in its response. If out of 100 relevant queries ChatGPT mentions you in 15, your score is 15%.</p>
@@ -408,7 +408,7 @@ export const blogArticles: BlogArticle[] = [
 <ol>
 <li><strong>Schema.org markup</strong> - implement structured data for all key pages</li>
 <li><strong>Entity Building</strong> - strengthen presence on platforms that AI cites (Wikipedia, industry directories, Google Business Profile)</li>
-<li><strong>Content Engineering</strong> - create FAQ pages, expert guides, definitions in AI-friendly format</li>
+<li><strong>Content Engineering</strong> - create FAQ pages, expert guides, definitions in AI‑friendly format</li>
 <li><strong>Monitoring</strong> - track score changes and adapt strategy</li>
 </ol>
 
@@ -568,42 +568,42 @@ export const blogArticles: BlogArticle[] = [
   },
   {
     slug: "5-shagov-ai-vidimosti",
-    date: "2026-04-10",
+    date: "2026-05-18",
     author: "Merkaba Digital Team",
     title: {
-      ru: "5 шагов для повышения видимости вашего бизнеса в AI-системах",
+      ru: "5 шагов для повышения видимости вашего бизнеса в AI‑системах",
       en: "5 steps to improve your business visibility in AI systems",
       tr: "Isletmenizin AI sistemlerindeki gorunurlugunu artirmak icin 5 adim",
       ar: "5 خطوات لتحسين ظهور عملك في انظمة الذكاء الاصطناعي",
     },
     description: {
-      ru: "Практическое руководство по повышению AI-видимости бизнеса: Schema.org разметка, FAQ-страницы, entity building, контент-стратегия и мониторинг. Конкретные действия с примерами",
+      ru: "Практическое руководство по повышению AI‑видимости бизнеса: Schema.org разметка, FAQ-страницы, entity building, контент-стратегия и мониторинг. Конкретные действия с примерами",
       en: "A practical guide to improving business AI visibility: Schema.org markup, FAQ pages, entity building, content strategy, and monitoring. Concrete actions with examples",
       tr: "Isletme AI gorunurlugunu artirmak icin pratik rehber: Schema.org isaretlemesi, FAQ sayfalari, entity building, icerik stratejisi ve izleme. Orneklerle somut eylemler",
       ar: "دليل عملي لتحسين ظهور الاعمال في AI: ترميز Schema.org وصفحات FAQ وبناء الكيان واستراتيجية المحتوى والمراقبة. اجراءات محددة مع امثلة",
     },
     content: {
-      ru: `<h2>Зачем повышать AI-видимость бизнеса</h2>
-<p>AI-видимость - это показатель того, как часто AI-системы (ChatGPT, Gemini, Perplexity) упоминают и рекомендуют ваш бренд. При 400+ миллионах еженедельных пользователей ChatGPT, отсутствие в AI-ответах означает потерю значительного потока потенциальных клиентов.</p>
+      ru: `<h2>Зачем повышать AI‑видимость бизнеса</h2>
+<p>AI‑видимость - это показатель того, как часто AI‑системы (ChatGPT, Gemini, Perplexity) упоминают и рекомендуют ваш бренд. При 400+ миллионах еженедельных пользователей ChatGPT, отсутствие в AI‑ответах означает потерю значительного потока потенциальных клиентов.</p>
 <p>Ниже - пять конкретных шагов, которые можно начать внедрять уже сегодня.</p>
 
 <h2>Шаг 1: Внедрите Schema.org разметку</h2>
-<p>Schema.org - это стандарт structured data, который помогает AI-системам понимать содержание вашего сайта. Без разметки AI видит просто текст. С разметкой - структурированные данные, которые легко цитировать.</p>
+<p>Schema.org - это стандарт structured data, который помогает AI‑системам понимать содержание вашего сайта. Без разметки AI видит просто текст. С разметкой - структурированные данные, которые легко цитировать.</p>
 
 <h3>Какую разметку внедрить в первую очередь</h3>
 <ul>
 <li><strong>Organization</strong> - базовая информация о компании (название, адрес, контакты, логотип)</li>
 <li><strong>LocalBusiness</strong> - если у вас есть физическое расположение</li>
-<li><strong>FAQPage</strong> - для страниц с вопросами и ответами (формат, который AI-системы цитируют чаще всего)</li>
+<li><strong>FAQPage</strong> - для страниц с вопросами и ответами (формат, который AI‑системы цитируют чаще всего)</li>
 <li><strong>Product/Service</strong> - для страниц услуг и товаров</li>
 <li><strong>Article</strong> - для блога и экспертного контента</li>
 </ul>
 
 <h3>Как проверить разметку</h3>
-<p>Используйте Google Rich Results Test (search.google.com/test/rich-results) или Schema.org Validator. Проверьте каждую страницу на ошибки валидации. AI-системы лучше парсят корректную разметку.</p>
+<p>Используйте Google Rich Results Test (search.google.com/test/rich-results) или Schema.org Validator. Проверьте каждую страницу на ошибки валидации. AI‑системы лучше парсят корректную разметку.</p>
 
 <h2>Шаг 2: Создайте FAQ-страницы</h2>
-<p>AI-системы цитируют ответы в формате "вопрос-ответ" чаще любого другого формата контента. FAQ-страницы - самый быстрый способ повысить AI-видимость.</p>
+<p>AI‑системы цитируют ответы в формате "вопрос-ответ" чаще любого другого формата контента. FAQ-страницы - самый быстрый способ повысить AI‑видимость.</p>
 
 <h3>Как составить эффективные FAQ</h3>
 <ul>
@@ -615,7 +615,7 @@ export const blogArticles: BlogArticle[] = [
 <p>Создайте отдельные FAQ-страницы для каждой услуги и для общих вопросов о компании. 10-15 вопросов на страницу - оптимальный объем.</p>
 
 <h2>Шаг 3: Постройте entity profile</h2>
-<p>Entity building - это создание связанного профиля вашего бренда в данных, которые AI-системы используют как источники. AI определяет авторитетность через "сущности" - связанные данные о бренде в различных системах.</p>
+<p>Entity building - это создание связанного профиля вашего бренда в данных, которые AI‑системы используют как источники. AI определяет авторитетность через "сущности" - связанные данные о бренде в различных системах.</p>
 
 <h3>Где создать или усилить присутствие</h3>
 <ul>
@@ -630,7 +630,7 @@ export const blogArticles: BlogArticle[] = [
 <p>Спросите ChatGPT: "Что ты знаешь о [название компании]?" Если AI не может дать связный ответ, ваш entity profile нуждается в работе.</p>
 
 <h2>Шаг 4: Разработайте контент-стратегию для AI</h2>
-<p>Контент для AI-видимости отличается от обычного SEO-контента. AI предпочитает цитировать определенные форматы и структуры.</p>
+<p>Контент для AI‑видимости отличается от обычного SEO‑контента. AI предпочитает цитировать определенные форматы и структуры.</p>
 
 <h3>Какой контент создавать</h3>
 <ul>
@@ -641,7 +641,7 @@ export const blogArticles: BlogArticle[] = [
 <li><strong>Гайды для покупателей</strong> - "Как выбрать [продукт/услугу]"</li>
 </ul>
 
-<h3>Принципы AI-оптимизированного контента</h3>
+<h3>Принципы AI‑оптимизированного контента</h3>
 <ul>
 <li>Первое предложение - прямой ответ или определение</li>
 <li>Короткие абзацы по 2-3 предложения</li>
@@ -651,11 +651,11 @@ export const blogArticles: BlogArticle[] = [
 </ul>
 
 <h2>Шаг 5: Запустите мониторинг</h2>
-<p>Без мониторинга невозможно управлять AI-видимостью. Вам нужно знать, что AI-системы говорят о вашем бренде прямо сейчас, и отслеживать изменения.</p>
+<p>Без мониторинга невозможно управлять AI‑видимостью. Вам нужно знать, что AI‑системы говорят о вашем бренде прямо сейчас, и отслеживать изменения.</p>
 
 <h3>Что отслеживать</h3>
 <ul>
-<li><strong>AI Visibility Score</strong> - процент запросов с упоминанием бренда по каждой AI-платформе</li>
+<li><strong>AI Visibility Score</strong> - процент запросов с упоминанием бренда по каждой AI‑платформе</li>
 <li><strong>Sentiment</strong> - позитивный, нейтральный или негативный контекст упоминаний</li>
 <li><strong>Конкуренты</strong> - кого AI рекомендует вместо вас</li>
 <li><strong>Новые запросы</strong> - какие запросы появляются в вашей нише</li>
@@ -663,14 +663,14 @@ export const blogArticles: BlogArticle[] = [
 
 <h3>Как организовать мониторинг</h3>
 <p>Минимальный вариант: еженедельно проверяйте 20-30 ключевых запросов вручную в ChatGPT и Gemini. Фиксируйте результаты в таблице.</p>
-<p>Профессиональный вариант: AI Visibility Dashboard с автоматическим мониторингом 100+ запросов в 5 AI-системах. Merkaba Digital предоставляет такой dashboard в рамках программ GROWTH и DOMINANCE.</p>
+<p>Профессиональный вариант: AI Visibility Dashboard с автоматическим мониторингом 100+ запросов в 5 AI‑системах. Merkaba Digital предоставляет такой dashboard в рамках программ GROWTH и DOMINANCE.</p>
 
 <h2>С чего начать прямо сейчас</h2>
 <p>Не обязательно внедрять все пять шагов одновременно. Начните с самого быстрого: создайте FAQ-страницу с Schema.org разметкой. Это можно сделать за 1-2 дня, и первые результаты появятся через 2-3 недели.</p>
-<p>Следующий шаг - провести AI-аудит, чтобы понять текущую ситуацию. Merkaba Digital предлагает бесплатный экспресс-аудит: проверка видимости в 3 AI-системах по 10 ключевым запросам.</p>
+<p>Следующий шаг - провести AI‑аудит, чтобы понять текущую ситуацию. Merkaba Digital предлагает бесплатный экспресс-аудит: проверка видимости в 3 AI‑системах по 10 ключевым запросам.</p>
 
 <h2>Часто задаваемые вопросы</h2>
-<h3>Можно ли повысить AI-видимость без бюджета</h3>
+<h3>Можно ли повысить AI‑видимость без бюджета</h3>
 <p>Базовые шаги (Schema.org, FAQ-страницы, Google Business Profile) не требуют бюджета. Они требуют времени и технических знаний. Для системной работы по всем направлениям нужен специалист или агентство.</p>
 
 <h3>Какой шаг дает самый быстрый результат</h3>
@@ -740,7 +740,7 @@ export const blogArticles: BlogArticle[] = [
 <li><strong>Buyer guides</strong> - "How to choose [product/service]"</li>
 </ul>
 
-<h3>Principles of AI-optimized content</h3>
+<h3>Principles of AI‑optimized content</h3>
 <ul>
 <li>First sentence is a direct answer or definition</li>
 <li>Short paragraphs of 2-3 sentences</li>
@@ -978,6 +978,528 @@ export const blogArticles: BlogArticle[] = [
 
 <h3>كيف تقاس النتائج</h3>
 <p>المقياس الرئيسي هو AI Visibility Score. تحقق منه قبل البدء وبعد 4-6 اسابيع. المقاييس الاضافية: عدد الاشارات في AI والمشاعر والموقع في الاجابات.</p>`,
+    },
+  },
+  {
+    slug: "schema-org-dlya-geo",
+    date: "2026-05-25",
+    author: "Merkaba Digital Team",
+    title: {
+      ru: "Schema.org для AI‑видимости: какая разметка помогает попасть в ответы AI",
+      en: "Schema.org for AI visibility: which markup helps you appear in AI answers",
+      tr: "AI gorunurlugu icin Schema.org: hangi isaretleme AI yanitlarina girmeye yardimci olur",
+      ar: "Schema.org لظهور AI: اي ترميز يساعد على الظهور في اجابات AI",
+    },
+    description: {
+      ru: "Разбираем, как structured data влияет на цитирование бренда в ChatGPT, Gemini и Perplexity: какие типы разметки внедрять первыми, как их проверять и каких ошибок избегать",
+      en: "How structured data affects brand citation in ChatGPT, Gemini and Perplexity: which markup types to implement first, how to validate them and which mistakes to avoid",
+      tr: "Structured data'nin ChatGPT, Gemini ve Perplexity'de marka alintilanmasini nasil etkiledigini inceliyoruz: once hangi isaretleme turleri uygulanmali, nasil dogrulanmali ve hangi hatalardan kacinilmali",
+      ar: "نشرح كيف تؤثر البيانات المهيكلة على استشهاد العلامة التجارية في ChatGPT وGemini وPerplexity: اي انواع الترميز تطبق اولا وكيف تتحقق منها واي اخطاء تتجنب",
+    },
+    content: {
+      ru: `<h2>Почему AI‑системам нужна structured data</h2>
+<p>AI‑системы не читают сайт так, как человек. Прежде чем процитировать бренд, модель должна понять, кто вы, чем занимаетесь, где работаете и почему вам можно доверять. Schema.org разметка отвечает на эти вопросы на языке, который машины разбирают без догадок.</p>
+<p>Страница без разметки - это просто текст, из которого AI пытается извлечь факты. Страница с разметкой - набор подтвержденных утверждений: название организации, услуги, география, цены, ответы на вопросы. Чем меньше системе приходится догадываться, тем выше шанс корректного цитирования.</p>
+
+<h2>Какая разметка важна для GEO в первую очередь</h2>
+<ul>
+<li><strong>Organization</strong> - базовый паспорт компании: название, логотип, контакты, ссылки на профили. Связывает сайт с сущностью бренда в Knowledge Graph</li>
+<li><strong>LocalBusiness</strong> - для бизнеса с физической локацией: адрес, часы работы, зона обслуживания</li>
+<li><strong>FAQPage</strong> - формат "вопрос-ответ", который AI‑системы цитируют чаще всего</li>
+<li><strong>Service / Product</strong> - что именно вы продаете, в каких вариантах и по какой цене</li>
+<li><strong>Article</strong> - авторство и дата для экспертного контента, сигналы E-E-A-T</li>
+<li><strong>BreadcrumbList</strong> - структура сайта, помогает AI понять иерархию страниц</li>
+</ul>
+
+<h2>Типичные ошибки внедрения</h2>
+<ul>
+<li><strong>Разметка не совпадает с контентом</strong> - данные в JSON-LD должны дублировать видимый текст страницы, иначе доверие к источнику падает</li>
+<li><strong>Только главная страница</strong> - разметка нужна каждой ключевой странице: услуги, FAQ, статьи, контакты</li>
+<li><strong>Ошибки валидации</strong> - незаполненные обязательные поля и неверные типы делают разметку бесполезной</li>
+<li><strong>Микроразметка вместо JSON-LD</strong> - Google и AI‑системы рекомендуют JSON-LD: он проще в поддержке и реже ломается при редизайне</li>
+</ul>
+
+<h2>Как проверить свою разметку</h2>
+<p>Используйте два инструмента: Google Rich Results Test показывает, как разметку видит Google, Schema.org Validator проверяет синтаксис и полноту. Проверяйте каждую ключевую страницу отдельно - ошибки часто локальны.</p>
+<p>Дополнительный тест: спросите ChatGPT или Perplexity о вашей компании. Если AI путает род деятельности или географию - данные о сущности бренда недостаточно связаны, и разметка одно из первых исправлений.</p>
+
+<h2>Чего разметка не сделает</h2>
+<p>Schema.org - необходимое, но не достаточное условие AI‑видимости. Разметка помогает системам понять контент, но не заменяет сам контент, авторитетность источников и упоминания на платформах, которым AI доверяет. В методологии Merkaba structured data - первый из четырех этапов, за ним следуют entity building, content engineering и мониторинг.</p>
+
+<h2>Часто задаваемые вопросы</h2>
+<h3>Как быстро разметка влияет на AI‑видимость</h3>
+<p>Эффект появляется после переиндексации страниц - обычно в течение 2-3 недель. Это одна из самых быстрых GEO‑тактик, поэтому мы внедряем ее первой.</p>
+
+<h3>Нужен ли разработчик для внедрения</h3>
+<p>JSON-LD добавляется в код страниц, поэтому участие разработчика обычно требуется. На популярных CMS часть типов разметки закрывается плагинами, но точность данных все равно нужно контролировать.</p>
+
+<h3>Достаточно ли разметки, чтобы AI начал цитировать бренд</h3>
+<p>Нет. Разметка устраняет технический барьер, но цитирование зависит и от авторитетности: упоминаний в источниках, которым AI доверяет, качества контента и сущности бренда в Knowledge Graph.</p>`,
+
+      en: `<h2>Why AI systems need structured data</h2>
+<p>AI systems do not read a website the way a person does. Before citing a brand, the model has to understand who you are, what you do, where you operate and why you can be trusted. Schema.org markup answers these questions in a language machines parse without guessing.</p>
+<p>A page without markup is just text from which AI tries to extract facts. A page with markup is a set of confirmed statements: organization name, services, geography, prices, answers to questions. The less the system has to guess, the higher the chance of correct citation.</p>
+
+<h2>Which markup matters most for GEO</h2>
+<ul>
+<li><strong>Organization</strong> - the company's basic passport: name, logo, contacts, profile links. Connects the site to the brand entity in the Knowledge Graph</li>
+<li><strong>LocalBusiness</strong> - for businesses with a physical location: address, opening hours, service area</li>
+<li><strong>FAQPage</strong> - the question-and-answer format AI systems cite most often</li>
+<li><strong>Service / Product</strong> - what exactly you sell, in which variants and at what price</li>
+<li><strong>Article</strong> - authorship and date for expert content, E-E-A-T signals</li>
+<li><strong>BreadcrumbList</strong> - site structure, helps AI understand page hierarchy</li>
+</ul>
+
+<h2>Common implementation mistakes</h2>
+<ul>
+<li><strong>Markup does not match content</strong> - JSON-LD data must mirror the visible page text, otherwise trust in the source drops</li>
+<li><strong>Homepage only</strong> - every key page needs markup: services, FAQ, articles, contacts</li>
+<li><strong>Validation errors</strong> - missing required fields and wrong types make markup useless</li>
+<li><strong>Microdata instead of JSON-LD</strong> - Google and AI systems recommend JSON-LD: it is easier to maintain and breaks less often during redesigns</li>
+</ul>
+
+<h2>How to validate your markup</h2>
+<p>Use two tools: Google Rich Results Test shows how Google sees your markup, Schema.org Validator checks syntax and completeness. Test every key page separately - errors are often local.</p>
+<p>An extra test: ask ChatGPT or Perplexity about your company. If AI confuses your line of business or geography, your brand entity data is not connected enough - and markup is one of the first fixes.</p>
+
+<h2>What markup will not do</h2>
+<p>Schema.org is a necessary but not sufficient condition for AI visibility. Markup helps systems understand content, but it does not replace the content itself, source authority or mentions on platforms AI trusts. In Merkaba's methodology, structured data is the first of four stages, followed by entity building, content engineering and monitoring.</p>
+
+<h2>Frequently asked questions</h2>
+<h3>How quickly does markup affect AI visibility</h3>
+<p>The effect appears after pages are reindexed - usually within 2-3 weeks. It is one of the fastest GEO tactics, which is why we implement it first.</p>
+
+<h3>Do I need a developer for implementation</h3>
+<p>JSON-LD is added to page code, so a developer is usually involved. On popular CMS platforms some markup types are covered by plugins, but data accuracy still needs to be controlled.</p>
+
+<h3>Is markup alone enough for AI to start citing a brand</h3>
+<p>No. Markup removes the technical barrier, but citation also depends on authority: mentions in sources AI trusts, content quality and the brand entity in the Knowledge Graph.</p>`,
+
+      tr: `<h2>AI sistemleri neden structured data'ya ihtiyac duyar</h2>
+<p>AI sistemleri bir web sitesini insan gibi okumaz. Bir markayi alintilamadan once model kim oldugunuzu, ne yaptiginizi, nerede calistiginizi ve neden guvenilir oldugunuzu anlamalidir. Schema.org isaretlemesi bu sorulari makinelerin tahmin etmeden ayristirdigi bir dilde yanitlar.</p>
+<p>Isaretlemesiz bir sayfa, AI'nin gercekleri cikarmaya calistigi duz metindir. Isaretlemeli bir sayfa ise dogrulanmis ifadeler butunudur: kurum adi, hizmetler, cografya, fiyatlar, soru yanitlari. Sistem ne kadar az tahmin ederse, dogru alintilanma sansi o kadar yuksek olur.</p>
+
+<h2>GEO icin oncelikli isaretleme turleri</h2>
+<ul>
+<li><strong>Organization</strong> - sirketin temel pasaportu: ad, logo, iletisim, profil linkleri. Siteyi Knowledge Graph'taki marka varligina baglar</li>
+<li><strong>LocalBusiness</strong> - fiziksel konumu olan isletmeler icin: adres, calisma saatleri, hizmet bolgesi</li>
+<li><strong>FAQPage</strong> - AI sistemlerinin en sik alintiladigi soru-cevap formati</li>
+<li><strong>Service / Product</strong> - tam olarak ne sattiginiz, hangi seceneklerle ve hangi fiyata</li>
+<li><strong>Article</strong> - uzman icerik icin yazarlik ve tarih, E-E-A-T sinyalleri</li>
+<li><strong>BreadcrumbList</strong> - site yapisi, AI'nin sayfa hiyerarsisini anlamasina yardimci olur</li>
+</ul>
+
+<h2>Tipik uygulama hatalari</h2>
+<ul>
+<li><strong>Isaretleme icerikle uyusmuyor</strong> - JSON-LD verileri sayfanin gorunen metnini yansitmali, aksi halde kaynaga guven duser</li>
+<li><strong>Sadece ana sayfa</strong> - her onemli sayfanin isaretlemeye ihtiyaci var: hizmetler, SSS, makaleler, iletisim</li>
+<li><strong>Dogrulama hatalari</strong> - eksik zorunlu alanlar ve yanlis turler isaretlemeyi ise yaramaz hale getirir</li>
+<li><strong>JSON-LD yerine microdata</strong> - Google ve AI sistemleri JSON-LD onerir: bakimi daha kolaydir ve yeniden tasarimda daha az bozulur</li>
+</ul>
+
+<h2>Isaretlemenizi nasil kontrol edersiniz</h2>
+<p>Iki arac kullanin: Google Rich Results Test isaretlemeyi Google'in nasil gordugunu gosterir, Schema.org Validator sozdizimi ve butunlugu kontrol eder. Her onemli sayfayi ayri test edin - hatalar genellikle yereldir.</p>
+<p>Ek test: ChatGPT veya Perplexity'ye sirketinizi sorun. AI faaliyet alaninizi veya cografyanizi karistiriyorsa, marka varlik verileriniz yeterince bagli degildir - ve isaretleme ilk duzeltmelerden biridir.</p>
+
+<h2>Isaretlemenin yapamayacaklari</h2>
+<p>Schema.org, AI gorunurlugu icin gerekli ama yeterli olmayan bir kosuldur. Isaretleme sistemlerin icerigi anlamasina yardimci olur ama icerigin kendisinin, kaynak otoritesinin ve AI'nin guvendigi platformlardaki bahsedilmelerin yerini tutmaz. Merkaba metodolojisinde structured data dort asamanin ilkidir; ardindan entity building, content engineering ve izleme gelir.</p>
+
+<h2>Sik sorulan sorular</h2>
+<h3>Isaretleme AI gorunurlugunu ne kadar hizli etkiler</h3>
+<p>Etki, sayfalar yeniden indekslendikten sonra ortaya cikar - genellikle 2-3 hafta icinde. En hizli GEO taktiklerinden biridir, bu yuzden once onu uyguluyoruz.</p>
+
+<h3>Uygulama icin gelistirici gerekli mi</h3>
+<p>JSON-LD sayfa koduna eklenir, bu nedenle genellikle gelistirici katilimi gerekir. Populer CMS'lerde bazi isaretleme turleri eklentilerle cozulur ama veri dogrulugu yine de kontrol edilmelidir.</p>
+
+<h3>AI'nin markayi alintilamasi icin isaretleme yeterli mi</h3>
+<p>Hayir. Isaretleme teknik engeli kaldirir ama alintilanma ayni zamanda otoriteye baglidir: AI'nin guvendigi kaynaklardaki bahsedilmeler, icerik kalitesi ve Knowledge Graph'taki marka varligi.</p>`,
+
+      ar: `<h2>لماذا تحتاج انظمة AI الى البيانات المهيكلة</h2>
+<p>انظمة AI لا تقرا الموقع كما يقراه الانسان. قبل الاستشهاد بعلامة تجارية، يجب ان يفهم النموذج من انت وماذا تفعل واين تعمل ولماذا يمكن الوثوق بك. ترميز Schema.org يجيب على هذه الاسئلة بلغة تحللها الآلات دون تخمين.</p>
+<p>الصفحة بدون ترميز هي مجرد نص يحاول AI استخراج الحقائق منه. الصفحة المرمزة هي مجموعة من البيانات المؤكدة: اسم المنظمة والخدمات والجغرافيا والاسعار واجابات الاسئلة. كلما قل التخمين المطلوب من النظام، زادت فرصة الاستشهاد الصحيح.</p>
+
+<h2>اي ترميز هو الاهم لـ GEO</h2>
+<ul>
+<li><strong>Organization</strong> - جواز السفر الاساسي للشركة: الاسم والشعار وجهات الاتصال وروابط الملفات. يربط الموقع بكيان العلامة التجارية في Knowledge Graph</li>
+<li><strong>LocalBusiness</strong> - للاعمال ذات الموقع الفعلي: العنوان وساعات العمل ومنطقة الخدمة</li>
+<li><strong>FAQPage</strong> - تنسيق السؤال والجواب الذي تستشهد به انظمة AI اكثر من غيره</li>
+<li><strong>Service / Product</strong> - ماذا تبيع بالضبط وباي خيارات وباي سعر</li>
+<li><strong>Article</strong> - التاليف والتاريخ للمحتوى الخبير، اشارات E-E-A-T</li>
+<li><strong>BreadcrumbList</strong> - بنية الموقع، تساعد AI على فهم تسلسل الصفحات</li>
+</ul>
+
+<h2>اخطاء التطبيق الشائعة</h2>
+<ul>
+<li><strong>الترميز لا يطابق المحتوى</strong> - يجب ان تعكس بيانات JSON-LD النص المرئي للصفحة، والا تنخفض الثقة بالمصدر</li>
+<li><strong>الصفحة الرئيسية فقط</strong> - كل صفحة رئيسية تحتاج الى ترميز: الخدمات والاسئلة الشائعة والمقالات وجهات الاتصال</li>
+<li><strong>اخطاء التحقق</strong> - الحقول الالزامية الناقصة والانواع الخاطئة تجعل الترميز عديم الفائدة</li>
+<li><strong>Microdata بدلا من JSON-LD</strong> - توصي Google وانظمة AI بـ JSON-LD: صيانته اسهل ويتعطل اقل عند اعادة التصميم</li>
+</ul>
+
+<h2>كيف تتحقق من ترميزك</h2>
+<p>استخدم اداتين: Google Rich Results Test يعرض كيف يرى Google الترميز، وSchema.org Validator يتحقق من الصياغة والاكتمال. اختبر كل صفحة رئيسية على حدة - الاخطاء غالبا محلية.</p>
+<p>اختبار اضافي: اسال ChatGPT او Perplexity عن شركتك. اذا كان AI يخلط في مجال نشاطك او جغرافيتك، فبيانات كيان علامتك التجارية غير مترابطة بما يكفي - والترميز من اول الاصلاحات.</p>
+
+<h2>ما الذي لن يفعله الترميز</h2>
+<p>Schema.org شرط ضروري لكنه غير كاف لظهور AI. الترميز يساعد الانظمة على فهم المحتوى لكنه لا يحل محل المحتوى نفسه ولا مصداقية المصادر ولا الاشارات على المنصات التي يثق بها AI. في منهجية Merkaba، البيانات المهيكلة هي الاولى من اربع مراحل، تليها بناء الكيان وهندسة المحتوى والمراقبة.</p>
+
+<h2>الاسئلة الشائعة</h2>
+<h3>ما مدى سرعة تاثير الترميز على ظهور AI</h3>
+<p>يظهر التاثير بعد اعادة فهرسة الصفحات - عادة خلال 2-3 اسابيع. انها من اسرع تكتيكات GEO، لذلك نطبقها اولا.</p>
+
+<h3>هل احتاج الى مطور للتطبيق</h3>
+<p>يضاف JSON-LD الى كود الصفحات، لذا عادة ما تكون مشاركة المطور مطلوبة. في انظمة CMS الشائعة تغطي الاضافات بعض انواع الترميز، لكن دقة البيانات تحتاج الى مراقبة دائما.</p>
+
+<h3>هل يكفي الترميز وحده ليبدا AI بالاستشهاد بالعلامة التجارية</h3>
+<p>لا. الترميز يزيل الحاجز التقني، لكن الاستشهاد يعتمد ايضا على المصداقية: الاشارات في المصادر التي يثق بها AI وجودة المحتوى وكيان العلامة التجارية في Knowledge Graph.</p>`,
+    },
+  },
+  {
+    slug: "istochniki-kotorye-tsitiruet-ai",
+    date: "2026-06-01",
+    author: "Merkaba Digital Team",
+    title: {
+      ru: "Какие источники цитируют AI‑системы и как попасть в их число",
+      en: "Which sources AI systems cite and how to become one of them",
+      tr: "AI sistemleri hangi kaynaklari alintiliyor ve onlardan biri nasil olunur",
+      ar: "اي مصادر تستشهد بها انظمة AI وكيف تصبح واحدا منها",
+    },
+    description: {
+      ru: "ChatGPT, Gemini и Perplexity опираются на ограниченный круг источников. Разбираем, как AI выбирает, кому доверять, и как встроить бренд в эту экосистему",
+      en: "ChatGPT, Gemini and Perplexity rely on a limited circle of sources. We break down how AI decides whom to trust and how to embed your brand in that ecosystem",
+      tr: "ChatGPT, Gemini ve Perplexity sinirli bir kaynak cevresine dayanir. AI'nin kime guvenecegine nasil karar verdigini ve markanizi bu ekosisteme nasil yerlestireceginizi inceliyoruz",
+      ar: "تعتمد ChatGPT وGemini وPerplexity على دائرة محدودة من المصادر. نشرح كيف يقرر AI بمن يثق وكيف تدمج علامتك التجارية في هذا النظام",
+    },
+    content: {
+      ru: `<h2>Откуда AI‑системы берут информацию</h2>
+<p>У AI‑ответов два источника: обучающие данные модели и веб-поиск в реальном времени. Обучающие данные определяют, что модель "знает" о брендах изначально. Поиск добавляет свежие факты из ограниченного круга страниц, которые система считает надежными.</p>
+<p>Для бизнеса это означает: попасть в AI‑ответы можно двумя путями - присутствовать в источниках, на которых модели обучаются, и быть видимым в источниках, которые AI подтягивает при поиске. Сильная GEO‑стратегия работает с обоими.</p>
+
+<h2>Категории источников, которым AI доверяет</h2>
+<ul>
+<li><strong>Wikipedia и Wikidata</strong> - ядро Knowledge Graph; даже без собственной статьи бренд может присутствовать через связанные сущности</li>
+<li><strong>Отраслевые каталоги и рейтинги</strong> - площадки, которые AI воспринимает как агрегаторы проверенных данных о компаниях ниши</li>
+<li><strong>СМИ и отраслевые издания</strong> - упоминания в материалах с экспертизой и редакционными стандартами</li>
+<li><strong>Платформы отзывов</strong> - Google Maps, Trustpilot, профильные площадки: AI учитывает и количество, и тональность</li>
+<li><strong>Профессиональные платформы</strong> - LinkedIn, Crunchbase, ассоциации, сертификации</li>
+</ul>
+
+<h2>Каждая AI‑система цитирует по-своему</h2>
+<p>Perplexity почти всегда опирается на свежие веб-источники и показывает ссылки - здесь решает присутствие в индексируемых авторитетных страницах. ChatGPT чаще отвечает из обученных знаний, поэтому важно, что о бренде писали устойчивые источники. Gemini связан с поиском Google и Knowledge Graph.</p>
+<p>Поэтому видимость нужно проверять в каждой системе отдельно: список цитируемых площадок в одной нише может почти не пересекаться между платформами.</p>
+
+<h2>Как построить source footprint: порядок действий</h2>
+<ol>
+<li><strong>Снимите карту источников ниши</strong> - задайте AI‑системам 20-30 ключевых запросов и зафиксируйте, какие сайты они цитируют</li>
+<li><strong>Закройте базовые сущности</strong> - Google Business Profile, Wikidata, LinkedIn, Crunchbase, профильные каталоги</li>
+<li><strong>Усильте приоритетные площадки</strong> - присутствие именно там, где AI уже берет ответы по вашей категории</li>
+<li><strong>Подтверждайте экспертизу</strong> - публикации и упоминания в отраслевых медиа дают сигнал авторитетности</li>
+</ol>
+
+<h2>Чего избегать</h2>
+<p>Массовые ссылки из спам-каталогов, сетки сайтов и купленные упоминания низкого качества для GEO не работают: AI‑системы опираются на ограниченный круг проверенных источников, и присутствие в мусорных не добавляет веса. Хуже того, противоречивые данные о бренде в разных источниках снижают уверенность модели и вероятность цитирования.</p>
+
+<h2>Часто задаваемые вопросы</h2>
+<h3>Нужна ли бренду статья в Wikipedia</h3>
+<p>Желательна, но не обязательна. Для большинства компаний реалистичнее Wikidata-сущность плюс системное присутствие в отраслевых каталогах и СМИ. Статья в Wikipedia без подтвержденной значимости будет удалена.</p>
+
+<h3>Сколько источников нужно для эффекта</h3>
+<p>Дело не в количестве, а в пересечении с теми площадками, которые AI реально цитирует в вашей нише. Десять точных попаданий работают лучше сотни случайных каталогов.</p>
+
+<h3>Как узнать, какие источники AI цитирует в моей нише</h3>
+<p>Это часть AI Visibility Audit: мы фиксируем цитируемые источники по 100+ запросам в 5 системах и используем этот список как план работ. Быструю оценку дает бесплатный экспресс-аудит.</p>`,
+
+      en: `<h2>Where AI systems get their information</h2>
+<p>AI answers have two sources: the model's training data and real-time web search. Training data defines what the model "knows" about brands by default. Search adds fresh facts from a limited circle of pages the system considers reliable.</p>
+<p>For a business this means there are two ways into AI answers: being present in the sources models are trained on, and being visible in the sources AI pulls in at search time. A strong GEO strategy works with both.</p>
+
+<h2>Source categories AI trusts</h2>
+<ul>
+<li><strong>Wikipedia and Wikidata</strong> - the core of the Knowledge Graph; even without its own article, a brand can be present through connected entities</li>
+<li><strong>Industry directories and rankings</strong> - platforms AI treats as aggregators of verified data about companies in a niche</li>
+<li><strong>Media and trade publications</strong> - mentions in material with expertise and editorial standards</li>
+<li><strong>Review platforms</strong> - Google Maps, Trustpilot, vertical platforms: AI weighs both volume and sentiment</li>
+<li><strong>Professional platforms</strong> - LinkedIn, Crunchbase, associations, certifications</li>
+</ul>
+
+<h2>Every AI system cites differently</h2>
+<p>Perplexity almost always relies on fresh web sources and shows links - presence in indexed authoritative pages decides here. ChatGPT answers more often from trained knowledge, so what stable sources have written about the brand matters. Gemini is tied to Google Search and the Knowledge Graph.</p>
+<p>That is why visibility has to be checked in each system separately: the list of cited platforms in one niche may barely overlap across systems.</p>
+
+<h2>Building a source footprint: the order of work</h2>
+<ol>
+<li><strong>Map your niche's sources</strong> - ask AI systems 20-30 key queries and record which sites they cite</li>
+<li><strong>Cover the basic entities</strong> - Google Business Profile, Wikidata, LinkedIn, Crunchbase, vertical directories</li>
+<li><strong>Strengthen priority platforms</strong> - presence exactly where AI already takes answers in your category</li>
+<li><strong>Confirm expertise</strong> - publications and mentions in trade media send an authority signal</li>
+</ol>
+
+<h2>What to avoid</h2>
+<p>Bulk links from spam directories, site networks and low-quality paid mentions do not work for GEO: AI systems rely on a limited circle of verified sources, and presence in junk ones adds no weight. Worse, contradictory brand data across sources lowers the model's confidence and the probability of citation.</p>
+
+<h2>Frequently asked questions</h2>
+<h3>Does a brand need a Wikipedia article</h3>
+<p>Desirable but not mandatory. For most companies a Wikidata entity plus systematic presence in industry directories and media is more realistic. A Wikipedia article without confirmed notability will be deleted.</p>
+
+<h3>How many sources are needed for an effect</h3>
+<p>It is not about quantity but about overlap with the platforms AI actually cites in your niche. Ten precise placements work better than a hundred random directories.</p>
+
+<h3>How do I find out which sources AI cites in my niche</h3>
+<p>That is part of the AI Visibility Audit: we record cited sources across 100+ queries in 5 systems and use the list as a work plan. A free express audit gives a quick estimate.</p>`,
+
+      tr: `<h2>AI sistemleri bilgiyi nereden alir</h2>
+<p>AI yanitlarinin iki kaynagi vardir: modelin egitim verileri ve gercek zamanli web aramasi. Egitim verileri modelin markalar hakkinda varsayilan olarak ne "bildigini" belirler. Arama ise sistemin guvenilir saydigi sinirli bir sayfa cevresinden taze gercekler ekler.</p>
+<p>Isletme icin bu su anlama gelir: AI yanitlarina girmenin iki yolu vardir - modellerin egitildigi kaynaklarda yer almak ve AI'nin arama sirasinda cektigi kaynaklarda gorunur olmak. Guclu bir GEO stratejisi her ikisiyle de calisir.</p>
+
+<h2>AI'nin guvendigi kaynak kategorileri</h2>
+<ul>
+<li><strong>Wikipedia ve Wikidata</strong> - Knowledge Graph'in cekirdegi; kendi makalesi olmasa bile marka bagli varliklar uzerinden var olabilir</li>
+<li><strong>Sektor dizinleri ve siralamalar</strong> - AI'nin nis sirketleri hakkinda dogrulanmis veri toplayicilari olarak gordugu platformlar</li>
+<li><strong>Medya ve sektor yayinlari</strong> - uzmanlik ve editoryal standartlara sahip iceriklerde bahsedilmeler</li>
+<li><strong>Yorum platformlari</strong> - Google Maps, Trustpilot, dikey platformlar: AI hem hacmi hem duyguyu tartar</li>
+<li><strong>Profesyonel platformlar</strong> - LinkedIn, Crunchbase, dernekler, sertifikalar</li>
+</ul>
+
+<h2>Her AI sistemi farkli alintiliyor</h2>
+<p>Perplexity neredeyse her zaman taze web kaynaklarina dayanir ve linkleri gosterir - burada indekslenen otoriter sayfalarda varlik belirleyicidir. ChatGPT daha cok egitilmis bilgiden yanitlar, bu yuzden istikrarli kaynaklarin marka hakkinda ne yazdigi onemlidir. Gemini, Google Arama ve Knowledge Graph'a baglidir.</p>
+<p>Bu nedenle gorunurluk her sistemde ayri kontrol edilmelidir: bir nisteki alintilanan platform listesi sistemler arasinda neredeyse hic ortusmeyebilir.</p>
+
+<h2>Source footprint olusturma: is sirasi</h2>
+<ol>
+<li><strong>Nisinizin kaynak haritasini cikarin</strong> - AI sistemlerine 20-30 temel sorgu sorun ve hangi siteleri alintiladiklarini kaydedin</li>
+<li><strong>Temel varliklari kapatin</strong> - Google Business Profile, Wikidata, LinkedIn, Crunchbase, dikey dizinler</li>
+<li><strong>Oncelikli platformlari guclendirin</strong> - tam olarak AI'nin kategorinizde yanit aldigi yerlerde varlik</li>
+<li><strong>Uzmanligi dogrulayin</strong> - sektor medyasindaki yayinlar ve bahsedilmeler otorite sinyali verir</li>
+</ol>
+
+<h2>Nelerden kacinmali</h2>
+<p>Spam dizinlerden toplu linkler, site aglari ve dusuk kaliteli satin alinmis bahsedilmeler GEO icin calismaz: AI sistemleri sinirli bir dogrulanmis kaynak cevresine dayanir ve cop kaynaklarda varlik agirlik eklemez. Daha kotusu, kaynaklar arasinda celiskili marka verileri modelin guvenini ve alintilanma olasiligini dusurur.</p>
+
+<h2>Sik sorulan sorular</h2>
+<h3>Markanin Wikipedia makalesine ihtiyaci var mi</h3>
+<p>Arzu edilir ama zorunlu degil. Cogu sirket icin Wikidata varligi ve sektor dizinleri ile medyada sistematik varlik daha gercekcidir. Dogrulanmis kayda degerlik olmadan Wikipedia makalesi silinir.</p>
+
+<h3>Etki icin kac kaynak gerekir</h3>
+<p>Mesele miktar degil, AI'nin nisinizde gercekten alintiladigi platformlarla ortusmedir. On isabetli yerlestirme, yuz rastgele dizinden daha iyi calisir.</p>
+
+<h3>AI'nin nisimde hangi kaynaklari alintiladigini nasil ogrenirim</h3>
+<p>Bu, AI Visibility Audit'in bir parcasidir: 5 sistemde 100+ sorguda alintilanan kaynaklari kaydeder ve listeyi is plani olarak kullaniriz. Ucretsiz ekspres denetim hizli bir tahmin verir.</p>`,
+
+      ar: `<h2>من اين تحصل انظمة AI على المعلومات</h2>
+<p>لاجابات AI مصدران: بيانات تدريب النموذج والبحث على الويب في الوقت الفعلي. بيانات التدريب تحدد ما "يعرفه" النموذج عن العلامات التجارية افتراضيا. اما البحث فيضيف حقائق جديدة من دائرة محدودة من الصفحات التي يعتبرها النظام موثوقة.</p>
+<p>بالنسبة للاعمال هذا يعني: هناك طريقان للوصول الى اجابات AI - التواجد في المصادر التي تتدرب عليها النماذج، والظهور في المصادر التي يسحبها AI عند البحث. استراتيجية GEO القوية تعمل مع كليهما.</p>
+
+<h2>فئات المصادر التي يثق بها AI</h2>
+<ul>
+<li><strong>Wikipedia وWikidata</strong> - جوهر Knowledge Graph؛ حتى بدون مقال خاص يمكن للعلامة التجارية ان تتواجد عبر الكيانات المترابطة</li>
+<li><strong>الدلائل والتصنيفات القطاعية</strong> - منصات يعتبرها AI مجمعات بيانات موثقة عن شركات المجال</li>
+<li><strong>وسائل الاعلام والمنشورات المتخصصة</strong> - الاشارات في مواد ذات خبرة ومعايير تحريرية</li>
+<li><strong>منصات التقييمات</strong> - Google Maps وTrustpilot والمنصات المتخصصة: AI يزن الكمية والمشاعر معا</li>
+<li><strong>المنصات المهنية</strong> - LinkedIn وCrunchbase والجمعيات والشهادات</li>
+</ul>
+
+<h2>كل نظام AI يستشهد بطريقته</h2>
+<p>Perplexity يعتمد دائما تقريبا على مصادر ويب حديثة ويعرض الروابط - هنا يحسم التواجد في صفحات موثوقة مفهرسة. ChatGPT يجيب اكثر من المعرفة المدربة، لذلك يهم ما كتبته المصادر المستقرة عن العلامة التجارية. Gemini مرتبط ببحث Google وKnowledge Graph.</p>
+<p>لهذا يجب فحص الظهور في كل نظام على حدة: قائمة المنصات المستشهد بها في مجال واحد قد لا تتقاطع تقريبا بين الانظمة.</p>
+
+<h2>بناء source footprint: ترتيب العمل</h2>
+<ol>
+<li><strong>ارسم خريطة مصادر مجالك</strong> - اسال انظمة AI عن 20-30 استعلاما رئيسيا وسجل اي مواقع تستشهد بها</li>
+<li><strong>غط الكيانات الاساسية</strong> - Google Business Profile وWikidata وLinkedIn وCrunchbase والدلائل المتخصصة</li>
+<li><strong>عزز المنصات ذات الاولوية</strong> - التواجد بالضبط حيث ياخذ AI الاجابات في فئتك</li>
+<li><strong>اكد الخبرة</strong> - المنشورات والاشارات في الاعلام القطاعي تعطي اشارة مصداقية</li>
+</ol>
+
+<h2>ما يجب تجنبه</h2>
+<p>الروابط الجماعية من دلائل السبام وشبكات المواقع والاشارات المشتراة منخفضة الجودة لا تعمل لـ GEO: انظمة AI تعتمد على دائرة محدودة من المصادر الموثقة، والتواجد في المهملة لا يضيف وزنا. والاسوا ان البيانات المتناقضة عن العلامة التجارية في مصادر مختلفة تخفض ثقة النموذج واحتمال الاستشهاد.</p>
+
+<h2>الاسئلة الشائعة</h2>
+<h3>هل تحتاج العلامة التجارية الى مقال في Wikipedia</h3>
+<p>مرغوب لكنه ليس الزاميا. لمعظم الشركات، كيان Wikidata مع تواجد منهجي في الدلائل القطاعية والاعلام اكثر واقعية. مقال Wikipedia بدون اهمية مؤكدة سيحذف.</p>
+
+<h3>كم عدد المصادر المطلوبة للتاثير</h3>
+<p>المسالة ليست في الكمية بل في التقاطع مع المنصات التي يستشهد بها AI فعلا في مجالك. عشرة مواضع دقيقة تعمل افضل من مئة دليل عشوائي.</p>
+
+<h3>كيف اعرف اي مصادر يستشهد بها AI في مجالي</h3>
+<p>هذا جزء من AI Visibility Audit: نسجل المصادر المستشهد بها عبر 100+ استعلام في 5 انظمة ونستخدم القائمة كخطة عمل. التدقيق المجاني السريع يعطي تقديرا اوليا.</p>`,
+    },
+  },
+  {
+    slug: "geo-dlya-lokalnogo-biznesa",
+    date: "2026-06-08",
+    author: "Merkaba Digital Team",
+    title: {
+      ru: "GEO для локального бизнеса: как попасть в AI‑рекомендации своего города",
+      en: "GEO for local business: how to get into AI recommendations for your city",
+      tr: "Yerel isletmeler icin GEO: sehrinizin AI onerilerine nasil girersiniz",
+      ar: "GEO للاعمال المحلية: كيف تدخل توصيات AI في مدينتك",
+    },
+    description: {
+      ru: "Пользователи спрашивают AI про лучшие клиники, застройщиков и отели конкретного города. Пошагово разбираем, как локальному бизнесу попасть в эти ответы",
+      en: "Users ask AI about the best clinics, developers and hotels in a specific city. A step-by-step guide to getting a local business into those answers",
+      tr: "Kullanicilar AI'ya belirli bir sehirdeki en iyi klinikleri, muteahhitleri ve otelleri soruyor. Yerel bir isletmenin bu yanitlara girmesini adim adim inceliyoruz",
+      ar: "يسال المستخدمون AI عن افضل العيادات والمطورين والفنادق في مدينة محددة. دليل خطوة بخطوة لدخول الاعمال المحلية في هذه الاجابات",
+    },
+    content: {
+      ru: `<h2>Как AI отвечает на локальные запросы</h2>
+<p>"Лучшая стоматология в Стамбуле", "проверенный застройщик в Анталье", "клиника трансплантации волос - кого выбрать" - такие вопросы пользователи все чаще задают не поисковику, а ChatGPT и Gemini. AI отвечает списком из 3-7 конкретных компаний с короткими обоснованиями.</p>
+<p>В этот список попадают не те, кто больше тратит на рекламу: AI собирает рекомендации из отзывов, каталогов, карт и упоминаний. Большинство локальных компаний в этих ответах отсутствуют - и даже не знают об этом.</p>
+
+<h2>Google Business Profile - фундамент локальной AI‑видимости</h2>
+<p>Gemini напрямую связан с данными Google Maps, остальные системы тоже опираются на них через поиск. Что должно быть закрыто:</p>
+<ul>
+<li>Полностью заполненный профиль: категории, услуги, описание, фото</li>
+<li>Актуальные часы работы и контакты, совпадающие с сайтом</li>
+<li>Регулярные свежие отзывы с ответами компании</li>
+<li>Посты и обновления - сигнал, что бизнес активен</li>
+</ul>
+
+<h2>Отзывы решают больше, чем кажется</h2>
+<p>На локальных запросах AI‑системы регулярно пересказывают содержание отзывов: "клиенты отмечают...", "по отзывам...". Важны три параметра: средний рейтинг, поток свежих отзывов и конкретика в тексте. Отзыв "делали виниры, прошло два года, все идеально" дает AI больше материала для рекомендации, чем десять оценок без слов.</p>
+
+<h2>LocalBusiness разметка и страницы под город</h2>
+<p>Разметка LocalBusiness с адресом, зоной обслуживания и geo-координатами связывает сайт с географией. Если работаете в нескольких городах - отдельная страница под каждый город с локальным FAQ работает лучше одной общей.</p>
+
+<h2>Мультиязычность: где локальный бизнес теряет международных клиентов</h2>
+<p>Для медицинского туризма, недвижимости и гостеприимства локальный запрос часто звучит на чужом языке: пациент из Эр-Рияда спрашивает по-арабски, покупатель из Берлина - по-немецки. AI отвечает на языке вопроса и опирается на источники на этом языке. Если присутствие бренда ограничено турецким и английским, в арабских ответах вас не существует.</p>
+
+<h2>С чего начать</h2>
+<ol>
+<li>Задайте ChatGPT и Gemini 10-15 локальных запросов по своей нише и зафиксируйте, кого они рекомендуют</li>
+<li>Приведите в порядок Google Business Profile и наладьте поток свежих отзывов</li>
+<li>Внедрите LocalBusiness и FAQPage разметку</li>
+<li>Проверьте видимость на языках своих клиентов</li>
+</ol>
+
+<h2>Часто задаваемые вопросы</h2>
+<h3>Работает ли GEO для небольшой компании</h3>
+<p>Да, и часто быстрее, чем для крупной: в локальных нишах конкуренция за AI‑видимость пока минимальна. Менее 12% компаний системно работают с GEO, в локальном сегменте - еще меньше.</p>
+
+<h3>Сколько времени нужно локальному бизнесу для результата</h3>
+<p>Первые сдвиги по локальным запросам обычно видны через 3-6 недель: профиль, отзывы и разметка дают эффект быстрее, чем построение авторитетности в широкой нише.</p>
+
+<h3>Что если конкуренты уже в AI‑ответах</h3>
+<p>Это значит, что AI уже сформировал список рекомендаций в нише - и его можно изменить. Аудит покажет, на какие источники опирается AI, рекомендуя конкурентов: это и есть план работ.</p>`,
+
+      en: `<h2>How AI answers local queries</h2>
+<p>"Best dental clinic in Istanbul", "trusted developer in Antalya", "hair transplant clinic - whom to choose" - users increasingly ask these questions not to a search engine but to ChatGPT and Gemini. AI answers with a list of 3-7 specific companies and short justifications.</p>
+<p>The list is not made of those who spend the most on advertising: AI assembles recommendations from reviews, directories, maps and mentions. Most local companies are absent from these answers - and do not even know it.</p>
+
+<h2>Google Business Profile - the foundation of local AI visibility</h2>
+<p>Gemini is directly tied to Google Maps data, and the other systems also rely on it through search. What has to be covered:</p>
+<ul>
+<li>A fully completed profile: categories, services, description, photos</li>
+<li>Current opening hours and contacts that match the website</li>
+<li>A regular flow of fresh reviews with company replies</li>
+<li>Posts and updates - a signal the business is active</li>
+</ul>
+
+<h2>Reviews decide more than it seems</h2>
+<p>On local queries AI systems regularly retell review content: "clients note...", "according to reviews...". Three parameters matter: average rating, the flow of fresh reviews and specificity in the text. A review like "got veneers two years ago, still perfect" gives AI more material for a recommendation than ten wordless ratings.</p>
+
+<h2>LocalBusiness markup and city pages</h2>
+<p>LocalBusiness markup with address, service area and geo coordinates ties the site to geography. If you operate in several cities, a separate page per city with a local FAQ works better than one general page.</p>
+
+<h2>Multilingual: where local businesses lose international clients</h2>
+<p>For medical tourism, real estate and hospitality, a local query often comes in a foreign language: a patient from Riyadh asks in Arabic, a buyer from Berlin in German. AI answers in the language of the question and relies on sources in that language. If your brand presence is limited to Turkish and English, you do not exist in Arabic answers.</p>
+
+<h2>Where to start</h2>
+<ol>
+<li>Ask ChatGPT and Gemini 10-15 local queries in your niche and record whom they recommend</li>
+<li>Get your Google Business Profile in order and establish a flow of fresh reviews</li>
+<li>Implement LocalBusiness and FAQPage markup</li>
+<li>Check visibility in the languages your clients speak</li>
+</ol>
+
+<h2>Frequently asked questions</h2>
+<h3>Does GEO work for a small company</h3>
+<p>Yes, and often faster than for a large one: in local niches competition for AI visibility is still minimal. Fewer than 12% of companies work on GEO systematically, and in the local segment even fewer.</p>
+
+<h3>How long does a local business need for results</h3>
+<p>First shifts on local queries are usually visible in 3-6 weeks: profile, reviews and markup take effect faster than building authority in a broad niche.</p>
+
+<h3>What if competitors are already in AI answers</h3>
+<p>It means AI has already formed a recommendation list in the niche - and it can be changed. An audit shows which sources AI relies on when recommending competitors: that is your work plan.</p>`,
+
+      tr: `<h2>AI yerel sorgulari nasil yanitliyor</h2>
+<p>"Istanbul'da en iyi dis klinigi", "Antalya'da guvenilir muteahhit", "sac ekimi klinigi - kimi secmeli" - kullanicilar bu sorulari artik arama motoruna degil, ChatGPT ve Gemini'ye soruyor. AI, kisa gerekcelerle 3-7 somut sirketten olusan bir listeyle yanitliyor.</p>
+<p>Bu listeye reklama en cok harcayanlar girmiyor: AI onerileri yorumlardan, dizinlerden, haritalardan ve bahsedilmelerden topluyor. Cogu yerel sirket bu yanitlarda yok - ve bunun farkinda bile degil.</p>
+
+<h2>Google Business Profile - yerel AI gorunurlugunun temeli</h2>
+<p>Gemini dogrudan Google Maps verilerine bagli, diger sistemler de arama uzerinden bunlara dayaniyor. Kapatilmasi gerekenler:</p>
+<ul>
+<li>Tam doldurulmus profil: kategoriler, hizmetler, aciklama, fotograflar</li>
+<li>Web sitesiyle eslesen guncel calisma saatleri ve iletisim</li>
+<li>Sirket yanitlariyla birlikte duzenli taze yorumlar</li>
+<li>Gonderiler ve guncellemeler - isletmenin aktif oldugu sinyali</li>
+</ul>
+
+<h2>Yorumlar sanildiqindan fazlasini belirliyor</h2>
+<p>Yerel sorgularda AI sistemleri duzenli olarak yorum icerigini aktariyor: "musteriler belirtiyor...", "yorumlara gore...". Uc parametre onemli: ortalama puan, taze yorum akisi ve metindeki somutluk. "Iki yil once lamine yaptirdim, hala mukemmel" yorumu, AI'ya kelimesiz on puandan daha fazla oneri malzemesi verir.</p>
+
+<h2>LocalBusiness isaretlemesi ve sehir sayfalari</h2>
+<p>Adres, hizmet bolgesi ve geo koordinatlarla LocalBusiness isaretlemesi siteyi cografyaya baglar. Birkac sehirde calisiyorsaniz, yerel SSS iceren her sehre ozel sayfa tek genel sayfadan daha iyi calisir.</p>
+
+<h2>Cok dillilik: yerel isletme uluslararasi musterileri nerede kaybediyor</h2>
+<p>Medikal turizm, gayrimenkul ve konaklama icin yerel sorgu genellikle yabanci dilde gelir: Riyad'dan hasta Arapca, Berlin'den alici Almanca sorar. AI sorunun dilinde yanitlar ve o dildeki kaynaklara dayanir. Marka varliginiz Turkce ve Ingilizceyle sinirliysa, Arapca yanitlarda yoksunuz.</p>
+
+<h2>Nereden baslamali</h2>
+<ol>
+<li>ChatGPT ve Gemini'ye nisinizde 10-15 yerel sorgu sorun ve kimi onerdiklerini kaydedin</li>
+<li>Google Business Profile'i duzene koyun ve taze yorum akisi saglayin</li>
+<li>LocalBusiness ve FAQPage isaretlemesini uygulayin</li>
+<li>Musterilerinizin dillerinde gorunurlugu kontrol edin</li>
+</ol>
+
+<h2>Sik sorulan sorular</h2>
+<h3>GEO kucuk bir sirket icin calisir mi</h3>
+<p>Evet, ve genellikle buyuk sirketten daha hizli: yerel nislerde AI gorunurlugu rekabeti hala minimal. Sirketlerin %12'sinden azi GEO ile sistematik calisiyor, yerel segmentte daha da az.</p>
+
+<h3>Yerel isletmenin sonuc icin ne kadar zamana ihtiyaci var</h3>
+<p>Yerel sorgulardaki ilk degisimler genellikle 3-6 haftada gorulur: profil, yorumlar ve isaretleme, genis niste otorite insasindan daha hizli etki eder.</p>
+
+<h3>Rakipler zaten AI yanitlarindaysa ne olur</h3>
+<p>Bu, AI'nin niste bir oneri listesi olusturdugu anlamina gelir - ve bu liste degistirilebilir. Denetim, AI'nin rakipleri onerirken hangi kaynaklara dayandigini gosterir: is plani tam olarak budur.</p>`,
+
+      ar: `<h2>كيف يجيب AI على الاستعلامات المحلية</h2>
+<p>"افضل عيادة اسنان في اسطنبول"، "مطور موثوق في انطاليا"، "عيادة زراعة شعر - من اختار" - يطرح المستخدمون هذه الاسئلة بشكل متزايد ليس على محرك البحث بل على ChatGPT وGemini. يجيب AI بقائمة من 3-7 شركات محددة مع مبررات قصيرة.</p>
+<p>لا يدخل هذه القائمة من ينفق اكثر على الاعلان: AI يجمع التوصيات من التقييمات والدلائل والخرائط والاشارات. معظم الشركات المحلية غائبة عن هذه الاجابات - ولا تعلم بذلك حتى.</p>
+
+<h2>Google Business Profile - اساس ظهور AI المحلي</h2>
+<p>Gemini مرتبط مباشرة ببيانات Google Maps، والانظمة الاخرى تعتمد عليها ايضا عبر البحث. ما يجب تغطيته:</p>
+<ul>
+<li>ملف مكتمل بالكامل: الفئات والخدمات والوصف والصور</li>
+<li>ساعات عمل وجهات اتصال محدثة تطابق الموقع</li>
+<li>تدفق منتظم من التقييمات الجديدة مع ردود الشركة</li>
+<li>منشورات وتحديثات - اشارة الى ان العمل نشط</li>
+</ul>
+
+<h2>التقييمات تحسم اكثر مما يبدو</h2>
+<p>في الاستعلامات المحلية تعيد انظمة AI سرد محتوى التقييمات بانتظام: "يلاحظ العملاء..."، "وفقا للتقييمات...". ثلاثة عوامل مهمة: متوسط التقييم وتدفق التقييمات الجديدة والتفاصيل في النص. تقييم "ركبت قشورا قبل عامين وما زالت مثالية" يعطي AI مادة للتوصية اكثر من عشر درجات بلا كلمات.</p>
+
+<h2>ترميز LocalBusiness وصفحات المدن</h2>
+<p>ترميز LocalBusiness بالعنوان ومنطقة الخدمة والاحداثيات الجغرافية يربط الموقع بالجغرافيا. اذا كنت تعمل في عدة مدن، فصفحة منفصلة لكل مدينة مع اسئلة شائعة محلية تعمل افضل من صفحة عامة واحدة.</p>
+
+<h2>تعدد اللغات: اين تخسر الاعمال المحلية العملاء الدوليين</h2>
+<p>في السياحة الطبية والعقارات والضيافة، غالبا ما ياتي الاستعلام المحلي بلغة اجنبية: مريض من الرياض يسال بالعربية، ومشتر من برلين بالالمانية. AI يجيب بلغة السؤال ويعتمد على مصادر بتلك اللغة. اذا كان حضور علامتك التجارية مقتصرا على التركية والانجليزية، فانت غير موجود في الاجابات العربية.</p>
+
+<h2>من اين تبدا</h2>
+<ol>
+<li>اسال ChatGPT وGemini عن 10-15 استعلاما محليا في مجالك وسجل من يوصون به</li>
+<li>رتب Google Business Profile وامن تدفقا من التقييمات الجديدة</li>
+<li>طبق ترميز LocalBusiness وFAQPage</li>
+<li>تحقق من الظهور بلغات عملائك</li>
+</ol>
+
+<h2>الاسئلة الشائعة</h2>
+<h3>هل يعمل GEO لشركة صغيرة</h3>
+<p>نعم، وغالبا اسرع من الشركة الكبيرة: في المجالات المحلية المنافسة على ظهور AI لا تزال ضئيلة. اقل من 12% من الشركات تعمل على GEO بشكل منهجي، وفي القطاع المحلي اقل من ذلك.</p>
+
+<h3>كم يحتاج العمل المحلي من الوقت للنتيجة</h3>
+<p>التحولات الاولى في الاستعلامات المحلية تظهر عادة خلال 3-6 اسابيع: الملف والتقييمات والترميز تعطي تاثيرا اسرع من بناء المصداقية في مجال واسع.</p>
+
+<h3>ماذا لو كان المنافسون في اجابات AI بالفعل</h3>
+<p>هذا يعني ان AI كون بالفعل قائمة توصيات في المجال - ويمكن تغييرها. التدقيق يظهر اي مصادر يعتمد عليها AI عند التوصية بالمنافسين: وهذه هي خطة العمل.</p>`,
     },
   },
 ];

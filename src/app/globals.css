@@ -32,11 +32,12 @@ body {
   font-family: var(--font-body);
 }
 
-/* Prevent ugly word breaks at hyphens + balance text across lines */
+/* Prevent ugly word breaks at hyphens + balance text across lines.
+   overflow-wrap stays normal: a word must never break mid-word, reduce font size instead */
 h1, h2, h3, h4, h5, h6,
 .hero-description,
 .page-intro {
-  overflow-wrap: break-word;
+  overflow-wrap: normal;
   word-break: keep-all;
   hyphens: none;
   text-wrap: balance;
